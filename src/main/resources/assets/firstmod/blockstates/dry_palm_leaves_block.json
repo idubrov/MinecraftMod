@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "firstmod:block/dry_palm_leaves_block",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "firstmod:block/dry_palm_leaves_block"
+    },
+    "axis=z": {
+      "model": "firstmod:block/dry_palm_leaves_block",
+      "x": 90
+    }
+  }
+}

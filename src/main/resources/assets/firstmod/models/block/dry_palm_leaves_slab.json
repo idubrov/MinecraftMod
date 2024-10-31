@@ -1,0 +1,7 @@
+{
+  "parent": "firstmod:block/slab_bundle",
+  "textures": {
+    "end": "firstmod:block/dry_palm_leaves_side",
+    "side": "firstmod:block/dry_palm_leaves_top"
+  }
+}

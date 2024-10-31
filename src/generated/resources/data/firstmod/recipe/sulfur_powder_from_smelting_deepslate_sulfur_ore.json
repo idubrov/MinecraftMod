@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.5,
+  "group": "sulfur",
+  "ingredient": {
+    "item": "firstmod:deepslate_sulfur_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "firstmod:sulfur_powder"
+  }
+}

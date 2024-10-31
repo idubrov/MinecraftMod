@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "firstmod:block/palm_slab"
+    },
+    "type=double": {
+      "model": "firstmod:block/palm_planks"
+    },
+    "type=top": {
+      "model": "firstmod:block/palm_slab_top"
+    }
+  }
+}

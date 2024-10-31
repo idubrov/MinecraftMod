@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.5,
+  "group": "sulfur",
+  "ingredient": {
+    "item": "firstmod:sulfur_shard"
+  },
+  "result": {
+    "count": 1,
+    "id": "firstmod:sulfur_powder"
+  }
+}

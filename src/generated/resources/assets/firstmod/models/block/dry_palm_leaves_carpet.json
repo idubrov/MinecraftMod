@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/carpet",
+  "textures": {
+    "wool": "firstmod:block/dry_palm_leaves_top"
+  }
+}

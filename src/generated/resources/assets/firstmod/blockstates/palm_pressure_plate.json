@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "firstmod:block/palm_pressure_plate"
+    },
+    "powered=true": {
+      "model": "firstmod:block/palm_pressure_plate_down"
+    }
+  }
+}

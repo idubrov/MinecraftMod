@@ -1,0 +1,21 @@
+// 1.21.1	2024-10-31T10:47:25.484821	Tags for minecraft:block mod id firstmod
+cdf4c381520132653fcf2bdf8659627bec006d40 data/firstmod/tags/block/palm_logs.json
+00a0cc0b217c867a2de5ad3583fdf223d015c7d4 data/firstmod/tags/block/sulfur.json
+922e51be2bf514f0d8f5727cb121b77006b1c6e2 data/firstmod/tags/block/sulfur_ores.json
+4e9d71d1a068380b0e14e4d95d1aee3fb209980f data/minecraft/tags/block/fence_gates.json
+eec96cfc153bebbcdec512f923c76b3bd3a9da21 data/minecraft/tags/block/flower_pots.json
+b8e5c8d62478e98e1219ef39b896840cda121540 data/minecraft/tags/block/leaves.json
+cdf4c381520132653fcf2bdf8659627bec006d40 data/minecraft/tags/block/logs_that_burn.json
+b7cb1d396423fa8c3437ec4ca0848122f760f24f data/minecraft/tags/block/mineable/axe.json
+b8e5c8d62478e98e1219ef39b896840cda121540 data/minecraft/tags/block/mineable/hoe.json
+2003ae88fa06cbb1422b7fc5d91d7b8000017c00 data/minecraft/tags/block/mineable/pickaxe.json
+2003ae88fa06cbb1422b7fc5d91d7b8000017c00 data/minecraft/tags/block/needs_iron_tool.json
+bc7447936f3af40bdf9198cb617b9695d28d1d8d data/minecraft/tags/block/planks.json
+117b1b59dfd470c17c21d5df44476e391e9bfff7 data/minecraft/tags/block/saplings.json
+33bed9f1a3637652c6266e1cac7d00c3df94d622 data/minecraft/tags/block/wooden_buttons.json
+5e51011383934fc26550dbf87f5d38be2da25606 data/minecraft/tags/block/wooden_doors.json
+bcccc4e5fafd3305a401ee1d4e75973ccb4fdb61 data/minecraft/tags/block/wooden_fences.json
+c3875eae1da9b54b00ca9fabafe2b0db619f6db5 data/minecraft/tags/block/wooden_pressure_plates.json
+2314b74c1677a5873e7efb83a553ebe0158fc455 data/minecraft/tags/block/wooden_slabs.json
+2f0b84075aab38fd99c4e86dc1357315caf8f66a data/minecraft/tags/block/wooden_stairs.json
+54e03236d7f016c4d5fcea2f0a1402d05f40c75d data/minecraft/tags/block/wooden_trapdoors.json

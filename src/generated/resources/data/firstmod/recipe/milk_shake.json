@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "firstmod:banana"
+    },
+    "M": {
+      "item": "minecraft:milk_bucket"
+    }
+  },
+  "pattern": [
+    "M  ",
+    "BBB",
+    "   "
+  ],
+  "result": {
+    "count": 3,
+    "id": "firstmod:milk_shake"
+  }
+}

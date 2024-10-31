@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "firstmod:sulfur_powder"
+    }
+  },
+  "pattern": [
+    "III",
+    "SSS",
+    "CCC"
+  ],
+  "result": {
+    "count": 3,
+    "id": "firstmod:battery"
+  }
+}

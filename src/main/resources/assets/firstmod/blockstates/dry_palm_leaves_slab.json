@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "firstmod:block/dry_palm_leaves_slab"
+    },
+    "type=double": {
+      "model": "firstmod:block/dry_palm_leaves_block"
+    },
+    "type=top": {
+      "model": "firstmod:block/dry_palm_leaves_slab_top"
+    }
+  }
+}

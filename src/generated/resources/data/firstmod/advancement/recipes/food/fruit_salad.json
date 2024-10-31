@@ -1,0 +1,76 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_apple": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:apple"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_banana": {
+      "conditions": {
+        "items": [
+          {
+            "items": "firstmod:banana"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_bowl": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:bowl"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_coconut": {
+      "conditions": {
+        "items": [
+          {
+            "items": "firstmod:coconut"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_melon_slice": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:melon_slice"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "firstmod:fruit_salad"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_banana",
+      "has_coconut",
+      "has_apple",
+      "has_melon_slice",
+      "has_bowl"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "firstmod:fruit_salad"
+    ]
+  }
+}
