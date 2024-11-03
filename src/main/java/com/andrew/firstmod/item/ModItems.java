@@ -1,7 +1,6 @@
 package com.andrew.firstmod.item;
 
 import com.andrew.firstmod.FirstMod;
-import com.andrew.firstmod.item.custom.HammerItem;
 import com.andrew.firstmod.item.custom.MilkShakeFoodItem;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;

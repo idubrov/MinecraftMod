@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:candle"
+    },
+    "C": {
+      "item": "firstmod:coconut"
+    }
+  },
+  "pattern": [
+    "   ",
+    "ACA",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "firstmod:coconut_lamp"
+  }
+}

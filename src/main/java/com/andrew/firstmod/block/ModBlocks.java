@@ -1,6 +1,7 @@
 package com.andrew.firstmod.block;
 
 import com.andrew.firstmod.FirstMod;
+import com.andrew.firstmod.block.custom.CoconutLampBlock;
 import com.andrew.firstmod.block.custom.SulfurOreBlock;
 import com.andrew.firstmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -87,6 +88,9 @@ public class ModBlocks {
     public static final DeferredBlock<FlowerPotBlock> POTTED_PALM_SAPLING = registerBlock("potted_palm_sapling",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.PALM_SAPLING, BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_ACACIA_SAPLING).noOcclusion()));
 
+    public static final DeferredBlock<Block> COCONUT_LAMP = registerBlock("coconut_lamp",
+        () -> new CoconutLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.TORCH)
+                .lightLevel(state -> state.getValue(CoconutLampBlock.COCONUT_LAMP_CLICKED) ? 10 : 0)));
 
     //Registering of our new blocks and its items
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

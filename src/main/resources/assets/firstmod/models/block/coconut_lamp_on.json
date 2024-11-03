@@ -1,0 +1,7 @@
+{
+  "parent": "firstmod:block/template_coconut_lamp",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "lamp": "firstmod:block/coconut_lamp_on"
+  }
+}

@@ -1,6 +1,7 @@
 package com.andrew.firstmod;
 
 import com.andrew.firstmod.block.ModBlocks;
+import com.andrew.firstmod.component.ModDataComponents;
 import com.andrew.firstmod.event.ModEventClientBusEvents;
 import com.andrew.firstmod.item.ModCreativeModeTabs;
 import com.andrew.firstmod.item.ModItems;
@@ -45,6 +46,7 @@ public class FirstMod
         ModBlocks.register(modEventBus);
         ModParticlesTypes.register(modEventBus);
 
+        ModDataComponents.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us

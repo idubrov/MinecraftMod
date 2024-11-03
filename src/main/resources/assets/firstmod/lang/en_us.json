@@ -35,6 +35,8 @@
   "block.firstmod.palm_sapling": "Palm Sapling",
   "block.firstmod.potted_palm_sapling": "Potted Palm Sapling",
 
+  "block.firstmod.coconut_lamp": "Coconut Lamp",
+
   "tooltip.firstmod.empty_line": " ",
   "tooltip.firstmod.sulfur_ore.tooltip": "§7This block will hurt you if you touch it.§r",
   "tooltip.firstmod.battery.tooltip": "Green energy!",

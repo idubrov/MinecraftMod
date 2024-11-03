@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "coconut_lamp_clicked=false": {
+      "model": "firstmod:block/coconut_lamp_off"
+    },
+    "coconut_lamp_clicked=true": {
+      "model": "firstmod:block/coconut_lamp_on"
+    }
+  }
+}

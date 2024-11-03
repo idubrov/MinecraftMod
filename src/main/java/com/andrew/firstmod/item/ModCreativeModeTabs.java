@@ -54,6 +54,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.FRUIT_SALAD);
 
                         output.accept(ModItems.BATTERY);
+                        output.accept(ModBlocks.COCONUT_LAMP);
                     }).build());
 
     public static void register(IEventBus eventBus) {

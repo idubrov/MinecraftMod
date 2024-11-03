@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-29T11:15:18.6877825	Recipes
+// 1.21.1	2024-11-03T14:28:03.617917	Recipes
 45760b825cef91b98fbf2ba3847c35efd65edcc1 data/firstmod/advancement/recipes/building_blocks/dry_palm_leaves_block.json
 efcfbfa6c3c58989670f8d199baaffa7731f6ec0 data/firstmod/advancement/recipes/building_blocks/dry_palm_leaves_carpet.json
 bda11ac69c058f2a7dda5d878ab55ef0fcff8172 data/firstmod/advancement/recipes/building_blocks/dry_palm_leaves_slab.json
@@ -11,6 +11,7 @@ bef201b3e932b4ca664916f0500db8d3e5f72465 data/firstmod/advancement/recipes/build
 a86268fe9fd84e4a7c990c9016e31b47f680e088 data/firstmod/advancement/recipes/food/fruit_salad.json
 5080903f86160b9fa2d4e8467532c55ee6ee77dd data/firstmod/advancement/recipes/food/milk_shake.json
 d88d829d3d560e8aa5ee75f4d25aeedee12b061f data/firstmod/advancement/recipes/misc/battery.json
+4ad7e8219c9ddc94b26aaf2bd5e508493a6dc611 data/firstmod/advancement/recipes/misc/coconut_lamp.json
 4e7e3665e3943ad76db89ea676914af0a34fce24 data/firstmod/advancement/recipes/misc/sulfur_block.json
 3a2184d5fa9bb50fe467c6c1bbdde687b99831a4 data/firstmod/advancement/recipes/misc/sulfur_powder_from_blasting_deepslate_sulfur_ore.json
 5fe1f66248a780f23e1ed199667373efa61c4608 data/firstmod/advancement/recipes/misc/sulfur_powder_from_blasting_sulfur_ore.json
@@ -25,6 +26,7 @@ a0ac76b8dc0a3290a9312397a9732376a23d6e78 data/firstmod/advancement/recipes/redst
 33b04d76a5d9bcc538d2a5476b7f9f50f27e8a09 data/firstmod/advancement/recipes/redstone/palm_pressure_plate.json
 839df38a74984c25e2f5f2f23aeee7fa36f399d1 data/firstmod/advancement/recipes/redstone/palm_trapdoor.json
 868d245d4653ce88072dec7eece2790ab26ab99e data/firstmod/recipe/battery.json
+d461e7446758e5bea29fbbff94f68a2349ee4dad data/firstmod/recipe/coconut_lamp.json
 561e092b0dd79b19640103dc30095cda6dfd08db data/firstmod/recipe/dry_palm_leaves_block.json
 51fa4eba2575358a3af139428bce99aa20dfad46 data/firstmod/recipe/dry_palm_leaves_carpet.json
 cf41c6b54b63b71bdbce29ea10072f7cc8e017c5 data/firstmod/recipe/dry_palm_leaves_slab.json

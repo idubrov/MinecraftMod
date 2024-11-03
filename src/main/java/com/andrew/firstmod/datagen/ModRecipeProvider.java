@@ -112,6 +112,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_sulfur_powder", has(ModItems.SULFUR_POWDER))
                 .save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.COCONUT_LAMP.get(), 1)
+                .pattern("   ")
+                .pattern("ACA")
+                .pattern("   ")
+                .define('A', Items.CANDLE)
+                .define('C', ModItems.COCONUT.get())
+                .unlockedBy("has_coconut", has(ModItems.COCONUT))
+                .unlockedBy("has_candle", has(Items.CANDLE))
+                .save(recipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SULFUR_SHARD.get(), 9)
                 .requires(ModBlocks.SULFUR_BLOCK)
@@ -152,6 +161,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_palm_planks", has(ModBlocks.PALM_PLANKS.get())).save(recipeOutput);
         trapdoorBuilder(ModBlocks.PALM_TRAPDOOR.get(), Ingredient.of(ModBlocks.PALM_PLANKS.get())).group("wooden_trapdoor")
                 .unlockedBy("has_palm_planks", has(ModBlocks.PALM_PLANKS.get())).save(recipeOutput);
+
+
+
 
     }
 

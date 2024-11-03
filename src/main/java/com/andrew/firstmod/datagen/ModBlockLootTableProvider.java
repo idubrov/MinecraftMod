@@ -54,6 +54,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.DRY_PALM_LEAVES_BLOCK.get());
         dropSelf(ModBlocks.DRY_PALM_LEAVES_CARPET.get());
         dropSelf(ModBlocks.PALM_SAPLING.get());
+        dropSelf(ModBlocks.COCONUT_LAMP.get());
+
         add(ModBlocks.POTTED_PALM_SAPLING.get(), createPotFlowerItemTable(ModBlocks.PALM_SAPLING.get()));
 
         add(ModBlocks.SULFUR_ORE.get(),
