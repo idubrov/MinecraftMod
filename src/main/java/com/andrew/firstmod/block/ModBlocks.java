@@ -4,6 +4,7 @@ import com.andrew.firstmod.FirstMod;
 import com.andrew.firstmod.block.custom.CoconutLampBlock;
 import com.andrew.firstmod.block.custom.SulfurOreBlock;
 import com.andrew.firstmod.item.ModItems;
+import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -29,12 +30,12 @@ public class ModBlocks {
                             .lightLevel(state -> 10)
                             .requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> SULFUR_ORE = registerBlock("sulfur_ore",
-            () -> new SulfurOreBlock(UniformInt.of(2, 5),
+            () -> new SulfurOreBlock(ConstantInt.of(0),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_ORE)
                             .lightLevel(state -> 10)
                             .requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> DEEPSLATE_SULFUR_ORE = registerBlock("deepslate_sulfur_ore",
-            () -> new SulfurOreBlock(UniformInt.of(2, 5),
+            () -> new SulfurOreBlock(ConstantInt.of(0),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_GOLD_ORE)
                             .lightLevel(state -> 10)
                             .requiresCorrectToolForDrops()));

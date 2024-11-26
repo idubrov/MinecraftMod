@@ -1,0 +1,8 @@
+{
+  "remove": [
+    "#firstmod:needs_electric_tool"
+  ],
+  "values": [
+    "#minecraft:incorrect_for_diamond_tool"
+  ]
+}

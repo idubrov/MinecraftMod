@@ -55,6 +55,20 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.BATTERY);
                         output.accept(ModBlocks.COCONUT_LAMP);
+
+                        output.accept(ModItems.ELECTRIC_SWORD);
+                        output.accept(ModItems.ELECTRIC_PICKAXE);
+                        output.accept(ModItems.ELECTRIC_SHOVEL);
+                        output.accept(ModItems.ELECTRIC_AXE);
+                        output.accept(ModItems.ELECTRIC_HOE);
+
+                        output.accept(ModItems.WOODEN_HAMMER);
+                        output.accept(ModItems.STONE_HAMMER);
+                        output.accept(ModItems.GOLDEN_HAMMER);
+                        output.accept(ModItems.IRON_HAMMER);
+                        output.accept(ModItems.DIAMOND_HAMMER);
+
+
                     }).build());
 
     public static void register(IEventBus eventBus) {

@@ -37,6 +37,14 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.STRIPPED_PALM_LOG.get());
 
 
+        tag(ModTags.Blocks.NEEDS_ELECTRIC_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+        tag(ModTags.Blocks.INCORRECT_FOR_ELECTRIC_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+                .remove(ModTags.Blocks.NEEDS_ELECTRIC_TOOL);
+
+
         // Minecraft tags
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.SULFUR_BLOCK.get())

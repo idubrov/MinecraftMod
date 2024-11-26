@@ -37,6 +37,18 @@
 
   "block.firstmod.coconut_lamp": "Coconut Lamp",
 
+  "item.firstmod.electric_sword": "Electric Sword",
+  "item.firstmod.electric_pickaxe": "Electric Pickaxe",
+  "item.firstmod.electric_axe": "Electric Axe",
+  "item.firstmod.electric_shovel": "Electric Shovel",
+  "item.firstmod.electric_hoe": "Electric Hoe",
+
+  "item.firstmod.wooden_hammer": "Wooden Hammer",
+  "item.firstmod.stone_hammer": "Stone Hammer",
+  "item.firstmod.golden_hammer": "Golden Hammer",
+  "item.firstmod.iron_hammer": "Iron Hammer",
+  "item.firstmod.diamond_hammer": "Diamond Hammer",
+
   "tooltip.firstmod.empty_line": " ",
   "tooltip.firstmod.sulfur_ore.tooltip": "§7This block will hurt you if you touch it.§r",
   "tooltip.firstmod.battery.tooltip": "Green energy!",

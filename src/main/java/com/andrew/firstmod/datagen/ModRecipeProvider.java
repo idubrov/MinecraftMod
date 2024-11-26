@@ -7,9 +7,11 @@ import com.andrew.firstmod.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
 import java.util.List;
@@ -162,10 +164,67 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         trapdoorBuilder(ModBlocks.PALM_TRAPDOOR.get(), Ingredient.of(ModBlocks.PALM_PLANKS.get())).group("wooden_trapdoor")
                 .unlockedBy("has_palm_planks", has(ModBlocks.PALM_PLANKS.get())).save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.WOODEN_HAMMER.get(), 1)
+                .pattern(" WW")
+                .pattern(" SW")
+                .pattern("S  ")
+                .define('S', Items.STICK)
+                .define('W', ItemTags.PLANKS)
+                .unlockedBy("has_planks", has(ItemTags.PLANKS))
+                .unlockedBy("has_sticks", has(Items.STICK))
+                .save(recipeOutput);
 
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STONE_HAMMER.get(), 1)
+                .pattern(" WW")
+                .pattern(" SW")
+                .pattern("S  ")
+                .define('S', Items.STICK)
+                .define('W', Items.COBBLESTONE)
+                .unlockedBy("has_cobblestone", has(Items.COBBLESTONE))
+                .unlockedBy("has_sticks", has(Items.STICK))
+                .save(recipeOutput);
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GOLDEN_HAMMER.get(), 1)
+                .pattern(" WW")
+                .pattern(" SW")
+                .pattern("S  ")
+                .define('S', Items.STICK)
+                .define('W', Items.GOLD_INGOT)
+                .unlockedBy("has_gold_ingot", has(Items.GOLD_INGOT))
+                .unlockedBy("has_sticks", has(Items.STICK))
+                .save(recipeOutput);
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.IRON_HAMMER.get(), 1)
+                .pattern(" WW")
+                .pattern(" SW")
+                .pattern("S  ")
+                .define('S', Items.STICK)
+                .define('W', Items.IRON_INGOT)
+                .unlockedBy("has_iron_ingot", has(Items.IRON_INGOT))
+                .unlockedBy("has_sticks", has(Items.STICK))
+                .save(recipeOutput);
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.DIAMOND_HAMMER.get(), 1)
+                .pattern(" WW")
+                .pattern(" SW")
+                .pattern("S  ")
+                .define('S', Items.STICK)
+                .define('W', Items.DIAMOND)
+                .unlockedBy("has_diamond", has(Items.DIAMOND))
+                .unlockedBy("has_sticks", has(Items.STICK))
+                .save(recipeOutput);
 
     }
+
+
+
+
+
+
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
                                       float pExperience, int pCookingTIme, String pGroup) {

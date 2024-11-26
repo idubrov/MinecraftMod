@@ -1,11 +1,15 @@
 # Palms and Sulfur
 
-Imagine you have a perfect simple life in tropics under 
-lush palm trees with abundance of bananas and coconuts... 
-You live in a cozy wooden hut with a palapa (dried 
-palm leaves) roof. And suddenly... you found some bright 
-yellow mineral that made you sick... 
-Industrialization started...
+Imagine you live in the tropics, eating fruits to your heart's 
+desire. You make smoothies and fruit salads, peacefully annihilating
+the local banana population.  And then, you find some sulfur. You 
+experiment with it, finding that you can make batteries! Although 
+they are not a great fuel, (Why would you burn batteries in the first
+place? Do you _want_ to die?) they are necessary for power armour [TBD]. 
+
+## Requirements
+
+[TBD]
 
 ## Downloads
 
@@ -25,20 +29,26 @@ coconut. [Logs](docs/palm_logs.md) light taupe color.
 Saplings.
 
 ### Sulfur Ore
-Beautiful neon yellow ore that glow in the dark. Be careful 
-it hurts if stepped on. Important ingredient for batteries.
+
+All you need to know: it drops sulfur shards, it doesn't feel good on
+your toes, and you can make batteries out of it. Oh yeah, mining it
+with a hammer gives you sulfur powder directly.
 
 ### Hammer Tool
-Use hammer tool to mine sulfur ore effectively and get 
-powder.
+Use the hammer to mine sulfur ore without needing to smelt the sulfur
+shards into powder, as you get the powder instantly. Who knew the 
+solution to not burning coal was Stone Age technology?
 
 ### Battery
-Made with sulfur. Furnace and blast furnace fuel. 
-Necessary for power armor.
+Terrible fuel (What have your parents told you about burning 
+batteries?), smells _interesting_, but is needed for all electrical 
+items.
 
 ### Power Armor
 
 ### New Food Recipes
+Fruit salads, smoothies, and bananas! What else could you ask for? 
+(Not accepting answers to question.) 
 
 ## About the Author
 

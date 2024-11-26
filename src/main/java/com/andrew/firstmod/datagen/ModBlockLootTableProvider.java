@@ -2,12 +2,13 @@ package com.andrew.firstmod.datagen;
 
 import com.andrew.firstmod.block.ModBlocks;
 import com.andrew.firstmod.item.ModItems;
+import com.andrew.firstmod.util.ModTags;
+import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
@@ -18,6 +19,7 @@ import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.predicates.BonusLevelTableCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+import net.minecraft.world.level.storage.loot.predicates.MatchTool;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 
@@ -32,6 +34,10 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         return this.hasShearsOrSilkTouch().invert();
     }
 
+    private LootItemCondition.Builder hasHammer() { return MatchTool.toolMatches(ItemPredicate.Builder.item().of(ModTags.Items.HAMMERS_ITEMS)); }
+    private LootItemCondition.Builder doesNotHaveHammer() {
+        return this.hasHammer().invert();
+    }
 
     protected ModBlockLootTableProvider(HolderLookup.Provider registries) {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags(), registries);
@@ -58,10 +64,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         add(ModBlocks.POTTED_PALM_SAPLING.get(), createPotFlowerItemTable(ModBlocks.PALM_SAPLING.get()));
 
-        add(ModBlocks.SULFUR_ORE.get(),
-                block -> createMultipleOreDrops(ModBlocks.SULFUR_ORE.get(), ModItems.SULFUR_SHARD.get(), 1, 3));
-        add(ModBlocks.DEEPSLATE_SULFUR_ORE.get(),
-                block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_SULFUR_ORE.get(), ModItems.SULFUR_SHARD.get(), 1, 3));
+        add(ModBlocks.SULFUR_ORE.get(), block -> createSulfurOreDrops(ModBlocks.SULFUR_ORE.get(), 1, 3));
+        add(ModBlocks.DEEPSLATE_SULFUR_ORE.get(), block -> createSulfurOreDrops(ModBlocks.DEEPSLATE_SULFUR_ORE.get(), 1, 3));
 
         add(ModBlocks.PALM_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.PALM_SLAB.get()));
@@ -74,26 +78,49 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createPalmLeavesDrops(ModBlocks.PALM_LEAVES.get(), ModBlocks.PALM_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
     }
 
-
+/*
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
         HolderLookup.RegistryLookup<Enchantment> registryLookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
         return this.createSilkTouchDispatchTable(pBlock,
                 this.applyExplosionDecay(pBlock, LootItem.lootTableItem(item)
                         .apply(SetItemCountFunction.setCount(UniformGenerator.between(minDrops, maxDrops)))
                         .apply(ApplyBonusCount.addOreBonusCount(registryLookup.getOrThrow(Enchantments.FORTUNE)))));
-    }
+    }*/
 
 
     protected LootTable.Builder createPalmLeavesDrops(Block palmLeavesBlock, Block saplingBlock, float... chances) {
-        HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
+        HolderLookup.RegistryLookup<Enchantment> registryLookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
         return this.createLeavesDrops(palmLeavesBlock, saplingBlock, chances)
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F)).when(this.doesNotHaveShearsOrSilkTouch())
                         .add((this.applyExplosionCondition(palmLeavesBlock, LootItem.lootTableItem(ModItems.COCONUT.get())))
-                                .when(BonusLevelTableCondition.bonusLevelFlatChance(registrylookup.getOrThrow(Enchantments.FORTUNE),
+                                .when(BonusLevelTableCondition.bonusLevelFlatChance(registryLookup.getOrThrow(Enchantments.FORTUNE),
                                         new float[]{0.05F, 0.055555557F, 0.0625F, 0.08333334F, 0.25F}))));
     }
 
+
+    protected LootTable.Builder createSulfurOreDrops(Block pBlock, float minDrops, float maxDrops) {
+        HolderLookup.RegistryLookup<Enchantment> registryLookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
+
+        return LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(pBlock)
+                                .when(this.hasSilkTouch())))
+
+                .withPool(this.applyExplosionCondition(pBlock, LootPool.lootPool()
+                        .when(this.doesNotHaveHammer().and(this.doesNotHaveSilkTouch()))
+                        .add(LootItem.lootTableItem(ModItems.SULFUR_SHARD.get()))
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(minDrops, maxDrops)))
+                        .apply(ApplyBonusCount.addOreBonusCount(registryLookup.getOrThrow(Enchantments.FORTUNE)))))
+
+                .withPool(this.applyExplosionCondition(pBlock, LootPool.lootPool()
+                        .when(this.hasHammer().and(this.doesNotHaveSilkTouch()))
+                        .add(LootItem.lootTableItem(ModItems.SULFUR_POWDER.get()))
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(minDrops, maxDrops)))
+                        .apply(ApplyBonusCount.addOreBonusCount(registryLookup.getOrThrow(Enchantments.FORTUNE)))
+                ));
+    }
 
     @Override
     protected Iterable<Block> getKnownBlocks() {

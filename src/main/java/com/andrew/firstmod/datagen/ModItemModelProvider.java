@@ -12,6 +12,7 @@ import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.Objects;
 
@@ -35,6 +36,18 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModBlocks.PALM_DOOR.asItem());
         saplingItem(ModBlocks.PALM_SAPLING);
+
+        handheldItem(ModItems.ELECTRIC_SWORD);
+        handheldItem(ModItems.ELECTRIC_PICKAXE);
+        handheldItem(ModItems.ELECTRIC_AXE);
+        handheldItem(ModItems.ELECTRIC_SHOVEL);
+        handheldItem(ModItems.ELECTRIC_HOE);
+
+        handheldItem(ModItems.WOODEN_HAMMER);
+        handheldItem(ModItems.STONE_HAMMER);
+        handheldItem(ModItems.GOLDEN_HAMMER);
+        handheldItem(ModItems.IRON_HAMMER);
+        handheldItem(ModItems.DIAMOND_HAMMER);
     }
 
 
@@ -54,5 +67,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         this.withExistingParent(block.getId().getPath(), mcLoc("item/generated"))
                 .texture("layer0", ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID,
                         "block/" + block.getId().getPath()));
+    }
+
+    private ItemModelBuilder handheldItem(DeferredItem<?> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/handheld")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID,"item/" + item.getId().getPath()));
     }
 }

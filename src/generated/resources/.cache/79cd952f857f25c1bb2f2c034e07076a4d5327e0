@@ -1,4 +1,6 @@
-// 1.21.1	2024-10-31T10:47:25.484821	Tags for minecraft:block mod id firstmod
+// 1.21.1	2024-11-10T16:36:33.7877881	Tags for minecraft:block mod id firstmod
+7d754cf2b18bff1243a80524cd2070fbe019ff64 data/firstmod/tags/block/incorrect_for_electric_tool.json
+a249c46329a41538f49a564e1f14338aaf1be5a0 data/firstmod/tags/block/needs_electric_tool.json
 cdf4c381520132653fcf2bdf8659627bec006d40 data/firstmod/tags/block/palm_logs.json
 00a0cc0b217c867a2de5ad3583fdf223d015c7d4 data/firstmod/tags/block/sulfur.json
 922e51be2bf514f0d8f5727cb121b77006b1c6e2 data/firstmod/tags/block/sulfur_ores.json

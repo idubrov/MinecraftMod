@@ -1,12 +1,18 @@
-// 1.21.1	2024-10-30T21:03:41.1863225	Tags for minecraft:item mod id firstmod
+// 1.21.1	2024-11-25T19:25:31.2264882	Tags for minecraft:item mod id firstmod
+2e210837655c82a8c946c05139e0f398a43b8620 data/firstmod/tags/item/hammers.json
 cdf4c381520132653fcf2bdf8659627bec006d40 data/firstmod/tags/item/palm_logs.json
 5875c0ca8fca8f3f79e57729260f945a7bbc153a data/firstmod/tags/item/sulfur.json
 922e51be2bf514f0d8f5727cb121b77006b1c6e2 data/firstmod/tags/item/sulfur_ores.json
+6c5c52cd9cac9981845495e4b31a31b5891ceeeb data/minecraft/tags/item/axes.json
 4e9d71d1a068380b0e14e4d95d1aee3fb209980f data/minecraft/tags/item/fence_gates.json
+24f61c5a8287d8b686c457d7b264bf0e91efd642 data/minecraft/tags/item/hoes.json
 b8e5c8d62478e98e1219ef39b896840cda121540 data/minecraft/tags/item/leaves.json
 cdf4c381520132653fcf2bdf8659627bec006d40 data/minecraft/tags/item/logs_that_burn.json
+0f4115fc66fc79d1768a8ca0a9a4faa623b6f6ed data/minecraft/tags/item/pickaxes.json
 bc7447936f3af40bdf9198cb617b9695d28d1d8d data/minecraft/tags/item/planks.json
 117b1b59dfd470c17c21d5df44476e391e9bfff7 data/minecraft/tags/item/saplings.json
+7b757143736e48a2cc9e4ea4e9e79adb8c1e9dc7 data/minecraft/tags/item/shovels.json
+17d715a0ab83f102d02fb97a9abb5cb469eea252 data/minecraft/tags/item/swords.json
 33bed9f1a3637652c6266e1cac7d00c3df94d622 data/minecraft/tags/item/wooden_buttons.json
 5e51011383934fc26550dbf87f5d38be2da25606 data/minecraft/tags/item/wooden_doors.json
 bcccc4e5fafd3305a401ee1d4e75973ccb4fdb61 data/minecraft/tags/item/wooden_fences.json

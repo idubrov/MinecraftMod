@@ -1,12 +1,22 @@
-// 1.21.1	2024-10-30T11:24:45.6305435	Item Models: firstmod
+// 1.21.1	2024-11-16T17:09:07.4628649	Item Models: firstmod
 92d6c44e2521ee962dd833d46a51bb02cdbb0ce1 assets/firstmod/models/item/banana.json
 da688f0c599d0ce5cdb8032f392ad5e27207bbe1 assets/firstmod/models/item/battery.json
 49e8da2348b09cf5335f24c3eb6d7c57298e5db3 assets/firstmod/models/item/coconut.json
+ab8bf25b6bb43b64a5fc0dbe6b552f2921ecb25c assets/firstmod/models/item/diamond_hammer.json
+ae5e18b8e48508b85f79dd9fbcc310c44d683d92 assets/firstmod/models/item/electric_axe.json
+9647a7987162bfc1081cc0615031ec19d023c027 assets/firstmod/models/item/electric_hoe.json
+4b92638a7000a02167aafc429e7c3b929506f49c assets/firstmod/models/item/electric_pickaxe.json
+da24c315da07866d484b2c215b7b7db4f6099e12 assets/firstmod/models/item/electric_shovel.json
+1d387d9fc8bccdf392f2ada985d0efad380a63f3 assets/firstmod/models/item/electric_sword.json
 80e78d596140da3debe7ace06a5b1956a57bd979 assets/firstmod/models/item/fruit_salad.json
+b66851fcff564c22079e9248b7d8555c9545d739 assets/firstmod/models/item/golden_hammer.json
+968ceaa57ec37a07ced71f366434cf5a5a00dd3d assets/firstmod/models/item/iron_hammer.json
 e1a2a9d4c0383a00325ffecaf3b9273bee801ba0 assets/firstmod/models/item/milk_shake.json
 7f305ea81f68b17e2ed2211644367e8e44d3826b assets/firstmod/models/item/palm_button.json
 b89977b8a1d1502a5b3f64b0df2c0bc35b855abe assets/firstmod/models/item/palm_door.json
 6e6144c4d598b2c8001b09f7e3db45af7db9e020 assets/firstmod/models/item/palm_fence.json
 31f1702e273baf2f49254f04766fa8dc01b726c2 assets/firstmod/models/item/palm_sapling.json
+d0c04650f903d0594e9eaca23e030c10cde02cd4 assets/firstmod/models/item/stone_hammer.json
 eb1cb08aef57ba477ff16fd6a3887ed568bf1167 assets/firstmod/models/item/sulfur_powder.json
 caecde34223f7610441a9036b30b31ead81b5501 assets/firstmod/models/item/sulfur_shard.json
+2a87ca57425edf61b197ed63b01954c13b556aca assets/firstmod/models/item/wooden_hammer.json
