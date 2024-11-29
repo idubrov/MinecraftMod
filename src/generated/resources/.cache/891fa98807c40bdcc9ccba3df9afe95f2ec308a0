@@ -1,4 +1,4 @@
-// 1.21.1	2024-11-16T17:09:07.4628649	Item Models: firstmod
+// 1.21.1	2024-11-26T22:17:06.1326719	Item Models: firstmod
 92d6c44e2521ee962dd833d46a51bb02cdbb0ce1 assets/firstmod/models/item/banana.json
 da688f0c599d0ce5cdb8032f392ad5e27207bbe1 assets/firstmod/models/item/battery.json
 49e8da2348b09cf5335f24c3eb6d7c57298e5db3 assets/firstmod/models/item/coconut.json
@@ -7,7 +7,6 @@ ae5e18b8e48508b85f79dd9fbcc310c44d683d92 assets/firstmod/models/item/electric_ax
 9647a7987162bfc1081cc0615031ec19d023c027 assets/firstmod/models/item/electric_hoe.json
 4b92638a7000a02167aafc429e7c3b929506f49c assets/firstmod/models/item/electric_pickaxe.json
 da24c315da07866d484b2c215b7b7db4f6099e12 assets/firstmod/models/item/electric_shovel.json
-1d387d9fc8bccdf392f2ada985d0efad380a63f3 assets/firstmod/models/item/electric_sword.json
 80e78d596140da3debe7ace06a5b1956a57bd979 assets/firstmod/models/item/fruit_salad.json
 b66851fcff564c22079e9248b7d8555c9545d739 assets/firstmod/models/item/golden_hammer.json
 968ceaa57ec37a07ced71f366434cf5a5a00dd3d assets/firstmod/models/item/iron_hammer.json

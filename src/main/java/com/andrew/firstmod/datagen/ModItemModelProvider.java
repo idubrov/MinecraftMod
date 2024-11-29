@@ -37,7 +37,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModBlocks.PALM_DOOR.asItem());
         saplingItem(ModBlocks.PALM_SAPLING);
 
-        handheldItem(ModItems.ELECTRIC_SWORD);
         handheldItem(ModItems.ELECTRIC_PICKAXE);
         handheldItem(ModItems.ELECTRIC_AXE);
         handheldItem(ModItems.ELECTRIC_SHOVEL);

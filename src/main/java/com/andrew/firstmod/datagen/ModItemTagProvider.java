@@ -80,8 +80,6 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.SAPLINGS)
                 .add(ModBlocks.PALM_SAPLING.asItem());
 
-        tag(ItemTags.SWORDS)
-                .add(ModItems.ELECTRIC_SWORD.get());
         tag(ItemTags.PICKAXES)
                 .add(ModItems.ELECTRIC_PICKAXE.get());
         tag(ItemTags.AXES)
@@ -90,6 +88,5 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.ELECTRIC_SHOVEL.get());
         tag(ItemTags.HOES)
                 .add(ModItems.ELECTRIC_HOE.get());
-
     }
 }

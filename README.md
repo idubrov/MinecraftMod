@@ -24,17 +24,17 @@ place? Do you _want_ to die?) they are necessary for power armour [TBD].
 ### Palm Tree
 
 Grow on sand. Special shape - long, angled. Drop stick and 
-coconut. [Logs](docs/palm_logs.md) light taupe color. 
-[Leaves](docs/palm_leaves.md) could be dried. 
+coconut. [Logs](docs/palm) light taupe color. 
+Leaves could be dried. 
 Saplings.
 
 ### Sulfur Ore
 
-All you need to know: it drops sulfur shards, it doesn't feel good on
+All you need to know: it drops [sulfur](docs/sulfur.md) shards, it doesn't feel good on
 your toes, and you can make batteries out of it. Oh yeah, mining it
 with a hammer gives you sulfur powder directly.
 
-### Hammer Tool
+### Hammer
 Use the hammer to mine sulfur ore without needing to smelt the sulfur
 shards into powder, as you get the powder instantly. Who knew the 
 solution to not burning coal was Stone Age technology?
@@ -47,7 +47,7 @@ items.
 ### Power Armor
 
 ### New Food Recipes
-Fruit salads, smoothies, and bananas! What else could you ask for? 
+[Fruit salads, smoothies, and more](docs/food.md)! What else could you ask for? 
 (Not accepting answers to question.) 
 
 ## About the Author

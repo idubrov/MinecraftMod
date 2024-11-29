@@ -1,9 +1,11 @@
 package com.andrew.firstmod.item;
 
 import com.andrew.firstmod.FirstMod;
+import com.andrew.firstmod.item.custom.ElectricTool;
 import com.andrew.firstmod.item.custom.HammerItem;
 import com.andrew.firstmod.item.custom.MilkShakeFoodItem;
 import net.minecraft.network.chat.Component;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -65,20 +67,18 @@ public class ModItems {
                 }
             });
 
-    public static final DeferredItem<SwordItem> ELECTRIC_SWORD = ITEMS.register("electric_sword",
-            () -> new SwordItem(ModToolTiers.ELECTRIC, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(ModToolTiers.ELECTRIC, 5, -2.4f))));
-    public static final DeferredItem<PickaxeItem> ELECTRIC_PICKAXE = ITEMS.register("electric_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.ELECTRIC, new Item.Properties()
+
+    public static final DeferredItem<ElectricTool> ELECTRIC_PICKAXE = ITEMS.register("electric_pickaxe",
+            () -> new ElectricTool(ModToolTiers.ELECTRIC, BlockTags.MINEABLE_WITH_PICKAXE, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.ELECTRIC, 1.0F, -2.8f))));
-    public static final DeferredItem<ShovelItem> ELECTRIC_SHOVEL = ITEMS.register("electric_shovel",
-            () -> new ShovelItem(ModToolTiers.ELECTRIC, new Item.Properties()
+    public static final DeferredItem<ElectricTool> ELECTRIC_SHOVEL = ITEMS.register("electric_shovel",
+            () -> new ElectricTool(ModToolTiers.ELECTRIC, BlockTags.MINEABLE_WITH_SHOVEL, new Item.Properties()
                     .attributes(ShovelItem.createAttributes(ModToolTiers.ELECTRIC, 1.5F, -3.0f))));
-    public static final DeferredItem<AxeItem> ELECTRIC_AXE = ITEMS.register("electric_axe",
-            () -> new AxeItem(ModToolTiers.ELECTRIC, new Item.Properties()
+    public static final DeferredItem<ElectricTool> ELECTRIC_AXE = ITEMS.register("electric_axe",
+            () -> new ElectricTool(ModToolTiers.ELECTRIC, BlockTags.MINEABLE_WITH_AXE, new Item.Properties()
                     .attributes(AxeItem.createAttributes(ModToolTiers.ELECTRIC, 8.0F, -3.0f))));
-    public static final DeferredItem<HoeItem> ELECTRIC_HOE = ITEMS.register("electric_hoe",
-            () -> new HoeItem(ModToolTiers.ELECTRIC, new Item.Properties()
+    public static final DeferredItem<ElectricTool> ELECTRIC_HOE = ITEMS.register("electric_hoe",
+            () -> new ElectricTool(ModToolTiers.ELECTRIC, BlockTags.MINEABLE_WITH_HOE, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.ELECTRIC, 0.5F, -3.0f))));
 
 

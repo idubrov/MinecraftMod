@@ -1,0 +1,12 @@
+- avocado tree
+- enchant hammer
+- electric hammer
+- cook top for fancy recipies
+- pizza
+- meatballs
+- flat wooden plate
+- banner 3 and 4 blocks long
+- curtains
+- coconut lamps guirland
+- sushi
+- rice pudding

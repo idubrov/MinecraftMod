@@ -56,7 +56,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BATTERY);
                         output.accept(ModBlocks.COCONUT_LAMP);
 
-                        output.accept(ModItems.ELECTRIC_SWORD);
                         output.accept(ModItems.ELECTRIC_PICKAXE);
                         output.accept(ModItems.ELECTRIC_SHOVEL);
                         output.accept(ModItems.ELECTRIC_AXE);
