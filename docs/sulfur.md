@@ -10,7 +10,6 @@ Also, Sulfur Ore,  Deepslate Sulfur Ore, and Sulfur Block glow in the dark with 
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
 | <img src="./img/sulfur_ore.png" alt="Sulfur Ore" height="100" width="100"> | <img src="./img/deepslate_sulfur_ore.png" alt="Deepslate Sulfur Ore" height="100" width="100"> | <img src="./img/sulfur_block.png" alt="Sulfur Block" height="100" width="100"> | <img src="./img/sulfur_shard.png" alt="Sulfur Shard" height="100" width="100"> | <img src="./img/sulfur_powder.png" alt="Sulfur Powder" height="100" width="100"> |
 
-<br>
 
 ```mermaid
 flowchart TD
@@ -20,7 +19,6 @@ flowchart TD
     A -->|Hammer| D
     A -..->|Furnace<br>Blast Furnace| D
 ```
-<br>
 
 ### Damage 
 
@@ -42,9 +40,24 @@ Sulfur Ore damages most living entities standing on top of it, dealing 1 damage 
 
 ### Usage
 
-| Name          | Ingredients                                                     | Crafting Recipe                                                        | Advancements                            |
-|---------------|-----------------------------------------------------------------|------------------------------------------------------------------------|-----------------------------------------|
-| Sulfur Shards | Sulfur Block                                                    | <img src="./img/recipe_sulfur_2.png" alt="Sulfur Recipe" height="100"> | Obtain Sulfur Block                     |
-| Sulfur Powder | Sulfur Shard                                                    | Furnace                                                                | Used to Make Batteries                  |
-| Sulfur Block  | Sulfur Shards (9)                                               | <img src="./img/recipe_sulfur_1.png" alt="Sulfur Recipe" height="100"> | Obtain Sulfur Shard                     |
-| Battery       | Iron Ingots (3),<br/> Sulfur Powder (3),<br/> Copper Ingots (3) | Crafting Table                                                         | Used in electrical equipment and a fuel |
+| Name          | Ingredients                                                     | Crafting Recipe                                                        | Advancements           |
+|---------------|-----------------------------------------------------------------|------------------------------------------------------------------------|------------------------|
+| Sulfur Shards | Sulfur Block                                                    | <img src="./img/recipe_sulfur_2.png" alt="Sulfur Recipe" height="100"> | Obtain Sulfur Block    |
+| Sulfur Block  | Sulfur Shards (9)                                               | <img src="./img/recipe_sulfur_1.png" alt="Sulfur Recipe" height="100"> | Obtain Sulfur Shard    |
+| Battery       | Iron Ingots (3),<br/> Sulfur Powder (3),<br/> Copper Ingots (3) | <img src="./img/recipe_sulfur_3.png" alt="Sulfur Recipe" height="100"> | Obtain Sulfur Powder   |
+
+<br>
+
+| Name          | Ingredients                        | Smelting Recipe                                                        | Cooking Time       | Exp | Advancements                |
+|---------------|------------------------------------|------------------------------------------------------------------------|:-------------------|:----|-----------------------------|
+| Sulfur Powder | Sulfur Shard, <br>any fuel         | <img src="./img/recipe_sulfur_4.png" alt="Sulfur Recipe" height="100"> | 100 ticks<br>5 sec | 0.5 | Obtain Sulfur Shard         |
+| Sulfur Powder | Sulfur Ore, <br>any fuel           | <img src="./img/recipe_sulfur_5.png" alt="Sulfur Recipe" height="100"> | 100 ticks<br>5 sec | 0.5 | Obtain Sulfur Ore           |
+| Sulfur Powder | Deepslate Sulfur Ore, <br>any fuel | <img src="./img/recipe_sulfur_6.png" alt="Sulfur Recipe" height="100"> | 100 ticks<br>5 sec | 0.5 | Obtain Deepslate Sulfur Ore |
+
+<br>
+
+| Name          | Ingredients                        | Blasting Recipe                                                        | Cooking Time      | Exp | Advancements                |
+|---------------|------------------------------------|------------------------------------------------------------------------|:------------------|:----|-----------------------------|
+| Sulfur Powder | Sulfur Shard, <br>any fuel         | <img src="./img/recipe_sulfur_4.png" alt="Sulfur Recipe" height="100"> | 80 ticks<br>4 sec | 0.7 | Obtain Sulfur Shard         |
+| Sulfur Powder | Sulfur Ore, <br>any fuel           | <img src="./img/recipe_sulfur_5.png" alt="Sulfur Recipe" height="100"> | 80 ticks<br>4 sec | 0.7 | Obtain Sulfur Ore           |
+| Sulfur Powder | Deepslate Sulfur Ore, <br>any fuel | <img src="./img/recipe_sulfur_6.png" alt="Sulfur Recipe" height="100"> | 80 ticks<br>4 sec | 0.7 | Obtain Deepslate Sulfur Ore |

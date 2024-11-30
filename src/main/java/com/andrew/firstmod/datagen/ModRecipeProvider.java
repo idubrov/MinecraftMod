@@ -164,58 +164,49 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         trapdoorBuilder(ModBlocks.PALM_TRAPDOOR.get(), Ingredient.of(ModBlocks.PALM_PLANKS.get())).group("wooden_trapdoor")
                 .unlockedBy("has_palm_planks", has(ModBlocks.PALM_PLANKS.get())).save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.WOODEN_HAMMER.get(), 1)
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.WOODEN_HAMMER.get(), 1)
                 .pattern(" WW")
                 .pattern(" SW")
                 .pattern("S  ")
                 .define('S', Items.STICK)
                 .define('W', ItemTags.PLANKS)
-                .unlockedBy("has_planks", has(ItemTags.PLANKS))
                 .unlockedBy("has_sticks", has(Items.STICK))
                 .save(recipeOutput);
 
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STONE_HAMMER.get(), 1)
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.STONE_HAMMER.get(), 1)
                 .pattern(" WW")
                 .pattern(" SW")
                 .pattern("S  ")
                 .define('S', Items.STICK)
                 .define('W', Items.COBBLESTONE)
                 .unlockedBy("has_cobblestone", has(Items.COBBLESTONE))
-                .unlockedBy("has_sticks", has(Items.STICK))
                 .save(recipeOutput);
 
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GOLDEN_HAMMER.get(), 1)
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.GOLDEN_HAMMER.get(), 1)
                 .pattern(" WW")
                 .pattern(" SW")
                 .pattern("S  ")
                 .define('S', Items.STICK)
                 .define('W', Items.GOLD_INGOT)
                 .unlockedBy("has_gold_ingot", has(Items.GOLD_INGOT))
-                .unlockedBy("has_sticks", has(Items.STICK))
                 .save(recipeOutput);
 
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.IRON_HAMMER.get(), 1)
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.IRON_HAMMER.get(), 1)
                 .pattern(" WW")
                 .pattern(" SW")
                 .pattern("S  ")
                 .define('S', Items.STICK)
                 .define('W', Items.IRON_INGOT)
                 .unlockedBy("has_iron_ingot", has(Items.IRON_INGOT))
-                .unlockedBy("has_sticks", has(Items.STICK))
                 .save(recipeOutput);
 
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.DIAMOND_HAMMER.get(), 1)
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.DIAMOND_HAMMER.get(), 1)
                 .pattern(" WW")
                 .pattern(" SW")
                 .pattern("S  ")
                 .define('S', Items.STICK)
                 .define('W', Items.DIAMOND)
                 .unlockedBy("has_diamond", has(Items.DIAMOND))
-                .unlockedBy("has_sticks", has(Items.STICK))
                 .save(recipeOutput);
 
     }

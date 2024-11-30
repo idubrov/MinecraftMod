@@ -1,12 +1,24 @@
+### Plants
 - avocado tree
+
+### Tools
+- netherite hammer
 - enchant hammer
 - electric hammer
-- cook top for fancy recipies
+
+### Tables
+- cook top for fancy recipes
+
+### Food
 - pizza
 - meatballs
+- sushi
+- rice pudding
+
+### Other Items
 - flat wooden plate
 - banner 3 and 4 blocks long
 - curtains
-- coconut lamps guirland
-- sushi
-- rice pudding
+- coconut lamps garland
+
+
