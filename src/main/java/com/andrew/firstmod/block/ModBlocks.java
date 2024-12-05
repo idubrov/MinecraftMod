@@ -4,19 +4,23 @@ import com.andrew.firstmod.FirstMod;
 import com.andrew.firstmod.block.custom.CoconutLampBlock;
 import com.andrew.firstmod.block.custom.SulfurOreBlock;
 import com.andrew.firstmod.item.ModItems;
+import net.minecraft.network.chat.Component;
 import net.minecraft.util.valueproviders.ConstantInt;
-import net.minecraft.util.valueproviders.UniformInt;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
+import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.common.ItemAbility;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.grower.TreeGrower;
+import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -42,9 +46,34 @@ public class ModBlocks {
 
 
     public static final DeferredBlock<Block> PALM_WOOD = registerBlock("palm_wood",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_WOOD)));
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_WOOD)) {
+                @Override
+                public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context,
+                                                                 ItemAbility itemAbility, boolean simulate) {
+                    if (context.getItemInHand().getItem() instanceof AxeItem) {
+                        if (state.is(ModBlocks.PALM_WOOD)) {
+                            return ModBlocks.STRIPPED_PALM_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+                        }
+                    }
+                    return super.getToolModifiedState(state, context, itemAbility, simulate);
+                }
+            }
+    );
     public static final DeferredBlock<Block> PALM_LOG = registerBlock("palm_log",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_LOG)));
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_LOG)) {
+                @Override
+                public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context,
+                                                                 ItemAbility itemAbility, boolean simulate) {
+                    if (context.getItemInHand().getItem() instanceof AxeItem) {
+                        if (state.is(ModBlocks.PALM_LOG)) {
+                            return ModBlocks.STRIPPED_PALM_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+                        }
+                    }
+                    return super.getToolModifiedState(state, context, itemAbility, simulate);
+                }
+            }
+    );
+
     public static final DeferredBlock<Block> STRIPPED_PALM_WOOD = registerBlock("stripped_palm_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_ACACIA_WOOD)));
     public static final DeferredBlock<Block> STRIPPED_PALM_LOG = registerBlock("stripped_palm_log",
@@ -90,8 +119,8 @@ public class ModBlocks {
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.PALM_SAPLING, BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_ACACIA_SAPLING).noOcclusion()));
 
     public static final DeferredBlock<Block> COCONUT_LAMP = registerBlock("coconut_lamp",
-        () -> new CoconutLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.TORCH)
-                .lightLevel(state -> state.getValue(CoconutLampBlock.COCONUT_LAMP_CLICKED) ? 10 : 0)));
+            () -> new CoconutLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.TORCH)
+                    .lightLevel(state -> state.getValue(CoconutLampBlock.COCONUT_LAMP_CLICKED) ? 10 : 0)));
 
     //Registering of our new blocks and its items
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

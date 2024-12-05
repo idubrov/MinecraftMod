@@ -13,7 +13,11 @@
 - pizza
 - meatballs
 - sushi
-- rice pudding
+- rice coconut pudding (like cake)
+
+### Biome
+- volcano
+- geyser
 
 ### Other Items
 - flat wooden plate

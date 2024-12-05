@@ -1,4 +1,4 @@
-// 1.21.1	2024-11-29T20:14:02.7238133	Recipes
+// 1.21.1	2024-12-01T15:24:44.9003024	Recipes
 45760b825cef91b98fbf2ba3847c35efd65edcc1 data/firstmod/advancement/recipes/building_blocks/dry_palm_leaves_block.json
 efcfbfa6c3c58989670f8d199baaffa7731f6ec0 data/firstmod/advancement/recipes/building_blocks/dry_palm_leaves_carpet.json
 bda11ac69c058f2a7dda5d878ab55ef0fcff8172 data/firstmod/advancement/recipes/building_blocks/dry_palm_leaves_slab.json
@@ -26,6 +26,10 @@ a0ac76b8dc0a3290a9312397a9732376a23d6e78 data/firstmod/advancement/recipes/redst
 33b04d76a5d9bcc538d2a5476b7f9f50f27e8a09 data/firstmod/advancement/recipes/redstone/palm_pressure_plate.json
 839df38a74984c25e2f5f2f23aeee7fa36f399d1 data/firstmod/advancement/recipes/redstone/palm_trapdoor.json
 421cbcbc8bb65b1e5090a65741c8e4429770f750 data/firstmod/advancement/recipes/tools/diamond_hammer.json
+b41aaf8cbfaa640674c22da183f576fd67b90cbe data/firstmod/advancement/recipes/tools/electric_axe.json
+9fb9f08cbe14380a0f20e8ba0d7574960c0ca7b9 data/firstmod/advancement/recipes/tools/electric_hoe.json
+34fb251815b402948c1bf858c9658435e569b93d data/firstmod/advancement/recipes/tools/electric_pickaxe.json
+fadf84a273fcab85a4d7bd6d98e99e71216e05ce data/firstmod/advancement/recipes/tools/electric_shovel.json
 10d780113e532ac1c985ebb8c35da253c7b63de3 data/firstmod/advancement/recipes/tools/golden_hammer.json
 aa4e9924816a1b96f2ae2d82cbc021b059be14de data/firstmod/advancement/recipes/tools/iron_hammer.json
 17f70f69389a172c538852a91d14213577765c93 data/firstmod/advancement/recipes/tools/stone_hammer.json
@@ -36,6 +40,10 @@ d461e7446758e5bea29fbbff94f68a2349ee4dad data/firstmod/recipe/coconut_lamp.json
 561e092b0dd79b19640103dc30095cda6dfd08db data/firstmod/recipe/dry_palm_leaves_block.json
 51fa4eba2575358a3af139428bce99aa20dfad46 data/firstmod/recipe/dry_palm_leaves_carpet.json
 cf41c6b54b63b71bdbce29ea10072f7cc8e017c5 data/firstmod/recipe/dry_palm_leaves_slab.json
+9d320487ebc9e6b7a74a7df8196dc685ebaad3f8 data/firstmod/recipe/electric_axe.json
+5f3b1c3230a5dc7bb774a741382898250ac83857 data/firstmod/recipe/electric_hoe.json
+0f3770f95ffc21b09900340cd17cb3fd6d450ba4 data/firstmod/recipe/electric_pickaxe.json
+a2a6ddb0f5420ce15d0b739e71e8d7b3605d32a7 data/firstmod/recipe/electric_shovel.json
 c35791e90a4c9aae4f67c3509c40ce8ccdcf2a76 data/firstmod/recipe/fruit_salad.json
 3e45c93630477c21bde62f49dd416e9801e839fe data/firstmod/recipe/golden_hammer.json
 229555eeed1c329615b376ee93f3220be2414851 data/firstmod/recipe/iron_hammer.json

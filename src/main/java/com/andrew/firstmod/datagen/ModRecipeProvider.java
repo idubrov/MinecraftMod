@@ -11,7 +11,6 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
-import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
 import java.util.List;
@@ -209,6 +208,46 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_diamond", has(Items.DIAMOND))
                 .save(recipeOutput);
 
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ELECTRIC_PICKAXE.get(), 1)
+                .pattern("IBI")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('S', Items.STICK)
+                .define('I', Items.IRON_INGOT)
+                .define('B', ModItems.BATTERY)
+                .unlockedBy("has_battery", has(ModItems.BATTERY))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ELECTRIC_AXE.get(), 1)
+                .pattern(" IB")
+                .pattern(" SI")
+                .pattern(" S ")
+                .define('S', Items.STICK)
+                .define('I', Items.IRON_INGOT)
+                .define('B', ModItems.BATTERY)
+                .unlockedBy("has_battery", has(ModItems.BATTERY))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ELECTRIC_SHOVEL.get(), 1)
+                .pattern(" B ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('S', Items.STICK)
+                .define('B', ModItems.BATTERY)
+                .unlockedBy("has_battery", has(ModItems.BATTERY))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ELECTRIC_HOE.get(), 1)
+                .pattern(" BI")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('S', Items.STICK)
+                .define('I', Items.IRON_INGOT)
+                .define('B', ModItems.BATTERY)
+                .unlockedBy("has_battery", has(ModItems.BATTERY))
+                .save(recipeOutput);
     }
 
 

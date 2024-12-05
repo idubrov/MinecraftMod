@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "firstmod:battery"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " IB",
+    " SI",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "firstmod:electric_axe"
+  }
+}

@@ -23,10 +23,9 @@ place? Do you _want_ to die?) they are necessary for power armour [TBD].
 
 ### Palm Tree
 
-Grow on sand. Special shape - long, angled. Drop stick and 
-coconut. [Logs](docs/palm) light taupe color. 
-Leaves could be dried. 
-Saplings.
+[Wood](docs/palm). 
+[Leaves](docs/palm).
+Coconuts.
 
 ### Sulfur Ore
 
@@ -43,6 +42,8 @@ solution to not burning coal was Stone Age technology?
 Terrible fuel (What have your parents told you about burning 
 [batteries](docs/battery.md)?), smells _interesting_, but is needed for all electrical 
 items.
+
+### Electric Tools
 
 ### Power Armor
 
