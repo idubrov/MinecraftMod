@@ -10,6 +10,7 @@ import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
+import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,24 +32,24 @@ public class ElectricTool extends DiggerItem {
         }
 
         if(traceResult.getDirection() == Direction.DOWN || traceResult.getDirection() == Direction.UP) {
-            for(int x = -range; x <= range; x++) {
-                for(int y = -range; y <= range; y++) {
+            for(int x = 0; x < range; x++) {
+                for(int y = 0; y < range; y++) {
                     positions.add(new BlockPos(initalBlockPos.getX() + x, initalBlockPos.getY(), initalBlockPos.getZ() + y));
                 }
             }
         }
 
         if(traceResult.getDirection() == Direction.NORTH || traceResult.getDirection() == Direction.SOUTH) {
-            for(int x = -range; x <= range; x++) {
-                for(int y = -range; y <= range; y++) {
+            for(int x = 0; x < range; x++) {
+                for(int y = 0; y < range; y++) {
                     positions.add(new BlockPos(initalBlockPos.getX() + x, initalBlockPos.getY() + y, initalBlockPos.getZ()));
                 }
             }
         }
 
         if(traceResult.getDirection() == Direction.EAST || traceResult.getDirection() == Direction.WEST) {
-            for(int x = -range; x <= range; x++) {
-                for(int y = -range; y <= range; y++) {
+            for(int x = 0; x < range; x++) {
+                for(int y = 0; y < range; y++) {
                     positions.add(new BlockPos(initalBlockPos.getX(), initalBlockPos.getY() + y, initalBlockPos.getZ() + x));
                 }
             }

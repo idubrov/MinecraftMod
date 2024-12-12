@@ -1,4 +1,4 @@
-// 1.21.1	2024-11-26T22:17:06.1376727	Tags for minecraft:item mod id firstmod
+// 1.21.1	2024-12-07T13:12:51.4968277	Tags for minecraft:item mod id firstmod
 2e210837655c82a8c946c05139e0f398a43b8620 data/firstmod/tags/item/hammers.json
 cdf4c381520132653fcf2bdf8659627bec006d40 data/firstmod/tags/item/palm_logs.json
 5875c0ca8fca8f3f79e57729260f945a7bbc153a data/firstmod/tags/item/sulfur.json
@@ -12,6 +12,7 @@ cdf4c381520132653fcf2bdf8659627bec006d40 data/minecraft/tags/item/logs_that_burn
 bc7447936f3af40bdf9198cb617b9695d28d1d8d data/minecraft/tags/item/planks.json
 117b1b59dfd470c17c21d5df44476e391e9bfff7 data/minecraft/tags/item/saplings.json
 7b757143736e48a2cc9e4ea4e9e79adb8c1e9dc7 data/minecraft/tags/item/shovels.json
+8c17e23fba16e59166c6a80f9640c71742f23a13 data/minecraft/tags/item/trimmable_armor.json
 33bed9f1a3637652c6266e1cac7d00c3df94d622 data/minecraft/tags/item/wooden_buttons.json
 5e51011383934fc26550dbf87f5d38be2da25606 data/minecraft/tags/item/wooden_doors.json
 bcccc4e5fafd3305a401ee1d4e75973ccb4fdb61 data/minecraft/tags/item/wooden_fences.json

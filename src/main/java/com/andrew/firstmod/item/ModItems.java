@@ -4,6 +4,7 @@ import com.andrew.firstmod.FirstMod;
 import com.andrew.firstmod.item.custom.ElectricTool;
 import com.andrew.firstmod.item.custom.HammerItem;
 import com.andrew.firstmod.item.custom.MilkShakeFoodItem;
+import com.andrew.firstmod.item.custom.ModArmorItem;
 import net.minecraft.network.chat.Component;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.*;
@@ -92,6 +93,19 @@ public class ModItems {
             () -> new HammerItem(Tiers.IRON, new Item.Properties()));
     public static final DeferredItem<Item> DIAMOND_HAMMER = ITEMS.register("diamond_hammer",
             () -> new HammerItem(Tiers.DIAMOND, new Item.Properties()));
+
+    public static final DeferredItem<ArmorItem> ELECTRIC_HELMET = ITEMS.register("electric_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.ELECTRIC_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))));
+    public static final DeferredItem<ArmorItem> ELECTRIC_CHESTPLATE = ITEMS.register("electric_chestplate",
+            () -> new ModArmorItem(ModArmorMaterials.ELECTRIC_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))));
+    public static final DeferredItem<ArmorItem> ELECTRIC_LEGGINGS = ITEMS.register("electric_leggings",
+            () -> new ModArmorItem(ModArmorMaterials.ELECTRIC_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(19))));
+    public static final DeferredItem<ArmorItem> ELECTRIC_BOOTS = ITEMS.register("electric_boots",
+            () -> new ModArmorItem(ModArmorMaterials.ELECTRIC_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))));
 
 
     public static void register(IEventBus eventBus) {

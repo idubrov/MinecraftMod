@@ -23,6 +23,7 @@ place? Do you _want_ to die?) they are necessary for power armour [TBD].
 
 ### Palm Tree
 
+Palm trees are nice and useful. They give -
 [Wood](docs/palm). 
 [Leaves](docs/palm).
 Coconuts.
@@ -38,14 +39,11 @@ Use the [hammer](docs/hammer.md) to mine sulfur ore without needing to smelt the
 shards into powder, as you get the powder instantly. Who knew the 
 solution to not burning coal was Stone Age technology?
 
-### Battery
+### Battery and Electric Tools and Power Armor
 Terrible fuel (What have your parents told you about burning 
-[batteries](docs/battery.md)?), smells _interesting_, but is needed for all electrical 
+[batteries](docs/electric_stuff)?), smells _interesting_, but is needed for all electrical 
 items.
-
-### Electric Tools
-
-### Power Armor
+[ADD ABOUT TOOLS AND ARMOR]
 
 ### New Food Recipes
 [Fruit salads](docs/food.md), [smoothies](docs/food.md), and more! What else could you ask for? 

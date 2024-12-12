@@ -1,13 +1,19 @@
+### Planks
+- chest from palm
+- boat from palm
+
 ### Plants
 - avocado tree
 
 ### Tools
 - netherite hammer
-- enchant hammer
+- enchantments for hammer
 - electric hammer
+- 2x2 frame when use electric tools
 
 ### Tables
 - cook top for fancy recipes
+- charge station for electric tools and armor (req sun?)
 
 ### Food
 - pizza

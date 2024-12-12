@@ -67,6 +67,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.IRON_HAMMER);
                         output.accept(ModItems.DIAMOND_HAMMER);
 
+                        output.accept(ModItems.ELECTRIC_HELMET);
+                        output.accept(ModItems.ELECTRIC_CHESTPLATE);
+                        output.accept(ModItems.ELECTRIC_LEGGINGS);
+                        output.accept(ModItems.ELECTRIC_BOOTS);
+
 
                     }).build());
 

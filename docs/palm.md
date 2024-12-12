@@ -35,11 +35,15 @@ These items can be obtained from palm trees:
 | Palm Door           | Palm Planks (6)                                                               | <img src="./img/recipe_palm_9.png" alt="Palm Recipe" height="100">  | Obtain Palm Planks                                                                   |
 | Palm Trapdoor       | Palm Planks (6)                                                               | <img src="./img/recipe_palm_11.png" alt="Palm Recipe" height="100"> | Obtain Palm Planks                                                                   |
 
+### Leaves
+- leaves -> dry
 
+### Fuel
+Palm wood blocks, planks, and saplings can all be used as fuel. 
+If needed, you can also burn palm stairs, fences and other palm items.
 
-fuel
-
+### Other
 - saplings -> potted saplings,
 - coconuts -> coconut lamp,
-- leaves -> dry
+
 

@@ -221,8 +221,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ELECTRIC_AXE.get(), 1)
-                .pattern(" IB")
-                .pattern(" SI")
+                .pattern("BI ")
+                .pattern("IS ")
                 .pattern(" S ")
                 .define('S', Items.STICK)
                 .define('I', Items.IRON_INGOT)
@@ -240,7 +240,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ELECTRIC_HOE.get(), 1)
-                .pattern(" BI")
+                .pattern("IB ")
                 .pattern(" S ")
                 .pattern(" S ")
                 .define('S', Items.STICK)
@@ -249,11 +249,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_battery", has(ModItems.BATTERY))
                 .save(recipeOutput);
     }
-
-
-
-
-
 
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,

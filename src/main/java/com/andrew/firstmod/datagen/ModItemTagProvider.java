@@ -24,6 +24,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
 
         // FirstMod tags
+
         tag(ModTags.Items.SULFUR_ITEMS)
                 .add(ModItems.SULFUR_SHARD.get())
                 .add(ModItems.SULFUR_POWDER.get())
@@ -49,6 +50,13 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.DIAMOND_HAMMER.get());
 
         // Minecraft tags
+
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.ELECTRIC_HELMET.get())
+                .add(ModItems.ELECTRIC_CHESTPLATE.get())
+                .add(ModItems.ELECTRIC_LEGGINGS.get())
+                .add(ModItems.ELECTRIC_BOOTS.get());
+
         tag(ItemTags.LEAVES)
                 .add(ModBlocks.PALM_LEAVES.asItem());
 

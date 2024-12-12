@@ -21,3 +21,14 @@ Powder directly, skipping the need to smelt the Sulfur Shards into Sulfur Powder
 | Iron      | Sticks (2), <br/>Iron Ingots (3) | <img src="./img/recipe_hammer_3.png" alt="Hammer Recipe" height="100"> | Obtain Iron Ingot   | 250        |
 | Golden    | Sticks (2), <br/>Gold Ingots (3) | <img src="./img/recipe_hammer_4.png" alt="Hammer Recipe" height="100"> | Obtain Golden Ingot | 32         |
 | Diamond   | Sticks (2), <br/>Diamonds (3)    | <img src="./img/recipe_hammer_5.png" alt="Hammer Recipe" height="100"> | Obtain Diamond      | 1561       |
+
+<br>
+
+### Repairing
+
+| Method   | Ingredients                          | Recipe                                                                 |
+|----------|--------------------------------------|------------------------------------------------------------------------|
+| Crafting | Damaged Hammers (2)                  | <img src="./img/recipe_hammer_8.png" alt="Hammer Recipe" height="100"> |
+| Grinding | Damaged Hammers (2)                  | <img src="./img/recipe_hammer_9.png" alt="Hammer Recipe" height="100"> |
+| Anvil    | Damaged Hammers (2)                  | <img src="./img/recipe_hammer_6.png" alt="Hammer Recipe" height="100"> |
+| Anvil    | Damaged Hammer, <br/>Hammer material | <img src="./img/recipe_hammer_7.png" alt="Hammer Recipe" height="100"> |

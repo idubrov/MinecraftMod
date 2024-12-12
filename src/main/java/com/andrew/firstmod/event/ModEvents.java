@@ -28,7 +28,7 @@ public class ModEvents {
                 return;
             }
 
-            for(BlockPos pos : ElectricTool.getBlocksToBeDestroyed(1, initialBlockPos, serverPlayer)) {
+            for(BlockPos pos : ElectricTool.getBlocksToBeDestroyed(2, initialBlockPos, serverPlayer)) {
                 if(pos == initialBlockPos) {
                     continue;
                 }

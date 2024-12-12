@@ -42,6 +42,11 @@
   "item.firstmod.electric_shovel": "Electric Shovel",
   "item.firstmod.electric_hoe": "Electric Hoe",
 
+  "item.firstmod.electric_helmet": "Electric Helmet",
+  "item.firstmod.electric_chestplate": "Electric Chestplate",
+  "item.firstmod.electric_leggings": "Electric Leggings",
+  "item.firstmod.electric_boots": "Electric Boots",
+
   "item.firstmod.wooden_hammer": "Wooden Hammer",
   "item.firstmod.stone_hammer": "Stone Hammer",
   "item.firstmod.golden_hammer": "Golden Hammer",
