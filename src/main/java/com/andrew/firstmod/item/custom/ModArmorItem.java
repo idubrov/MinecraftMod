@@ -2,14 +2,18 @@ package com.andrew.firstmod.item.custom;
 
 import com.andrew.firstmod.item.ModArmorMaterials;
 import net.minecraft.core.Holder;
+import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+
+import java.util.List;
 
 
 public class ModArmorItem extends ArmorItem {
@@ -24,18 +28,23 @@ public class ModArmorItem extends ArmorItem {
         }
     }
 
+    private static final List<Holder<MobEffect>> EFFECTS = List.of(
+            MobEffects.JUMP,
+            MobEffects.MOVEMENT_SPEED,
+            MobEffects.REGENERATION,
+            MobEffects.NIGHT_VISION
+    );
+
     private void applyArmorEffects(Player player) {
-        ArmorItem boots = null;
-        ArmorItem leggings = null;
-        ArmorItem chestplate = null;
-        ArmorItem helmet = null;
+        for (int slot : Inventory.ALL_ARMOR_SLOTS) {
+            if (player.getInventory().getArmor(slot).getItem() instanceof ArmorItem item &&
+                    item.getMaterial() == ModArmorMaterials.ELECTRIC_ARMOR_MATERIAL) {
 
-        if (player.getInventory().getArmor(0).getItem() instanceof ArmorItem) {
-            boots = ((ArmorItem) player.getInventory().getArmor(0).getItem());
-            if (boots.getMaterial() == ModArmorMaterials.ELECTRIC_ARMOR_MATERIAL) {
-                player.addEffect(new MobEffectInstance(MobEffects.JUMP, 1, 1, false, false));
+                if (!player.hasEffect(EFFECTS.get(slot)))
+                    player.addEffect(
+                            new MobEffectInstance(EFFECTS.get(slot), 60, 1, false, false)
+                    );
             }
-
         }
     }
 }

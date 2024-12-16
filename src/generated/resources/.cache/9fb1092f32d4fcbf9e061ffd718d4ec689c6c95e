@@ -1,4 +1,4 @@
-// 1.21.1	2024-12-08T22:29:33.7477939	Recipes
+// 1.21.1	2024-12-14T15:33:58.0035949	Recipes
 45760b825cef91b98fbf2ba3847c35efd65edcc1 data/firstmod/advancement/recipes/building_blocks/dry_palm_leaves_block.json
 efcfbfa6c3c58989670f8d199baaffa7731f6ec0 data/firstmod/advancement/recipes/building_blocks/dry_palm_leaves_carpet.json
 bda11ac69c058f2a7dda5d878ab55ef0fcff8172 data/firstmod/advancement/recipes/building_blocks/dry_palm_leaves_slab.json
@@ -27,7 +27,11 @@ a0ac76b8dc0a3290a9312397a9732376a23d6e78 data/firstmod/advancement/recipes/redst
 839df38a74984c25e2f5f2f23aeee7fa36f399d1 data/firstmod/advancement/recipes/redstone/palm_trapdoor.json
 421cbcbc8bb65b1e5090a65741c8e4429770f750 data/firstmod/advancement/recipes/tools/diamond_hammer.json
 b41aaf8cbfaa640674c22da183f576fd67b90cbe data/firstmod/advancement/recipes/tools/electric_axe.json
+60f04437beba4c4d73a9a8cb2a43a5df02187112 data/firstmod/advancement/recipes/tools/electric_boots.json
+2e57f1b1d944a0ea5418ce6b7ffa2711966dee56 data/firstmod/advancement/recipes/tools/electric_chestplate.json
+4966d7cae80c2b910a87e1c4aa8c1ac7a5ef19d7 data/firstmod/advancement/recipes/tools/electric_helmet.json
 9fb9f08cbe14380a0f20e8ba0d7574960c0ca7b9 data/firstmod/advancement/recipes/tools/electric_hoe.json
+ad1894592e20240baccec3846c4936285bd650c8 data/firstmod/advancement/recipes/tools/electric_leggings.json
 34fb251815b402948c1bf858c9658435e569b93d data/firstmod/advancement/recipes/tools/electric_pickaxe.json
 fadf84a273fcab85a4d7bd6d98e99e71216e05ce data/firstmod/advancement/recipes/tools/electric_shovel.json
 10d780113e532ac1c985ebb8c35da253c7b63de3 data/firstmod/advancement/recipes/tools/golden_hammer.json
@@ -41,7 +45,11 @@ d461e7446758e5bea29fbbff94f68a2349ee4dad data/firstmod/recipe/coconut_lamp.json
 51fa4eba2575358a3af139428bce99aa20dfad46 data/firstmod/recipe/dry_palm_leaves_carpet.json
 cf41c6b54b63b71bdbce29ea10072f7cc8e017c5 data/firstmod/recipe/dry_palm_leaves_slab.json
 bf1e2216888a95720a0b747158613ba058a1d480 data/firstmod/recipe/electric_axe.json
+a54ce2f9760aa9bdd3722c470bc34df587111a74 data/firstmod/recipe/electric_boots.json
+335c2449b29c76427aaa419ebfb10d1318b02a52 data/firstmod/recipe/electric_chestplate.json
+64d7fbf8bf7c3dc3b321436ce55f9d4dd6de6e4e data/firstmod/recipe/electric_helmet.json
 efea4f98261c3a986ccd2f6a776d2a9efbf11b7a data/firstmod/recipe/electric_hoe.json
+b9658264153f17b174d2c73f65353c4a2d235d12 data/firstmod/recipe/electric_leggings.json
 0f3770f95ffc21b09900340cd17cb3fd6d450ba4 data/firstmod/recipe/electric_pickaxe.json
 a2a6ddb0f5420ce15d0b739e71e8d7b3605d32a7 data/firstmod/recipe/electric_shovel.json
 c35791e90a4c9aae4f67c3509c40ce8ccdcf2a76 data/firstmod/recipe/fruit_salad.json

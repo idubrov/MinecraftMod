@@ -71,16 +71,16 @@ public class ModItems {
 
     public static final DeferredItem<ElectricTool> ELECTRIC_PICKAXE = ITEMS.register("electric_pickaxe",
             () -> new ElectricTool(ModToolTiers.ELECTRIC, BlockTags.MINEABLE_WITH_PICKAXE, new Item.Properties()
-                    .attributes(PickaxeItem.createAttributes(ModToolTiers.ELECTRIC, 1.0F, -2.8f))));
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.ELECTRIC, 1.0F, -2.8F))));
     public static final DeferredItem<ElectricTool> ELECTRIC_SHOVEL = ITEMS.register("electric_shovel",
             () -> new ElectricTool(ModToolTiers.ELECTRIC, BlockTags.MINEABLE_WITH_SHOVEL, new Item.Properties()
-                    .attributes(ShovelItem.createAttributes(ModToolTiers.ELECTRIC, 1.5F, -3.0f))));
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.ELECTRIC, 1.5F, -3.0F))));
     public static final DeferredItem<ElectricTool> ELECTRIC_AXE = ITEMS.register("electric_axe",
             () -> new ElectricTool(ModToolTiers.ELECTRIC, BlockTags.MINEABLE_WITH_AXE, new Item.Properties()
-                    .attributes(AxeItem.createAttributes(ModToolTiers.ELECTRIC, 8.0F, -3.0f))));
+                    .attributes(AxeItem.createAttributes(ModToolTiers.ELECTRIC, 6.0F, -3.1F))));
     public static final DeferredItem<ElectricTool> ELECTRIC_HOE = ITEMS.register("electric_hoe",
             () -> new ElectricTool(ModToolTiers.ELECTRIC, BlockTags.MINEABLE_WITH_HOE, new Item.Properties()
-                    .attributes(HoeItem.createAttributes(ModToolTiers.ELECTRIC, 0.5F, -3.0f))));
+                    .attributes(HoeItem.createAttributes(ModToolTiers.ELECTRIC, -2F, -1F))));
 
 
     public static final DeferredItem<Item> WOODEN_HAMMER = ITEMS.register("wooden_hammer",

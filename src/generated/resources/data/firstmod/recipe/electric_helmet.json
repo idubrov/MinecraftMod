@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "firstmod:battery"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "IBI",
+    "I I",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "firstmod:electric_helmet"
+  }
+}

@@ -248,6 +248,42 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('B', ModItems.BATTERY)
                 .unlockedBy("has_battery", has(ModItems.BATTERY))
                 .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ELECTRIC_HELMET.get(), 1)
+                .pattern("IBI")
+                .pattern("I I")
+                .pattern("   ")
+                .define('I', Items.IRON_INGOT)
+                .define('B', ModItems.BATTERY)
+                .unlockedBy("has_battery", has(ModItems.BATTERY))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ELECTRIC_CHESTPLATE.get(), 1)
+                .pattern("B B")
+                .pattern("IBI")
+                .pattern("IBI")
+                .define('I', Items.IRON_INGOT)
+                .define('B', ModItems.BATTERY)
+                .unlockedBy("has_battery", has(ModItems.BATTERY))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ELECTRIC_LEGGINGS.get(), 1)
+                .pattern("BIB")
+                .pattern("I I")
+                .pattern("I I")
+                .define('I', Items.IRON_INGOT)
+                .define('B', ModItems.BATTERY)
+                .unlockedBy("has_battery", has(ModItems.BATTERY))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ELECTRIC_BOOTS.get(), 1)
+                .pattern("   ")
+                .pattern("B B")
+                .pattern("I I")
+                .define('I', Items.IRON_INGOT)
+                .define('B', ModItems.BATTERY)
+                .unlockedBy("has_battery", has(ModItems.BATTERY))
+                .save(recipeOutput);
     }
 
 

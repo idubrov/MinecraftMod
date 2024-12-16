@@ -39,11 +39,12 @@ Use the [hammer](docs/hammer.md) to mine sulfur ore without needing to smelt the
 shards into powder, as you get the powder instantly. Who knew the 
 solution to not burning coal was Stone Age technology?
 
-### Battery and Electric Tools and Power Armor
-Terrible fuel (What have your parents told you about burning 
-[batteries](docs/electric_stuff)?), smells _interesting_, but is needed for all electrical 
-items.
-[ADD ABOUT TOOLS AND ARMOR]
+### Battery, Electric Tools, and Power Armor
+[Batteries](docs/electric_stuff.md) make a terrible fuel (What have your parents told you about burning 
+batteries?), smell _interesting_, but are needed for all electrical 
+items. [Electric Tools](docs/electric_stuff.md) are faster than normal tools _and_ mine a bigger area. To make a full 
+tool tier, we had to include armor, so we present to you: [Power Armor](docs/electric_stuff.md)! Completely unasked for,
+ruin the balance of the game, _and_ are way too cheap! Get you Power Armor today!!!
 
 ### New Food Recipes
 [Fruit salads](docs/food.md), [smoothies](docs/food.md), and more! What else could you ask for? 
