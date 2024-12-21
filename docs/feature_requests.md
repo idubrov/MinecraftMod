@@ -1,5 +1,4 @@
 ### Planks
-- chest from palm
 - boat from palm
 
 ### Plants
@@ -30,5 +29,6 @@
 - banner 3 and 4 blocks long
 - curtains
 - coconut lamps garland
+- only find electric horse armor in chests
 
 

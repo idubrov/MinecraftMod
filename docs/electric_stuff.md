@@ -17,7 +17,7 @@ Electric tools are a new tool tier: the pickaxe, the axe, the hoe, and the shove
 
 | Tier Material | Durability (Uses) | Mining Speed <br/>Multiplier | Attack Damage <br/>Bonus | Enchantability | Repair Item | 
 |---------------|-------------------|------------------------------|--------------------------|----------------|:------------|
-| Electric      | 500               | 10                           | 5                        | 1              | Battery     |
+| Electric      | 300               | 8                            | 3                        | 1              | Battery     |
 
 <br/>
 
@@ -46,12 +46,24 @@ Power Armor is another tier of armor, but each piece of armor gives a different 
 To craft them you use batteries.
 Armor can be given trims using a smithing template and a trim material.
 
-| Armor      | Ingredients                     | Crafting Recipe                                                             | Advancements   | Effect       | 
-|------------|---------------------------------|-----------------------------------------------------------------------------|:---------------|:-------------|
-| Helmet     | 4 Iron Ingots,<br/> 1 Battery   | <img src="./img/recipe_electric_5.png" alt="Electric Recipe" height="100">  | Obtain Battery | Night Vision |
-| Chestplate | 4 Iron Ingots,<br/> 4 Batteries | <img src="./img/recipe_electric_10.png" alt="Electric Recipe" height="100"> | Obtain Battery | Regeneration |
-| Leggings   | 5 Iron Ingots,<br/> 2 Batteries | <img src="./img/recipe_electric_11.png" alt="Electric Recipe" height="100"> | Obtain Battery | Speed        |
-| Boots      | 2 Iron Ingots,<br/> 2 Batteries | <img src="./img/recipe_electric_12.png" alt="Electric Recipe" height="100"> | Obtain Battery | Jump Boost   |
+
+| Armor Piece               | Durability    | Defense Points | Enchantability | Effect       | Repair Item | 
+|---------------------------|---------------|----------------|----------------|:-------------|:------------|
+| Electric Boots            | 13 * 20 = 260 | 2              | 1              | Night Vision | Battery     |
+| Electric Leggings         | 15 * 20 = 300 | 5              | 1              | Regeneration | Battery     |
+| Electric Chestplate       | 16 * 20 = 320 | 6              | 1              | Speed        | Battery     |
+| Electric Helmet           | 11 * 20 = 220 | 2              | 1              | Jump Boost   | Battery     |
+| Electric <br/>Horse Armor | 13 * 20 = 260 | 5              | 1              | Speed        | Battery     |
+
+<br/>
+
+| Armor       | Ingredients                     | Crafting Recipe                                                             | Advancements   | 
+|-------------|---------------------------------|-----------------------------------------------------------------------------|:---------------|
+| Helmet      | 4 Iron Ingots,<br/> 1 Battery   | <img src="./img/recipe_electric_5.png" alt="Electric Recipe" height="100">  | Obtain Battery |
+| Chestplate  | 4 Iron Ingots,<br/> 4 Batteries | <img src="./img/recipe_electric_10.png" alt="Electric Recipe" height="100"> | Obtain Battery |
+| Leggings    | 5 Iron Ingots,<br/> 2 Batteries | <img src="./img/recipe_electric_11.png" alt="Electric Recipe" height="100"> | Obtain Battery |
+| Boots       | 2 Iron Ingots,<br/> 2 Batteries | <img src="./img/recipe_electric_12.png" alt="Electric Recipe" height="100"> | Obtain Battery |
+| Horse Armor |                                 |                                                                             | Obtain Battery |
 
 <br/>
 

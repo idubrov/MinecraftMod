@@ -1,4 +1,4 @@
-// 1.21.1	2024-12-07T13:12:51.4928288	Item Models: firstmod
+// 1.21.1	2024-12-16T19:01:07.2550437	Item Models: firstmod
 92d6c44e2521ee962dd833d46a51bb02cdbb0ce1 assets/firstmod/models/item/banana.json
 da688f0c599d0ce5cdb8032f392ad5e27207bbe1 assets/firstmod/models/item/battery.json
 49e8da2348b09cf5335f24c3eb6d7c57298e5db3 assets/firstmod/models/item/coconut.json
@@ -38,6 +38,7 @@ a732de6e517be6f4d9ef623ef41d8050dbe3bf0d assets/firstmod/models/item/electric_he
 b16e49ab7522df869267207dda41daca21c8b02e assets/firstmod/models/item/electric_helmet_quartz_trim.json
 41accf12504cc1f5a547867ec796475b632a6539 assets/firstmod/models/item/electric_helmet_redstone_trim.json
 9647a7987162bfc1081cc0615031ec19d023c027 assets/firstmod/models/item/electric_hoe.json
+79a94979bf37608f78a21b903eb44c104beff067 assets/firstmod/models/item/electric_horse_armor.json
 49e7b97cb512749b882c9c8e5b88916039fcfb27 assets/firstmod/models/item/electric_leggings.json
 fb2a741941a7aa5d25f1ee3df5519f0a960a5398 assets/firstmod/models/item/electric_leggings_amethyst_trim.json
 a5ff96aba4517d35149e78bbd1a003aa43329b39 assets/firstmod/models/item/electric_leggings_copper_trim.json

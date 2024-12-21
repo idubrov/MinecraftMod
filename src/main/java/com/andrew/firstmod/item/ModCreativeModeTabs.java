@@ -72,6 +72,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ELECTRIC_LEGGINGS);
                         output.accept(ModItems.ELECTRIC_BOOTS);
 
+                        output.accept(ModItems.ELECTRIC_HORSE_ARMOR);
+
 
                     }).build());
 

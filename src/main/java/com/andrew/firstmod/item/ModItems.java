@@ -1,10 +1,7 @@
 package com.andrew.firstmod.item;
 
 import com.andrew.firstmod.FirstMod;
-import com.andrew.firstmod.item.custom.ElectricTool;
-import com.andrew.firstmod.item.custom.HammerItem;
-import com.andrew.firstmod.item.custom.MilkShakeFoodItem;
-import com.andrew.firstmod.item.custom.ModArmorItem;
+import com.andrew.firstmod.item.custom.*;
 import net.minecraft.network.chat.Component;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.*;
@@ -94,19 +91,81 @@ public class ModItems {
     public static final DeferredItem<Item> DIAMOND_HAMMER = ITEMS.register("diamond_hammer",
             () -> new HammerItem(Tiers.DIAMOND, new Item.Properties()));
 
+
+
     public static final DeferredItem<ArmorItem> ELECTRIC_HELMET = ITEMS.register("electric_helmet",
             () -> new ModArmorItem(ModArmorMaterials.ELECTRIC_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
-                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))));
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(20)))
+            {
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.firstmod.empty_line"));
+                    tooltipComponents.add(Component.translatable("tooltip.firstmod.electric.tooltip.title"));
+                    tooltipComponents.add(Component.translatable("tooltip.firstmod.electric_helmet.tooltip.line1"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+
+
+
     public static final DeferredItem<ArmorItem> ELECTRIC_CHESTPLATE = ITEMS.register("electric_chestplate",
             () -> new ModArmorItem(ModArmorMaterials.ELECTRIC_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
-                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))));
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(20)))
+            {
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.firstmod.empty_line"));
+                    tooltipComponents.add(Component.translatable("tooltip.firstmod.electric.tooltip.title"));
+                    tooltipComponents.add(Component.translatable("tooltip.firstmod.electric_chestplate.tooltip.line1"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+
+
+
     public static final DeferredItem<ArmorItem> ELECTRIC_LEGGINGS = ITEMS.register("electric_leggings",
             () -> new ModArmorItem(ModArmorMaterials.ELECTRIC_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
-                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(19))));
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(20)))
+            {
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.firstmod.empty_line"));
+                    tooltipComponents.add(Component.translatable("tooltip.firstmod.electric.tooltip.title"));
+                    tooltipComponents.add(Component.translatable("tooltip.firstmod.electric_leggings.tooltip.line1"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+
+
+
     public static final DeferredItem<ArmorItem> ELECTRIC_BOOTS = ITEMS.register("electric_boots",
             () -> new ModArmorItem(ModArmorMaterials.ELECTRIC_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
-                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))));
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(20)))
+            {
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.firstmod.empty_line"));
+                    tooltipComponents.add(Component.translatable("tooltip.firstmod.electric.tooltip.title"));
+                    tooltipComponents.add(Component.translatable("tooltip.firstmod.electric_boots.tooltip.line1"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
 
+
+
+    public static final DeferredItem<ModHorseArmorItem> ELECTRIC_HORSE_ARMOR = ITEMS.register("electric_horse_armor",
+            () -> new ModHorseArmorItem(ModArmorMaterials.ELECTRIC_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN,
+                    false, new Item.Properties().stacksTo(1)
+            .durability(ArmorItem.Type.BODY.getDurability(20))));
+
+
+
+    /*
+    public static final DeferredItem<Item> BISMUTH_HORSE_ARMOR = ITEMS.register("bismuth_horse_armor",
+            () -> new AnimalArmorItem(ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN,
+                    false, new Item.Properties().stacksTo(1)
+                    .durability(ArmorItem.Type.BODY.getDurability(20))));
+    */
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

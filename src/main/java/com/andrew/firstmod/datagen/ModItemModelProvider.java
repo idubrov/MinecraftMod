@@ -66,6 +66,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.ELECTRIC_LEGGINGS);
         trimmedArmorItem(ModItems.ELECTRIC_BOOTS);
 
+        basicItem(ModItems.ELECTRIC_HORSE_ARMOR.get());
+
         handheldItem(ModItems.WOODEN_HAMMER);
         handheldItem(ModItems.STONE_HAMMER);
         handheldItem(ModItems.GOLDEN_HAMMER);
