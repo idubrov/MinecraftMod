@@ -7,10 +7,13 @@
     },
     "I": {
       "item": "minecraft:iron_ingot"
+    },
+    "N": {
+      "item": "minecraft:netherite_helmet"
     }
   },
   "pattern": [
-    "IBI",
+    "BNB",
     "I I",
     "   "
   ],

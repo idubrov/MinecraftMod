@@ -1,13 +1,18 @@
 package com.andrew.firstmod.event;
 
 import com.andrew.firstmod.FirstMod;
+import com.andrew.firstmod.item.ModItems;
 import com.andrew.firstmod.item.custom.ElectricTool;
+import com.andrew.firstmod.potion.ModPotions;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.alchemy.PotionBrewing;
+import net.minecraft.world.item.alchemy.Potions;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.event.brewing.RegisterBrewingRecipesEvent;
 import net.neoforged.neoforge.event.level.BlockEvent;
 
 import java.util.HashSet;
@@ -38,5 +43,11 @@ public class ModEvents {
                 HARVESTED_BLOCKS.remove(pos);
             }
         }
+    }
+    @SubscribeEvent
+    public static void onBrewingRecipeRegister(RegisterBrewingRecipesEvent event) {
+        PotionBrewing.Builder builder = event.getBuilder();
+
+        builder.addMix(Potions.AWKWARD, ModItems.BATTERY.get(), ModPotions.ELECTRIFIED_POTION);
     }
 }

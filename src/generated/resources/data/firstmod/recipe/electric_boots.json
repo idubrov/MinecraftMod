@@ -7,11 +7,14 @@
     },
     "I": {
       "item": "minecraft:iron_ingot"
+    },
+    "N": {
+      "item": "minecraft:netherite_boots"
     }
   },
   "pattern": [
     "   ",
-    "B B",
+    "BNB",
     "I I"
   ],
   "result": {

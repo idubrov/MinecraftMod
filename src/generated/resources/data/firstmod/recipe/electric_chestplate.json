@@ -7,11 +7,14 @@
     },
     "I": {
       "item": "minecraft:iron_ingot"
+    },
+    "N": {
+      "item": "minecraft:netherite_chestplate"
     }
   },
   "pattern": [
     "B B",
-    "IBI",
+    "INI",
     "IBI"
   ],
   "result": {

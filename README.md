@@ -50,5 +50,8 @@ ruin the balance of the game, _and_ are way too cheap! Get you Power Armor today
 [Fruit salads](docs/food.md), [smoothies](docs/food.md), and more! What else could you ask for? 
 (Not accepting answers to question.) 
 
+### Electrified Effect Potion
+[Effect and potion](docs/electrified_effect.md) Fun Info
+
 ## About the Author
 

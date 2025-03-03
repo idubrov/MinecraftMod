@@ -2,10 +2,12 @@ package com.andrew.firstmod;
 
 import com.andrew.firstmod.block.ModBlocks;
 import com.andrew.firstmod.component.ModDataComponents;
+import com.andrew.firstmod.effect.ModEffects;
 import com.andrew.firstmod.event.ModEventClientBusEvents;
 import com.andrew.firstmod.item.ModCreativeModeTabs;
 import com.andrew.firstmod.item.ModItems;
 import com.andrew.firstmod.particle.ModParticlesTypes;
+import com.andrew.firstmod.potion.ModPotions;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
@@ -45,6 +47,8 @@ public class FirstMod
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModParticlesTypes.register(modEventBus);
+        ModEffects.register(modEventBus);
+        ModPotions.register(modEventBus);
 
         ModDataComponents.register(modEventBus);
         // Register the item to a creative tab
