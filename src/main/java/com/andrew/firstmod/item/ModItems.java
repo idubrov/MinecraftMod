@@ -1,7 +1,9 @@
 package com.andrew.firstmod.item;
 
 import com.andrew.firstmod.FirstMod;
+import com.andrew.firstmod.block.ModBlocks;
 import com.andrew.firstmod.item.custom.*;
+import com.andrew.firstmod.potion.ModPotions;
 import net.minecraft.network.chat.Component;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.*;
@@ -39,7 +41,7 @@ public class ModItems {
 
 
     public static final DeferredItem<Item> BANANA = ITEMS.register("banana",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.BANANA)) {
+            () -> new ItemNameBlockItem(ModBlocks.BANANA_BUSH.get(), new Item.Properties().food(ModFoodProperties.BANANA)) {
                 @Override
                 public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
                     tooltipComponents.add(Component.translatable("tooltip.firstmod.empty_line"));
@@ -159,13 +161,12 @@ public class ModItems {
             .durability(ArmorItem.Type.BODY.getDurability(20))));
 
 
+    public static final DeferredItem<Item> RICE_SEEDS = ITEMS.register("rice_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.RICE_CROP.get(), new Item.Properties()));
 
-    /*
-    public static final DeferredItem<Item> BISMUTH_HORSE_ARMOR = ITEMS.register("bismuth_horse_armor",
-            () -> new AnimalArmorItem(ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN,
-                    false, new Item.Properties().stacksTo(1)
-                    .durability(ArmorItem.Type.BODY.getDurability(20))));
-    */
+    public static final DeferredItem<Item> RICE_STEM = ITEMS.register("rice_stem",
+            () -> new Item(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

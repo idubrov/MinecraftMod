@@ -80,5 +80,11 @@
   "effect.firstmod.electrified": "Electrified",
   "item.minecraft.potion.effect.electrified_potion": "Electrified Potion",
   "item.minecraft.splash_potion.effect.electrified_potion": "Electrified Splash Potion",
-  "item.minecraft.lingering_potion.effect.electrified_potion": "Electrified Lingering Potion"
+  "item.minecraft.lingering_potion.effect.electrified_potion": "Electrified Lingering Potion",
+
+  "item.firstmod.rice_seeds": "Rice Seeds",
+  "item.firstmod.rice_stem": "Rice Stem",
+  "block.firstmod.rice_crop": "Rice Crop",
+
+  "block.firstmod.banana_bush": "Banana Bush"
 }

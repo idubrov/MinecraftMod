@@ -1,7 +1,9 @@
 package com.andrew.firstmod.block;
 
 import com.andrew.firstmod.FirstMod;
+import com.andrew.firstmod.block.custom.BananaBushBlock;
 import com.andrew.firstmod.block.custom.CoconutLampBlock;
+import com.andrew.firstmod.block.custom.RiceCropBlock;
 import com.andrew.firstmod.block.custom.SulfurOreBlock;
 import com.andrew.firstmod.item.ModItems;
 import net.minecraft.network.chat.Component;
@@ -20,7 +22,6 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.grower.TreeGrower;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.List;
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -121,6 +122,13 @@ public class ModBlocks {
     public static final DeferredBlock<Block> COCONUT_LAMP = registerBlock("coconut_lamp",
             () -> new CoconutLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.TORCH)
                     .lightLevel(state -> state.getValue(CoconutLampBlock.COCONUT_LAMP_CLICKED) ? 10 : 0)));
+
+    public static final DeferredBlock<Block> RICE_CROP = BLOCKS.register("rice_crop",
+            () -> new RiceCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
+
+    public static final DeferredBlock<Block> BANANA_BUSH = BLOCKS.register("banana_bush",
+            () -> new BananaBushBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));
+
 
     //Registering of our new blocks and its items
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

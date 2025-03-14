@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:husbandry/root",
+  "criteria": {
+    "rice": {
+      "conditions": {
+        "location": [
+          {
+            "block": "firstmod:rice_crop",
+            "condition": "minecraft:block_state_property"
+          }
+        ]
+      },
+      "trigger": "minecraft:placed_block"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.husbandry.plant_seed.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:wheat"
+    },
+    "title": {
+      "translate": "advancements.husbandry.plant_seed.title"
+    }
+  },
+  "requirements": [
+    [
+      "rice"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

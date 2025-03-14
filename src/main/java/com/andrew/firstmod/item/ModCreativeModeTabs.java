@@ -2,10 +2,12 @@ package com.andrew.firstmod.item;
 
 import com.andrew.firstmod.FirstMod;
 import com.andrew.firstmod.block.ModBlocks;
+import com.andrew.firstmod.potion.ModPotions;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.ItemLike;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -74,6 +76,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.ELECTRIC_HORSE_ARMOR);
 
+                        output.accept(ModItems.RICE_SEEDS);
+                        output.accept(ModItems.RICE_STEM);
 
                     }).build());
 

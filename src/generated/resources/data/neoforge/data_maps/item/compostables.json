@@ -1,0 +1,10 @@
+{
+  "values": {
+    "firstmod:rice_seeds": {
+      "chance": 0.5
+    },
+    "firstmod:rice_stem": {
+      "chance": 0.75
+    }
+  }
+}

@@ -73,6 +73,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.GOLDEN_HAMMER);
         handheldItem(ModItems.IRON_HAMMER);
         handheldItem(ModItems.DIAMOND_HAMMER);
+
+        basicItem(ModItems.RICE_SEEDS.get());
+        basicItem(ModItems.RICE_STEM.get());
+
     }
 
 

@@ -1,9 +1,11 @@
 package com.andrew.firstmod.datagen;
 
 import com.andrew.firstmod.block.ModBlocks;
+import com.andrew.firstmod.block.custom.RiceCropBlock;
 import com.andrew.firstmod.item.ModItems;
 import com.andrew.firstmod.util.ModTags;
 import net.minecraft.advancements.critereon.ItemPredicate;
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
@@ -12,12 +14,14 @@ import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.predicates.BonusLevelTableCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.predicates.MatchTool;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
@@ -76,16 +80,34 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         add(ModBlocks.PALM_LEAVES.get(),
                 block -> createPalmLeavesDrops(ModBlocks.PALM_LEAVES.get(), ModBlocks.PALM_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
-    }
 
-/*
-    protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
-        HolderLookup.RegistryLookup<Enchantment> registryLookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
-        return this.createSilkTouchDispatchTable(pBlock,
-                this.applyExplosionDecay(pBlock, LootItem.lootTableItem(item)
-                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(minDrops, maxDrops)))
-                        .apply(ApplyBonusCount.addOreBonusCount(registryLookup.getOrThrow(Enchantments.FORTUNE)))));
-    }*/
+        LootItemCondition.Builder lootItemConditionBuilder = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.RICE_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(RiceCropBlock.AGE, 5));
+
+        this.add(ModBlocks.RICE_CROP.get(), this.createCropDrops(ModBlocks.RICE_CROP.get(),
+                ModItems.RICE_STEM.get(),
+                ModItems.RICE_SEEDS.get(), lootItemConditionBuilder));
+
+
+        HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
+
+        this.add(ModBlocks.BANANA_BUSH.get(), block -> this.applyExplosionDecay(
+                block,LootTable.lootTable().withPool(LootPool.lootPool().when(
+                                        LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.BANANA_BUSH.get())
+                                                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 3))
+                                ).add(LootItem.lootTableItem(ModItems.BANANA.get()))
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 3.0F)))
+                                .apply(ApplyBonusCount.addUniformBonusCount(registrylookup.getOrThrow(Enchantments.FORTUNE)))
+                ).withPool(LootPool.lootPool().when(
+                                        LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.BANANA_BUSH.get())
+                                                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 2))
+                                ).add(LootItem.lootTableItem(ModItems.BANANA.get()))
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F)))
+                                .apply(ApplyBonusCount.addUniformBonusCount(registrylookup.getOrThrow(Enchantments.FORTUNE)))
+                )));
+
+
+    }
 
 
     protected LootTable.Builder createPalmLeavesDrops(Block palmLeavesBlock, Block saplingBlock, float... chances) {

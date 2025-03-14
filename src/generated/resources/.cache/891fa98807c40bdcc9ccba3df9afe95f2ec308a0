@@ -1,4 +1,4 @@
-// 1.21.1	2024-12-16T19:01:07.2550437	Item Models: firstmod
+// 1.21.1	2025-03-10T16:29:50.4366174	Item Models: firstmod
 92d6c44e2521ee962dd833d46a51bb02cdbb0ce1 assets/firstmod/models/item/banana.json
 da688f0c599d0ce5cdb8032f392ad5e27207bbe1 assets/firstmod/models/item/battery.json
 49e8da2348b09cf5335f24c3eb6d7c57298e5db3 assets/firstmod/models/item/coconut.json
@@ -60,6 +60,8 @@ e1a2a9d4c0383a00325ffecaf3b9273bee801ba0 assets/firstmod/models/item/milk_shake.
 b89977b8a1d1502a5b3f64b0df2c0bc35b855abe assets/firstmod/models/item/palm_door.json
 6e6144c4d598b2c8001b09f7e3db45af7db9e020 assets/firstmod/models/item/palm_fence.json
 31f1702e273baf2f49254f04766fa8dc01b726c2 assets/firstmod/models/item/palm_sapling.json
+e4a5462df8c6a2558afab3661d88e71a956371da assets/firstmod/models/item/rice_seeds.json
+f6f0dc68acd1e33119803981c364b8c6020ae462 assets/firstmod/models/item/rice_stem.json
 d0c04650f903d0594e9eaca23e030c10cde02cd4 assets/firstmod/models/item/stone_hammer.json
 eb1cb08aef57ba477ff16fd6a3887ed568bf1167 assets/firstmod/models/item/sulfur_powder.json
 caecde34223f7610441a9036b30b31ead81b5501 assets/firstmod/models/item/sulfur_shard.json

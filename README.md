@@ -23,10 +23,8 @@ place? Do you _want_ to die?) they are necessary for power armour [TBD].
 
 ### Palm Tree
 
-Palm trees are nice and useful. They give -
-[Wood](docs/palm). 
-[Leaves](docs/palm).
-Coconuts.
+Palm trees are nice and useful. They give
+[wood](docs/palm), [leaves](docs/palm), and coconuts. What else could you ask for?
 
 ### Sulfur Ore
 
@@ -37,21 +35,27 @@ with a hammer gives you sulfur powder directly.
 ### Hammer
 Use the [hammer](docs/hammer.md) to mine sulfur ore without needing to smelt the sulfur
 shards into powder, as you get the powder instantly. Who knew the 
-solution to not burning coal was Stone Age technology?
+solution to burning less coal was Stone Age technology?
 
 ### Battery, Electric Tools, and Power Armor
 [Batteries](docs/electric_stuff.md) make a terrible fuel (What have your parents told you about burning 
 batteries?), smell _interesting_, but are needed for all electrical 
-items. [Electric Tools](docs/electric_stuff.md) are faster than normal tools _and_ mine a bigger area. To make a full 
-tool tier, we had to include armor, so we present to you: [Power Armor](docs/electric_stuff.md)! Completely unasked for,
-ruin the balance of the game, _and_ are way too cheap! Get you Power Armor today!!!
+items. [Electric Tools](docs/electric_stuff.md) are faster than normal tools _and_ mine a bigger area. Have you ever
+felt that your netherite armour doesn't protect you enough? Have you ever wanted to have a neverending regen effect?
+If so, get your [Power Armor](docs/electric_stuff.md) today!
 
 ### New Food Recipes
 [Fruit salads](docs/food.md), [smoothies](docs/food.md), and more! What else could you ask for? 
 (Not accepting answers to question.) 
 
 ### Electrified Effect Potion
-[Effect and potion](docs/electrified_effect.md) Fun Info
+Have you ever wanted to become a living tesla rod? Have you ever been surrounded by countless mobs? If so, the 
+[electrified effect](docs/electrified_effect.md) is here to help! This effect damages you and everybody around you,
+but if you wear electric armour it will absorb the electricity that damages you.
+
+### Rice
+Sushi! Rice pudding! Mats! All of these can be made with the rice plant! A major food source, kind of annoying to grow, 
+rice is essential for any self-respecting foodie!
 
 ## About the Author
 

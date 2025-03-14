@@ -1,0 +1,40 @@
+{
+  "variants": {
+    "age=0,waterlogged=false": {
+      "model": "firstmod:block/rice_crop_stage0"
+    },
+    "age=0,waterlogged=true": {
+      "model": "firstmod:block/rice_crop_stage0"
+    },
+    "age=1,waterlogged=false": {
+      "model": "firstmod:block/rice_crop_stage1"
+    },
+    "age=1,waterlogged=true": {
+      "model": "firstmod:block/rice_crop_stage1"
+    },
+    "age=2,waterlogged=false": {
+      "model": "firstmod:block/rice_crop_stage2"
+    },
+    "age=2,waterlogged=true": {
+      "model": "firstmod:block/rice_crop_stage2"
+    },
+    "age=3,waterlogged=false": {
+      "model": "firstmod:block/rice_crop_stage3"
+    },
+    "age=3,waterlogged=true": {
+      "model": "firstmod:block/rice_crop_stage3"
+    },
+    "age=4,waterlogged=false": {
+      "model": "firstmod:block/rice_crop_stage4"
+    },
+    "age=4,waterlogged=true": {
+      "model": "firstmod:block/rice_crop_stage4"
+    },
+    "age=5,waterlogged=false": {
+      "model": "firstmod:block/rice_crop_stage5"
+    },
+    "age=5,waterlogged=true": {
+      "model": "firstmod:block/rice_crop_stage5"
+    }
+  }
+}
