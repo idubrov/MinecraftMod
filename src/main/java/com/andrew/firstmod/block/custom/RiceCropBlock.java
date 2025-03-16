@@ -222,7 +222,7 @@ public class RiceCropBlock extends CropBlock {
 
 
     @Override
-    public boolean isValidBonemealTarget(LevelReader level, BlockPos pos, BlockState state) {
+    public boolean isValidBonemealTarget(@NotNull LevelReader level, @NotNull BlockPos pos, BlockState state) {
         int currentAge = state.getValue(AGE);
 
         // If the crop is fully grown, bonemeal should not work
