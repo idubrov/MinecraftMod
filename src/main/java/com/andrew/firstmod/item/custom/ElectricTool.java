@@ -3,24 +3,32 @@ package com.andrew.firstmod.item.custom;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.tags.TagKey;
-import net.minecraft.world.item.DiggerItem;
-import net.minecraft.world.item.Tier;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.ClipContext;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
-import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.ArrayList;
 import java.util.List;
 
+public class ElectricTool {
 
-public class ElectricTool extends DiggerItem {
-    public ElectricTool(Tier tier, TagKey<Block> blocks, Properties properties) {
-        super(tier, blocks, properties);
+    // Gets 2x2 blocks in horizontal plane for shovel and hoe (right-click useOn method)
+    public static List<BlockPos> getBlocksToBeChangedHorizontally(BlockPos pos, Player player) {
+        List<BlockPos> positions = new ArrayList<>();
+
+        // Center block
+        positions.add(pos);
+
+        // Add adjacent blocks to form a 2x2 area
+        positions.add(pos.east());
+        positions.add(pos.south());
+        positions.add(pos.south().east());
+
+        return positions;
     }
 
+    // Gets 2x2 blocks in the direction of mining (left-click)
     public static List<BlockPos> getBlocksToBeDestroyed(int range, BlockPos initalBlockPos, ServerPlayer player) {
         List<BlockPos> positions = new ArrayList<>();
 

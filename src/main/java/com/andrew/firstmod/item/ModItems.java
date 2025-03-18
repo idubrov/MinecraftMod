@@ -3,9 +3,7 @@ package com.andrew.firstmod.item;
 import com.andrew.firstmod.FirstMod;
 import com.andrew.firstmod.block.ModBlocks;
 import com.andrew.firstmod.item.custom.*;
-import com.andrew.firstmod.potion.ModPotions;
 import net.minecraft.network.chat.Component;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -68,18 +66,18 @@ public class ModItems {
             });
 
 
-    public static final DeferredItem<ElectricTool> ELECTRIC_PICKAXE = ITEMS.register("electric_pickaxe",
-            () -> new ElectricTool(ModToolTiers.ELECTRIC, BlockTags.MINEABLE_WITH_PICKAXE, new Item.Properties()
-                    .attributes(PickaxeItem.createAttributes(ModToolTiers.ELECTRIC, 1.0F, -2.8F))));
-    public static final DeferredItem<ElectricTool> ELECTRIC_SHOVEL = ITEMS.register("electric_shovel",
-            () -> new ElectricTool(ModToolTiers.ELECTRIC, BlockTags.MINEABLE_WITH_SHOVEL, new Item.Properties()
+    public static final DeferredItem<Item> ELECTRIC_PICKAXE = ITEMS.register("electric_pickaxe",
+          () -> new ElectricPickaxeItem(ModToolTiers.ELECTRIC, new Item.Properties()
+                  .attributes(PickaxeItem.createAttributes(ModToolTiers.ELECTRIC, 1.0F, -2.8F))));
+    public static final DeferredItem<Item> ELECTRIC_SHOVEL = ITEMS.register("electric_shovel",
+            () -> new ElectricShovelItem(ModToolTiers.ELECTRIC, new Item.Properties()
                     .attributes(ShovelItem.createAttributes(ModToolTiers.ELECTRIC, 1.5F, -3.0F))));
-    public static final DeferredItem<ElectricTool> ELECTRIC_AXE = ITEMS.register("electric_axe",
-            () -> new ElectricTool(ModToolTiers.ELECTRIC, BlockTags.MINEABLE_WITH_AXE, new Item.Properties()
+    public static final DeferredItem<Item> ELECTRIC_AXE = ITEMS.register("electric_axe",
+            () -> new ElectricAxeItem(ModToolTiers.ELECTRIC, new Item.Properties()
                     .attributes(AxeItem.createAttributes(ModToolTiers.ELECTRIC, 6.0F, -3.1F))));
-    public static final DeferredItem<ElectricTool> ELECTRIC_HOE = ITEMS.register("electric_hoe",
-            () -> new ElectricTool(ModToolTiers.ELECTRIC, BlockTags.MINEABLE_WITH_HOE, new Item.Properties()
-                    .attributes(HoeItem.createAttributes(ModToolTiers.ELECTRIC, -2F, -1F))));
+    public static final DeferredItem<Item> ELECTRIC_HOE = ITEMS.register("electric_hoe",
+            () -> new ElectricHoeItem(ModToolTiers.ELECTRIC, new Item.Properties()
+                    .attributes(ElectricHoeItem.createAttributes(ModToolTiers.ELECTRIC, -2F, -1F))));
 
 
     public static final DeferredItem<Item> WOODEN_HAMMER = ITEMS.register("wooden_hammer",
@@ -108,8 +106,6 @@ public class ModItems {
                 }
             });
 
-
-
     public static final DeferredItem<ArmorItem> ELECTRIC_CHESTPLATE = ITEMS.register("electric_chestplate",
             () -> new ModArmorItem(ModArmorMaterials.ELECTRIC_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
                     new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(20)))
@@ -122,8 +118,6 @@ public class ModItems {
                     super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
                 }
             });
-
-
 
     public static final DeferredItem<ArmorItem> ELECTRIC_LEGGINGS = ITEMS.register("electric_leggings",
             () -> new ModArmorItem(ModArmorMaterials.ELECTRIC_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
@@ -138,8 +132,6 @@ public class ModItems {
                 }
             });
 
-
-
     public static final DeferredItem<ArmorItem> ELECTRIC_BOOTS = ITEMS.register("electric_boots",
             () -> new ModArmorItem(ModArmorMaterials.ELECTRIC_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(20)))
@@ -153,12 +145,11 @@ public class ModItems {
                 }
             });
 
-
-
     public static final DeferredItem<ModHorseArmorItem> ELECTRIC_HORSE_ARMOR = ITEMS.register("electric_horse_armor",
             () -> new ModHorseArmorItem(ModArmorMaterials.ELECTRIC_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN,
                     false, new Item.Properties().stacksTo(1)
             .durability(ArmorItem.Type.BODY.getDurability(20))));
+
 
 
     public static final DeferredItem<Item> RICE_SEEDS = ITEMS.register("rice_seeds",
