@@ -54,6 +54,32 @@ public class ModItems {
     public static final DeferredItem<Item> MILK_SHAKE = ITEMS.register("milk_shake",
             () -> new MilkShakeFoodItem(new Item.Properties().food(ModFoodProperties.MILK_SHAKE)));
 
+    public static final DeferredItem<Item> MAKI_SUSHI = ITEMS.register("maki_sushi",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.MAKI_SUSHI)) {
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.firstmod.empty_line"));
+                    tooltipComponents.add(Component.translatable("tooltip.firstmod.sushi.tooltip.line1"));
+                    tooltipComponents.add(Component.translatable("tooltip.firstmod.empty_line"));
+                    tooltipComponents.add(Component.translatable("tooltip.firstmod.sushi.tooltip.line2"));
+                    tooltipComponents.add(Component.translatable("tooltip.firstmod.maki_sushi.tooltip.line3"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+
+    public static final DeferredItem<Item> NIGIRI_SUSHI = ITEMS.register("nigiri_sushi",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.NIGIRI_SUSHI)) {
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.firstmod.empty_line"));
+                    tooltipComponents.add(Component.translatable("tooltip.firstmod.sushi.tooltip.line1"));
+                    tooltipComponents.add(Component.translatable("tooltip.firstmod.empty_line"));
+                    tooltipComponents.add(Component.translatable("tooltip.firstmod.sushi.tooltip.line2"));
+                    tooltipComponents.add(Component.translatable("tooltip.firstmod.nigiri_sushi.tooltip.line3"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+
 
     public static final DeferredItem<Item> BATTERY = ITEMS.register("battery",
             () -> new Item(new Item.Properties()) {
@@ -67,8 +93,8 @@ public class ModItems {
 
 
     public static final DeferredItem<Item> ELECTRIC_PICKAXE = ITEMS.register("electric_pickaxe",
-          () -> new ElectricPickaxeItem(ModToolTiers.ELECTRIC, new Item.Properties()
-                  .attributes(PickaxeItem.createAttributes(ModToolTiers.ELECTRIC, 1.0F, -2.8F))));
+            () -> new ElectricPickaxeItem(ModToolTiers.ELECTRIC, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.ELECTRIC, 1.0F, -2.8F))));
     public static final DeferredItem<Item> ELECTRIC_SHOVEL = ITEMS.register("electric_shovel",
             () -> new ElectricShovelItem(ModToolTiers.ELECTRIC, new Item.Properties()
                     .attributes(ShovelItem.createAttributes(ModToolTiers.ELECTRIC, 1.5F, -3.0F))));
@@ -92,11 +118,9 @@ public class ModItems {
             () -> new HammerItem(Tiers.DIAMOND, new Item.Properties()));
 
 
-
     public static final DeferredItem<ArmorItem> ELECTRIC_HELMET = ITEMS.register("electric_helmet",
             () -> new ModArmorItem(ModArmorMaterials.ELECTRIC_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
-                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(20)))
-            {
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(20))) {
                 @Override
                 public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
                     tooltipComponents.add(Component.translatable("tooltip.firstmod.empty_line"));
@@ -108,8 +132,7 @@ public class ModItems {
 
     public static final DeferredItem<ArmorItem> ELECTRIC_CHESTPLATE = ITEMS.register("electric_chestplate",
             () -> new ModArmorItem(ModArmorMaterials.ELECTRIC_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
-                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(20)))
-            {
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(20))) {
                 @Override
                 public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
                     tooltipComponents.add(Component.translatable("tooltip.firstmod.empty_line"));
@@ -121,8 +144,7 @@ public class ModItems {
 
     public static final DeferredItem<ArmorItem> ELECTRIC_LEGGINGS = ITEMS.register("electric_leggings",
             () -> new ModArmorItem(ModArmorMaterials.ELECTRIC_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
-                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(20)))
-            {
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(20))) {
                 @Override
                 public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
                     tooltipComponents.add(Component.translatable("tooltip.firstmod.empty_line"));
@@ -134,8 +156,7 @@ public class ModItems {
 
     public static final DeferredItem<ArmorItem> ELECTRIC_BOOTS = ITEMS.register("electric_boots",
             () -> new ModArmorItem(ModArmorMaterials.ELECTRIC_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
-                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(20)))
-            {
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(20))) {
                 @Override
                 public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
                     tooltipComponents.add(Component.translatable("tooltip.firstmod.empty_line"));
@@ -148,8 +169,7 @@ public class ModItems {
     public static final DeferredItem<ModHorseArmorItem> ELECTRIC_HORSE_ARMOR = ITEMS.register("electric_horse_armor",
             () -> new ModHorseArmorItem(ModArmorMaterials.ELECTRIC_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN,
                     false, new Item.Properties().stacksTo(1)
-            .durability(ArmorItem.Type.BODY.getDurability(20))));
-
+                    .durability(ArmorItem.Type.BODY.getDurability(20))));
 
 
     public static final DeferredItem<Item> RICE_SEEDS = ITEMS.register("rice_seeds",
@@ -157,6 +177,15 @@ public class ModItems {
 
     public static final DeferredItem<Item> RICE_STEM = ITEMS.register("rice_stem",
             () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> ELECTRIFIED_POTION = ITEMS.register("electrified_potion",
+            () -> new PotionItem(new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> ELECTRIFIED_SPLASH_POTION = ITEMS.register("electrified_splash_potion",
+            () -> new SplashPotionItem(new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> ELECTRIFIED_LINGERING_POTION = ITEMS.register("electrified_lingering_potion",
+            () -> new LingeringPotionItem(new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> ELECTRIFIED_TIPPED_ARROW = ITEMS.register("electrified_tipped_arrow",
+            () -> new TippedArrowItem(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

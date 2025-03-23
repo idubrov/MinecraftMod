@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "minecraft:salmon"
+    },
+    "K": {
+      "item": "minecraft:dried_kelp"
+    },
+    "R": {
+      "item": "firstmod:rice_seeds"
+    }
+  },
+  "pattern": [
+    "RFR",
+    "KKK",
+    "RFR"
+  ],
+  "result": {
+    "count": 6,
+    "id": "firstmod:maki_sushi"
+  }
+}

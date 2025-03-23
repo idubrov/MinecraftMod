@@ -103,6 +103,36 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_banana", has(ModItems.BANANA))
                 .save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.NIGIRI_SUSHI.get(), 6)
+                .pattern("FKF")
+                .pattern("RKR")
+                .pattern("RKR")
+                .define('R', ModItems.RICE_SEEDS.get())
+                .define('F', Items.SALMON)
+                .define('K', Items.DRIED_KELP)
+                .unlockedBy("has_rice", has(ModItems.RICE_SEEDS))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.MAKI_SUSHI.get(), 6)
+                .pattern("RFR")
+                .pattern("KKK")
+                .pattern("RFR")
+                .define('R', ModItems.RICE_SEEDS.get())
+                .define('F', Items.SALMON)
+                .define('K', Items.DRIED_KELP)
+                .unlockedBy("has_rice", has(ModItems.RICE_SEEDS))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModBlocks.RICE_PUDDING.get(), 1)
+                .pattern("BCB")
+                .pattern("RBR")
+                .pattern("RRR")
+                .define('R', ModItems.RICE_SEEDS.get())
+                .define('B', ModItems.BANANA.get())
+                .define('C', Items.COCOA_BEANS)
+                .unlockedBy("has_rice", has(ModItems.RICE_SEEDS))
+                .save(recipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BATTERY.get(), 3)
                 .pattern("III")
                 .pattern("SSS")
@@ -216,7 +246,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" S ")
                 .define('S', Items.STICK)
                 .define('I', Items.IRON_INGOT)
-                .define('B', ModItems.BATTERY)
+                .define('B', ModItems.BATTERY.get())
                 .unlockedBy("has_battery", has(ModItems.BATTERY))
                 .save(recipeOutput);
 
@@ -226,7 +256,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" S ")
                 .define('S', Items.STICK)
                 .define('I', Items.IRON_INGOT)
-                .define('B', ModItems.BATTERY)
+                .define('B', ModItems.BATTERY.get())
                 .unlockedBy("has_battery", has(ModItems.BATTERY))
                 .save(recipeOutput);
 
@@ -235,7 +265,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" S ")
                 .pattern(" S ")
                 .define('S', Items.STICK)
-                .define('B', ModItems.BATTERY)
+                .define('B', ModItems.BATTERY.get())
                 .unlockedBy("has_battery", has(ModItems.BATTERY))
                 .save(recipeOutput);
 
@@ -245,7 +275,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" S ")
                 .define('S', Items.STICK)
                 .define('I', Items.IRON_INGOT)
-                .define('B', ModItems.BATTERY)
+                .define('B', ModItems.BATTERY.get())
                 .unlockedBy("has_battery", has(ModItems.BATTERY))
                 .save(recipeOutput);
 
@@ -254,7 +284,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("I I")
                 .pattern("   ")
                 .define('I', Items.IRON_INGOT)
-                .define('B', ModItems.BATTERY)
+                .define('B', ModItems.BATTERY.get())
                 .define('N', Items.NETHERITE_HELMET)
                 .unlockedBy("has_battery", has(ModItems.BATTERY))
                 .save(recipeOutput);
@@ -264,7 +294,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("INI")
                 .pattern("IBI")
                 .define('I', Items.IRON_INGOT)
-                .define('B', ModItems.BATTERY)
+                .define('B', ModItems.BATTERY.get())
                 .define('N', Items.NETHERITE_CHESTPLATE)
                 .unlockedBy("has_battery", has(ModItems.BATTERY))
                 .save(recipeOutput);
@@ -274,7 +304,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("I I")
                 .pattern("I I")
                 .define('I', Items.IRON_INGOT)
-                .define('B', ModItems.BATTERY)
+                .define('B', ModItems.BATTERY.get())
                 .define('N', Items.NETHERITE_LEGGINGS)
                 .unlockedBy("has_battery", has(ModItems.BATTERY))
                 .save(recipeOutput);
@@ -284,7 +314,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("BNB")
                 .pattern("I I")
                 .define('I', Items.IRON_INGOT)
-                .define('B', ModItems.BATTERY)
+                .define('B', ModItems.BATTERY.get())
                 .define('N', Items.NETHERITE_BOOTS)
                 .unlockedBy("has_battery", has(ModItems.BATTERY))
                 .save(recipeOutput);

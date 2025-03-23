@@ -6,9 +6,7 @@ import com.andrew.firstmod.block.custom.BananaBushBlock;
 import com.andrew.firstmod.block.custom.RiceCropBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.CropBlock;
-import net.minecraft.world.level.block.RotatedPillarBlock;
-import net.minecraft.world.level.block.SweetBerryBushBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
@@ -77,7 +75,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         makeRiceCrop(((CropBlock) ModBlocks.RICE_CROP.get()), "rice_crop_stage", "rice_crop_stage");
         makeBananaBush(((SweetBerryBushBlock) ModBlocks.BANANA_BUSH.get()), "banana_bush_stage", "banana_bush_stage");
-
     }
 
     public void makeBananaBush(SweetBerryBushBlock block, String modelName, String textureName) {

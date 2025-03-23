@@ -1,12 +1,8 @@
 package com.andrew.firstmod.block;
 
 import com.andrew.firstmod.FirstMod;
-import com.andrew.firstmod.block.custom.BananaBushBlock;
-import com.andrew.firstmod.block.custom.CoconutLampBlock;
-import com.andrew.firstmod.block.custom.RiceCropBlock;
-import com.andrew.firstmod.block.custom.SulfurOreBlock;
+import com.andrew.firstmod.block.custom.*;
 import com.andrew.firstmod.item.ModItems;
-import net.minecraft.network.chat.Component;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.context.UseOnContext;
@@ -129,11 +125,20 @@ public class ModBlocks {
     public static final DeferredBlock<Block> BANANA_BUSH = BLOCKS.register("banana_bush",
             () -> new BananaBushBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));
 
+    public static final DeferredBlock<Block> RICE_PUDDING = registerBlock("rice_pudding",
+            () -> new RicePuddingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE)),1);
 
-    //Registering of our new blocks and its items
+
+
+    //Registering of our new blocks and its item
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
+        return toReturn;
+    }
+    private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block, int stacksTo) {
+        DeferredBlock<T> toReturn = BLOCKS.register(name, block);
+        registerBlockItem(name, toReturn, stacksTo);
         return toReturn;
     }
 
@@ -141,8 +146,12 @@ public class ModBlocks {
     public static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
+    public static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block, int stacksTo) {
+        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().stacksTo(stacksTo)));
+    }
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }
+
 }

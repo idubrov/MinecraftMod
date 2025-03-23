@@ -25,6 +25,7 @@
   "item.firstmod.fruit_salad": "Fruit Salad",
   "item.firstmod.coconut": "Coconut",
   "item.firstmod.milk_shake": "Milkshake",
+  "block.firstmod.rice_pudding": "Rice Pudding",
 
   "item.firstmod.battery": "Battery",
 
@@ -60,9 +61,9 @@
   "tooltip.firstmod.battery.tooltip": "Green energy!",
   "tooltip.firstmod.milkshake.tooltip.line1": "Sugar Rush!",
   "tooltip.firstmod.milkshake.tooltip.line2": "§7Drinking this will give:§r",
-  "tooltip.firstmod.milkshake.tooltip.line3": "§2 2 Speed§r",
-  "tooltip.firstmod.milkshake.tooltip.line4": "§2 2 Haste§r",
-  "tooltip.firstmod.milkshake.tooltip.line5": "§2 2 Jump Boost§r",
+  "tooltip.firstmod.milkshake.tooltip.line3": "§2 1 Speed§r",
+  "tooltip.firstmod.milkshake.tooltip.line4": "§2 1 Haste§r",
+  "tooltip.firstmod.milkshake.tooltip.line5": "§2 1 Jump Boost§r",
   "tooltip.firstmod.banana.tooltip.line1": "Healthy snack!",
   "tooltip.firstmod.banana.tooltip.line2": "§7Eating this will give:§r",
   "tooltip.firstmod.banana.tooltip.line3": "§2 3 Speed§r",
@@ -81,10 +82,18 @@
   "item.minecraft.potion.effect.electrified_potion": "Electrified Potion",
   "item.minecraft.splash_potion.effect.electrified_potion": "Electrified Splash Potion",
   "item.minecraft.lingering_potion.effect.electrified_potion": "Electrified Lingering Potion",
+  "item.minecraft.tipped_arrow.effect.electrified_potion": "Electrified Arrow",
 
   "item.firstmod.rice_seeds": "Rice Seeds",
   "item.firstmod.rice_stem": "Rice Stem",
   "block.firstmod.rice_crop": "Rice Crop",
 
-  "block.firstmod.banana_bush": "Banana Bush"
+  "block.firstmod.banana_bush": "Banana Bush",
+
+  "item.firstmod.maki_sushi": "Maki Sushi",
+  "item.firstmod.nigiri_sushi": "Nigiri Sushi",
+  "tooltip.firstmod.sushi.tooltip.line1": "Eating raw or undercooked fish might increase the risk of food poisoning.",
+  "tooltip.firstmod.sushi.tooltip.line2": "§7Eating this might give:§r",
+  "tooltip.firstmod.maki_sushi.tooltip.line3": "§2 1 Regeneration§r",
+  "tooltip.firstmod.nigiri_sushi.tooltip.line3": "§2 1 Instant Health§r"
 }

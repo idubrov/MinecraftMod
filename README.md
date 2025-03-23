@@ -1,11 +1,12 @@
-# Palms and Sulfur
+# [TBD]Palms and Sulfur
 
 Imagine you live in the tropics, eating fruits to your heart's 
 desire. You make smoothies and fruit salads, peacefully annihilating
 the local banana population.  And then, you find some sulfur. You 
 experiment with it, finding that you can make batteries! Although 
 they are not a great fuel, (Why would you burn batteries in the first
-place? Do you _want_ to die?) they are necessary for power armour [TBD]. 
+place? Do you _want_ to die?) they are necessary for electric tools and 
+power armor. 
 
 ## Requirements
 
@@ -23,6 +24,7 @@ place? Do you _want_ to die?) they are necessary for power armour [TBD].
 
 ### Palm Tree
 
+[TBD]
 Palm trees are nice and useful. They give
 [wood](docs/palm), [leaves](docs/palm), and coconuts. What else could you ask for?
 
@@ -41,8 +43,12 @@ solution to burning less coal was Stone Age technology?
 [Batteries](docs/electric_stuff.md) make a terrible fuel (What have your parents told you about burning 
 batteries?), smell _interesting_, but are needed for all electrical 
 items. [Electric Tools](docs/electric_stuff.md) are faster than normal tools _and_ mine a bigger area. Have you ever
-felt that your netherite armour doesn't protect you enough? Have you ever wanted to have a neverending regen effect?
+felt that your netherite armor doesn't protect you enough? Have you ever wanted to have a neverending regen effect?
 If so, get your [Power Armor](docs/electric_stuff.md) today!
+
+### Rice Crop and Banana Bush
+Sushi! Rice pudding! Mats! All of these can be made with the rice plant! A major food source, kind of annoying to grow,
+rice is essential for any self-respecting foodie! [Rice Crop](docs/plants.md), [Banana Bush](docs/plants.md)
 
 ### New Food Recipes
 [Fruit salads](docs/food.md), [smoothies](docs/food.md), and more! What else could you ask for? 
@@ -51,11 +57,10 @@ If so, get your [Power Armor](docs/electric_stuff.md) today!
 ### Electrified Effect Potion
 Have you ever wanted to become a living tesla rod? Have you ever been surrounded by countless mobs? If so, the 
 [electrified effect](docs/electrified_effect.md) is here to help! This effect damages you and everybody around you,
-but if you wear electric armour it will absorb the electricity that damages you.
+but if you wear electric armor it will absorb the electricity that damages you.
 
-### Rice
-Sushi! Rice pudding! Mats! All of these can be made with the rice plant! A major food source, kind of annoying to grow, 
-rice is essential for any self-respecting foodie!
+### Household Items
+[TBD] Lamp
 
 ## About the Author
 

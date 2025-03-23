@@ -2,8 +2,10 @@
 
 ### Batteries
 
-Batteries are used for all electric tools, but they can also be used as a fuel.
-When used in a furnace as a fuel, one battery lasts 3200 ticks (160 seconds).
+Batteries are used for all electric tools and power armor, 
+but they can also be used as a fuel.
+When used in a furnace as a fuel, 
+one battery lasts 3200 ticks (160 seconds).
 
 | Item    | Ingredients                                              | Recipe                                                                 |
 |---------|----------------------------------------------------------|------------------------------------------------------------------------|
@@ -43,7 +45,7 @@ Electric tools are a new tool tier: the pickaxe, the axe, the hoe, and the shove
 
 ### Power Armor
 Power Armor is another tier of armor, but each piece of armor gives a different effect. 
-To craft them you use batteries.
+To craft them you use netherite armor and batteries.
 Armor can be given trims using a smithing template and a trim material.
 
 

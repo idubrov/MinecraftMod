@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "bites=0": {
+      "model": "firstmod:block/rice_pudding"
+    },
+    "bites=1": {
+      "model": "firstmod:block/rice_pudding_slice1"
+    },
+    "bites=2": {
+      "model": "firstmod:block/rice_pudding_slice2"
+    },
+    "bites=3": {
+      "model": "firstmod:block/rice_pudding_slice3"
+    },
+    "bites=4": {
+      "model": "firstmod:block/rice_pudding_slice4"
+    },
+    "bites=5": {
+      "model": "firstmod:block/rice_pudding_slice5"
+    },
+    "bites=6": {
+      "model": "firstmod:block/rice_pudding_slice6"
+    }
+  }
+}

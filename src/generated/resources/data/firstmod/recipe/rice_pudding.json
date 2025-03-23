@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "firstmod:banana"
+    },
+    "C": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "R": {
+      "item": "firstmod:rice_seeds"
+    }
+  },
+  "pattern": [
+    "BCB",
+    "RBR",
+    "RRR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "firstmod:rice_pudding"
+  }
+}

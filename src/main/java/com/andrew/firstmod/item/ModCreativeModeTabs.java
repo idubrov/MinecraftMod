@@ -5,8 +5,12 @@ import com.andrew.firstmod.block.ModBlocks;
 import com.andrew.firstmod.potion.ModPotions;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.PotionContents;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -54,6 +58,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.COCONUT);
                         output.accept(ModItems.MILK_SHAKE);
                         output.accept(ModItems.FRUIT_SALAD);
+                        output.accept(ModItems.MAKI_SUSHI);
+                        output.accept(ModItems.NIGIRI_SUSHI);
+                        output.accept(ModBlocks.RICE_PUDDING);
 
                         output.accept(ModItems.BATTERY);
                         output.accept(ModBlocks.COCONUT_LAMP);
@@ -78,6 +85,11 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.RICE_SEEDS);
                         output.accept(ModItems.RICE_STEM);
+
+                        output.accept(PotionContents.createItemStack(Items.POTION, ModPotions.ELECTRIFIED_POTION));
+                        output.accept(PotionContents.createItemStack(Items.SPLASH_POTION, ModPotions.ELECTRIFIED_POTION));
+                        output.accept(PotionContents.createItemStack(Items.LINGERING_POTION, ModPotions.ELECTRIFIED_POTION));
+                        output.accept(PotionContents.createItemStack(Items.TIPPED_ARROW, ModPotions.ELECTRIFIED_POTION));
 
                     }).build());
 

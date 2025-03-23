@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-13T14:12:53.8368164	Loot Tables
+// 1.21.1	2025-03-22T21:29:43.1916353	Loot Tables
 a5854d9d92fc37f1207b3f29a7e649e4a9212ee3 data/firstmod/loot_table/blocks/banana_bush.json
 b5f99f3110f1d0fdb74c426ff46006831328a9fb data/firstmod/loot_table/blocks/coconut_lamp.json
 5ce8205b0b2c6dfa7a65c0f02d20c05bf5c4063f data/firstmod/loot_table/blocks/deepslate_sulfur_ore.json
@@ -20,6 +20,7 @@ f95616185817856c51abee4db201390faa12b17c data/firstmod/loot_table/blocks/palm_pl
 a0ba44313c6c216dad874843a70ceabb58b859cc data/firstmod/loot_table/blocks/palm_wood.json
 6bff99d2477acf3773692d65f31f5f71d1f7df9f data/firstmod/loot_table/blocks/potted_palm_sapling.json
 e562f3fe32c0074b4fb9a11d29787e62106caf16 data/firstmod/loot_table/blocks/rice_crop.json
+03ccc3bf007e7a6ff157bb8f9244a20836905cf3 data/firstmod/loot_table/blocks/rice_pudding.json
 61156cb46461c39424fbb064faa37ee86e150277 data/firstmod/loot_table/blocks/stripped_palm_log.json
 e241ab8fe31d4cfbb0e645db8cb98f31e18852fb data/firstmod/loot_table/blocks/stripped_palm_wood.json
 cd740ab67b67b2864fee01b4b565ba81dc2aa99c data/firstmod/loot_table/blocks/sulfur_block.json

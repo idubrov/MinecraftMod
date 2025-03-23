@@ -46,6 +46,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.BANANA.get());
         basicItem(ModItems.FRUIT_SALAD.get());
         basicItem(ModItems.MILK_SHAKE.get());
+        basicItem(ModItems.NIGIRI_SUSHI.get());
+        basicItem(ModItems.MAKI_SUSHI.get());
+
         basicItem(ModItems.SULFUR_POWDER.get());
         basicItem(ModItems.SULFUR_SHARD.get());
         basicItem(ModItems.BATTERY.get());
@@ -76,7 +79,6 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModItems.RICE_SEEDS.get());
         basicItem(ModItems.RICE_STEM.get());
-
     }
 
 

@@ -10,6 +10,7 @@ import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
@@ -49,6 +50,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+        add(ModBlocks.RICE_PUDDING.get(), LootTable.lootTable()); //Drops nothing
+
         dropSelf(ModBlocks.SULFUR_BLOCK.get());
         dropSelf(ModBlocks.PALM_WOOD.get());
         dropSelf(ModBlocks.PALM_LOG.get());
