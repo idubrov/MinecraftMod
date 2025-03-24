@@ -178,16 +178,6 @@ public class ModItems {
     public static final DeferredItem<Item> RICE_STEM = ITEMS.register("rice_stem",
             () -> new Item(new Item.Properties()));
 
-    public static final DeferredItem<Item> ELECTRIFIED_POTION = ITEMS.register("electrified_potion",
-            () -> new PotionItem(new Item.Properties().stacksTo(1)));
-    public static final DeferredItem<Item> ELECTRIFIED_SPLASH_POTION = ITEMS.register("electrified_splash_potion",
-            () -> new SplashPotionItem(new Item.Properties().stacksTo(1)));
-    public static final DeferredItem<Item> ELECTRIFIED_LINGERING_POTION = ITEMS.register("electrified_lingering_potion",
-            () -> new LingeringPotionItem(new Item.Properties().stacksTo(1)));
-    public static final DeferredItem<Item> ELECTRIFIED_TIPPED_ARROW = ITEMS.register("electrified_tipped_arrow",
-            () -> new TippedArrowItem(new Item.Properties()));
-
-
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
