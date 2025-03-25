@@ -51,7 +51,7 @@ Sushi! Rice pudding! Mats! All of these can be made with the rice plant! A major
 rice is essential for any self-respecting foodie! [Rice Crop](docs/plants.md), [Banana Bush](docs/plants.md)
 
 ### New Food Recipes
-[Fruit salads](docs/food.md), [smoothies](docs/food.md), and more! What else could you ask for? 
+[Fruit salads](docs/food.md), [smoothies](docs/food.md), [sushi](docs/food.md), and more! What else could you ask for? 
 (Not accepting answers to question.) 
 
 ### Electrified Effect Potion
