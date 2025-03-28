@@ -54,6 +54,7 @@ public class ModEvents {
         }
     }
 
+
     @SubscribeEvent
     public static void onBrewingRecipeRegister(RegisterBrewingRecipesEvent event) {
         PotionBrewing.Builder builder = event.getBuilder();

@@ -8,6 +8,7 @@ import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
@@ -177,6 +178,15 @@ public class ModItems {
 
     public static final DeferredItem<Item> RICE_STEM = ITEMS.register("rice_stem",
             () -> new Item(new Item.Properties()));
+
+
+    public static final DeferredItem<Item> TELEPORTATION_DRINK = ITEMS.register("teleportation_drink",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.TELEPORTATION_DRINK).stacksTo(1)) {
+                @Override
+                public @NotNull UseAnim getUseAnimation(@NotNull ItemStack stack) {
+                    return UseAnim.DRINK;
+                }
+            });
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

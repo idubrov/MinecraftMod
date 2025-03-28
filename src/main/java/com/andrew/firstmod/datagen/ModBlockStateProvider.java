@@ -30,6 +30,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.PALM_PLANKS);
 
+        blockWithItem(ModBlocks.TELEPORTATION_STONE);
+
         logBlock((RotatedPillarBlock) ModBlocks.PALM_LOG.get());
         logBlock((RotatedPillarBlock) ModBlocks.STRIPPED_PALM_LOG.get());
         axisBlock((RotatedPillarBlock) ModBlocks.PALM_WOOD.get(),

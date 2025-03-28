@@ -79,6 +79,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModItems.RICE_SEEDS.get());
         basicItem(ModItems.RICE_STEM.get());
+
+        basicItem(ModItems.TELEPORTATION_DRINK.get());
     }
 
 

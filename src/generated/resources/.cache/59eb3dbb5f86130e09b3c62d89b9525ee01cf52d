@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-22T21:29:43.1916353	Loot Tables
+// 1.21.1	2025-03-25T21:19:58.235751	Loot Tables
 a5854d9d92fc37f1207b3f29a7e649e4a9212ee3 data/firstmod/loot_table/blocks/banana_bush.json
 b5f99f3110f1d0fdb74c426ff46006831328a9fb data/firstmod/loot_table/blocks/coconut_lamp.json
 5ce8205b0b2c6dfa7a65c0f02d20c05bf5c4063f data/firstmod/loot_table/blocks/deepslate_sulfur_ore.json
@@ -25,3 +25,4 @@ e562f3fe32c0074b4fb9a11d29787e62106caf16 data/firstmod/loot_table/blocks/rice_cr
 e241ab8fe31d4cfbb0e645db8cb98f31e18852fb data/firstmod/loot_table/blocks/stripped_palm_wood.json
 cd740ab67b67b2864fee01b4b565ba81dc2aa99c data/firstmod/loot_table/blocks/sulfur_block.json
 2c6d8f7d28a0a73a8696a0d9b5419f2b8e95f8fa data/firstmod/loot_table/blocks/sulfur_ore.json
+1951558a56b203f186fcc314cb34e8d5837e90a1 data/firstmod/loot_table/blocks/teleportation_stone.json

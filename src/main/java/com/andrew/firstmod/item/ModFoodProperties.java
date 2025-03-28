@@ -1,5 +1,6 @@
 package com.andrew.firstmod.item;
 
+import com.andrew.firstmod.effect.ModEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -35,7 +36,6 @@ public class ModFoodProperties {
             .fast()
             .build();
 
-
     public static final FoodProperties NIGIRI_SUSHI = new FoodProperties.Builder()
             .nutrition(2)
             .saturationModifier(1f)
@@ -43,4 +43,8 @@ public class ModFoodProperties {
             .fast()
             .build();
 
+    public static final FoodProperties TELEPORTATION_DRINK = new FoodProperties.Builder()
+            .alwaysEdible()
+            .effect(() -> new MobEffectInstance(ModEffects.TELEPORTATiON_EFFECT, 1, 0), 1f)
+            .build();
 }

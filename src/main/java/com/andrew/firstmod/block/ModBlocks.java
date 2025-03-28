@@ -129,6 +129,8 @@ public class ModBlocks {
             () -> new RicePuddingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE)),1);
 
 
+    public static final DeferredBlock<Block> TELEPORTATION_STONE = registerBlock("teleportation_stone",
+            () -> new TeleportationBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
     //Registering of our new blocks and its item
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

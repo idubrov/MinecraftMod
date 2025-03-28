@@ -15,6 +15,9 @@ public class ModEffects {
     public static final Holder<MobEffect> ELECTRIFIED_EFFECT = MOB_EFFECTS.register("electrified",
             () -> new ElectrifiedEffect(MobEffectCategory.NEUTRAL, 0xe2ff68));
 
+    public static final Holder<MobEffect> TELEPORTATiON_EFFECT = MOB_EFFECTS.register("teleportation",
+            () -> new TeleportationEffect(MobEffectCategory.NEUTRAL, 0x000000));
+
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);
     }
