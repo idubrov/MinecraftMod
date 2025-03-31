@@ -3,6 +3,7 @@ package com.andrew.firstmod.block;
 import com.andrew.firstmod.FirstMod;
 import com.andrew.firstmod.block.custom.*;
 import com.andrew.firstmod.item.ModItems;
+import com.andrew.firstmod.worldgen.tree.ModTreeGrowers;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.context.UseOnContext;
@@ -15,7 +16,6 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.common.ItemAbility;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.minecraft.world.level.block.grower.TreeGrower;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Supplier;
@@ -38,6 +38,16 @@ public class ModBlocks {
     public static final DeferredBlock<Block> DEEPSLATE_SULFUR_ORE = registerBlock("deepslate_sulfur_ore",
             () -> new SulfurOreBlock(ConstantInt.of(0),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_GOLD_ORE)
+                            .lightLevel(state -> 10)
+                            .requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> NETHER_SULFUR_ORE = registerBlock("nether_sulfur_ore",
+            () -> new SulfurOreBlock(ConstantInt.of(0),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_GOLD_ORE)
+                            .lightLevel(state -> 10)
+                            .requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> END_SULFUR_ORE = registerBlock("end_sulfur_ore",
+            () -> new SulfurOreBlock(ConstantInt.of(0),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.END_STONE)
                             .lightLevel(state -> 10)
                             .requiresCorrectToolForDrops()));
 
@@ -111,7 +121,7 @@ public class ModBlocks {
 
 
     public static final DeferredBlock<SaplingBlock> PALM_SAPLING = registerBlock("palm_sapling",
-            () -> new SaplingBlock(TreeGrower.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_SAPLING)));
+            () -> new SaplingBlock(ModTreeGrowers.PALMWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_SAPLING)));
     public static final DeferredBlock<FlowerPotBlock> POTTED_PALM_SAPLING = registerBlock("potted_palm_sapling",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.PALM_SAPLING, BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_ACACIA_SAPLING).noOcclusion()));
 

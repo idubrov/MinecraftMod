@@ -2,6 +2,8 @@
   "values": [
     "firstmod:sulfur_block",
     "firstmod:sulfur_ore",
-    "firstmod:deepslate_sulfur_ore"
+    "firstmod:deepslate_sulfur_ore",
+    "firstmod:nether_sulfur_ore",
+    "firstmod:end_sulfur_ore"
   ]
 }

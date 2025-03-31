@@ -30,11 +30,15 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.SULFUR_POWDER.get())
                 .add(ModBlocks.SULFUR_ORE.asItem())
                 .add(ModBlocks.DEEPSLATE_SULFUR_ORE.asItem())
+                .add(ModBlocks.NETHER_SULFUR_ORE.asItem())
+                .add(ModBlocks.END_SULFUR_ORE.asItem())
                 .add(ModBlocks.SULFUR_BLOCK.asItem());
 
         tag(ModTags.Items.SULFUR_ORES_ITEMS)
                 .add(ModBlocks.SULFUR_ORE.asItem())
-                .add(ModBlocks.DEEPSLATE_SULFUR_ORE.asItem());
+                .add(ModBlocks.DEEPSLATE_SULFUR_ORE.asItem())
+                .add(ModBlocks.NETHER_SULFUR_ORE.asItem())
+                .add(ModBlocks.END_SULFUR_ORE.asItem());
 
         tag(ModTags.Items.PALM_LOGS_ITEMS)
                 .add(ModBlocks.PALM_WOOD.asItem())

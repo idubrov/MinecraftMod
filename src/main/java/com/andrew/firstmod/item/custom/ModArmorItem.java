@@ -14,6 +14,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
 import java.util.List;
+import java.util.Objects;
 
 
 public class ModArmorItem extends ArmorItem {
@@ -40,10 +41,16 @@ public class ModArmorItem extends ArmorItem {
             if (player.getInventory().getArmor(slot).getItem() instanceof ArmorItem item &&
                     item.getMaterial() == ModArmorMaterials.ELECTRIC_ARMOR_MATERIAL) {
 
-                if (!player.hasEffect(EFFECTS.get(slot)))
-                    player.addEffect(
-                            new MobEffectInstance(EFFECTS.get(slot), 60, 1, false, false)
-                    );
+                    if (!player.hasEffect(EFFECTS.get(slot))) {
+                        player.addEffect(
+                            new MobEffectInstance(EFFECTS.get(slot), 400, 1, false, false));
+                    }
+
+                    else if (player.getEffect(EFFECTS.get(slot)) != null) {
+                        if (player.getEffect(EFFECTS.get(slot)).getDuration() < 220)
+                            player.addEffect(
+                                    new MobEffectInstance(EFFECTS.get(slot), 400, 1, false, false));
+                };
             }
         }
     }

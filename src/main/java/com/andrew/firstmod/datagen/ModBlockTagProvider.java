@@ -24,11 +24,15 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(ModTags.Blocks.SULFUR_BLOCKS)
                 .add(ModBlocks.SULFUR_ORE.get())
                 .add(ModBlocks.DEEPSLATE_SULFUR_ORE.get())
+                .add(ModBlocks.NETHER_SULFUR_ORE.get())
+                .add(ModBlocks.END_SULFUR_ORE.get())
                 .add(ModBlocks.SULFUR_BLOCK.get());
 
         tag(ModTags.Blocks.SULFUR_ORES_BLOCKS)
                 .add(ModBlocks.SULFUR_ORE.get())
-                .add(ModBlocks.DEEPSLATE_SULFUR_ORE.get());
+                .add(ModBlocks.DEEPSLATE_SULFUR_ORE.get())
+                .add(ModBlocks.NETHER_SULFUR_ORE.get())
+                .add(ModBlocks.END_SULFUR_ORE.get());
 
         tag(ModTags.Blocks.PALM_LOGS_BLOCKS)
                 .add(ModBlocks.PALM_WOOD.get())
@@ -49,7 +53,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.SULFUR_BLOCK.get())
                 .add(ModBlocks.SULFUR_ORE.get())
-                .add(ModBlocks.DEEPSLATE_SULFUR_ORE.get());
+                .add(ModBlocks.DEEPSLATE_SULFUR_ORE.get())
+                .add(ModBlocks.NETHER_SULFUR_ORE.get())
+                .add(ModBlocks.END_SULFUR_ORE.get());
         tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.PALM_WOOD.get())
                 .add(ModBlocks.STRIPPED_PALM_WOOD.get())
@@ -62,7 +68,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.SULFUR_BLOCK.get())
                 .add(ModBlocks.SULFUR_ORE.get())
-                .add(ModBlocks.DEEPSLATE_SULFUR_ORE.get());
+                .add(ModBlocks.DEEPSLATE_SULFUR_ORE.get())
+                .add(ModBlocks.NETHER_SULFUR_ORE.get())
+                .add(ModBlocks.END_SULFUR_ORE.get());
 
         tag(BlockTags.LEAVES)
                 .add(ModBlocks.PALM_LEAVES.get());

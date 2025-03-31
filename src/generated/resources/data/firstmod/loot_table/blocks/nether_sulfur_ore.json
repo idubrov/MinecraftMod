@@ -23,7 +23,7 @@
               }
             }
           ],
-          "name": "firstmod:deepslate_sulfur_ore"
+          "name": "firstmod:nether_sulfur_ore"
         }
       ],
       "rolls": 1.0
@@ -152,5 +152,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "firstmod:blocks/deepslate_sulfur_ore"
+  "random_sequence": "firstmod:blocks/nether_sulfur_ore"
 }

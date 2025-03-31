@@ -44,6 +44,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.SULFUR_ORE);
                         output.accept(ModBlocks.DEEPSLATE_SULFUR_ORE);
+                        output.accept(ModBlocks.NETHER_SULFUR_ORE);
+                        output.accept(ModBlocks.END_SULFUR_ORE);
                         output.accept(ModItems.SULFUR_SHARD);
                         output.accept(ModBlocks.SULFUR_BLOCK);
                         output.accept(ModItems.SULFUR_POWDER);

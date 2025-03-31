@@ -17,6 +17,8 @@
 
   "block.firstmod.sulfur_ore": "Sulfur Ore",
   "block.firstmod.deepslate_sulfur_ore": "Deepslate Sulfur Ore",
+  "block.firstmod.nether_sulfur_ore": "Nether Sulfur Ore",
+  "block.firstmod.end_sulfur_ore": "End Sulfur Ore",
   "block.firstmod.sulfur_block": "Block of Sulfur",
   "item.firstmod.sulfur_powder": "Sulfur Powder",
   "item.firstmod.sulfur_shard": "Sulfur Shard",

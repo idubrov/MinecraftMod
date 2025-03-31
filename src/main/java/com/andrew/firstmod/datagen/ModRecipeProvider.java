@@ -27,7 +27,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         List<ItemLike> SULFUR_SMELTABLES = List.of(
                 ModItems.SULFUR_SHARD,
                 ModBlocks.SULFUR_ORE,
-                ModBlocks.DEEPSLATE_SULFUR_ORE);
+                ModBlocks.DEEPSLATE_SULFUR_ORE,
+                ModBlocks.NETHER_SULFUR_ORE,
+                ModBlocks.END_SULFUR_ORE);
 
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SULFUR_BLOCK.get(), 1)
@@ -237,7 +239,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('W', Items.DIAMOND)
                 .unlockedBy("has_diamond", has(Items.DIAMOND))
                 .save(recipeOutput);
-
 
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ELECTRIC_PICKAXE.get(), 1)

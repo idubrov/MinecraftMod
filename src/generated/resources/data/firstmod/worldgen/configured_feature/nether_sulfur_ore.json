@@ -6,7 +6,7 @@
     "targets": [
       {
         "state": {
-          "Name": "firstmod:sulfur_ore"
+          "Name": "firstmod:nether_sulfur_ore"
         },
         "target": {
           "block": "minecraft:netherrack",

@@ -73,7 +73,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.POTTED_PALM_SAPLING.get(), createPotFlowerItemTable(ModBlocks.PALM_SAPLING.get()));
 
         add(ModBlocks.SULFUR_ORE.get(), block -> createSulfurOreDrops(ModBlocks.SULFUR_ORE.get(), 1, 3));
-        add(ModBlocks.DEEPSLATE_SULFUR_ORE.get(), block -> createSulfurOreDrops(ModBlocks.DEEPSLATE_SULFUR_ORE.get(), 1, 3));
+        add(ModBlocks.DEEPSLATE_SULFUR_ORE.get(), block -> createSulfurOreDrops(ModBlocks.DEEPSLATE_SULFUR_ORE.get(), 2, 4));
+        add(ModBlocks.NETHER_SULFUR_ORE.get(), block -> createSulfurOreDrops(ModBlocks.NETHER_SULFUR_ORE.get(), 2, 4));
+        add(ModBlocks.END_SULFUR_ORE.get(), block -> createSulfurOreDrops(ModBlocks.END_SULFUR_ORE.get(), 2, 4));
 
         add(ModBlocks.PALM_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.PALM_SLAB.get()));

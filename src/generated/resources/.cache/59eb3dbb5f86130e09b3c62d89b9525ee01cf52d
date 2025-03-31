@@ -1,10 +1,12 @@
-// 1.21.1	2025-03-25T21:19:58.235751	Loot Tables
+// 1.21.1	2025-03-30T16:16:32.0160557	Loot Tables
 a5854d9d92fc37f1207b3f29a7e649e4a9212ee3 data/firstmod/loot_table/blocks/banana_bush.json
 b5f99f3110f1d0fdb74c426ff46006831328a9fb data/firstmod/loot_table/blocks/coconut_lamp.json
-5ce8205b0b2c6dfa7a65c0f02d20c05bf5c4063f data/firstmod/loot_table/blocks/deepslate_sulfur_ore.json
+508bb1880e6fe9001c84ef430f31e8d092ac8f0b data/firstmod/loot_table/blocks/deepslate_sulfur_ore.json
 1ce889f5c3778eb20fa63f8895f1af88b2268f54 data/firstmod/loot_table/blocks/dry_palm_leaves_block.json
 6670df483c762378756fa139e9abf9f42ebc4f29 data/firstmod/loot_table/blocks/dry_palm_leaves_carpet.json
 1c59d4be6efa32998c487b8cb0a956a1e878e725 data/firstmod/loot_table/blocks/dry_palm_leaves_slab.json
+5fd370a6b8723ab13ae4d657801c9d83b0a018cc data/firstmod/loot_table/blocks/end_sulfur_ore.json
+f21c2ca4a618015b1a98e93cdf2c55b061be00e1 data/firstmod/loot_table/blocks/nether_sulfur_ore.json
 d06c91a26af207de498840c5aff821a57670f439 data/firstmod/loot_table/blocks/palm_button.json
 1454f21530c7c65751539580cbecd786cc42c0bb data/firstmod/loot_table/blocks/palm_door.json
 772e2dd478b5180effbdc40bbc11b3654b0e74a4 data/firstmod/loot_table/blocks/palm_fence.json
