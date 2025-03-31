@@ -6,17 +6,13 @@ import com.andrew.firstmod.item.ModItems;
 import com.andrew.firstmod.worldgen.tree.ModTreeGrowers;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.world.item.*;
-import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.neoforge.common.ItemAbility;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Supplier;
 
@@ -53,40 +49,17 @@ public class ModBlocks {
 
 
     public static final DeferredBlock<Block> PALM_WOOD = registerBlock("palm_wood",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_WOOD)) {
-                @Override
-                public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context,
-                                                                 ItemAbility itemAbility, boolean simulate) {
-                    if (context.getItemInHand().getItem() instanceof AxeItem) {
-                        if (state.is(ModBlocks.PALM_WOOD)) {
-                            return ModBlocks.STRIPPED_PALM_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
-                        }
-                    }
-                    return super.getToolModifiedState(state, context, itemAbility, simulate);
-                }
-            }
-    );
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_WOOD)));
     public static final DeferredBlock<Block> PALM_LOG = registerBlock("palm_log",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_LOG)) {
-                @Override
-                public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context,
-                                                                 ItemAbility itemAbility, boolean simulate) {
-                    if (context.getItemInHand().getItem() instanceof AxeItem) {
-                        if (state.is(ModBlocks.PALM_LOG)) {
-                            return ModBlocks.STRIPPED_PALM_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
-                        }
-                    }
-                    return super.getToolModifiedState(state, context, itemAbility, simulate);
-                }
-            }
-    );
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_LOG)));
 
     public static final DeferredBlock<Block> STRIPPED_PALM_WOOD = registerBlock("stripped_palm_wood",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_ACACIA_WOOD)));
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_ACACIA_WOOD)));
     public static final DeferredBlock<Block> STRIPPED_PALM_LOG = registerBlock("stripped_palm_log",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_ACACIA_LOG)));
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_ACACIA_LOG)));
+
     public static final DeferredBlock<Block> PALM_PLANKS = registerBlock("palm_planks",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PLANKS)));
+            () -> new ModFlammableBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PLANKS)));
 
 
     public static final DeferredBlock<SlabBlock> PALM_SLAB = registerBlock("palm_slab",
@@ -111,7 +84,7 @@ public class ModBlocks {
             () -> new TrapDoorBlock(BlockSetType.ACACIA, BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_TRAPDOOR)));
 
     public static final DeferredBlock<Block> PALM_LEAVES = registerBlock("palm_leaves",
-            () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_LEAVES)));
+            () -> new ModFlammableLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_LEAVES)));
     public static final DeferredBlock<Block> DRY_PALM_LEAVES_BLOCK = registerBlock("dry_palm_leaves_block",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.HAY_BLOCK)));
     public static final DeferredBlock<SlabBlock> DRY_PALM_LEAVES_SLAB = registerBlock("dry_palm_leaves_slab",
@@ -124,6 +97,7 @@ public class ModBlocks {
             () -> new SaplingBlock(ModTreeGrowers.PALMWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_SAPLING)));
     public static final DeferredBlock<FlowerPotBlock> POTTED_PALM_SAPLING = registerBlock("potted_palm_sapling",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.PALM_SAPLING, BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_ACACIA_SAPLING).noOcclusion()));
+
 
     public static final DeferredBlock<Block> COCONUT_LAMP = registerBlock("coconut_lamp",
             () -> new CoconutLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.TORCH)
