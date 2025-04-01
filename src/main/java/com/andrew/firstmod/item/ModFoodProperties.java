@@ -43,7 +43,7 @@ public class ModFoodProperties {
             .fast()
             .build();
 
-    public static final FoodProperties TELEPORTATION_DRINK = new FoodProperties.Builder()
+    public static final FoodProperties TELEPORTATION_DEVICE = new FoodProperties.Builder()
             .alwaysEdible()
             .effect(() -> new MobEffectInstance(ModEffects.TELEPORTATiON_EFFECT, 1, 0), 1f)
             .build();

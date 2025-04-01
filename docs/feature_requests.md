@@ -1,5 +1,5 @@
 ### Planks
-- boat from palm
+- boat from palm (electric boat)
 
 ### Plants
 - avocado tree
@@ -8,7 +8,6 @@
 - netherite hammer
 - enchantments for hammer
 - electric hammer
-- 2x2 frame when use electric tools
 
 ### Tables
 - cook top for fancy recipes
@@ -17,8 +16,6 @@
 ### Food
 - pizza
 - meatballs
-- sushi
-- rice coconut pudding (like cake)
 
 ### Biome
 - volcano

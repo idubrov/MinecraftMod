@@ -49,9 +49,9 @@ public class TeleportationStoneTracker {
                 data.addStone(pos);
             }
 
-            if (event.getEntity() instanceof Player player) {
-                player.sendSystemMessage(net.minecraft.network.chat.Component.literal("Teleportation Stone placed at: " + pos));
-            }
+//            if (event.getEntity() instanceof Player player) {
+//                player.sendSystemMessage(net.minecraft.network.chat.Component.literal("Teleportation Stone placed at: " + pos));
+//            }
         }
     }
 
@@ -71,8 +71,8 @@ public class TeleportationStoneTracker {
                 data.removeStone(pos);
             }
 
-            event.getPlayer()
-                    .sendSystemMessage(net.minecraft.network.chat.Component.literal("Teleportation Stone removed from: " + pos));
+//            event.getPlayer()
+//                    .sendSystemMessage(net.minecraft.network.chat.Component.literal("Teleportation Stone removed from: " + pos));
         }
     }
 

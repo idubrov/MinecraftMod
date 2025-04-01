@@ -43,9 +43,9 @@ public class TeleportationEffect  extends InstantenousMobEffect {
             if (nearestStone != null) {
                 teleportToTop(entity, nearestStone);
             }
-            else {
-                entity.sendSystemMessage(net.minecraft.network.chat.Component.literal("No Teleportation Stone found"));
-            }
+//            else {
+//                entity.sendSystemMessage(net.minecraft.network.chat.Component.literal("No Teleportation Stone found"));
+//            }
         }
         return true;
     }

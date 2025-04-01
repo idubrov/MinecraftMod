@@ -180,8 +180,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
 
-    public static final DeferredItem<Item> TELEPORTATION_DRINK = ITEMS.register("teleportation_drink",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.TELEPORTATION_DRINK).stacksTo(1)) {
+    public static final DeferredItem<Item> TELEPORTATION_DEVICE = ITEMS.register("teleportation_device",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.TELEPORTATION_DEVICE).stacksTo(1)) {
                 @Override
                 public @NotNull UseAnim getUseAnimation(@NotNull ItemStack stack) {
                     return UseAnim.DRINK;

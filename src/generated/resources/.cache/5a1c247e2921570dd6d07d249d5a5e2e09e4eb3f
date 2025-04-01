@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-30T16:16:32.030056	Block States: firstmod
+// 1.21.1	2025-03-31T21:01:57.8490168	Block States: firstmod
 5a4be082f866abf343c84034192cf99495f8b7f5 assets/firstmod/blockstates/banana_bush.json
 b2a653fb2035f999939e0486425efb12c445221f assets/firstmod/blockstates/deepslate_sulfur_ore.json
 2a5070dd5f9ffd00167bc62872ceadb99435737a assets/firstmod/blockstates/dry_palm_leaves_carpet.json
@@ -23,7 +23,7 @@ b4f7671bc080514df2731622688c02250229dc16 assets/firstmod/blockstates/rice_crop.j
 c6d3d2f03dbf5b6a229c8857095de2ad22f55489 assets/firstmod/blockstates/stripped_palm_wood.json
 8ca23d3fe2197116236b43e143b3f08a2c6adc12 assets/firstmod/blockstates/sulfur_block.json
 6f15e062d472095161fd177af56ac0fe54b1e394 assets/firstmod/blockstates/sulfur_ore.json
-efe31e6f6ed12c3e6951d3046e98f3f021eadd3a assets/firstmod/blockstates/teleportation_stone.json
+899a0b734fdaef57f989a83d316f2d638567bae5 assets/firstmod/blockstates/teleportation_stone.json
 ab2560dc99b93871c2d5177ed311031446c6d64f assets/firstmod/models/block/banana_bush_stage0.json
 06072fc232e6b9df0582248164ff1b0bc3632ddc assets/firstmod/models/block/banana_bush_stage1.json
 2c95b0f92b0a6a5570b549dd6e90c4c621d2a5ab assets/firstmod/models/block/banana_bush_stage2.json
@@ -78,7 +78,8 @@ a28afb8f77de12e50073f9a31031b8ba1725594b assets/firstmod/models/block/stripped_p
 f873de417a1f3d415a4548f16dfa622a34131e84 assets/firstmod/models/block/stripped_palm_wood_horizontal.json
 c159f79e5a538c08a94a3f9e166706c03204585e assets/firstmod/models/block/sulfur_block.json
 6799d547ef50221cda61f1a4bee8e3acad404837 assets/firstmod/models/block/sulfur_ore.json
-1246ce769c2b305d7455b14e278cb931ee862610 assets/firstmod/models/block/teleportation_stone.json
+3c90b0a066cbcbceaaf4b83898b7c502b7a4f8ec assets/firstmod/models/block/teleportation_stone.json
+c985d054716199009bbe1ea282342d543fd46bbd assets/firstmod/models/block/teleportation_stone_horizontal.json
 7862706f218e957c9a1f76aaa3bbe91304c6a08a assets/firstmod/models/item/deepslate_sulfur_ore.json
 90a4c8bc82cb603d68873eaf114a3b4ef2dac5c0 assets/firstmod/models/item/dry_palm_leaves_carpet.json
 68d137cf104b1a03cf30f69ed7dfa63cfdb582f0 assets/firstmod/models/item/end_sulfur_ore.json

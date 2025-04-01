@@ -95,7 +95,7 @@ public class ModCreativeModeTabs {
 
 
                         output.accept(ModBlocks.TELEPORTATION_STONE);
-                        output.accept(ModItems.TELEPORTATION_DRINK);
+                        output.accept(ModItems.TELEPORTATION_DEVICE);
                     }).build());
 
     public static void register(IEventBus eventBus) {

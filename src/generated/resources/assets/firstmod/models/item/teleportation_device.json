@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "firstmod:item/teleportation_drink"
+    "layer0": "firstmod:item/teleportation_device"
   }
 }

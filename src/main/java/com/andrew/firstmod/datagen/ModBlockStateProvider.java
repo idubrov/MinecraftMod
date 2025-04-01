@@ -29,10 +29,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.END_SULFUR_ORE);
         blockWithItem(ModBlocks.SULFUR_BLOCK);
 
-
         blockWithItem(ModBlocks.PALM_PLANKS);
 
-        blockWithItem(ModBlocks.TELEPORTATION_STONE);
 
         logBlock((RotatedPillarBlock) ModBlocks.PALM_LOG.get());
         logBlock((RotatedPillarBlock) ModBlocks.STRIPPED_PALM_LOG.get());
@@ -67,6 +65,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
                         blockTexture(ModBlocks.PALM_SAPLING.get())).renderType("cutout"));
 
 
+        logBlock((RotatedPillarBlock) ModBlocks.TELEPORTATION_STONE.get());
+
         blockItem(ModBlocks.PALM_LOG);
         blockItem(ModBlocks.STRIPPED_PALM_LOG);
         blockItem(ModBlocks.PALM_WOOD);
@@ -76,6 +76,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.PALM_PRESSURE_PLATE);
         blockItem(ModBlocks.PALM_FENCE_GATE);
         blockItem(ModBlocks.PALM_TRAPDOOR, "_bottom");
+        blockItem(ModBlocks.TELEPORTATION_STONE);
 
         makeRiceCrop(((CropBlock) ModBlocks.RICE_CROP.get()), "rice_crop_stage", "rice_crop_stage");
         makeBananaBush(((SweetBerryBushBlock) ModBlocks.BANANA_BUSH.get()), "banana_bush_stage", "banana_bush_stage");

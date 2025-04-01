@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-26T20:56:57.9247039	Item Models: firstmod
+// 1.21.1	2025-03-31T21:01:57.8430159	Item Models: firstmod
 92d6c44e2521ee962dd833d46a51bb02cdbb0ce1 assets/firstmod/models/item/banana.json
 da688f0c599d0ce5cdb8032f392ad5e27207bbe1 assets/firstmod/models/item/battery.json
 49e8da2348b09cf5335f24c3eb6d7c57298e5db3 assets/firstmod/models/item/coconut.json
@@ -67,5 +67,5 @@ f6f0dc68acd1e33119803981c364b8c6020ae462 assets/firstmod/models/item/rice_stem.j
 d0c04650f903d0594e9eaca23e030c10cde02cd4 assets/firstmod/models/item/stone_hammer.json
 eb1cb08aef57ba477ff16fd6a3887ed568bf1167 assets/firstmod/models/item/sulfur_powder.json
 caecde34223f7610441a9036b30b31ead81b5501 assets/firstmod/models/item/sulfur_shard.json
-62450414dd380891a076ca8e5c4feff08e0082a2 assets/firstmod/models/item/teleportation_drink.json
+4c896f3eebb2de85cb8032df025bf847e9f52b67 assets/firstmod/models/item/teleportation_device.json
 2a87ca57425edf61b197ed63b01954c13b556aca assets/firstmod/models/item/wooden_hammer.json
