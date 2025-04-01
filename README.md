@@ -1,4 +1,4 @@
-# [TBD]Palms and Sulfur
+# [Name TBD]Palms and Sulfur
 
 Imagine you live in the tropics, eating fruits to your heart's 
 desire. You make smoothies and fruit salads, peacefully annihilating
@@ -58,6 +58,9 @@ rice is essential for any self-respecting foodie! [Rice Crop](docs/plants.md), [
 Have you ever wanted to become a living tesla rod? Have you ever been surrounded by countless mobs? If so, the 
 [electrified effect](docs/electrified_effect.md) is here to help! This effect damages you and everybody around you,
 but if you wear electric armor it will absorb the electricity that damages you.
+
+### Teleportation Device
+[Teleportation Stone and Device](docs/teleportation.md)
 
 ### Household Items
 [TBD] Lamp

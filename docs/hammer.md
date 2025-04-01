@@ -1,14 +1,15 @@
 # Hammer
 
 Hammers are extensions of pickaxes: they mine rocks and stones, 
-but when you mine Sulfur Ore or Deepslate Sulfur Ore you get Sulfur
-Powder directly, skipping the need to smelt the Sulfur Shards into Sulfur Powder.
+but when you mine Sulfur Ore, Deepslate Sulfur Ore, Nether Sulfur Ore, 
+or End Sulfur Ore you get Sulfur Powder directly, 
+skipping the need to smelt the Sulfur Shards into Sulfur Powder.
 
 <br>
 
-| Wooden                                                                         | Stone                                                                        | Iron                                                                       | Golden                                                                         | Diamond                                                                          |
-|--------------------------------------------------------------------------------|------------------------------------------------------------------------------|----------------------------------------------------------------------------|--------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| <img src="./img/wooden_hammer.png" alt="Wooden Hammer" height="50" width="50"> | <img src="./img/stone_hammer.png" alt="Stone Hammer" height="50" width="50"> | <img src="./img/iron_hammer.png" alt="Iron Hammer" height="50" width="50"> | <img src="./img/golden_hammer.png" alt="Golden Hammer" height="50" width="50"> | <img src="./img/diamond_hammer.png" alt="Diamond Hammer" height="50" width="50"> |
+| Wooden                                                                   | Stone                                                                   | Iron                                                                   | Golden                                                                   | Diamond                                                                   |
+|--------------------------------------------------------------------------|-------------------------------------------------------------------------|------------------------------------------------------------------------|--------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| <img src="./img/hammer1.png" alt="Wooden Hammer" height="50" width="50"> | <img src="./img/hammer2.png" alt="Stone Hammer" height="50" width="50"> | <img src="./img/hammer4.png" alt="Iron Hammer" height="50" width="50"> | <img src="./img/hammer3.png" alt="Golden Hammer" height="50" width="50"> | <img src="./img/hammer5.png" alt="Diamond Hammer" height="50" width="50"> |
 
 <br>
 

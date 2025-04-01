@@ -4,13 +4,13 @@ Sulfur Ore is best mined by a hammer, because you don't need to smelt the Shards
 Sulfur Ore, Nether Sulfur Ore, and End Sulfur Ore have a hardness of 3, 
 while Deepslate has a hardness of 4.5.
 Also, Sulfur Ore,  Deepslate Sulfur Ore, Nether Sulfur Ore, End Sulfur Ore, 
-and Sulfur Block glow in the dark with a light level of 10 and emits particles.
+and Sulfur Block glow in the dark with a light level of 10 and emit particles.
 
 <br>
 
-| Sulfur Ore                                                               | Deepslate <br>Sulfur Ore                                                                     | Nether <br>Sulfur Ore                                                                  | End <br>Sulfur Ore                                                               | Sulfur Block                                                                 | Sulfur Shard                                                                 | Sulfur Powder                                                                  |
-|--------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| <img src="./img/sulfur_ore.png" alt="Sulfur Ore" height="50" width="50"> | <img src="./img/deepslate_sulfur_ore.png" alt="Deepslate Sulfur Ore" height="50" width="50"> | <img src="./img/nether_sulfur_ore.png" alt="Nether Sulfur Ore" height="50" width="50"> | <img src="./img/end_sulfur_ore.png" alt="End Sulfur Ore" height="50" width="50"> | <img src="./img/sulfur_block.png" alt="Sulfur Block" height="50" width="50"> | <img src="./img/sulfur_shard.png" alt="Sulfur Shard" height="50" width="50"> | <img src="./img/sulfur_powder.png" alt="Sulfur Powder" height="50" width="50"> |
+| Sulfur Ore                                                               | Deepslate <br>Sulfur Ore                                                                     | Nether <br>Sulfur Ore                                                                  | End <br>Sulfur Ore                                                               | Sulfur Block                                                                 | Sulfur Shard                                                                  | Sulfur Powder                                                                   |
+|--------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| <img src="./img/sulfur_ore.png" alt="Sulfur Ore" height="50" width="50"> | <img src="./img/deepslate_sulfur_ore.png" alt="Deepslate Sulfur Ore" height="50" width="50"> | <img src="./img/nether_sulfur_ore.png" alt="Nether Sulfur Ore" height="50" width="50"> | <img src="./img/end_sulfur_ore.png" alt="End Sulfur Ore" height="50" width="50"> | <img src="./img/sulfur_block.png" alt="Sulfur Block" height="50" width="50"> | <img src="./img/sulfur_shard1.png" alt="Sulfur Shard" height="50" width="50"> | <img src="./img/sulfur_powder1.png" alt="Sulfur Powder" height="50" width="50"> |
 
 
 ```mermaid
@@ -24,7 +24,7 @@ flowchart TD
 
 ### Damage 
 
-Sulfur Ore damages most living entities standing on top of it, dealing 1 damage every tick.
+All Sulfur Ores damage most living entities standing on top, dealing 1 damage every tick.
 
 <br>
 
@@ -51,6 +51,7 @@ Sulfur Ore damages most living entities standing on top of it, dealing 1 damage 
 | Golden    | None              | None                         | None                | None  |
 
 <br>
+
 ### Usage
 
 | Name          | Ingredients                                                     | Crafting Recipe                                                        | Advancements           |

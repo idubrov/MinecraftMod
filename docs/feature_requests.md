@@ -23,8 +23,7 @@
 
 ### Other Items
 - flat wooden plate
-- banner 3 and 4 blocks long
-- curtains
+- banner 3 and 4 blocks long = curtains
 - coconut lamps garland
 - only find electric horse armor in chests
 
