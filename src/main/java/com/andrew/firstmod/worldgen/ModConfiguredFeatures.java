@@ -2,15 +2,14 @@ package com.andrew.firstmod.worldgen;
 
 import com.andrew.firstmod.FirstMod;
 import com.andrew.firstmod.block.ModBlocks;
+import com.andrew.firstmod.worldgen.tree.custom.PalmFoliagePlacer;
+import com.andrew.firstmod.worldgen.tree.custom.PalmTrunkPlacer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.valueproviders.ConstantInt;
-import net.minecraft.util.valueproviders.IntProvider;
-import net.minecraft.util.valueproviders.UniformInt;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
@@ -18,8 +17,8 @@ import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfigur
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.AcaciaFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.PineFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.*;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
@@ -58,11 +57,11 @@ public class ModConfiguredFeatures {
 
 
         register(context, PALMWOOD_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(ModBlocks.PALM_WOOD.get()),
-                new BendingTrunkPlacer(7, 0,0, 7, ConstantInt.of(5)),
+                BlockStateProvider.simple(ModBlocks.PALM_LOG.get()),
+                new PalmTrunkPlacer(11, 2,1),
 
                 BlockStateProvider.simple(ModBlocks.PALM_LEAVES.get()),
-                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 2),
+                new PalmFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0)),
 
                 new TwoLayersFeatureSize(1, 0, 2))
                 .dirt(BlockStateProvider.simple(Blocks.DIRT)).build());

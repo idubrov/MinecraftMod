@@ -9,8 +9,7 @@
       }
     },
     "foliage_placer": {
-      "type": "minecraft:blob_foliage_placer",
-      "height": 2,
+      "type": "firstmod:palm_foliage_placer",
       "offset": 0,
       "radius": 2
     },
@@ -34,17 +33,15 @@
       "upper_size": 2
     },
     "trunk_placer": {
-      "type": "minecraft:bending_trunk_placer",
-      "base_height": 7,
-      "bend_length": 5,
-      "height_rand_a": 0,
-      "height_rand_b": 0,
-      "min_height_for_leaves": 7
+      "type": "firstmod:palm_trunk_placer",
+      "base_height": 10,
+      "height_rand_a": 2,
+      "height_rand_b": 1
     },
     "trunk_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "firstmod:palm_wood",
+        "Name": "firstmod:palm_log",
         "Properties": {
           "axis": "y"
         }

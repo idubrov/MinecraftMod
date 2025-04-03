@@ -8,6 +8,8 @@ import com.andrew.firstmod.item.ModCreativeModeTabs;
 import com.andrew.firstmod.item.ModItems;
 import com.andrew.firstmod.particle.ModParticlesTypes;
 import com.andrew.firstmod.potion.ModPotions;
+import com.andrew.firstmod.worldgen.tree.ModFoliagePlacers;
+import com.andrew.firstmod.worldgen.tree.ModTrunkPlacerTypes;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
@@ -49,6 +51,8 @@ public class FirstMod
         ModParticlesTypes.register(modEventBus);
         ModEffects.register(modEventBus);
         ModPotions.register(modEventBus);
+        ModTrunkPlacerTypes.register(modEventBus);
+        ModFoliagePlacers.register(modEventBus);
 
         ModDataComponents.register(modEventBus);
         // Register the item to a creative tab
