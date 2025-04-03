@@ -25,7 +25,8 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> NETHER_SULFUR_ORE_PLACED_KEY = registerKey("nether_sulfur_ore_placed");
     public static final ResourceKey<PlacedFeature> END_SULFUR_ORE_PLACED_KEY = registerKey("end_sulfur_ore_placed");
 
-    public static final ResourceKey<PlacedFeature> PALMWOOD_PLACED_KEY = registerKey("palmwood_placed");
+    public static final ResourceKey<PlacedFeature> PALMWOOD_PLACED_MORE_KEY = registerKey("palmwood_placed_more");
+    public static final ResourceKey<PlacedFeature> PALMWOOD_PLACED_LESS_KEY = registerKey("palmwood_placed_less");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -37,8 +38,12 @@ public class ModPlacedFeatures {
         register(context, END_SULFUR_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.END_SULFUR_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(12, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
 
-        register(context,PALMWOOD_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PALMWOOD_KEY),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2),
+
+        register(context, PALMWOOD_PLACED_MORE_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PALMWOOD_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(6, 0.2f, 2),
+                        ModBlocks.PALM_SAPLING.get()));
+        register(context, PALMWOOD_PLACED_LESS_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PALMWOOD_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.2f, 1),
                         ModBlocks.PALM_SAPLING.get()));
     }
 
