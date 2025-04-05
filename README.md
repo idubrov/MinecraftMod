@@ -25,8 +25,9 @@ power armor.
 ### Palm Tree
 
 [TBD]
-Palm trees are nice and useful. They give
-[wood](docs/palm), [leaves](docs/palm), and coconuts. What else could you ask for?
+Palm trees are nice and useful. Bended and bright green. They give
+[wood](docs/palm), [leaves](docs/palm), and coconuts.
+Appears in several biomes. Coconuts can be weapon.
 
 ### Sulfur Ore
 
@@ -47,7 +48,8 @@ felt that your netherite armor doesn't protect you enough? Have you ever wanted 
 If so, get your [Power Armor](docs/electric_stuff.md) today!
 
 ### Rice Crop and Banana Bush
-Sushi! Rice pudding! Mats! All of these can be made with the rice plant! A major food source, kind of annoying to grow,
+Sushi! Rice pudding! Mats! All of these can be made with the rice plant! 
+A major food source, kind of annoying to grow,
 rice is essential for any self-respecting foodie! [Rice Crop](docs/plants.md), [Banana Bush](docs/plants.md)
 
 ### New Food Recipes
@@ -63,7 +65,7 @@ but if you wear electric armor it will absorb the electricity that damages you.
 [Teleportation Stone and Device](docs/teleportation.md)
 
 ### Household Items
-[TBD] Lamp
+[TBD] Lamp. We will add more.
 
 ## About the Author
 

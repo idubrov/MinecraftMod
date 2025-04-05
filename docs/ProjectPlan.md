@@ -1,18 +1,23 @@
 # Plan
 
 ### MUST before release
-- name
 - better ore distribution
-- (video) palms on sand
-- (video) generate banana plant
-- generate rice crop or put rice seeds in chests/trader
+- (video1) palms on sand
+- (video2) generate banana plant
+- (video) rice seeds in grass/chests/trader
 - (video) electric horse armor in chests/trader
 - (video) teleportation stones in chests/trader
 - recipe for teleportation device
-- (video) throw coconuts
+- (video3) throw coconuts
 - (video) palm sapplings and banana from traders
+- split creative tab
 
 ### Docs Update
+- Name
+- Intro: palm trees, rice and banana, teleportation, household items.
+- Details: palm tree, plants, sulfur generation, teleportaion.
+
+### Installation
 
 ### Feature Requests and Ideas
 - electric boat from palm (electric boat)
