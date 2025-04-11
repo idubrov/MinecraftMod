@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-30T16:16:32.0190557	Recipes
+// 1.21.1	2025-04-06T16:22:05.7323597	Recipes
 45760b825cef91b98fbf2ba3847c35efd65edcc1 data/firstmod/advancement/recipes/building_blocks/dry_palm_leaves_block.json
 efcfbfa6c3c58989670f8d199baaffa7731f6ec0 data/firstmod/advancement/recipes/building_blocks/dry_palm_leaves_carpet.json
 bda11ac69c058f2a7dda5d878ab55ef0fcff8172 data/firstmod/advancement/recipes/building_blocks/dry_palm_leaves_slab.json
@@ -27,6 +27,8 @@ f4d74500de6ac7b559c92c5aa1c5e7b53cbc651b data/firstmod/advancement/recipes/misc/
 cc5a50851ac5f7da86865455ee3fe8771cca2b57 data/firstmod/advancement/recipes/misc/sulfur_powder_from_smelting_sulfur_ore.json
 fb02e9051f359bddb79fa48cd12f3734de3132f1 data/firstmod/advancement/recipes/misc/sulfur_powder_from_smelting_sulfur_shard.json
 ac3e44091735532c159371694da9a42ad0b3d116 data/firstmod/advancement/recipes/misc/sulfur_shard.json
+fd8c3146659fd9461b676309395204dc58787aba data/firstmod/advancement/recipes/misc/teleportation_device.json
+bff8b0cf8ceb564ae381171d88800f7318a77c44 data/firstmod/advancement/recipes/misc/teleportation_stone.json
 1b768124a0b1b880410ed9048950df65902d21c8 data/firstmod/advancement/recipes/redstone/palm_button.json
 2fb0f1093a73b0a29947ab85dbc184b1404d825d data/firstmod/advancement/recipes/redstone/palm_door.json
 a0ac76b8dc0a3290a9312397a9732376a23d6e78 data/firstmod/advancement/recipes/redstone/palm_fence_gate.json
@@ -90,4 +92,6 @@ ee8bac6c3bca4d80a6ff7496db621713d25a9192 data/firstmod/recipe/sulfur_powder_from
 ff2fcaf9d5c5d28a7df9fb383b8d697648b29a0e data/firstmod/recipe/sulfur_powder_from_smelting_sulfur_ore.json
 132c3547f96b1af1735fcf95e2ec15e291730ea9 data/firstmod/recipe/sulfur_powder_from_smelting_sulfur_shard.json
 449d67eeb1ded2ee45d9fb4b59ca662d36863f5d data/firstmod/recipe/sulfur_shard.json
+67a712458ad27f21413f96080122158a955fd0ed data/firstmod/recipe/teleportation_device.json
+f221aa53f1e0f7af426bfb8fc81e647b17d6a67e data/firstmod/recipe/teleportation_stone.json
 9877017e6b0564b620da719fe3fb1112b0c7abb2 data/firstmod/recipe/wooden_hammer.json

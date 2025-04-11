@@ -20,6 +20,9 @@ public class ModBiomeModifiers {
 
     public static final ResourceKey<BiomeModifier> ADD_TREE_PALMWOOD_MORE = registerKey("add_tree_palmwood_more");
     public static final ResourceKey<BiomeModifier> ADD_TREE_PALMWOOD_LESS = registerKey("add_tree_palmwood_less");
+    public static final ResourceKey<BiomeModifier> ADD_TREE_PALMWOOD_RARE = registerKey("add_tree_palmwood_rare");
+
+    public static final ResourceKey<BiomeModifier> ADD_BANANA_BUSH = registerKey("add_banana_bush");
 
     public static void bootstrap(BootstrapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -40,18 +43,35 @@ public class ModBiomeModifiers {
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.END_SULFUR_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
+
+
+        context.register(ADD_TREE_PALMWOOD_RARE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(Biomes.DESERT)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.PALMWOOD_PLACED_RARE_KEY)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
         context.register(ADD_TREE_PALMWOOD_LESS, new BiomeModifiers.AddFeaturesBiomeModifier(
                 HolderSet.direct(biomes.getOrThrow(Biomes.CHERRY_GROVE),
                         biomes.getOrThrow(Biomes.SPARSE_JUNGLE),
-                        biomes.getOrThrow(Biomes.DESERT)),
+                        biomes.getOrThrow(Biomes.BEACH)),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.PALMWOOD_PLACED_LESS_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
         context.register(ADD_TREE_PALMWOOD_MORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 HolderSet.direct(biomes.getOrThrow(Biomes.STONY_SHORE),
-                        biomes.getOrThrow(Biomes.BAMBOO_JUNGLE),
-                        biomes.getOrThrow(Biomes.BEACH)),
+                        biomes.getOrThrow(Biomes.BAMBOO_JUNGLE)),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.PALMWOOD_PLACED_MORE_KEY)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+
+
+        context.register(ADD_BANANA_BUSH, new BiomeModifiers.AddFeaturesBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(Biomes.BEACH),
+                        biomes.getOrThrow(Biomes.BAMBOO_JUNGLE),
+                        biomes.getOrThrow(Biomes.FOREST),
+                        biomes.getOrThrow(Biomes.MEADOW),
+                        biomes.getOrThrow(Biomes.SPARSE_JUNGLE)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.BANANA_BUSH_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
     }
 

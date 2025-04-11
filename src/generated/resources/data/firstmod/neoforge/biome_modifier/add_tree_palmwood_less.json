@@ -3,7 +3,7 @@
   "biomes": [
     "minecraft:cherry_grove",
     "minecraft:sparse_jungle",
-    "minecraft:desert"
+    "minecraft:beach"
   ],
   "features": "firstmod:palmwood_placed_less",
   "step": "vegetal_decoration"

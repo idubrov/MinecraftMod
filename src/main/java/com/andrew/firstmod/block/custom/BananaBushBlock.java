@@ -129,7 +129,7 @@ public class BananaBushBlock extends SweetBerryBushBlock {
 
         if (currentAge >= MAX_AGE || level.getRawBrightness(pos.above(), 0) < 8) return;
 
-        if (CommonHooks.canCropGrow(level, pos, state, random.nextInt(1) == 0)) {
+        if (CommonHooks.canCropGrow(level, pos, state, random.nextInt(3) == 0)) {
             if (aboveBlock.isAir() && currentAge == 0) {
                 level.setBlock(abovePos, getStateForAge(currentAge + 1), 3);
             } else if (currentAge == 1) {

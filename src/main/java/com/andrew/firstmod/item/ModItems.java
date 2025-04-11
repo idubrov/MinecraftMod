@@ -18,7 +18,7 @@ public class ModItems {
 
 
     public static final DeferredItem<Item> COCONUT = ITEMS.register("coconut",
-            () -> new Item(new Item.Properties()));
+            () -> new CoconutItem(new Item.Properties().stacksTo(16)));
     public static final DeferredItem<Item> SULFUR_POWDER = ITEMS.register("sulfur_powder",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> SULFUR_SHARD = ITEMS.register("sulfur_shard",

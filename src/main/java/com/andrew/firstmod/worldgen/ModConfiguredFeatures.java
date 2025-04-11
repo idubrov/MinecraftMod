@@ -2,19 +2,23 @@ package com.andrew.firstmod.worldgen;
 
 import com.andrew.firstmod.FirstMod;
 import com.andrew.firstmod.block.ModBlocks;
+import com.andrew.firstmod.block.custom.BananaBushBlock;
 import com.andrew.firstmod.worldgen.tree.custom.PalmFoliagePlacer;
 import com.andrew.firstmod.worldgen.tree.custom.PalmTrunkPlacer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
+import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
@@ -34,7 +38,7 @@ public class ModConfiguredFeatures {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> PALMWOOD_KEY = registerKey("palmwood");
 
-
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BANANA_BUSH_KEY = registerKey("banana_bush_key");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
 
@@ -58,13 +62,17 @@ public class ModConfiguredFeatures {
 
         register(context, PALMWOOD_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.PALM_LOG.get()),
-                new PalmTrunkPlacer(11, 2,1),
-
+                new PalmTrunkPlacer(11, 2, 1),
                 BlockStateProvider.simple(ModBlocks.PALM_LEAVES.get()),
                 new PalmFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0)),
+                new TwoLayersFeatureSize(1, 0, 2)).build());
 
-                new TwoLayersFeatureSize(1, 0, 2))
-                .dirt(BlockStateProvider.simple(Blocks.DIRT)).build());
+
+        register(context, BANANA_BUSH_KEY, Feature.RANDOM_PATCH,
+                FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.BANANA_BUSH.get().
+                                defaultBlockState().setValue(BananaBushBlock.AGE, Integer.valueOf(0)))
+                        ), List.of(Blocks.GRASS_BLOCK, Blocks.DIRT)));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

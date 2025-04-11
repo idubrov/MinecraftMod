@@ -2,15 +2,9 @@
 
 ### MUST before release
 - better ore distribution
-- (video1) palms on sand
-- (video2) generate banana plant
-- (video) rice seeds in grass/chests/trader
-- (video) electric horse armor in chests/trader
-- (video) teleportation stones in chests/trader
-- recipe for teleportation device
-- (video3) throw coconuts
-- (video) palm sapplings and banana from traders
-- split creative tab
+- (video) rice seeds in chests
+- (video) electric horse armor in chests
+- (video) teleportation stones and devices in chests
 
 ### Docs Update
 - Name

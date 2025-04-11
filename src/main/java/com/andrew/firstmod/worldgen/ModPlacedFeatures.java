@@ -11,9 +11,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
-import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import net.minecraft.world.level.levelgen.placement.PlacementModifier;
+import net.minecraft.world.level.levelgen.placement.*;
 
 import java.util.List;
 
@@ -27,6 +25,9 @@ public class ModPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> PALMWOOD_PLACED_MORE_KEY = registerKey("palmwood_placed_more");
     public static final ResourceKey<PlacedFeature> PALMWOOD_PLACED_LESS_KEY = registerKey("palmwood_placed_less");
+    public static final ResourceKey<PlacedFeature> PALMWOOD_PLACED_RARE_KEY = registerKey("palmwood_placed_rare");
+
+    public static final ResourceKey<PlacedFeature> BANANA_BUSH_PLACED_KEY = registerKey("banana_bush_placed");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -39,12 +40,27 @@ public class ModPlacedFeatures {
                 ModOrePlacement.commonOrePlacement(12, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
 
 
+
         register(context, PALMWOOD_PLACED_MORE_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PALMWOOD_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(6, 0.2f, 2),
                         ModBlocks.PALM_SAPLING.get()));
+
         register(context, PALMWOOD_PLACED_LESS_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PALMWOOD_KEY),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.2f, 1),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.1f, 1),
                         ModBlocks.PALM_SAPLING.get()));
+
+        register(context, PALMWOOD_PLACED_RARE_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PALMWOOD_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(64), // 1 tree every ~64 chunks
+                        InSquarePlacement.spread(),
+                        PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
+                        BiomeFilter.biome(),
+                        PlacementUtils.filteredByBlockSurvival(ModBlocks.PALM_SAPLING.get()))); // uses your sapling survival rules
+
+
+
+        register(context, BANANA_BUSH_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.BANANA_BUSH_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(),
+                        PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {

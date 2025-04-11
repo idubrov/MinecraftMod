@@ -93,8 +93,9 @@ public class ModBlocks {
             () -> new CarpetBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.HAY_BLOCK)));
 
 
-    public static final DeferredBlock<SaplingBlock> PALM_SAPLING = registerBlock("palm_sapling",
-            () -> new SaplingBlock(ModTreeGrowers.PALMWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_SAPLING)));
+    public static final DeferredBlock<ModSaplingBlock> PALM_SAPLING = registerBlock("palm_sapling",
+            () -> new ModSaplingBlock(ModTreeGrowers.PALMWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_SAPLING),
+                    Blocks.DIRT, Blocks.SAND, Blocks.GRASS_BLOCK));
     public static final DeferredBlock<FlowerPotBlock> POTTED_PALM_SAPLING = registerBlock("potted_palm_sapling",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.PALM_SAPLING, BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_ACACIA_SAPLING).noOcclusion()));
 

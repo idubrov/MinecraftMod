@@ -3,6 +3,7 @@ package com.andrew.firstmod;
 import com.andrew.firstmod.block.ModBlocks;
 import com.andrew.firstmod.component.ModDataComponents;
 import com.andrew.firstmod.effect.ModEffects;
+import com.andrew.firstmod.entity.ModEntities;
 import com.andrew.firstmod.event.ModEventClientBusEvents;
 import com.andrew.firstmod.item.ModCreativeModeTabs;
 import com.andrew.firstmod.item.ModItems;
@@ -11,6 +12,8 @@ import com.andrew.firstmod.potion.ModPotions;
 import com.andrew.firstmod.worldgen.tree.ModFoliagePlacers;
 import com.andrew.firstmod.worldgen.tree.ModTrunkPlacerTypes;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.neoforged.api.distmarker.Dist;
@@ -53,6 +56,7 @@ public class FirstMod
         ModPotions.register(modEventBus);
         ModTrunkPlacerTypes.register(modEventBus);
         ModFoliagePlacers.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         ModDataComponents.register(modEventBus);
         // Register the item to a creative tab
@@ -88,7 +92,7 @@ public class FirstMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            EntityRenderers.register(ModEntities.COCONUT.get(), ThrownItemRenderer::new);
         }
     }
 }

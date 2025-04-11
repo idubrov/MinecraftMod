@@ -21,12 +21,13 @@ public class ModSpawnPointHandler {
 
         // List of biomes to search for
         List<ResourceKey<Biome>> desiredBiomes = List.of(
-            //    Biomes.BEACH,             // need palms on the sand
-                Biomes.SPARSE_JUNGLE,
-                Biomes.BAMBOO_JUNGLE,
-             //   Biomes.DESERT,            // need palms on the sand
-                Biomes.CHERRY_GROVE,
-                Biomes.STONY_SHORE
+            //   + Biomes.BEACH,             // need palms on the sand
+              //+  Biomes.SPARSE_JUNGLE
+               //+ Biomes.BAMBOO_JUNGLE
+                //+Biomes.DESERT            // need palms on the sand
+               //+ Biomes.CHERRY_GROVE
+             //  + Biomes.STONY_SHORE
+                Biomes.MEADOW
         );
 
         BlockPos newSpawn = findBiomeSpawn(serverLevel, desiredBiomes, 5000); // Set to desired biome

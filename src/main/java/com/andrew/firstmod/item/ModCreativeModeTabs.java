@@ -22,10 +22,9 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, FirstMod.MOD_ID);
 
-
-    public static final Supplier<CreativeModeTab> TROPICS_ITEMS_TAB = CREATIVE_MODE_TAB.register("tropics_items_tab",
+    public static final Supplier<CreativeModeTab> TROPICS_ITEMS_TAB1 = CREATIVE_MODE_TAB.register("tropics_items_tab1",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BANANA.get()))
-                    .title(Component.translatable("creativetab.firstmod.tropics_items"))
+                    .title(Component.translatable("creativetab.firstmod.tropics_items_tab1"))
                     .displayItems((itemDisplayParameters, output) -> {
 
                         output.accept(ModBlocks.PALM_LOG);
@@ -56,16 +55,26 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.DRY_PALM_LEAVES_CARPET);
                         output.accept(ModBlocks.PALM_SAPLING);
 
+                        output.accept(ModItems.RICE_SEEDS);
+                        output.accept(ModItems.RICE_STEM);
                         output.accept(ModItems.BANANA);
                         output.accept(ModItems.COCONUT);
+
                         output.accept(ModItems.MILK_SHAKE);
                         output.accept(ModItems.FRUIT_SALAD);
                         output.accept(ModItems.MAKI_SUSHI);
                         output.accept(ModItems.NIGIRI_SUSHI);
                         output.accept(ModBlocks.RICE_PUDDING);
 
-                        output.accept(ModItems.BATTERY);
                         output.accept(ModBlocks.COCONUT_LAMP);
+                    }).build());
+
+    public static final Supplier<CreativeModeTab> TROPICS_ITEMS_TAB2 = CREATIVE_MODE_TAB.register("tropics_items_tab2",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BATTERY.get()))
+                    .title(Component.translatable("creativetab.firstmod.tropics_items_tab2"))
+                    .displayItems((itemDisplayParameters, output) -> {
+
+                        output.accept(ModItems.BATTERY);
 
                         output.accept(ModItems.ELECTRIC_PICKAXE);
                         output.accept(ModItems.ELECTRIC_SHOVEL);
@@ -85,14 +94,10 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.ELECTRIC_HORSE_ARMOR);
 
-                        output.accept(ModItems.RICE_SEEDS);
-                        output.accept(ModItems.RICE_STEM);
-
                         output.accept(PotionContents.createItemStack(Items.POTION, ModPotions.ELECTRIFIED_POTION));
                         output.accept(PotionContents.createItemStack(Items.SPLASH_POTION, ModPotions.ELECTRIFIED_POTION));
                         output.accept(PotionContents.createItemStack(Items.LINGERING_POTION, ModPotions.ELECTRIFIED_POTION));
                         output.accept(PotionContents.createItemStack(Items.TIPPED_ARROW, ModPotions.ELECTRIFIED_POTION));
-
 
                         output.accept(ModBlocks.TELEPORTATION_STONE);
                         output.accept(ModItems.TELEPORTATION_DEVICE);

@@ -11,8 +11,10 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
+import javax.swing.text.html.parser.Entity;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
@@ -319,6 +321,33 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('N', Items.NETHERITE_BOOTS)
                 .unlockedBy("has_battery", has(ModItems.BATTERY))
                 .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TELEPORTATION_STONE.get(), 1)
+                .pattern("IEI")
+                .pattern("NLN")
+                .pattern("IBI")
+                .define('B', ModItems.BATTERY.get())
+                .define('E', Items.ENDER_PEARL)
+                .define('N', Blocks.NETHERITE_BLOCK)
+                .define('L', Blocks.LODESTONE)
+                .define('I', Blocks.IRON_BLOCK)
+                .unlockedBy("has_battery", has(ModItems.BATTERY))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TELEPORTATION_DEVICE.get(), 1)
+                .pattern("   ")
+                .pattern("BIB")
+                .pattern(" E ")
+                .define('I', Items.IRON_INGOT)
+                .define('B', ModItems.BATTERY.get())
+                .define('E', Items.ENDER_PEARL)
+                .unlockedBy("has_battery", has(ModItems.BATTERY))
+                .save(recipeOutput);
+
+
+
+
+
     }
 
 

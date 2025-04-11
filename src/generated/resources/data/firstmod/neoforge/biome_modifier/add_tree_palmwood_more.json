@@ -2,8 +2,7 @@
   "type": "neoforge:add_features",
   "biomes": [
     "minecraft:stony_shore",
-    "minecraft:bamboo_jungle",
-    "minecraft:beach"
+    "minecraft:bamboo_jungle"
   ],
   "features": "firstmod:palmwood_placed_more",
   "step": "vegetal_decoration"
