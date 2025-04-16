@@ -1,0 +1,10 @@
+{
+  "type": "firstmod:add_item",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/shipwreck_supply"
+    }
+  ],
+  "item": "firstmod:rice_seeds"
+}

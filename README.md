@@ -1,4 +1,4 @@
-# [Name TBD]Palms and Sulfur
+# Electric Bananas
 
 Imagine you live in the tropics, eating fruits to your heart's 
 desire. You make smoothies and fruit salads, peacefully annihilating

@@ -22,9 +22,9 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, FirstMod.MOD_ID);
 
-    public static final Supplier<CreativeModeTab> TROPICS_ITEMS_TAB1 = CREATIVE_MODE_TAB.register("tropics_items_tab1",
+    public static final Supplier<CreativeModeTab> ITEMS_TAB1 = CREATIVE_MODE_TAB.register("electric_bananas_items_tab1",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BANANA.get()))
-                    .title(Component.translatable("creativetab.firstmod.tropics_items_tab1"))
+                    .title(Component.translatable("creativetab.firstmod.electric_bananas_items_tab1"))
                     .displayItems((itemDisplayParameters, output) -> {
 
                         output.accept(ModBlocks.PALM_LOG);
@@ -69,9 +69,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.COCONUT_LAMP);
                     }).build());
 
-    public static final Supplier<CreativeModeTab> TROPICS_ITEMS_TAB2 = CREATIVE_MODE_TAB.register("tropics_items_tab2",
+    public static final Supplier<CreativeModeTab> ITEMS_TAB2 = CREATIVE_MODE_TAB.register("electric_bananas_items_tab2",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BATTERY.get()))
-                    .title(Component.translatable("creativetab.firstmod.tropics_items_tab2"))
+                    .title(Component.translatable("creativetab.firstmod.electric_bananas_items_tab2"))
                     .displayItems((itemDisplayParameters, output) -> {
 
                         output.accept(ModItems.BATTERY);

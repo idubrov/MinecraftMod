@@ -2,18 +2,20 @@
 
 ### MUST before release
 - better ore distribution
-- (video) rice seeds in chests
-- (video) electric horse armor in chests
-- (video) teleportation stones and devices in chests
 
 ### Docs Update
-- Name
 - Intro: palm trees, rice and banana, teleportation, household items.
 - Details: palm tree, plants, sulfur generation, teleportaion.
 
 ### Installation
+- Backup your current MC worlds
+- Install Java 21.0.6
+- Install Neoforge 21.1.146: as Client if plan to play Singlemode; Server if plan to host
+- Install latest Modrinth app
 
 ### Feature Requests and Ideas
+- (video) Migrate to MC 1.21.5 - blocks, armour, recipies, items, custom items, consumables.
+  (or wait till 1.22)
 - electric boat from palm (electric boat)
 - palm sign
 - dried rice stems for pillows, mattresses, curtains

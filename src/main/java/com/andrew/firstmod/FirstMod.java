@@ -7,6 +7,7 @@ import com.andrew.firstmod.entity.ModEntities;
 import com.andrew.firstmod.event.ModEventClientBusEvents;
 import com.andrew.firstmod.item.ModCreativeModeTabs;
 import com.andrew.firstmod.item.ModItems;
+import com.andrew.firstmod.loot.ModLootModifiers;
 import com.andrew.firstmod.particle.ModParticlesTypes;
 import com.andrew.firstmod.potion.ModPotions;
 import com.andrew.firstmod.worldgen.tree.ModFoliagePlacers;
@@ -59,6 +60,8 @@ public class FirstMod
         ModEntities.register(modEventBus);
 
         ModDataComponents.register(modEventBus);
+
+        ModLootModifiers.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
