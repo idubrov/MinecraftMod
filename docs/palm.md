@@ -1,6 +1,6 @@
 # Palm Tree
 
-<img src="./img/palm.png" alt="Palm" height="200" width="200">
+<img src="./img/palm.png" alt="Palm" height="200">
 
 Palm tree description - bending trunk, lush, bright, and green leaves, and
 it drops coconuts, sticks, and saplings. It has all the usual types of wood / logs.
