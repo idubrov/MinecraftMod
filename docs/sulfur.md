@@ -5,6 +5,7 @@ Sulfur Ore, Nether Sulfur Ore, and End Sulfur Ore have a hardness of 3,
 while Deepslate has a hardness of 4.5.
 Also, Sulfur Ore,  Deepslate Sulfur Ore, Nether Sulfur Ore, End Sulfur Ore, 
 and Sulfur Block glow in the dark with a light level of 10 and emit particles.
+Lastly, sulfur ore barely spawns in the Overworld, spawns a decent amount in the Nether, and a ton in the End.
 
 <br>
 

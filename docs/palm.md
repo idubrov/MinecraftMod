@@ -2,14 +2,12 @@
 
 <img src="./img/palm.png" alt="Palm" height="200" width="200">
 
-Palm Tree description - bended trunk, lush bright green leaves, 
-drops coconuts, sticks and saplings. Has all usual types of wood / logs.
-Could be found in biomes: CHERRY_GROVE, SPARSE_JUNGLE, DESERT, 
-STONY_SHORE, BAMBOO_JUNGLE, BEACH.
-Grows on sand and dirt.
-Saplings from traders. 
-Pot saplings. Throw coconuts.
-
+Palm tree description - bending trunk, lush, bright, and green leaves, and
+it drops coconuts, sticks, and saplings. It has all the usual types of wood / logs.
+Could be found naturally in the biomes: cherry grove, sparse jungle, desert, stony shore, bamboo jungle, and 
+obviously, beach.
+It grows on sand and dirt.
+You can get saplings from wandering traders, put saplings in a pot, and throw coconuts.
 <br>
 
 ### Blocks and items

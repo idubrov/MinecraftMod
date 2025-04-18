@@ -5,7 +5,7 @@
 
 ### Docs Update
 - Intro: palm trees, rice and banana, teleportation, household items.
-- Details: palm tree, plants, sulfur generation, teleportaion.
+- Details: palm tree, rice and banana, sulfur generation, teleportation.
 
 ### Installation
 - Backup your current MC worlds

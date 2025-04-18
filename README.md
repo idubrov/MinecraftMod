@@ -24,10 +24,11 @@ power armor.
 
 ### Palm Tree
 
-[TBD]
-Palm trees are nice and useful. Bended and bright green. They give
-[wood](docs/palm), [leaves](docs/palm), and coconuts.
-Appears in several biomes. Coconuts can be weapon.
+Palm trees are amazing! They give
+[wood](docs/palm.md), [leaves](docs/palm.md), and coconuts.
+ They appear in several biomes that both do and don't make sense. (Imagine finding a palm
+tree in the desert. Totally makes sense.) Coconuts can also be used as a weapon now
+because why not.
 
 ### Sulfur Ore
 
@@ -48,9 +49,11 @@ felt that your netherite armor doesn't protect you enough? Have you ever wanted 
 If so, get your [Power Armor](docs/electric_stuff.md) today!
 
 ### Rice Crop and Banana Bush
-Sushi! Rice pudding! Mats! All of these can be made with the rice plant! 
+Sushi! Rice pudding! Mats! All of these can be made with the  [rice plant](docs/plants.md)! 
 A major food source, kind of annoying to grow,
-rice is essential for any self-respecting foodie! [Rice Crop](docs/plants.md), [Banana Bush](docs/plants.md)
+rice is essential for any self-respecting foodie.  The 
+[banana bush](docs/plants.md) is another food source. It spawns way too often, 
+but who cares when you get bananas!? Also: milkshakes.
 
 ### New Food Recipes
 [Fruit salads](docs/food.md), [smoothies](docs/food.md), [sushi](docs/food.md), and more! What else could you ask for? 
@@ -62,10 +65,12 @@ Have you ever wanted to become a living tesla rod? Have you ever been surrounded
 but if you wear electric armor it will absorb the electricity that damages you.
 
 ### Teleportation Device
-[Teleportation Stone and Device](docs/teleportation.md)
+[Teleportation Stones and Devices](docs/teleportation.md) are new additions that
+let you teleport! Ridiculously expensive, kind of useless, and nonreusable, the
+teleportation device will send you right back home!
 
 ### Household Items
-[TBD] Lamp. We will add more.
+We will add more household items, but for now you just have to deal with simple [coconut lamps](docs/palm).
 
 ## About the Author
 

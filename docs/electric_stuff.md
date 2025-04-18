@@ -72,13 +72,13 @@ Armor can be given trims using a smithing template and a trim material.
 
 <br/>
 
-| Armor       | Ingredients                                                  | Crafting Recipe                                                             | Advancements   | 
-|-------------|--------------------------------------------------------------|-----------------------------------------------------------------------------|:---------------|
-| Helmet      | 1 Netherite Helmet,<br/> 2 Iron Ingots,<br/> 2 Battery       | <img src="./img/recipe_electric_5.png" alt="Electric Recipe" height="100">  | Obtain Battery |
-| Chestplate  | 1 Netherite Chestplate,<br/> 4 Iron Ingots,<br/> 3 Batteries | <img src="./img/recipe_electric_10.png" alt="Electric Recipe" height="100"> | Obtain Battery |
-| Leggings    | 1 Netherite Leggings,<br/> 4 Iron Ingots,<br/> 2 Batteries   | <img src="./img/recipe_electric_11.png" alt="Electric Recipe" height="100"> | Obtain Battery |
-| Boots       | 1 Netherite Boots,<br/> 2 Iron Ingots,<br/> 2 Batteries      | <img src="./img/recipe_electric_12.png" alt="Electric Recipe" height="100"> | Obtain Battery |
-| Horse Armor | Can not be crafted                                           |                                                                             |                |
+| Armor       | Ingredients                                                                           | Crafting Recipe                                                             | Advancements   | 
+|-------------|---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|:---------------|
+| Helmet      | 1 Netherite Helmet,<br/> 2 Iron Ingots,<br/> 2 Battery                                | <img src="./img/recipe_electric_5.png" alt="Electric Recipe" height="100">  | Obtain Battery |
+| Chestplate  | 1 Netherite Chestplate,<br/> 4 Iron Ingots,<br/> 3 Batteries                          | <img src="./img/recipe_electric_10.png" alt="Electric Recipe" height="100"> | Obtain Battery |
+| Leggings    | 1 Netherite Leggings,<br/> 4 Iron Ingots,<br/> 2 Batteries                            | <img src="./img/recipe_electric_11.png" alt="Electric Recipe" height="100"> | Obtain Battery |
+| Boots       | 1 Netherite Boots,<br/> 2 Iron Ingots,<br/> 2 Batteries                               | <img src="./img/recipe_electric_12.png" alt="Electric Recipe" height="100"> | Obtain Battery |
+| Horse Armor | Can not be crafted. <br/>Could be found in Abandon <br/>Mineshaft and Dungeon chests. |                                                                             |                |
 
 <br/>
 

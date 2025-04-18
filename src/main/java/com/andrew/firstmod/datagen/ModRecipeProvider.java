@@ -322,6 +322,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_battery", has(ModItems.BATTERY))
                 .save(recipeOutput);
 
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TELEPORTATION_STONE.get(), 1)
                 .pattern("IEI")
                 .pattern("NLN")
@@ -343,11 +344,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('E', Items.ENDER_PEARL)
                 .unlockedBy("has_battery", has(ModItems.BATTERY))
                 .save(recipeOutput);
-
-
-
-
-
     }
 
 
