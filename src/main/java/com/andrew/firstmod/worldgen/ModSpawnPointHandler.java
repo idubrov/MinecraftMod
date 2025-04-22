@@ -21,23 +21,23 @@ public class ModSpawnPointHandler {
 
         // List of biomes to search for
         List<ResourceKey<Biome>> desiredBiomes = List.of(
-            //   + Biomes.BEACH,             // need palms on the sand
-              //+  Biomes.SPARSE_JUNGLE
-               //+ Biomes.BAMBOO_JUNGLE
-                //+Biomes.DESERT            // need palms on the sand
-               //+ Biomes.CHERRY_GROVE
-             //  + Biomes.STONY_SHORE
+            //    Biomes.BEACH,             // need palms on the sand
+              //  Biomes.SPARSE_JUNGLE
+               // Biomes.BAMBOO_JUNGLE
+                //Biomes.DESERT            // need palms on the sand
+               // Biomes.CHERRY_GROVE
+             //   Biomes.STONY_SHORE
                 Biomes.MEADOW
         );
 
-        BlockPos newSpawn = findBiomeSpawn(serverLevel, desiredBiomes, 5000); // Set to desired biome
-        if (newSpawn != null) {
-            event.setCanceled(true); // Cancel default spawn
-            serverLevel.setDefaultSpawnPos(newSpawn, 0); // Set new spawn point
-            System.out.println("Spawn point set in desired biome: " + serverLevel.getBiome(newSpawn).unwrapKey().get());
-        } else {
-            System.out.println("No desired biome found within search range.");
-        }
+//        BlockPos newSpawn = findBiomeSpawn(serverLevel, desiredBiomes, 5000); // Set to desired biome
+//        if (newSpawn != null) {
+//            event.setCanceled(true); // Cancel default spawn
+//            serverLevel.setDefaultSpawnPos(newSpawn, 0); // Set new spawn point
+//            System.out.println("Spawn point set in desired biome: " + serverLevel.getBiome(newSpawn).unwrapKey().get());
+//        } else {
+//            System.out.println("No desired biome found within search range.");
+//        }
     }
 
     private static BlockPos findBiomeSpawn(ServerLevel level, List<ResourceKey<Biome>> biomesToFind, int searchRadius) {
