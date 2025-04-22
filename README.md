@@ -13,7 +13,7 @@ power armor.
 - Neoforge 21.1.146
 
 ## Downloads
-[Electric_Bananas-1.0.0-neoforge.jar](build/libs/Electric_Bananas-1.0.0-neoforge.jar)
+[Electric_Bananas-1.0.1-neoforge.jar](build/libs/Electric_Bananas-1.0.1-neoforge.jar)
 
 ## Installation information
 - Backup your current Minecraft worlds
