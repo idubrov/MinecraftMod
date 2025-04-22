@@ -6,10 +6,6 @@ sulfur-based batteries, power armor, and teleportation stones.
 
 # Plan
 
-### MUST before release
-
-### Docs Update
-
 ### Feature Requests and Ideas
 - (video) Migrate to MC 1.21.5 - blocks, armour, recipies, items, custom items, consumables.
   (or wait till 1.22)
