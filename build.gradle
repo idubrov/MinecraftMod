@@ -187,3 +187,9 @@ idea {
         downloadJavadoc = true
     }
 }
+
+jar {
+    archiveBaseName.set("Electric_Bananas")
+    archiveVersion.set("1.0.0")
+    archiveClassifier.set("neoforge") // Optional
+}

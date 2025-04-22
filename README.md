@@ -9,16 +9,18 @@ place? Do you _want_ to die?) they are necessary for electric tools and
 power armor. 
 
 ## Requirements
-
-[TBD]
+- Java 21.0.6
+- Neoforge 21.1.146
 
 ## Downloads
-
-[TBD]
+[Electric_Bananas-1.0.0-neoforge.jar](build/libs/Electric_Bananas-1.0.0-neoforge.jar)
 
 ## Installation information
-
-[TBD]
+- Backup your current Minecraft worlds
+- Install Java 21.0.6
+- Install Neoforge 21.1.146 (Client or Server)
+- Download Electric Bananas Mod jar and drop it into the `minecraft\mods\` folder
+- In Minecraft Launcher bottom-left corner, choose the NeoForge profile
 
 ## Features
 
@@ -71,6 +73,4 @@ teleportation device will send you right back home!
 
 ### Household Items
 We will add more household items, but for now you just have to deal with simple [coconut lamps](docs/palm).
-
-## About the Author
 

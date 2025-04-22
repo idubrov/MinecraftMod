@@ -1,17 +1,14 @@
+## Short Description
+(for the summary field — 1 sentence)
+A chaotic tropical tech mod featuring electric tools, palm trees, fruit smoothies, 
+sulfur-based batteries, power armor, and teleportation stones.
+
+
 # Plan
 
 ### MUST before release
-- better ore distribution
 
 ### Docs Update
-- Intro: palm trees, rice and banana, teleportation, household items.
-- Details: palm tree, rice and banana, sulfur generation, teleportation.
-
-### Installation
-- Backup your current MC worlds
-- Install Java 21.0.6
-- Install Neoforge 21.1.146: as Client if plan to play Singlemode; Server if plan to host
-- Install latest Modrinth app
 
 ### Feature Requests and Ideas
 - (video) Migrate to MC 1.21.5 - blocks, armour, recipies, items, custom items, consumables.

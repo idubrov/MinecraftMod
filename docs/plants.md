@@ -30,7 +30,6 @@ You can get them from wandering traders, jungle temples, and shipwrecks.
 
 # Banana
 
-[TBD]
 Bananas are a food item obtained from banana bushes, and are used to plant them.
 Could be found naturally in the biomes: beach, bamboo jungle, forest, meadow, and sparse jungle.
 
