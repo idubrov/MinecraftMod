@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "F": {
-      "item": "minecraft:salmon"
-    },
-    "K": {
-      "item": "minecraft:dried_kelp"
-    },
-    "R": {
-      "item": "firstmod:rice_seeds"
-    }
+    "F": "minecraft:salmon",
+    "K": "minecraft:dried_kelp",
+    "R": "firstmod:rice_seeds"
   },
   "pattern": [
     "RFR",

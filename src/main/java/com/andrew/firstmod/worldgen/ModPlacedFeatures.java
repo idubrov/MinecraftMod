@@ -15,8 +15,6 @@ import net.minecraft.world.level.levelgen.placement.*;
 
 import java.util.List;
 
-
-
 public class ModPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> SULFUR_ORE_PLACED_KEY = registerKey("sulfur_ore_placed");

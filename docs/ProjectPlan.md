@@ -1,12 +1,14 @@
-## Short Description
-(for the summary field — 1 sentence)
-A chaotic tropical tech mod featuring electric tools, palm trees, fruit smoothies, 
-sulfur-based batteries, power armor, and teleportation stones.
-
+## Migration
+- tooltips method deprecated (ModItems)
+- 
 
 # Plan
 
 ### Feature Requests and Ideas
+- Add to readme mining sulfur ore with nether tools
+- Banana gives speed-1, not 3. Fix amplifier in the code
+
+
 - (video) Migrate to MC 1.21.5 - blocks, armour, recipies, items, custom items, consumables.
   (or wait till 1.22)
 - electric boat from palm (electric boat)

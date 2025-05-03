@@ -3,9 +3,7 @@
   "category": "building",
   "group": "planks",
   "ingredients": [
-    {
-      "tag": "firstmod:palm_logs"
-    }
+    "#firstmod:palm_logs"
   ],
   "result": {
     "count": 4,

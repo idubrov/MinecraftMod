@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "A": {
-      "item": "minecraft:candle"
-    },
-    "C": {
-      "item": "firstmod:coconut"
-    }
+    "A": "minecraft:candle",
+    "C": "firstmod:coconut"
   },
   "pattern": [
     "   ",

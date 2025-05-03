@@ -1,49 +1,35 @@
 package com.andrew.firstmod.item;
 
 import com.andrew.firstmod.FirstMod;
+import com.andrew.firstmod.util.ModTags;
 import net.minecraft.Util;
-import net.minecraft.core.Holder;
-import net.minecraft.core.Registry;
-import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.equipment.ArmorMaterial;
+import net.minecraft.world.item.equipment.ArmorType;
+import net.minecraft.world.item.equipment.EquipmentAssets;
 
 import java.util.EnumMap;
-import java.util.List;
-import java.util.function.Supplier;
 
 public class ModArmorMaterials {
-    public static final Holder<ArmorMaterial> ELECTRIC_ARMOR_MATERIAL = register("electric",
-            Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
-                attribute.put(ArmorItem.Type.BOOTS, 2);
-                attribute.put(ArmorItem.Type.LEGGINGS, 5);
-                attribute.put(ArmorItem.Type.CHESTPLATE, 6);
-                attribute.put(ArmorItem.Type.HELMET, 2);
-                attribute.put(ArmorItem.Type.BODY, 5);
-            }), 1, 0.0F, 0.0F, () -> ModItems.BATTERY.get());
-
-
-    private static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection,
-                                                  int enchantability, float toughness, float knockbackResistance,
-                                                  Supplier<Item> ingredientItem) {
-        ResourceLocation location = ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, name);
-        Holder<SoundEvent> equipSound = SoundEvents.ARMOR_EQUIP_NETHERITE;
-        Supplier<Ingredient> ingredient = () -> Ingredient.of(ingredientItem.get());
-        List<ArmorMaterial.Layer> layers = List.of(new ArmorMaterial.Layer(location));
-
-        EnumMap<ArmorItem.Type, Integer> typeMap = new EnumMap<>(ArmorItem.Type.class);
-        for (ArmorItem.Type type : ArmorItem.Type.values()) {
-            typeMap.put(type, typeProtection.get(type));
-        }
-
-        return Registry.registerForHolder(BuiltInRegistries.ARMOR_MATERIAL, location,
-                new ArmorMaterial(typeProtection, enchantability, equipSound, ingredient, layers, toughness, knockbackResistance));
-    }
+    public static final ArmorMaterial ELECTRIC_ARMOR_MATERIAL = new ArmorMaterial(
+            20,
+            Util.make(new EnumMap<>(ArmorType.class), map -> {
+                map.put(ArmorType.BOOTS, 2);
+                map.put(ArmorType.LEGGINGS, 5);
+                map.put(ArmorType.CHESTPLATE, 6);
+                map.put(ArmorType.HELMET, 2);
+                map.put(ArmorType.BODY, 5);
+            }),
+            1,
+            SoundEvents.ARMOR_EQUIP_NETHERITE,
+            0, 0,
+            ModTags.Items.BATTERY_REPAIR,
+            // The resource key of the EquipmentClientInfo JSON discussed below
+            // Points to assets/examplemod/equipment/copper.json
+            ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "electric"))
+    );
 }
 
 

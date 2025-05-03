@@ -28,6 +28,7 @@ public class ModTags {
         public static final TagKey<Item> SULFUR_ORES_ITEMS = createTag("sulfur_ores");
         public static final TagKey<Item> PALM_LOGS_ITEMS = createTag("palm_logs");
         public static final TagKey<Item> HAMMERS_ITEMS = createTag("hammers");
+        public static final TagKey<Item> BATTERY_REPAIR = createTag("battery_repair");
 
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, name));

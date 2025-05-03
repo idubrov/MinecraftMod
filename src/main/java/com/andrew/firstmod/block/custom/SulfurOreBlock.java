@@ -3,24 +3,19 @@ package com.andrew.firstmod.block.custom;
 import com.andrew.firstmod.item.custom.HammerItem;
 import com.andrew.firstmod.particle.ModParticlesTypes;
 import net.minecraft.core.BlockPos;
-import net.minecraft.network.chat.Component;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.IntProvider;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.Nullable;
-
-import java.util.List;
 
 public class SulfurOreBlock extends DropExperienceBlock {
     public SulfurOreBlock(IntProvider xpRange, Properties properties) {
@@ -56,14 +51,5 @@ public class SulfurOreBlock extends DropExperienceBlock {
             double d5 = (double) (random.nextFloat() * (float) k) * 0.03;
             level.addParticle(ModParticlesTypes.SULFUR_PARTICLES.get(), d0, d1, d2, d3, d4, d5);
         }
-    }
-
-    @Override
-    public void appendHoverText(ItemStack stack, Item.TooltipContext context,
-                                List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-        tooltipComponents.add(Component.translatable("tooltip.firstmod.empty_line"));
-        tooltipComponents.add(Component.translatable("tooltip.firstmod.sulfur_ore.tooltip"));
-
-        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 }

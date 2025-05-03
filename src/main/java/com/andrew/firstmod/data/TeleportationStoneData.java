@@ -1,9 +1,12 @@
 package com.andrew.firstmod.data;
 
+import com.mojang.serialization.Codec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.data.DataProvider;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
+import net.minecraft.nbt.NbtOps;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.saveddata.SavedData;
 
@@ -23,30 +26,32 @@ public class TeleportationStoneData extends SavedData {
     public static TeleportationStoneData load(CompoundTag tag, HolderLookup.Provider provider) {
 
         TeleportationStoneData data = TeleportationStoneData.create();
-        ListTag list = tag.getList("positions", 10);
+        ListTag list = tag.getListOrEmpty("positions");
+            for (int i = 0; i < list.size(); i++) {
+                CompoundTag posTag = list.getCompoundOrEmpty(i);
+                data.storedPositions.add(new BlockPos(
+                        posTag.getIntOr("x", 0), posTag.getIntOr("y", 0), posTag.getIntOr("z", 0)));
+            }
+            return data;
 
-        for (int i = 0; i < list.size(); i++) {
-            CompoundTag posTag = list.getCompound(i);
-            data.storedPositions.add(new BlockPos(posTag.getInt("x"), posTag.getInt("y"), posTag.getInt("z")));
-        }
-        return data;
     }
 
 
-    @Override
-    public CompoundTag save(CompoundTag tag, HolderLookup.Provider provider) {
 
-        ListTag list = new ListTag();
-        for (BlockPos pos : storedPositions) {
-            CompoundTag posTag = new CompoundTag();
-            posTag.putInt("x", pos.getX());
-            posTag.putInt("y", pos.getY());
-            posTag.putInt("z", pos.getZ());
-            list.add(posTag);
-        }
-        tag.put("positions", list);
-        return tag;
-    }
+//    @Override
+//    public CompoundTag store(CompoundTag tag, HolderLookup.Provider provider) {
+//
+//        ListTag list = new ListTag();
+//        for (BlockPos pos : storedPositions) {
+//            CompoundTag posTag = new CompoundTag();
+//            posTag.putInt("x", pos.getX());
+//            posTag.putInt("y", pos.getY());
+//            posTag.putInt("z", pos.getZ());
+//            list.add(posTag);
+//        }
+//        tag.put("positions", list);
+//        return tag;
+//    }
 
 
     public void addStone(BlockPos pos) {
@@ -66,8 +71,8 @@ public class TeleportationStoneData extends SavedData {
     }
 
 
-    public static TeleportationStoneData get(ServerLevel world) {
-        return world.getDataStorage()
-            .computeIfAbsent(new Factory<>(TeleportationStoneData::create, TeleportationStoneData::load), "teleportation_stone_data");
-    }
+//    public static TeleportationStoneData get(ServerLevel world) {
+//        return world.getDataStorage()
+//            .computeIfAbsent(new DataProvider.Factory<>(TeleportationStoneData::create, TeleportationStoneData::load), "teleportation_stone_data");
+//    }
 }

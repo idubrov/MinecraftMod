@@ -3,12 +3,12 @@ package com.andrew.firstmod.block.custom;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.LeavesBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class ModFlammableLeavesBlock extends LeavesBlock {
-    public ModFlammableLeavesBlock(Properties properties) {
-        super(properties);
+public class ModFlammableLeavesBlock extends TintedParticleLeavesBlock {
+    public ModFlammableLeavesBlock(float leafParticleChance, Properties properties) {
+        super(leafParticleChance, properties);
     }
 
     @Override

@@ -2,44 +2,62 @@
   "creativetab.firstmod.electric_bananas_items_tab1": "Bananas Items",
   "creativetab.firstmod.electric_bananas_items_tab2": "Electric Items",
 
-  "block.firstmod.palm_wood": "Palm Wood",
-  "block.firstmod.palm_log": "Palm Log",
-  "block.firstmod.stripped_palm_wood": "Stripped Palm Wood",
-  "block.firstmod.stripped_palm_log": "Stripped Palm Log",
-  "block.firstmod.palm_planks": "Palm Planks",
-  "block.firstmod.palm_slab": "Palm Slab",
-  "block.firstmod.palm_stairs": "Palm Stairs",
-  "block.firstmod.palm_pressure_plate": "Palm Pressure Plate",
-  "block.firstmod.palm_button": "Palm Button",
-  "block.firstmod.palm_fence": "Palm Fence",
-  "block.firstmod.palm_fence_gate": "Palm Fence Gate",
-  "block.firstmod.palm_door": "Palm Door",
-  "block.firstmod.palm_trapdoor": "Palm Trapdoor",
 
-  "block.firstmod.sulfur_ore": "Sulfur Ore",
-  "block.firstmod.deepslate_sulfur_ore": "Deepslate Sulfur Ore",
-  "block.firstmod.nether_sulfur_ore": "Nether Sulfur Ore",
-  "block.firstmod.end_sulfur_ore": "End Sulfur Ore",
-  "block.firstmod.sulfur_block": "Block of Sulfur",
+  "item.firstmod.palm_wood": "Palm Wood",
+  "item.firstmod.palm_log": "Palm Log",
+  "item.firstmod.stripped_palm_wood": "Stripped Palm Wood",
+  "item.firstmod.stripped_palm_log": "Stripped Palm Log",
+  "item.firstmod.palm_planks": "Palm Planks",
+  "item.firstmod.palm_slab": "Palm Slab",
+  "item.firstmod.palm_stairs": "Palm Stairs",
+  "item.firstmod.palm_pressure_plate": "Palm Pressure Plate",
+  "item.firstmod.palm_button": "Palm Button",
+  "item.firstmod.palm_fence": "Palm Fence",
+  "item.firstmod.palm_fence_gate": "Palm Fence Gate",
+  "item.firstmod.palm_door": "Palm Door",
+  "item.firstmod.palm_trapdoor": "Palm Trapdoor",
+
+
+  "item.firstmod.palm_leaves": "Palm Leaves",
+  "item.firstmod.dry_palm_leaves_block": "Dry Palm Leaves Block",
+  "item.firstmod.dry_palm_leaves_slab": "Dry Palm Leaves Slab",
+  "item.firstmod.dry_palm_leaves_carpet": "Dry Palm Leaves Carpet",
+  "item.firstmod.palm_sapling": "Palm Sapling",
+  "item.firstmod.potted_palm_sapling": "Potted Palm Sapling",
+
+
+  "item.firstmod.sulfur_ore": "Sulfur Ore",
+  "item.firstmod.deepslate_sulfur_ore": "Deepslate Sulfur Ore",
+  "item.firstmod.nether_sulfur_ore": "Nether Sulfur Ore",
+  "item.firstmod.end_sulfur_ore": "End Sulfur Ore",
+  "item.firstmod.sulfur_block": "Block of Sulfur",
   "item.firstmod.sulfur_powder": "Sulfur Powder",
   "item.firstmod.sulfur_shard": "Sulfur Shard",
 
+
+  "item.firstmod.coconut_lamp": "Coconut Lamp",
+
+
+  "item.firstmod.coconut": "Coconut",
+
+
   "item.firstmod.banana": "Banana",
   "item.firstmod.fruit_salad": "Fruit Salad",
-  "item.firstmod.coconut": "Coconut",
   "item.firstmod.milk_shake": "Milkshake",
-  "block.firstmod.rice_pudding": "Rice Pudding",
+  "item.firstmod.rice_pudding": "Rice Pudding",
+  "item.firstmod.maki_sushi": "Maki Sushi",
+  "item.firstmod.nigiri_sushi": "Nigiri Sushi",
+
+
+  "item.firstmod.rice_seeds": "Rice Seeds",
+  "item.firstmod.rice_stem": "Rice Stem",
+
+
+
+
+
 
   "item.firstmod.battery": "Battery",
-
-  "block.firstmod.palm_leaves": "Palm Leaves",
-  "block.firstmod.dry_palm_leaves_block": "Dry Palm Leaves Block",
-  "block.firstmod.dry_palm_leaves_slab": "Dry Palm Leaves Slab",
-  "block.firstmod.dry_palm_leaves_carpet": "Dry Palm Leaves Carpet",
-  "block.firstmod.palm_sapling": "Palm Sapling",
-  "block.firstmod.potted_palm_sapling": "Potted Palm Sapling",
-
-  "block.firstmod.coconut_lamp": "Coconut Lamp",
 
   "item.firstmod.electric_pickaxe": "Electric Pickaxe",
   "item.firstmod.electric_axe": "Electric Axe",
@@ -62,6 +80,8 @@
   "tooltip.firstmod.empty_line": " ",
   "tooltip.firstmod.sulfur_ore.tooltip": "§7This block will hurt you if you touch it.§r",
   "tooltip.firstmod.battery.tooltip": "Green energy!",
+
+
   "tooltip.firstmod.milkshake.tooltip.line1": "Sugar Rush!",
   "tooltip.firstmod.milkshake.tooltip.line2": "§7Drinking this will give:§r",
   "tooltip.firstmod.milkshake.tooltip.line3": "§2 1 Speed§r",
@@ -73,6 +93,12 @@
   "tooltip.firstmod.fruit_salad.tooltip.line1": "Nutritious and delicious!",
   "tooltip.firstmod.fruit_salad.tooltip.line2": "§7Eating this will give:§r",
   "tooltip.firstmod.fruit_salad.tooltip.line3": "§2 1 Regeneration§r",
+  "tooltip.firstmod.sushi.tooltip.line1": "Eating raw or undercooked fish might increase the risk of food poisoning.",
+  "tooltip.firstmod.sushi.tooltip.line2": "§7Eating this might give:§r",
+  "tooltip.firstmod.maki_sushi.tooltip.line3": "§2 1 Regeneration§r",
+  "tooltip.firstmod.nigiri_sushi.tooltip.line3": "§2 1 Instant Health§r",
+
+
 
   "tooltip.firstmod.electric.tooltip.title": "§7Gives effect:§r",
   "tooltip.firstmod.electric_helmet.tooltip.line1": "§2 Night Vision 2§r",
@@ -87,18 +113,8 @@
   "item.minecraft.lingering_potion.effect.electrified_potion": "Electrified Lingering Potion",
   "item.minecraft.tipped_arrow.effect.electrified_potion": "Electrified Arrow",
 
-  "item.firstmod.rice_seeds": "Rice Seeds",
-  "item.firstmod.rice_stem": "Rice Stem",
-  "block.firstmod.rice_crop": "Rice Crop",
 
-  "block.firstmod.banana_bush": "Banana Bush",
 
-  "item.firstmod.maki_sushi": "Maki Sushi",
-  "item.firstmod.nigiri_sushi": "Nigiri Sushi",
-  "tooltip.firstmod.sushi.tooltip.line1": "Eating raw or undercooked fish might increase the risk of food poisoning.",
-  "tooltip.firstmod.sushi.tooltip.line2": "§7Eating this might give:§r",
-  "tooltip.firstmod.maki_sushi.tooltip.line3": "§2 1 Regeneration§r",
-  "tooltip.firstmod.nigiri_sushi.tooltip.line3": "§2 1 Instant Health§r",
 
   "block.firstmod.teleportation_stone": "Teleportation Stone",
   "effect.firstmod.teleportation": "Teleportation",

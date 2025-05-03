@@ -7,8 +7,9 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ShovelItem;
-import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.ToolMaterial;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
@@ -18,8 +19,9 @@ import net.neoforged.neoforge.common.ItemAbilities;
 import java.util.List;
 
 public class ElectricShovelItem extends ShovelItem {
-    public ElectricShovelItem(Tier tier, Properties properties) {
-        super(tier, properties);
+
+    public ElectricShovelItem(ToolMaterial material, float attackDamage, float attackSpeed, Item.Properties properties) {
+        super(material, attackDamage, attackSpeed, properties);
     }
 
     @Override
@@ -64,7 +66,7 @@ public class ElectricShovelItem extends ShovelItem {
                 }
             }
 
-            return modified ? InteractionResult.sidedSuccess(level.isClientSide) : InteractionResult.PASS;
+            return modified ? InteractionResult.SUCCESS : InteractionResult.PASS;
         }
     }
 }

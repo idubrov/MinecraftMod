@@ -14,7 +14,7 @@ public class ModPotions {
             DeferredRegister.create(BuiltInRegistries.POTION, FirstMod.MOD_ID);
 
     public static final Holder<Potion> ELECTRIFIED_POTION = POTIONS.register("electrified_potion",
-            () -> new Potion(new MobEffectInstance(ModEffects.ELECTRIFIED_EFFECT, 2400 , 0)));
+            () -> new Potion("electrified_potion", new MobEffectInstance(ModEffects.ELECTRIFIED_EFFECT, 2400 , 0)));
 
     public static void register(IEventBus eventBus) {
         POTIONS.register(eventBus);

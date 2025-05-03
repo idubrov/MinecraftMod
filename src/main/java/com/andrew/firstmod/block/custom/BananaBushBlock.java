@@ -8,8 +8,8 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.InsideBlockEffectApplier;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -38,34 +38,46 @@ public class BananaBushBlock extends SweetBerryBushBlock {
                     Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0),
                     Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0)};
 
+
     public BananaBushBlock(Properties properties) {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any().setValue(AGE, 0));
     }
+
+
+    @Override
+    public ItemStack getCloneItemStack(LevelReader level, BlockPos pos, BlockState state, boolean p_388022_) {
+        return new ItemStack(ModItems.BANANA.get());
+    }
+
 
     @Override
     protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
         return SHAPE_BY_AGE[state.getValue(AGE)];
     }
 
+
     @Override
-    protected void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
+    protected void entityInside(BlockState state, Level level, BlockPos pos, Entity entity, InsideBlockEffectApplier p_405414_) {
         // Do nothing, don't hurt anybody
     }
+
 
     public @NotNull IntegerProperty getAgeProperty() {
         return AGE;
     }
 
+
     public BlockState getStateForAge(int age) {
         return this.defaultBlockState().setValue(this.getAgeProperty(), age);
     }
+
 
     // If hit any block of fully grown banana_bush with BONEMEAL,
     // it should behave as any other item (collect all crop),
     // otherwise apply bonemeal
     @Override
-    protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
+    protected InteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
         int currentAge = state.getValue(AGE);
         BlockPos abovePos = pos.above();
         BlockPos aboveAbovePos = pos.above(2);
@@ -76,8 +88,11 @@ public class BananaBushBlock extends SweetBerryBushBlock {
                 (currentAge == 2 && aboveBlock.is(this)) ||
                 (currentAge == 0 && aboveAboveBlock.is(this)));
 
-        return !fullyGrownFlag && stack.is(Items.BONE_MEAL) ? ItemInteractionResult.SKIP_DEFAULT_BLOCK_INTERACTION : ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+        return !fullyGrownFlag && stack.is(Items.BONE_MEAL)
+                ? InteractionResult.PASS
+                : super.useItemOn(stack, state, level, pos, player, hand, hitResult);
     }
+
 
     @Override
     protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
@@ -98,7 +113,7 @@ public class BananaBushBlock extends SweetBerryBushBlock {
             level.setBlock(belowPos, getStateForAge(1), 2);
 
             level.gameEvent(GameEvent.BLOCK_CHANGE, belowPos, GameEvent.Context.of(player, getStateForAge(1)));
-            return InteractionResult.sidedSuccess(level.isClientSide);
+            return InteractionResult.SUCCESS;
         } else if (currentAge == 2 && aboveBlock.isAir()) {
             popResource(level, pos, new ItemStack(ModItems.BANANA.get(), drops));
             level.playSound(null, pos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, 0.8F + level.random.nextFloat() * 0.4F);
@@ -106,7 +121,7 @@ public class BananaBushBlock extends SweetBerryBushBlock {
             level.setBlock(pos, getStateForAge(1), 2);
 
             level.gameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Context.of(player, getStateForAge(1)));
-            return InteractionResult.sidedSuccess(level.isClientSide);
+            return InteractionResult.SUCCESS;
         } else if (currentAge == 2 && aboveBlock.is(this)) {
             return this.useWithoutItem(aboveBlock, level, abovePos, player, hitResult);
         } else if (currentAge == 0 && aboveBlock.is(this)) {
@@ -116,10 +131,6 @@ public class BananaBushBlock extends SweetBerryBushBlock {
         }
     }
 
-    @Override
-    public ItemStack getCloneItemStack(LevelReader level, BlockPos pos, BlockState state) {
-        return new ItemStack(ModItems.BANANA.get());
-    }
 
     @Override
     protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
@@ -140,6 +151,7 @@ public class BananaBushBlock extends SweetBerryBushBlock {
         }
     }
 
+
     @Override
     protected boolean canSurvive(BlockState state, LevelReader level, BlockPos pos) {
         int currentAge = state.getValue(AGE);
@@ -154,6 +166,7 @@ public class BananaBushBlock extends SweetBerryBushBlock {
             return belowBlock.is(this);
         }
     }
+
 
     @Override
     public void performBonemeal(ServerLevel level, RandomSource random, BlockPos pos, BlockState state) {
@@ -172,6 +185,7 @@ public class BananaBushBlock extends SweetBerryBushBlock {
         }
     }
 
+
     @Override
     public void playerDestroy(Level level, Player player, BlockPos pos, BlockState state, @Nullable BlockEntity blockEntity, ItemStack tool) {
         BlockPos abovePos = pos.above();
@@ -182,6 +196,7 @@ public class BananaBushBlock extends SweetBerryBushBlock {
         if (aboveAboveState.is(this)) level.destroyBlock(aboveAbovePos, false);
         if (aboveState.is(this)) level.destroyBlock(abovePos, false);
     }
+
 
     @Override
     public boolean isValidBonemealTarget(LevelReader level, BlockPos pos, BlockState state) {

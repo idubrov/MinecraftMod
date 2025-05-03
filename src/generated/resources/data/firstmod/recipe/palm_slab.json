@@ -3,9 +3,7 @@
   "category": "building",
   "group": "wooden_slab",
   "key": {
-    "#": {
-      "item": "firstmod:palm_planks"
-    }
+    "#": "firstmod:palm_planks"
   },
   "pattern": [
     "###"

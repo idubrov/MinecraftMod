@@ -1,12 +1,11 @@
 package com.andrew.firstmod.item.custom;
 
-import net.minecraft.tags.BlockTags;
-import net.minecraft.world.item.DiggerItem;
-import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ToolMaterial;
 
 
-public class HammerItem extends DiggerItem {
-    public HammerItem(Tier tier, Properties properties) {
-        super(tier, BlockTags.MINEABLE_WITH_PICKAXE, properties);
+public class HammerItem extends Item {
+    public HammerItem(ToolMaterial material, float attackDamage, float attackSpeed, Item.Properties properties) {
+        super(properties.pickaxe(material, attackDamage, attackSpeed));
     }
 }

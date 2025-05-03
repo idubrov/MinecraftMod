@@ -17,19 +17,19 @@ public class TeleportationEffect  extends InstantenousMobEffect {
 
 
     private BlockPos findNearestStone(ServerLevel world, BlockPos startPos) {
-        Set<BlockPos> stones = TeleportationStoneData.get(world).getStoredPositions();
+//        Set<BlockPos> stones = TeleportationStoneData.get(world).getStoredPositions();
+//
+//        Optional<BlockPos> nearest = stones.stream()
+//                .min(Comparator.comparingDouble(pos -> pos.distSqr(startPos)));
 
-        Optional<BlockPos> nearest = stones.stream()
-                .min(Comparator.comparingDouble(pos -> pos.distSqr(startPos)));
-
-        return nearest.orElse(null);
+        return null; //nearest.orElse(null);
     }
 
     private void teleportToTop(LivingEntity entity, BlockPos basePos) {
         ServerLevel world = (ServerLevel) entity.level();
         BlockPos topPos = basePos.above(); // Assume the player stands on top of the block
 
-        while (!world.getBlockState(topPos).isAir() && topPos.getY() < world.getMaxBuildHeight()) {
+        while (!world.getBlockState(topPos).isAir()) {
             topPos = topPos.above();
         }
 

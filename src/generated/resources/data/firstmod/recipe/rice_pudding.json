@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "B": {
-      "item": "firstmod:banana"
-    },
-    "C": {
-      "item": "minecraft:cocoa_beans"
-    },
-    "R": {
-      "item": "firstmod:rice_seeds"
-    }
+    "B": "firstmod:banana",
+    "C": "minecraft:cocoa_beans",
+    "R": "firstmod:rice_seeds"
   },
   "pattern": [
     "BCB",

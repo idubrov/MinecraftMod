@@ -3,9 +3,7 @@
   "category": "building",
   "group": "wooden_stairs",
   "key": {
-    "#": {
-      "item": "firstmod:palm_planks"
-    }
+    "#": "firstmod:palm_planks"
   },
   "pattern": [
     "#  ",

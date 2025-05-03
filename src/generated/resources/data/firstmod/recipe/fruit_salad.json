@@ -2,21 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "firstmod:banana"
-    },
-    {
-      "item": "firstmod:coconut"
-    },
-    {
-      "item": "minecraft:apple"
-    },
-    {
-      "item": "minecraft:melon_slice"
-    },
-    {
-      "item": "minecraft:bowl"
-    }
+    "firstmod:banana",
+    "firstmod:coconut",
+    "minecraft:apple",
+    "minecraft:melon_slice",
+    "minecraft:bowl"
   ],
   "result": {
     "count": 1,

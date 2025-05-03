@@ -4,9 +4,7 @@
   "cookingtime": 80,
   "experience": 0.7,
   "group": "sulfur",
-  "ingredient": {
-    "item": "firstmod:end_sulfur_ore"
-  },
+  "ingredient": "firstmod:end_sulfur_ore",
   "result": {
     "count": 1,
     "id": "firstmod:sulfur_powder"

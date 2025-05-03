@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "firstmod:sulfur_block"
-    }
+    "firstmod:sulfur_block"
   ],
   "result": {
     "count": 9,

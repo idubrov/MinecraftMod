@@ -5,13 +5,10 @@ import com.andrew.firstmod.block.ModBlocks;
 import com.andrew.firstmod.potion.ModPotions;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.PotionContents;
-import net.minecraft.world.level.ItemLike;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -22,8 +19,10 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, FirstMod.MOD_ID);
 
+
     public static final Supplier<CreativeModeTab> ITEMS_TAB1 = CREATIVE_MODE_TAB.register("electric_bananas_items_tab1",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BANANA.get()))
+            () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModItems.BANANA.get()))
                     .title(Component.translatable("creativetab.firstmod.electric_bananas_items_tab1"))
                     .displayItems((itemDisplayParameters, output) -> {
 
@@ -55,22 +54,23 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.DRY_PALM_LEAVES_CARPET);
                         output.accept(ModBlocks.PALM_SAPLING);
 
+                        output.accept(ModItems.COCONUT);
+                        output.accept(ModBlocks.COCONUT_LAMP);
+
                         output.accept(ModItems.RICE_SEEDS);
                         output.accept(ModItems.RICE_STEM);
-                        output.accept(ModItems.BANANA);
-                        output.accept(ModItems.COCONUT);
 
+                        output.accept(ModItems.BANANA);
                         output.accept(ModItems.MILK_SHAKE);
                         output.accept(ModItems.FRUIT_SALAD);
                         output.accept(ModItems.MAKI_SUSHI);
                         output.accept(ModItems.NIGIRI_SUSHI);
                         output.accept(ModBlocks.RICE_PUDDING);
-
-                        output.accept(ModBlocks.COCONUT_LAMP);
                     }).build());
 
     public static final Supplier<CreativeModeTab> ITEMS_TAB2 = CREATIVE_MODE_TAB.register("electric_bananas_items_tab2",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BATTERY.get()))
+            () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModItems.BATTERY.get()))
                     .title(Component.translatable("creativetab.firstmod.electric_bananas_items_tab2"))
                     .displayItems((itemDisplayParameters, output) -> {
 
@@ -99,8 +99,8 @@ public class ModCreativeModeTabs {
                         output.accept(PotionContents.createItemStack(Items.LINGERING_POTION, ModPotions.ELECTRIFIED_POTION));
                         output.accept(PotionContents.createItemStack(Items.TIPPED_ARROW, ModPotions.ELECTRIFIED_POTION));
 
-                        output.accept(ModBlocks.TELEPORTATION_STONE);
-                        output.accept(ModItems.TELEPORTATION_DEVICE);
+//                        output.accept(ModBlocks.TELEPORTATION_STONE);
+//                        output.accept(ModItems.TELEPORTATION_DEVICE);
                     }).build());
 
     public static void register(IEventBus eventBus) {

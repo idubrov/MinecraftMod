@@ -5,7 +5,6 @@ import com.andrew.firstmod.block.ModBlocks;
 import com.andrew.firstmod.data.TeleportationStoneData;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -29,8 +28,8 @@ public class TeleportationStoneTracker {
         if (!(event.getLevel() instanceof ServerLevel serverLevel)) return;
 
         // Load saved Teleportation Stones into memory
-        TeleportationStoneData data = TeleportationStoneData.get(serverLevel);
-        TeleportationStoneTracker.teleportationStones.addAll(data.getStoredPositions());
+//        TeleportationStoneData data = TeleportationStoneData.get(serverLevel);
+//        TeleportationStoneTracker.teleportationStones.addAll(data.getStoredPositions());
     }
 
 
@@ -44,10 +43,10 @@ public class TeleportationStoneTracker {
             teleportationStones.add(pos);
 
             // Save position in persistent storage
-            if (event.getLevel() instanceof ServerLevel serverLevel) {
-                TeleportationStoneData data = TeleportationStoneData.get(serverLevel);
-                data.addStone(pos);
-            }
+//            if (event.getLevel() instanceof ServerLevel serverLevel) {
+//                TeleportationStoneData data = TeleportationStoneData.get(serverLevel);
+//                data.addStone(pos);
+//            }
 
 //            if (event.getEntity() instanceof Player player) {
 //                player.sendSystemMessage(net.minecraft.network.chat.Component.literal("Teleportation Stone placed at: " + pos));
@@ -66,10 +65,10 @@ public class TeleportationStoneTracker {
             teleportationStones.remove(pos);
 
             // Remove from persistent storage
-            if (event.getLevel() instanceof ServerLevel serverLevel) {
-                TeleportationStoneData data = TeleportationStoneData.get(serverLevel);
-                data.removeStone(pos);
-            }
+//            if (event.getLevel() instanceof ServerLevel serverLevel) {
+//                TeleportationStoneData data = TeleportationStoneData.get(serverLevel);
+//                data.removeStone(pos);
+//            }
 
 //            event.getPlayer()
 //                    .sendSystemMessage(net.minecraft.network.chat.Component.literal("Teleportation Stone removed from: " + pos));
@@ -84,7 +83,7 @@ public class TeleportationStoneTracker {
             for (BlockPos pos : new ArrayList<>(affectedBlocks)) {  // Avoid concurrent modification
                 if (serverLevel.getBlockState(pos).is(ModBlocks.TELEPORTATION_STONE.get())) {
                     // Remove from tracking
-                    TeleportationStoneData.get(serverLevel).removeStone(pos);
+                  //  TeleportationStoneData.get(serverLevel).removeStone(pos);
 
                     // Manually break the block
                     serverLevel.destroyBlock(pos, true);
