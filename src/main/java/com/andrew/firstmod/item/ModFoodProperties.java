@@ -53,13 +53,9 @@ public class ModFoodProperties {
             new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 20, 0), 0.25f)).build();
 
 
-
-
-
-
     public static final FoodProperties TELEPORTATION_DEVICE = new FoodProperties.Builder()
             .alwaysEdible()
             .build();
-    public final static Consumable TELEPORTATION_EFFECT = Consumables.defaultDrink().onConsume(
+    public final static Consumable TELEPORTATION_EFFECT = Consumables.defaultDrink().consumeSeconds(0.5F).onConsume(
             new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(ModEffects.TELEPORTATiON_EFFECT, 1, 0), 1f)).build();
 }

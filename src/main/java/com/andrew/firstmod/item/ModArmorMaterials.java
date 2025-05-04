@@ -26,14 +26,9 @@ public class ModArmorMaterials {
             SoundEvents.ARMOR_EQUIP_NETHERITE,
             0, 0,
             ModTags.Items.BATTERY_REPAIR,
-            // The resource key of the EquipmentClientInfo JSON discussed below
-            // Points to assets/examplemod/equipment/copper.json
             ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "electric"))
     );
 }
-
-
-
 
 
 

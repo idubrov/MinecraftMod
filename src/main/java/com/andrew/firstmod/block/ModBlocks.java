@@ -46,7 +46,7 @@ public class ModBlocks {
                             .lightLevel(state -> 10)
                             .requiresCorrectToolForDrops()
                             .setId(ResourceKey.create(Registries.BLOCK,
-                                    ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "deepslate_sulfur_block")))));
+                                    ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "deepslate_sulfur_ore")))));
 
     public static final DeferredBlock<Block> NETHER_SULFUR_ORE = registerBlock("nether_sulfur_ore",
             () -> new SulfurOreBlock(ConstantInt.of(0),
@@ -201,15 +201,11 @@ public class ModBlocks {
 
 
 
-
-
-
-
-
     public static final DeferredBlock<Block> TELEPORTATION_STONE = registerBlock("teleportation_stone",
             () -> new TeleportationBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LODESTONE)
                     .setId(ResourceKey.create(Registries.BLOCK,
                             ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "teleportation_stone")))));
+
 
     //Registering of our new blocks and its item
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

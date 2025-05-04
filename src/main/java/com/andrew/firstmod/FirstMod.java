@@ -95,7 +95,7 @@ public class FirstMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-          //  EntityRenderers.register(ModEntities.COCONUT.get(), ThrownItemRenderer::new);
+
         }
     }
 }

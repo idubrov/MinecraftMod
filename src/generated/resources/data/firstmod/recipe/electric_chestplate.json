@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "B": {
-      "item": "firstmod:battery"
-    },
-    "I": {
-      "item": "minecraft:iron_ingot"
-    },
-    "N": {
-      "item": "minecraft:netherite_chestplate"
-    }
+    "B": "firstmod:battery",
+    "I": "minecraft:iron_ingot",
+    "N": "minecraft:netherite_chestplate"
   },
   "pattern": [
     "B B",

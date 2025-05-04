@@ -28,7 +28,6 @@ public class ElectricHoeItem extends HoeItem {
     public InteractionResult useOn(UseOnContext context) {
         Level level = context.getLevel();
         BlockPos blockpos = context.getClickedPos();
-        BlockState blockstate = level.getBlockState(blockpos);
 
         if (context.getClickedFace() == Direction.DOWN) {
             return InteractionResult.PASS;
@@ -62,5 +61,4 @@ public class ElectricHoeItem extends HoeItem {
             return tilled ? InteractionResult.SUCCESS : InteractionResult.PASS;
         }
     }
-
 }

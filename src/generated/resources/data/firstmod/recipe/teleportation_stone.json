@@ -2,21 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "B": {
-      "item": "firstmod:battery"
-    },
-    "E": {
-      "item": "minecraft:ender_pearl"
-    },
-    "I": {
-      "item": "minecraft:iron_block"
-    },
-    "L": {
-      "item": "minecraft:lodestone"
-    },
-    "N": {
-      "item": "minecraft:netherite_block"
-    }
+    "B": "firstmod:battery",
+    "E": "minecraft:ender_pearl",
+    "I": "minecraft:iron_block",
+    "L": "minecraft:lodestone",
+    "N": "minecraft:netherite_block"
   },
   "pattern": [
     "IEI",

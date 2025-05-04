@@ -36,8 +36,6 @@
 
 
   "item.firstmod.coconut_lamp": "Coconut Lamp",
-
-
   "item.firstmod.coconut": "Coconut",
 
 
@@ -51,10 +49,6 @@
 
   "item.firstmod.rice_seeds": "Rice Seeds",
   "item.firstmod.rice_stem": "Rice Stem",
-
-
-
-
 
 
   "item.firstmod.battery": "Battery",
@@ -77,10 +71,23 @@
   "item.firstmod.iron_hammer": "Iron Hammer",
   "item.firstmod.diamond_hammer": "Diamond Hammer",
 
+
+  "effect.firstmod.electrified": "Electrified",
+  "item.minecraft.potion.effect.electrified_potion": "Electrified Potion",
+  "item.minecraft.splash_potion.effect.electrified_potion": "Electrified Splash Potion",
+  "item.minecraft.lingering_potion.effect.electrified_potion": "Electrified Lingering Potion",
+  "item.minecraft.tipped_arrow.effect.electrified_potion": "Electrified Arrow",
+
+
+  "item.firstmod.teleportation_stone": "Teleportation Stone",
+  "effect.firstmod.teleportation": "Teleportation",
+  "item.firstmod.teleportation_device": "Teleportation Device",
+
+
+
   "tooltip.firstmod.empty_line": " ",
   "tooltip.firstmod.sulfur_ore.tooltip": "§7This block will hurt you if you touch it.§r",
   "tooltip.firstmod.battery.tooltip": "Green energy!",
-
 
   "tooltip.firstmod.milkshake.tooltip.line1": "Sugar Rush!",
   "tooltip.firstmod.milkshake.tooltip.line2": "§7Drinking this will give:§r",
@@ -98,25 +105,11 @@
   "tooltip.firstmod.maki_sushi.tooltip.line3": "§2 1 Regeneration§r",
   "tooltip.firstmod.nigiri_sushi.tooltip.line3": "§2 1 Instant Health§r",
 
-
-
   "tooltip.firstmod.electric.tooltip.title": "§7Gives effect:§r",
   "tooltip.firstmod.electric_helmet.tooltip.line1": "§2 Night Vision 2§r",
   "tooltip.firstmod.electric_chestplate.tooltip.line1": "§2 Regeneration 2§r",
   "tooltip.firstmod.electric_leggings.tooltip.line1": "§2 Speed 2§r",
   "tooltip.firstmod.electric_boots.tooltip.line1": "§2 Jump Boost 2§r",
-  "tooltip.firstmod.electric_horse_armor.tooltip.line1": "§2 Speed 3§r",
+  "tooltip.firstmod.electric_horse_armor.tooltip.line1": "§2 Speed 3§r"
 
-  "effect.firstmod.electrified": "Electrified",
-  "item.minecraft.potion.effect.electrified_potion": "Electrified Potion",
-  "item.minecraft.splash_potion.effect.electrified_potion": "Electrified Splash Potion",
-  "item.minecraft.lingering_potion.effect.electrified_potion": "Electrified Lingering Potion",
-  "item.minecraft.tipped_arrow.effect.electrified_potion": "Electrified Arrow",
-
-
-
-
-  "block.firstmod.teleportation_stone": "Teleportation Stone",
-  "effect.firstmod.teleportation": "Teleportation",
-  "item.firstmod.teleportation_device": "Teleportation Device"
 }

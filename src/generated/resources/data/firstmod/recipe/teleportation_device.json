@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "B": {
-      "item": "firstmod:battery"
-    },
-    "E": {
-      "item": "minecraft:ender_pearl"
-    },
-    "I": {
-      "item": "minecraft:iron_ingot"
-    }
+    "B": "firstmod:battery",
+    "E": "minecraft:ender_pearl",
+    "I": "minecraft:iron_ingot"
   },
   "pattern": [
     "   ",

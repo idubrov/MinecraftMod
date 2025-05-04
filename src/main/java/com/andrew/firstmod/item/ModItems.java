@@ -76,9 +76,6 @@ public class ModItems {
 
 
 
-
-
-
     public static final DeferredItem<Item> BATTERY = ITEMS.register("battery",
             () -> new Item(new Item.Properties()
                     .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "battery")))));
@@ -101,94 +98,61 @@ public class ModItems {
                     .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "electric_hoe")))));
 
 
+
     public static final DeferredItem<Item> WOODEN_HAMMER = ITEMS.register("wooden_hammer",
             () -> new HammerItem(ToolMaterial.WOOD, 1.0F, -2.8F, new Item.Properties()
                     .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "wooden_hammer")))));
 
     public static final DeferredItem<Item> STONE_HAMMER = ITEMS.register("stone_hammer",
-            () -> new HammerItem(ToolMaterial.WOOD, 1.0F, -2.8F, new Item.Properties()
+            () -> new HammerItem(ToolMaterial.STONE, 1.0F, -2.8F, new Item.Properties()
                     .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "stone_hammer")))));
 
     public static final DeferredItem<Item> GOLDEN_HAMMER = ITEMS.register("golden_hammer",
-            () -> new HammerItem(ToolMaterial.WOOD, 1.0F, -2.8F, new Item.Properties()
+            () -> new HammerItem(ToolMaterial.GOLD, 1.0F, -2.8F, new Item.Properties()
                     .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "golden_hammer")))));
 
     public static final DeferredItem<Item> IRON_HAMMER = ITEMS.register("iron_hammer",
-            () -> new HammerItem(ToolMaterial.WOOD, 1.0F, -2.8F, new Item.Properties()
+            () -> new HammerItem(ToolMaterial.IRON, 1.0F, -2.8F, new Item.Properties()
                     .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "iron_hammer")))));
 
     public static final DeferredItem<Item> DIAMOND_HAMMER = ITEMS.register("diamond_hammer",
-            () -> new HammerItem(ToolMaterial.WOOD, 1.0F, -2.8F, new Item.Properties()
+            () -> new HammerItem(ToolMaterial.DIAMOND, 1.0F, -2.8F, new Item.Properties()
                     .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "diamond_hammer")))));
+
 
 
     public static final DeferredItem<Item> ELECTRIC_HELMET = ITEMS.register("electric_helmet",
             () -> new ModArmorItem(new Item.Properties()
                     .humanoidArmor(ModArmorMaterials.ELECTRIC_ARMOR_MATERIAL, ArmorType.HELMET)
                     .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "electric_helmet")))));
-//            {
-//                @Override
-//                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-//                    tooltipComponents.add(Component.translatable("tooltip.firstmod.empty_line"));
-//                    tooltipComponents.add(Component.translatable("tooltip.firstmod.electric.tooltip.title"));
-//                    tooltipComponents.add(Component.translatable("tooltip.firstmod.electric_helmet.tooltip.line1"));
-//                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
-//                }
-//            });
 
     public static final DeferredItem<Item> ELECTRIC_CHESTPLATE = ITEMS.register("electric_chestplate",
             () -> new ModArmorItem(new Item.Properties()
                     .humanoidArmor(ModArmorMaterials.ELECTRIC_ARMOR_MATERIAL, ArmorType.CHESTPLATE)
                     .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "electric_chestplate")))));
-//            {
-//                @Override
-//                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-//                    tooltipComponents.add(Component.translatable("tooltip.firstmod.empty_line"));
-//                    tooltipComponents.add(Component.translatable("tooltip.firstmod.electric.tooltip.title"));
-//                    tooltipComponents.add(Component.translatable("tooltip.firstmod.electric_chestplate.tooltip.line1"));
-//                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
-//                }
-//            });
 
     public static final DeferredItem<Item> ELECTRIC_LEGGINGS = ITEMS.register("electric_leggings",
             () -> new ModArmorItem(new Item.Properties()
                     .humanoidArmor(ModArmorMaterials.ELECTRIC_ARMOR_MATERIAL, ArmorType.LEGGINGS)
                     .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "electric_leggings")))));
-//            {
-//                @Override
-//                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-//                    tooltipComponents.add(Component.translatable("tooltip.firstmod.empty_line"));
-//                    tooltipComponents.add(Component.translatable("tooltip.firstmod.electric.tooltip.title"));
-//                    tooltipComponents.add(Component.translatable("tooltip.firstmod.electric_leggings.tooltip.line1"));
-//                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
-//                }
-//            });
 
     public static final DeferredItem<Item> ELECTRIC_BOOTS = ITEMS.register("electric_boots",
             () -> new ModArmorItem(new Item.Properties()
                     .humanoidArmor(ModArmorMaterials.ELECTRIC_ARMOR_MATERIAL, ArmorType.BOOTS)
                     .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "electric_boots")))));
-//            {
-//                @Override
-//                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-//                    tooltipComponents.add(Component.translatable("tooltip.firstmod.empty_line"));
-//                    tooltipComponents.add(Component.translatable("tooltip.firstmod.electric.tooltip.title"));
-//                    tooltipComponents.add(Component.translatable("tooltip.firstmod.electric_boots.tooltip.line1"));
-//                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
-//                }
-//            });
 
     public static final DeferredItem<Item> ELECTRIC_HORSE_ARMOR = ITEMS.register("electric_horse_armor",
-            () -> new Item(new Item.Properties().stacksTo(1)
+            () -> new ModHorseArmorItem(new Item.Properties().stacksTo(1)
                     .horseArmor(ModArmorMaterials.ELECTRIC_ARMOR_MATERIAL)
                     .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "electric_horse_armor")))));
 
 
-//    public static final DeferredItem<Item> TELEPORTATION_DEVICE = ITEMS.register("teleportation_device",
-//            () -> new Item(new Item.Properties()
-//                    .food(ModFoodProperties.TELEPORTATION_DEVICE, ModFoodProperties.TELEPORTATION_EFFECT)
-//                    .stacksTo(1)));
 
+    public static final DeferredItem<Item> TELEPORTATION_DEVICE = ITEMS.register("teleportation_device",
+            () -> new Item(new Item.Properties()
+                    .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "teleportation_device")))
+                    .food(ModFoodProperties.TELEPORTATION_DEVICE, ModFoodProperties.TELEPORTATION_EFFECT)
+                    .stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

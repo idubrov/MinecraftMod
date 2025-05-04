@@ -99,8 +99,8 @@ public class ModCreativeModeTabs {
                         output.accept(PotionContents.createItemStack(Items.LINGERING_POTION, ModPotions.ELECTRIFIED_POTION));
                         output.accept(PotionContents.createItemStack(Items.TIPPED_ARROW, ModPotions.ELECTRIFIED_POTION));
 
-//                        output.accept(ModBlocks.TELEPORTATION_STONE);
-//                        output.accept(ModItems.TELEPORTATION_DEVICE);
+                        output.accept(ModBlocks.TELEPORTATION_STONE);
+                        output.accept(ModItems.TELEPORTATION_DEVICE);
                     }).build());
 
     public static void register(IEventBus eventBus) {

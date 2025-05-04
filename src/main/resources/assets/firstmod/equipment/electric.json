@@ -1,0 +1,19 @@
+{
+  "layers": {
+    "horse_body": [
+      {
+        "texture": "firstmod:electric"
+      }
+    ],
+    "humanoid": [
+      {
+        "texture": "firstmod:electric"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "firstmod:electric"
+      }
+    ]
+  }
+}

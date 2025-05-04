@@ -15,15 +15,15 @@ import java.util.Set;
 public class TeleportationEffect  extends InstantenousMobEffect {
     public TeleportationEffect(MobEffectCategory category, int color) {super(category, color);}
 
-
     private BlockPos findNearestStone(ServerLevel world, BlockPos startPos) {
-//        Set<BlockPos> stones = TeleportationStoneData.get(world).getStoredPositions();
-//
-//        Optional<BlockPos> nearest = stones.stream()
-//                .min(Comparator.comparingDouble(pos -> pos.distSqr(startPos)));
+        Set<BlockPos> stones = TeleportationStoneData.get(world).getStoredPositions();
 
-        return null; //nearest.orElse(null);
+        Optional<BlockPos> nearest = stones.stream()
+                .min(Comparator.comparingDouble(pos -> pos.distSqr(startPos)));
+
+        return nearest.orElse(null);
     }
+
 
     private void teleportToTop(LivingEntity entity, BlockPos basePos) {
         ServerLevel world = (ServerLevel) entity.level();
@@ -36,7 +36,8 @@ public class TeleportationEffect  extends InstantenousMobEffect {
         entity.teleportTo(topPos.getX() + 0.5, topPos.getY(), topPos.getZ() + 0.5);
     }
 
-    public boolean applyEffectTick(@NotNull LivingEntity entity, int amplifier) {
+
+    public boolean applyEffectTick(@NotNull ServerLevel level, @NotNull LivingEntity entity, int amplifier) {
         if (!entity.level().isClientSide() && entity.level() instanceof ServerLevel serverLevel) {
             BlockPos nearestStone = findNearestStone(serverLevel, entity.blockPosition());
 

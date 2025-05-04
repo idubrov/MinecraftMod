@@ -7,8 +7,6 @@ import com.andrew.firstmod.item.ModItems;
 import com.andrew.firstmod.item.custom.*;
 import com.andrew.firstmod.potion.ModPotions;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
-import net.minecraft.ChatFormatting;
-import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
@@ -81,9 +79,28 @@ public class ModEvents {
             event.getToolTip().add(Component.translatable("tooltip.firstmod.empty_line"));
             event.getToolTip().add(Component.translatable("tooltip.firstmod.sushi.tooltip.line2"));
             event.getToolTip().add(Component.translatable("tooltip.firstmod.nigiri_sushi.tooltip.line3"));
+        } else if (stack.getItem() == ModItems.ELECTRIC_HELMET.get()) {
+            event.getToolTip().add(Component.translatable("tooltip.firstmod.empty_line"));
+            event.getToolTip().add(Component.translatable("tooltip.firstmod.electric.tooltip.title"));
+            event.getToolTip().add(Component.translatable("tooltip.firstmod.electric_helmet.tooltip.line1"));
+        } else if (stack.getItem() == ModItems.ELECTRIC_CHESTPLATE.get()) {
+            event.getToolTip().add(Component.translatable("tooltip.firstmod.empty_line"));
+            event.getToolTip().add(Component.translatable("tooltip.firstmod.electric.tooltip.title"));
+            event.getToolTip().add(Component.translatable("tooltip.firstmod.electric_chestplate.tooltip.line1"));
+        } else if (stack.getItem() == ModItems.ELECTRIC_LEGGINGS.get()) {
+            event.getToolTip().add(Component.translatable("tooltip.firstmod.empty_line"));
+            event.getToolTip().add(Component.translatable("tooltip.firstmod.electric.tooltip.title"));
+            event.getToolTip().add(Component.translatable("tooltip.firstmod.electric_leggings.tooltip.line1"));
+        } else if (stack.getItem() == ModItems.ELECTRIC_BOOTS.get()) {
+            event.getToolTip().add(Component.translatable("tooltip.firstmod.empty_line"));
+            event.getToolTip().add(Component.translatable("tooltip.firstmod.electric.tooltip.title"));
+            event.getToolTip().add(Component.translatable("tooltip.firstmod.electric_boots.tooltip.line1"));
+        } else if (stack.getItem() == ModItems.ELECTRIC_HORSE_ARMOR.get()) {
+            event.getToolTip().add(Component.translatable("tooltip.firstmod.empty_line"));
+            event.getToolTip().add(Component.translatable("tooltip.firstmod.electric.tooltip.title"));
+            event.getToolTip().add(Component.translatable("tooltip.firstmod.electric_horse_armor.tooltip.line1"));
         }
     }
-
 
 
     private static final Set<BlockPos> HARVESTED_BLOCKS = new HashSet<>();
@@ -157,13 +174,13 @@ public class ModEvents {
                 new ItemStack(ModBlocks.PALM_SAPLING.get(), 1), 8, 4, 0.5f
         ));
 
-//        rareTrades.add((entity, randomSource) -> new MerchantOffer(
-//                new ItemCost(Items.EMERALD, 7),
-//                new ItemStack(ModItems.TELEPORTATION_DEVICE.get(), 1), 2, 4, 0.5f
-//        ));
-//        rareTrades.add((entity, randomSource) -> new MerchantOffer(
-//                new ItemCost(Items.EMERALD, 20),
-//                new ItemStack(ModBlocks.TELEPORTATION_STONE.get(), 1), 1, 4, 0.5f
-//        ));
+        rareTrades.add((entity, randomSource) -> new MerchantOffer(
+                new ItemCost(Items.EMERALD, 7),
+                new ItemStack(ModItems.TELEPORTATION_DEVICE.get(), 1), 2, 4, 0.5f
+        ));
+        rareTrades.add((entity, randomSource) -> new MerchantOffer(
+                new ItemCost(Items.EMERALD, 20),
+                new ItemStack(ModBlocks.TELEPORTATION_STONE.get(), 1), 1, 4, 0.5f
+        ));
     }
 }

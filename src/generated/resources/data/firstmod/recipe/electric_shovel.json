@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "B": {
-      "item": "firstmod:battery"
-    },
-    "S": {
-      "item": "minecraft:stick"
-    }
+    "B": "firstmod:battery",
+    "S": "minecraft:stick"
   },
   "pattern": [
     " B ",
