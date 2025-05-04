@@ -10,10 +10,10 @@ power armor.
 
 ## Requirements
 - Java 21.0.6
-- Neoforge 21.1.146
+- Neoforge 21.5.63-beta
 
 ## Downloads
-[Electric_Bananas-1.0.1-neoforge.jar](build/libs/Electric_Bananas-1.0.1-neoforge.jar)
+[Electric_Bananas-1.0.1-neoforge-1.21.5.jar](build/libs/Electric_Bananas-1.0.1-neoforge-1.21.5.jar)
 
 ## Installation information
 - Backup your current Minecraft worlds
