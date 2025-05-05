@@ -62,13 +62,13 @@ Armor can be given trims using a smithing template and a trim material.
 
 <br>
 
-| Armor Piece               | Durability    | Defense Points | Enchantability | Effect       | Repair Item | 
-|---------------------------|---------------|----------------|----------------|:-------------|:------------|
-| Electric Boots            | 13 * 20 = 260 | 2              | 1              | Night Vision | Battery     |
-| Electric Leggings         | 15 * 20 = 300 | 5              | 1              | Regeneration | Battery     |
-| Electric Chestplate       | 16 * 20 = 320 | 6              | 1              | Speed        | Battery     |
-| Electric Helmet           | 11 * 20 = 220 | 2              | 1              | Jump Boost   | Battery     |
-| Electric <br/>Horse Armor | 13 * 20 = 260 | 5              | 1              | Speed        | Battery     |
+| Armor Piece               | Durability    | Defense Points | Enchantability | Effect          | Repair Item | 
+|---------------------------|---------------|----------------|----------------|:----------------|:------------|
+| Electric Boots            | 13 * 20 = 260 | 2              | 1              | Jump Boost II   | Battery     |
+| Electric Leggings         | 15 * 20 = 300 | 5              | 1              | Speed II        | Battery     |
+| Electric Chestplate       | 16 * 20 = 320 | 6              | 1              | Regeneration II | Battery     |
+| Electric Helmet           | 11 * 20 = 220 | 2              | 1              | Night Vision II | Battery     |
+| Electric <br/>Horse Armor | 13 * 20 = 260 | 5              | 1              | Speed III       | Battery     |
 
 <br/>
 
