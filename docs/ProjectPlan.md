@@ -1,14 +1,11 @@
-## Short Description
-(for the summary field — 1 sentence)
-A chaotic tropical tech mod featuring electric tools, palm trees, fruit smoothies, 
-sulfur-based batteries, power armor, and teleportation stones.
-
-
 # Plan
 
+### To Fix
+- Smithing table in armor trim preview doesn't show trim
+- Don't waste teleportation device if there is no stones
+
+
 ### Feature Requests and Ideas
-- (video) Migrate to MC 1.21.5 - blocks, armour, recipies, items, custom items, consumables.
-  (or wait till 1.22)
 - electric boat from palm (electric boat)
 - palm sign
 - dried rice stems for pillows, mattresses, curtains
@@ -30,12 +27,6 @@ sulfur-based batteries, power armor, and teleportation stones.
 - banner 3 and 4 blocks long = curtains
 - coconut lamps garland
 
-### Fix me
-- Intro and Docs for rice and banana
-- Intro and Docs for teleportation
+
+### Known Problems
 - Axes don't stripe 4x4
-
-### Done
-- Cannot stripe palm log with right click
-
-

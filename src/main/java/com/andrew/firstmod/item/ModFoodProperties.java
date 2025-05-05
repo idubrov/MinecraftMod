@@ -10,7 +10,7 @@ public class ModFoodProperties {
     public static final FoodProperties BANANA = new FoodProperties.Builder()
             .nutrition(5)
             .saturationModifier(0.5f)
-            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400), 1f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 2), 1f)
             .build();
 
     public static final FoodProperties MILK_SHAKE = new FoodProperties.Builder()
