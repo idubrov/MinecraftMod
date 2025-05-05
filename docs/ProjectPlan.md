@@ -1,11 +1,6 @@
 # Plan
 
-### Fix
-- +Add to readme mining sulfur ore with nether tools
-- +Banana gives speed-1, not 3. Fix amplifier in the code
-- +Electric armor gives effect level 2 - fix in readme, horse - 3
-- +Electric armor - wrong items description in the table of effects
-- +Electric armor - wrong effect tooltips
+### To Fix
 - Smithing table in armor trim preview doesn't show trim
 - Don't waste teleportation device if there is no stones
 
