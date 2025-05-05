@@ -37,7 +37,7 @@ All Sulfur Ores damage most living entities standing on top, dealing 1 damage ev
 | Stone     | None              | None                         | None                | None  |
 | Iron      | 1-3 Sulfur Shards | 1-3 Sulfur Powder<br/>2-5 xp | 1 Sulfur Ore Block  | None  |
 | Diamond   | 1-3 Sulfur Shards | 1-3 Sulfur Powder<br/>2-5 xp | 1 Sulfur Ore Block  | None  |
-| Nether    | 1-3 Sulfur Shards | 1-3 Sulfur Powder<br/>2-5 xp | 1 Sulfur Ore Block  | None  |
+| Netherite | 1-3 Sulfur Shards | 1-3 Sulfur Powder<br/>2-5 xp | 1 Sulfur Ore Block  | None  |
 | Golden    | None              | None                         | None                | None  |
 
 <br>
@@ -50,7 +50,7 @@ All Sulfur Ores damage most living entities standing on top, dealing 1 damage ev
 | Stone     | None              | None                         | None                | None  |
 | Iron      | 2-4 Sulfur Shards | 2-4 Sulfur Powder<br/>2-5 xp | 1 Sulfur Ore Block  | None  |
 | Diamond   | 2-4 Sulfur Shards | 2-4 Sulfur Powder<br/>2-5 xp | 1 Sulfur Ore Block  | None  |
-| Nether    | 2-4 Sulfur Shards | 2-4 Sulfur Powder<br/>2-5 xp | 1 Sulfur Ore Block  | None  |
+| Netherite | 2-4 Sulfur Shards | 2-4 Sulfur Powder<br/>2-5 xp | 1 Sulfur Ore Block  | None  |
 | Golden    | None              | None                         | None                | None  |
 
 <br>
