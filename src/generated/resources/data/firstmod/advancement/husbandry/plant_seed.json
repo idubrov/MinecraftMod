@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:husbandry/root",
   "criteria": {
-    "rice": {
+    "planted_rice_crop": {
       "conditions": {
         "location": [
           {
@@ -19,7 +19,7 @@
     },
     "icon": {
       "count": 1,
-      "id": "minecraft:wheat"
+      "id": "firstmod:rice_seeds"
     },
     "title": {
       "translate": "advancements.husbandry.plant_seed.title"
@@ -27,7 +27,7 @@
   },
   "requirements": [
     [
-      "rice"
+      "planted_rice_crop"
     ]
   ],
   "sends_telemetry_event": true

@@ -31,6 +31,8 @@ public class DataGenerators {
 
         event.addProvider(new ModDataMapProvider(packOutput, lookupProvider));
 
+        event.addProvider(new ModAdvancementProvider(packOutput, lookupProvider));
+
         event.addProvider(new ModWorldGenProvider(packOutput, lookupProvider));
 
         event.addProvider(new ModGlobalLootModifierProvider(packOutput, lookupProvider));
