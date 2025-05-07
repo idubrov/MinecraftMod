@@ -18,7 +18,7 @@ power armor.
 ## Installation information
 - Backup your current Minecraft worlds
 - Install Java 21.0.6
-- Install Neoforge 21.1.146 (Client or Server)
+- Install Neoforge 21.5.63-beta (Client or Server)
 - Download Electric Bananas Mod jar and drop it into the `minecraft\mods\` folder
 - In Minecraft Launcher bottom-left corner, choose the NeoForge profile
 
