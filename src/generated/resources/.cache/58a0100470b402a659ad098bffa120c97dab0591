@@ -1,8 +1,8 @@
-// 1.21.1	2025-04-12T15:59:29.5202701	Global Loot Modifiers : firstmod
+// 1.21.5	2025-05-07T20:32:28.3152449	Global Loot Modifiers : firstmod
 1d4f2d54f155416d9395ef63abd12bcfe0c2fae7 data/firstmod/loot_modifiers/electric_horse_armour_from_abandoned_mineshaft.json
 2a936624bd15e7d10eee06a42b8c24186514f3f6 data/firstmod/loot_modifiers/electric_horse_armour_from_simple_dungeons.json
 60bf849d8c58e3725a3095fc0ecf8d60ddb57d00 data/firstmod/loot_modifiers/rice_seeds_from_jungle_temple.json
 eb2d04fc5aba7229b8c2cd8b2865ad88a0e37557 data/firstmod/loot_modifiers/rice_seeds_from_shipwreck.json
 5f10c697b4dd8a359d7a9f5c71f9f031648c4cc7 data/firstmod/loot_modifiers/teleportation_device_from_stronghold_crossing.json
 a65a21ac1f7565f4119a007fb22c054a0e365d44 data/firstmod/loot_modifiers/teleportation_stone_from_stronghold_crossing.json
-845b9311b2cb2d82ec8a48444c04c1fb47f2c6f1 data/neoforge/loot_modifiers/global_loot_modifiers.json
+621a1c0480aed1d204c1ea6a75b8d1f8e5efe810 data/neoforge/loot_modifiers/global_loot_modifiers.json

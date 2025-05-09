@@ -1,21 +1,6 @@
 {
-    "textures": {
-        "particle": "firstmod:block/rice_pudding_side",
-        "bottom": "firstmod:block/rice_pudding_bottom",
-        "top": "firstmod:block/rice_pudding_top",
-        "side": "firstmod:block/rice_pudding_side"
-    },
-    "elements": [
-        {   "from": [ 1, 0, 1 ],
-            "to": [ 15, 8, 15 ],
-            "faces": {
-                "down":  { "texture": "#bottom", "cullface": "down" },
-                "up":    { "texture": "#top" },
-                "north": { "texture": "#side" },
-                "south": { "texture": "#side" },
-                "west":  { "texture": "#side" },
-                "east":  { "texture": "#side" }
-            }
-        }
-    ]
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "firstmod:item/rice_pudding"
+  }
 }

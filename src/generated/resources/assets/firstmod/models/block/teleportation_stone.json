@@ -2,6 +2,6 @@
   "parent": "minecraft:block/cube_column",
   "textures": {
     "end": "firstmod:block/teleportation_stone_top",
-    "side": "firstmod:block/teleportation_stone"
+    "side": "firstmod:block/teleportation_stone_side"
   }
 }

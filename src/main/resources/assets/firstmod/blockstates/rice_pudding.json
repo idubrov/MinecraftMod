@@ -1,7 +1,7 @@
 {
   "variants": {
     "bites=0": {
-      "model": "firstmod:block/rice_pudding"
+      "model": "firstmod:block/rice_pudding_slice0"
     },
     "bites=1": {
       "model": "firstmod:block/rice_pudding_slice1"

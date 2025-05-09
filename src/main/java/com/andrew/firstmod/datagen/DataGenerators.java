@@ -20,7 +20,8 @@ public class DataGenerators {
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
         event.addProvider(new ModRecipeProvider.Runner(packOutput, lookupProvider));
-        //event.addProvider(new ModModelProvider(packOutput, FirstMod.MOD_ID));
+
+        event.addProvider(new ModModelProvider(packOutput));
 
         event.addProvider(ModLootTableProvider.create(packOutput, lookupProvider));
 
@@ -36,5 +37,7 @@ public class DataGenerators {
         event.addProvider(new ModWorldGenProvider(packOutput, lookupProvider));
 
         event.addProvider(new ModGlobalLootModifierProvider(packOutput, lookupProvider));
+
+        event.addProvider(new ModEquipmentAssetProvider(packOutput));
     }
 }

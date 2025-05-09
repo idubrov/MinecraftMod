@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "firstmod:block/potted_palm_tree"
+      "model": "firstmod:block/potted_palm_sapling"
     }
   }
 }

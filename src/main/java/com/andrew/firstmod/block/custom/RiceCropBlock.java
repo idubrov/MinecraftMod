@@ -16,6 +16,7 @@ import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.material.FluidState;
@@ -29,12 +30,11 @@ import org.jetbrains.annotations.Nullable;
 //   System.out.println("current age: "+ currentAge);
 
 public class RiceCropBlock extends CropBlock {
-
     public static final BooleanProperty WATERLOGGED = BooleanProperty.create("waterlogged");
 
     public static final int BOTTOM_PART_MAX_AGE = 2;    // stage0, stage1, stage2
     public static final int TOTAL_MAX_AGE = 5;
-    public static final IntegerProperty AGE = IntegerProperty.create("age", 0, 5);
+    public static IntegerProperty AGE = IntegerProperty.create("age", 0, 5);
 
     private static final VoxelShape[] SHAPE_BY_AGE =
             new VoxelShape[]{
@@ -238,5 +238,9 @@ public class RiceCropBlock extends CropBlock {
             }
         }
         return true; // Otherwise, bonemeal can be applied
+    }
+
+    static {
+        AGE = BlockStateProperties.AGE_5;
     }
 }

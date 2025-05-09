@@ -1,7 +1,7 @@
 {
   "variants": {
     "axis=x": {
-      "model": "firstmod:block/palm_wood_horizontal",
+      "model": "firstmod:block/palm_wood",
       "x": 90,
       "y": 90
     },
@@ -9,7 +9,7 @@
       "model": "firstmod:block/palm_wood"
     },
     "axis=z": {
-      "model": "firstmod:block/palm_wood_horizontal",
+      "model": "firstmod:block/palm_wood",
       "x": 90
     }
   }

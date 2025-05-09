@@ -125,19 +125,19 @@ public class ModBlocks {
                             ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "palm_fence_gate")))));
 
     public static final DeferredBlock<DoorBlock> PALM_DOOR = registerBlock("palm_door",
-            () -> new DoorBlock(BlockSetType.ACACIA, BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_DOOR)
+            () -> new DoorBlock(BlockSetType.ACACIA, BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_DOOR).noOcclusion()
                     .setId(ResourceKey.create(Registries.BLOCK,
                             ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "palm_door")))));
 
     public static final DeferredBlock<TrapDoorBlock> PALM_TRAPDOOR = registerBlock("palm_trapdoor",
-            () -> new TrapDoorBlock(BlockSetType.ACACIA, BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_TRAPDOOR)
+            () -> new TrapDoorBlock(BlockSetType.ACACIA, BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_TRAPDOOR).noOcclusion()
                     .setId(ResourceKey.create(Registries.BLOCK,
                             ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "palm_trapdoor")))));
 
 
 
     public static final DeferredBlock<Block> PALM_LEAVES = registerBlock("palm_leaves",
-            () -> new ModFlammableLeavesBlock(0.01F, BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_LEAVES)
+            () -> new ModFlammableLeavesBlock(0.01F, BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_LEAVES).noOcclusion()
                     .setId(ResourceKey.create(Registries.BLOCK,
                             ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "palm_leaves")))));
 
@@ -159,7 +159,7 @@ public class ModBlocks {
 
 
     public static final DeferredBlock<ModSaplingBlock> PALM_SAPLING = registerBlock("palm_sapling",
-            () -> new ModSaplingBlock(ModTreeGrowers.PALMWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_SAPLING)
+            () -> new ModSaplingBlock(ModTreeGrowers.PALMWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_SAPLING).noCollission()
                     .setId(ResourceKey.create(Registries.BLOCK,
                             ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "palm_sapling"))),
                     Blocks.DIRT, Blocks.SAND, Blocks.GRASS_BLOCK));
