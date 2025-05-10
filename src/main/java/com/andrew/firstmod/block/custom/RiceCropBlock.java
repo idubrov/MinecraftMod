@@ -2,14 +2,12 @@ package com.andrew.firstmod.block.custom;
 
 import com.andrew.firstmod.item.ModItems;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.ItemLike;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.CropBlock;
@@ -30,7 +28,7 @@ import org.jetbrains.annotations.Nullable;
 //   System.out.println("current age: "+ currentAge);
 
 public class RiceCropBlock extends CropBlock {
-    public static final BooleanProperty WATERLOGGED = BooleanProperty.create("waterlogged");
+    public static BooleanProperty WATERLOGGED = BooleanProperty.create("waterlogged");
 
     public static final int BOTTOM_PART_MAX_AGE = 2;    // stage0, stage1, stage2
     public static final int TOTAL_MAX_AGE = 5;
@@ -240,7 +238,20 @@ public class RiceCropBlock extends CropBlock {
         return true; // Otherwise, bonemeal can be applied
     }
 
+    // This method ensures that water flows out of the rice block
+    protected BlockState updateShape(BlockState p_154530_, LevelReader p_374421_,
+                                     ScheduledTickAccess p_374071_, BlockPos p_154534_, Direction p_154531_,
+                                     BlockPos p_154535_, BlockState p_154532_, RandomSource p_374406_) {
+        BlockState blockstate = super.updateShape(p_154530_, p_374421_, p_374071_, p_154534_, p_154531_, p_154535_, p_154532_, p_374406_);
+        if (!blockstate.isAir()) {
+            p_374071_.scheduleTick(p_154534_, Fluids.WATER, Fluids.WATER.getTickDelay(p_374421_));
+        }
+        return blockstate;
+    }
+
+
     static {
         AGE = BlockStateProperties.AGE_5;
+        WATERLOGGED = BlockStateProperties.WATERLOGGED;
     }
 }

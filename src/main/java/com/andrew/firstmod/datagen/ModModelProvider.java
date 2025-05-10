@@ -11,6 +11,7 @@ import net.minecraft.client.data.models.MultiVariant;
 import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
 import net.minecraft.client.data.models.blockstates.PropertyDispatch;
 import net.minecraft.client.data.models.model.*;
+import net.minecraft.client.renderer.block.model.BlockModel;
 import net.minecraft.client.renderer.item.BlockModelWrapper;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -23,9 +24,7 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.neoforged.neoforge.client.model.generators.template.ExtendedModelTemplate;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Objects;
+import java.util.*;
 import java.util.stream.Stream;
 
 import static com.andrew.firstmod.block.ModBlocks.BLOCKS;
@@ -83,8 +82,7 @@ public class ModModelProvider extends ModelProvider {
         armorModel(itemModels, ModItems.ELECTRIC_CHESTPLATE.get(), ModEquipmentAssets.ELECTRIC);
         armorModel(itemModels, ModItems.ELECTRIC_LEGGINGS.get(), ModEquipmentAssets.ELECTRIC);
         armorModel(itemModels, ModItems.ELECTRIC_BOOTS.get(), ModEquipmentAssets.ELECTRIC);
-        armorModel(itemModels, ModItems.ELECTRIC_HORSE_ARMOR.get(), ModEquipmentAssets.ELECTRIC);
-
+        itemModel(itemModels, ModItems.ELECTRIC_HORSE_ARMOR.get());
 
         blockModel(blockModels, ModBlocks.SULFUR_BLOCK.get());
         blockModel(blockModels, ModBlocks.SULFUR_ORE.get());
@@ -97,7 +95,6 @@ public class ModModelProvider extends ModelProvider {
         blockModels.woodProvider(ModBlocks.PALM_LOG.get())
                 .logWithHorizontal(ModBlocks.PALM_LOG.get())
                 .wood(ModBlocks.PALM_WOOD.get());
-
         blockModels.woodProvider(ModBlocks.STRIPPED_PALM_LOG.get())
                 .logWithHorizontal(ModBlocks.STRIPPED_PALM_LOG.get())
                 .wood(ModBlocks.STRIPPED_PALM_WOOD.get());
@@ -117,14 +114,8 @@ public class ModModelProvider extends ModelProvider {
 
         carpetBlock(blockModels, ModBlocks.DRY_PALM_LEAVES_CARPET.get());
 
+        saplingBlock(blockModels, ModBlocks.PALM_SAPLING.get(), ModBlocks.POTTED_PALM_SAPLING.get());
 
-
-        blockModels.createPlantWithDefaultItem(ModBlocks.PALM_SAPLING.get(), ModBlocks.POTTED_PALM_SAPLING.get(), BlockModelGenerators.PlantType.NOT_TINTED);
-        //  blockModel(blockModels, ModBlocks.PALM_SAPLING.get());
-        //   blockModel(blockModels, ModBlocks.POTTED_PALM_SAPLING.get());
-
-
-        //rice
         riceCropBlock(blockModels, ModBlocks.RICE_CROP.get());
         bananaBushBlock(blockModels, ModBlocks.BANANA_BUSH.get());
 
@@ -340,27 +331,64 @@ public class ModModelProvider extends ModelProvider {
         );
     }
 
+
     public void riceCropBlock(BlockModelGenerators blockModels, Block riceCropBlock) {
+
         ExtendedModelTemplate cropWithCutout = ModelTemplates.CROP.extend().renderType("cutout").build();
 
-        blockModels.blockStateOutput.accept(
-                MultiVariantGenerator.dispatch(riceCropBlock).with(
-                        PropertyDispatch.initial(BlockStateProperties.AGE_5)
-                                .generate(age -> {
-                                    // Generate model ID like firstmod:block/rice_crop_stage0, etc.
-                                    ResourceLocation modelId = BuiltInRegistries.BLOCK
-                                            .getKey(riceCropBlock)
-                                            .withPath(path -> "block/" + path + "_stage" + age);
+        ResourceLocation[] nowaterModels = new ResourceLocation[6];
+        ResourceLocation[] waterModels = new ResourceLocation[6];
+        TextureMapping[] texture = new TextureMapping[6];
 
-                                    // Use the same model ID for crop texture
-                                    TextureMapping texture = TextureMapping.crop(modelId);
+        ResourceLocation baseId = BuiltInRegistries.BLOCK.getKey(riceCropBlock);
 
-                                    return BlockModelGenerators.plainVariant(
-                                            cropWithCutout.create(modelId, texture, blockModels.modelOutput)
-                                    );
-                                })
-                )
-        );
+        for (int i = 0; i <= 5; i++) {
+            int finalI = i;
+            nowaterModels[i] = baseId.withPath(path -> "block/" + path + "_nowater_stage" + finalI);
+            waterModels[i] = baseId.withPath(path -> "block/" + path + "_water_stage" + finalI);
+            texture[i] = TextureMapping.crop(baseId.withPath(path -> "block/" + path + "_stage" + finalI));
+        }
+
+        blockModels.blockStateOutput
+                .accept(
+                        MultiVariantGenerator.dispatch(riceCropBlock)
+                                .with(
+                                        PropertyDispatch.initial(BlockStateProperties.AGE_5, BlockStateProperties.WATERLOGGED)
+                                                .select(0, false, BlockModelGenerators.plainVariant(cropWithCutout.create(nowaterModels[0], texture[0], blockModels.modelOutput)))
+                                                .select(1, false, BlockModelGenerators.plainVariant(cropWithCutout.create(nowaterModels[1], texture[1], blockModels.modelOutput)))
+                                                .select(2, false, BlockModelGenerators.plainVariant(cropWithCutout.create(nowaterModels[2], texture[2], blockModels.modelOutput)))
+                                                .select(3, false, BlockModelGenerators.plainVariant(cropWithCutout.create(nowaterModels[3], texture[3], blockModels.modelOutput)))
+                                                .select(4, false, BlockModelGenerators.plainVariant(cropWithCutout.create(nowaterModels[4], texture[4], blockModels.modelOutput)))
+                                                .select(5, false, BlockModelGenerators.plainVariant(cropWithCutout.create(nowaterModels[5], texture[5], blockModels.modelOutput)))
+
+                                                .select(0, true, BlockModelGenerators.plainVariant(cropWithCutout.create(waterModels[0], texture[0], blockModels.modelOutput)))
+                                                .select(1, true, BlockModelGenerators.plainVariant(cropWithCutout.create(waterModels[1], texture[1], blockModels.modelOutput)))
+                                                .select(2, true, BlockModelGenerators.plainVariant(cropWithCutout.create(waterModels[2], texture[2], blockModels.modelOutput)))
+                                                .select(3, true, BlockModelGenerators.plainVariant(cropWithCutout.create(waterModels[3], texture[3], blockModels.modelOutput)))
+                                                .select(4, true, BlockModelGenerators.plainVariant(cropWithCutout.create(waterModels[4], texture[4], blockModels.modelOutput)))
+                                                .select(5, true, BlockModelGenerators.plainVariant(cropWithCutout.create(waterModels[5], texture[5], blockModels.modelOutput)))
+
+                                )
+                );
+    }
+
+
+    public void saplingBlock(BlockModelGenerators blockModels, Block sapling, Block pottedSapling) {
+        // Define cutout versions of cross and flower pot templates
+        ExtendedModelTemplate crossWithCutout = ModelTemplates.CROSS.extend().renderType("cutout").build();
+        ExtendedModelTemplate potWithCutout = ModelTemplates.FLOWER_POT_CROSS.extend().renderType("cutout").build();
+
+
+        TextureMapping textureMapping1 = TextureMapping.cross(sapling);
+        MultiVariant multivariant1 = plainVariant(crossWithCutout.create(sapling, textureMapping1, blockModels.modelOutput));
+        blockModels.blockStateOutput.accept(createSimpleBlock(sapling, multivariant1));
+
+        // Create the potted variant
+        TextureMapping textureMapping2 = BlockModelGenerators.PlantType.NOT_TINTED.getPlantTextureMapping(sapling);
+        MultiVariant multivariant2 = plainVariant(potWithCutout.create(pottedSapling, textureMapping2, blockModels.modelOutput));
+        blockModels.blockStateOutput.accept(createSimpleBlock(pottedSapling, multivariant2));
+
+        blockModels.registerSimpleFlatItemModel(sapling);
     }
 
 
