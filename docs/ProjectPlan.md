@@ -1,7 +1,6 @@
 # Plan
 
 ### To Fix
-- Smithing table in armor trim preview doesn't show trim
 - Don't waste teleportation device if there is no stones
 
 
