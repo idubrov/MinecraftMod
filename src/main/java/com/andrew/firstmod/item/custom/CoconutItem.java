@@ -1,6 +1,7 @@
 package com.andrew.firstmod.item.custom;
 
 import com.andrew.firstmod.entity.custom.CoconutProjectileEntity;
+import com.andrew.firstmod.sound.ModSounds;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
@@ -20,7 +21,7 @@ public class CoconutItem extends SnowballItem {
     public InteractionResult use(Level level, Player player, InteractionHand hand) {
         ItemStack itemstack = player.getItemInHand(hand);
         level.playSound(null, player.getX(), player.getY(), player.getZ(),
-                SoundEvents.SNOWBALL_THROW, SoundSource.NEUTRAL, 0.5F, 1.0F);
+                ModSounds.COCONUT_POP.get(), SoundSource.BLOCKS, 0.5F, 1.0F);
         if (!level.isClientSide) {
             CoconutProjectileEntity coconutProjectile = new CoconutProjectileEntity(level, player, itemstack);
             coconutProjectile.setItem(itemstack);

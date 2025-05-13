@@ -1,5 +1,9 @@
 # Plan
 
+### Change Log v 1.0.2
+- Two music discs and coconut sound
+
+
 ### To Fix
 - Don't waste teleportation device if there is no stones
 

@@ -65,7 +65,8 @@ public class ModModelProvider extends ModelProvider {
         itemModel(itemModels, ModItems.RICE_STEM.get());
         itemModel(itemModels, ModItems.BATTERY.get());
         itemModel(itemModels, ModItems.TELEPORTATION_DEVICE.get());
-
+        itemModel(itemModels, ModItems.MUSIC_DISC_BASSOON_SONGS.get());
+        itemModel(itemModels, ModItems.MUSIC_DISC_BASSOON_SOLOS.get());
 
         toolModel(itemModels, ModItems.ELECTRIC_PICKAXE.get());
         toolModel(itemModels, ModItems.ELECTRIC_AXE.get());

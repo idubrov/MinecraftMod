@@ -1,0 +1,24 @@
+{
+  "bassoon_songs_sound_event":{
+    "sounds": [
+      {
+        "name": "firstmod:bassoon_songs_ogg",
+        "stream": true
+      }
+    ]
+  },
+  "bassoon_solos_sound_event":{
+    "sounds": [
+      {
+        "name": "firstmod:bassoon_solos_ogg",
+        "stream": true
+      }
+    ]
+  },
+  "coconut_pop_event": {
+    "subtitle": "sounds.firstmod.coconut_pop",
+    "sounds": [
+      "firstmod:coconut_pop_ogg"
+    ]
+  }
+}

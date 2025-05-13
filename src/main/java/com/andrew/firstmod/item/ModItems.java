@@ -3,6 +3,7 @@ package com.andrew.firstmod.item;
 import com.andrew.firstmod.FirstMod;
 import com.andrew.firstmod.block.ModBlocks;
 import com.andrew.firstmod.item.custom.*;
+import com.andrew.firstmod.sound.ModSounds;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -153,6 +154,17 @@ public class ModItems {
                     .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "teleportation_device")))
                     .food(ModFoodProperties.TELEPORTATION_DEVICE, ModFoodProperties.TELEPORTATION_EFFECT)
                     .stacksTo(1)));
+
+
+    public static final DeferredItem<Item> MUSIC_DISC_BASSOON_SONGS = ITEMS.register("music_disc_bassoon_songs",
+            () -> new Item(new Item.Properties()
+                    .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "music_disc_bassoon_songs")))
+                    .jukeboxPlayable(ModSounds.BASSOON_SONGS_KEY).stacksTo(1)));
+    public static final DeferredItem<Item> MUSIC_DISC_BASSOON_SOLOS = ITEMS.register("music_disc_bassoon_solos",
+            () -> new Item(new Item.Properties()
+                    .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "music_disc_bassoon_solos")))
+                    .jukeboxPlayable(ModSounds.BASSOON_SOLOS_KEY).stacksTo(1)));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

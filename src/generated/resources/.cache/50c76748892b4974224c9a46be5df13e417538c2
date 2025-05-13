@@ -1,4 +1,4 @@
-// 1.21.5	2025-05-09T20:53:04.0729837	Model Definitions - firstmod
+// 1.21.5	2025-05-12T19:46:33.5565906	Model Definitions - firstmod
 5a4be082f866abf343c84034192cf99495f8b7f5 assets/firstmod/blockstates/banana_bush.json
 b2a653fb2035f999939e0486425efb12c445221f assets/firstmod/blockstates/deepslate_sulfur_ore.json
 2a5070dd5f9ffd00167bc62872ceadb99435737a assets/firstmod/blockstates/dry_palm_leaves_carpet.json
@@ -48,6 +48,8 @@ ac6af442d1e5a64784f2810f5afd69cdb09a7d7e assets/firstmod/items/golden_hammer.jso
 8262118402f9e0a6470e6ab271fc9878575cc7e2 assets/firstmod/items/iron_hammer.json
 1f1cc4dc125fd7d412754251f335911b5920f13a assets/firstmod/items/maki_sushi.json
 3f123b56a9b10328a663f52e0848d3171d1e5163 assets/firstmod/items/milk_shake.json
+e72462ef58dd60ecea2a1d8da7f0c377880e3281 assets/firstmod/items/music_disc_bassoon_solos.json
+5977f09e1a1165ad576a61dd08be489a9ad068b9 assets/firstmod/items/music_disc_bassoon_songs.json
 786f3c7115392c9af62494e4688853551218010d assets/firstmod/items/nether_sulfur_ore.json
 d2e1b16807185a5395b9930ccfbbac2c3b03c1dc assets/firstmod/items/nigiri_sushi.json
 a3735bf87c42e76ec77bd0d2fee43eed374d70ce assets/firstmod/items/palm_button.json
@@ -201,6 +203,8 @@ b66851fcff564c22079e9248b7d8555c9545d739 assets/firstmod/models/item/golden_hamm
 968ceaa57ec37a07ced71f366434cf5a5a00dd3d assets/firstmod/models/item/iron_hammer.json
 66c3b2a48dce6d925ec8c19fb9f7c70516585dec assets/firstmod/models/item/maki_sushi.json
 e1a2a9d4c0383a00325ffecaf3b9273bee801ba0 assets/firstmod/models/item/milk_shake.json
+a5eef819981aa81d3c6a890c67313689b97d5f43 assets/firstmod/models/item/music_disc_bassoon_solos.json
+c6faf5608f76cd13f72fe298b5917b3c7e64cd94 assets/firstmod/models/item/music_disc_bassoon_songs.json
 b434e5a4776feeec6b41323ee673a98a1aca58a2 assets/firstmod/models/item/nigiri_sushi.json
 b89977b8a1d1502a5b3f64b0df2c0bc35b855abe assets/firstmod/models/item/palm_door.json
 31f1702e273baf2f49254f04766fa8dc01b726c2 assets/firstmod/models/item/palm_sapling.json

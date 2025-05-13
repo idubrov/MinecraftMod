@@ -101,6 +101,9 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.TELEPORTATION_STONE);
                         output.accept(ModItems.TELEPORTATION_DEVICE);
+
+                        output.accept(ModItems.MUSIC_DISC_BASSOON_SONGS);
+                        output.accept(ModItems.MUSIC_DISC_BASSOON_SOLOS);
                     }).build());
 
     public static void register(IEventBus eventBus) {

@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.firstmod.music_disc_bassoon_songs.desc"
+  },
+  "length_in_seconds": 310.0,
+  "sound_event": "firstmod:bassoon_songs_sound_event"
+}

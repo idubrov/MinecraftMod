@@ -84,6 +84,11 @@
   "item.firstmod.teleportation_device": "Teleportation Device",
 
 
+  "item.firstmod.music_disc_bassoon_songs": "Bassoon Music Disc",
+  "item.firstmod.music_disc_bassoon_songs.desc": "Bassoon songs: Cavatina and Don Giovanni by Mozart, Dance Song by Sperontes.",
+  "item.firstmod.music_disc_bassoon_solos": "Bassoon Solos Disc",
+  "item.firstmod.music_disc_bassoon_solos.desc": "Bassoon solos: Soviet Anthem, Whiskey in the Jar, Imperial March, Polovetzian Dance.",
+  "sounds.firstmod.coconut_pop": "Coconut Pop",
 
   "tooltip.firstmod.empty_line": " ",
   "tooltip.firstmod.sulfur_ore.tooltip": "§7This block will hurt you if you touch it.§r",

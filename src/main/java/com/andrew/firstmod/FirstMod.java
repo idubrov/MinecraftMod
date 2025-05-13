@@ -10,6 +10,7 @@ import com.andrew.firstmod.item.ModItems;
 import com.andrew.firstmod.loot.ModLootModifiers;
 import com.andrew.firstmod.particle.ModParticlesTypes;
 import com.andrew.firstmod.potion.ModPotions;
+import com.andrew.firstmod.sound.ModSounds;
 import com.andrew.firstmod.worldgen.tree.ModFoliagePlacers;
 import com.andrew.firstmod.worldgen.tree.ModTrunkPlacerTypes;
 import com.mojang.logging.LogUtils;
@@ -58,14 +59,13 @@ public class FirstMod
         ModTrunkPlacerTypes.register(modEventBus);
         ModFoliagePlacers.register(modEventBus);
         ModEntities.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         ModDataComponents.register(modEventBus);
 
         ModLootModifiers.register(modEventBus);
-        // Register the item to a creative tab
+
         modEventBus.addListener(this::addCreative);
-        // Register our mod's ModConfigSpec so that FML can create and load the config file for us
-       // modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
