@@ -1,7 +1,10 @@
 # Plan
 
+### Change Log v 1.0.2
+- Two music discs and coconut sound
+
+
 ### To Fix
-- Smithing table in armor trim preview doesn't show trim
 - Don't waste teleportation device if there is no stones
 
 

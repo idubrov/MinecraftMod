@@ -3,6 +3,7 @@ package com.andrew.firstmod.block;
 import com.andrew.firstmod.FirstMod;
 import com.andrew.firstmod.block.custom.*;
 import com.andrew.firstmod.item.ModItems;
+import com.andrew.firstmod.sound.ModSounds;
 import com.andrew.firstmod.worldgen.tree.ModTreeGrowers;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.world.item.*;
@@ -116,6 +117,9 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> TELEPORTATION_STONE = registerBlock("teleportation_stone",
             () -> new TeleportationBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+
+    public static final DeferredBlock<Block> CHARGING_STATION = registerBlock("charging_station",
+            () -> new ChargingStationBlock(BlockBehaviour.Properties.of().noOcclusion()));
 
     //Registering of our new blocks and its item
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

@@ -102,5 +102,12 @@
 
   "block.firstmod.teleportation_stone": "Teleportation Stone",
   "effect.firstmod.teleportation": "Teleportation",
-  "item.firstmod.teleportation_device": "Teleportation Device"
+  "item.firstmod.teleportation_device": "Teleportation Device",
+
+  "item.firstmod.music_disc_bassoon_songs": "Bassoon Music Disc",
+  "item.firstmod.music_disc_bassoon_songs.desc": "Bassoon songs: Cavatina and Don Giovanni by Mozart, Dance Song by Sperontes.",
+  "item.firstmod.music_disc_bassoon_solos": "Bassoon Solos Disc",
+  "item.firstmod.music_disc_bassoon_solos.desc": "Bassoon solos: Soviet Anthem, Whiskey in the Jar, Imperial March, Polovetzian Dance.",
+
+  "block.firstmod.charging_station": "Charging Station"
 }

@@ -190,6 +190,6 @@ idea {
 
 jar {
     archiveBaseName.set("Electric_Bananas")
-    archiveVersion.set("1.0.1")
+    archiveVersion.set("1.0.2")
     archiveClassifier.set("neoforge-1.21.1") // Optional
 }

@@ -81,6 +81,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.RICE_STEM.get());
 
         basicItem(ModItems.TELEPORTATION_DEVICE.get());
+
+        basicItem(ModItems.MUSIC_DISC_BASSOON_SONGS.get());
+        basicItem(ModItems.MUSIC_DISC_BASSOON_SOLOS.get());
     }
 
 
