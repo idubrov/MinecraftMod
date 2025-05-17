@@ -84,6 +84,10 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModItems.MUSIC_DISC_BASSOON_SONGS.get());
         basicItem(ModItems.MUSIC_DISC_BASSOON_SOLOS.get());
+
+        basicItem(ModItems.PALM_BOAT.get());
+        basicItem(ModItems.PALM_CHEST_BOAT.get());
+      //  basicItem(ModItems.PALM_ELECTRIC_BOAT.get());
     }
 
 

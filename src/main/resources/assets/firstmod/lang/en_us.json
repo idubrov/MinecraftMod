@@ -108,6 +108,11 @@
   "item.firstmod.music_disc_bassoon_songs.desc": "Bassoon songs: Cavatina and Don Giovanni by Mozart, Dance Song by Sperontes.",
   "item.firstmod.music_disc_bassoon_solos": "Bassoon Solos Disc",
   "item.firstmod.music_disc_bassoon_solos.desc": "Bassoon solos: Soviet Anthem, Whiskey in the Jar, Imperial March, Polovetzian Dance.",
+  "sounds.firstmod.coconut_pop": "Coconut Pop",
 
-  "block.firstmod.charging_station": "Charging Station"
+  "block.firstmod.charging_station": "Charging Station",
+
+  "item.firstmod.palm_boat": "Palm Boat",
+  "item.firstmod.palm_chest_boat": "Palm Chest Boat",
+  "item.firstmod.palm_electric_boat": "Palm Electric Boat"
 }

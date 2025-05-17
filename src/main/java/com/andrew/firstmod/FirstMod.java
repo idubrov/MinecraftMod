@@ -2,6 +2,7 @@ package com.andrew.firstmod;
 
 import com.andrew.firstmod.block.ModBlocks;
 import com.andrew.firstmod.block.entity.ModBlockEntities;
+import com.andrew.firstmod.client.ModBoatRenderer;
 import com.andrew.firstmod.component.ModDataComponents;
 import com.andrew.firstmod.effect.ModEffects;
 import com.andrew.firstmod.entity.ModEntities;
@@ -98,6 +99,10 @@ public class FirstMod
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             EntityRenderers.register(ModEntities.COCONUT.get(), ThrownItemRenderer::new);
+            EntityRenderers.register(ModEntities.MOD_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
+            EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
+          //  EntityRenderers.register(ModEntities.MOD_ELECTRIC_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
+
         }
     }
 }
