@@ -344,6 +344,27 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('E', Items.ENDER_PEARL)
                 .unlockedBy("has_battery", has(ModItems.BATTERY))
                 .save(recipeOutput);
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PALM_BOAT.get(), 1)
+                .group("boat")
+                .pattern("# #")
+                .pattern("###")
+                .define('#', ModBlocks.PALM_PLANKS.get())
+                .unlockedBy("in_water", insideOf(Blocks.WATER))
+                .save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PALM_CHEST_BOAT.get(), 1)
+                .group("chest_boat")
+                .requires(ModItems.PALM_BOAT.get())
+                .requires(Items.CHEST)
+                .unlockedBy("has_boat", has(ItemTags.BOATS)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PALM_ELECTRIC_BOAT.get(), 1)
+                .group("electric_boat")
+                .requires(ModItems.PALM_BOAT.get())
+                .requires(ModItems.BATTERY.get())
+                .unlockedBy("has_battery", has(ModItems.BATTERY)).save(recipeOutput);
     }
 
 

@@ -70,6 +70,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.COCONUT_LAMP.get());
         dropSelf(ModBlocks.TELEPORTATION_STONE.get());
 
+        dropSelf(ModBlocks.CHARGING_STATION.get());
+
         add(ModBlocks.POTTED_PALM_SAPLING.get(), createPotFlowerItemTable(ModBlocks.PALM_SAPLING.get()));
 
         add(ModBlocks.SULFUR_ORE.get(), block -> createSulfurOreDrops(ModBlocks.SULFUR_ORE.get(), 1, 3));

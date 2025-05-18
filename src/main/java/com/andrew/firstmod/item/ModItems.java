@@ -201,8 +201,8 @@ public class ModItems {
             () -> new ModBoatItem(false, ModBoatEntity.Type.PALM, (new Item.Properties()).stacksTo(1)));
     public static final DeferredItem<Item> PALM_CHEST_BOAT = ITEMS.register("palm_chest_boat",
             () -> new ModBoatItem(true, ModBoatEntity.Type.PALM, (new Item.Properties()).stacksTo(1)));
-//    public static final DeferredItem<Item> PALM_ELECTRIC_BOAT = ITEMS.register("palm_electric_boat",
-//            () -> new ModBoatItem(false, ModBoatEntity.Type.PALM, new Item.Properties()));
+    public static final DeferredItem<Item> PALM_ELECTRIC_BOAT = ITEMS.register("palm_electric_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.PALM, (new Item.Properties()).stacksTo(1)));
 
 
     public static void register(IEventBus eventBus) {

@@ -100,5 +100,22 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.ELECTRIC_SHOVEL.get());
         tag(ItemTags.HOES)
                 .add(ModItems.ELECTRIC_HOE.get());
+
+
+        tag(ItemTags.CHEST_ARMOR)
+                .add(ModItems.ELECTRIC_CHESTPLATE.get());
+        tag(ItemTags.FOOT_ARMOR)
+                .add(ModItems.ELECTRIC_BOOTS.get());
+        tag(ItemTags.HEAD_ARMOR)
+                .add(ModItems.ELECTRIC_HELMET.get());
+        tag(ItemTags.LEG_ARMOR)
+                .add(ModItems.ELECTRIC_LEGGINGS.get());
+
+
+        tag(ItemTags.CHEST_BOATS)
+                .add(ModItems.PALM_CHEST_BOAT.get());
+        tag(ItemTags.BOATS)
+                .add(ModItems.PALM_BOAT.get())
+                .add(ModItems.PALM_ELECTRIC_BOAT.get());
     }
 }

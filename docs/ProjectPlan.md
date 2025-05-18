@@ -2,6 +2,8 @@
 
 ### Change Log v 1.0.2
 - Two music discs and coconut sound
+- Palm boat, Palm chest boat + recipies, tags and advancements
+- Add electric armor to item tags
 
 
 ### To Fix

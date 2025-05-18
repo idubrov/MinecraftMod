@@ -2,6 +2,7 @@ package com.andrew.firstmod;
 
 import com.andrew.firstmod.block.ModBlocks;
 import com.andrew.firstmod.block.entity.ModBlockEntities;
+import com.andrew.firstmod.block.entity.renderer.ChargingStationBlockEntityRenderer;
 import com.andrew.firstmod.client.ModBoatRenderer;
 import com.andrew.firstmod.component.ModDataComponents;
 import com.andrew.firstmod.effect.ModEffects;
@@ -28,6 +29,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
@@ -103,6 +105,12 @@ public class FirstMod
             EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
           //  EntityRenderers.register(ModEntities.MOD_ELECTRIC_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
 
+        }
+
+
+        @SubscribeEvent
+        public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {
+            event.registerBlockEntityRenderer(ModBlockEntities.CHARGING_STATION_BE.get(), ChargingStationBlockEntityRenderer::new);
         }
     }
 }

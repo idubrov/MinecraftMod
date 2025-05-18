@@ -87,7 +87,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModItems.PALM_BOAT.get());
         basicItem(ModItems.PALM_CHEST_BOAT.get());
-      //  basicItem(ModItems.PALM_ELECTRIC_BOAT.get());
+        basicItem(ModItems.PALM_ELECTRIC_BOAT.get());
     }
 
 

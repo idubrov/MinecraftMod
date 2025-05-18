@@ -9,6 +9,6 @@ public class ModModelLayers {
             ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "boat/palm"), "main");
     public static final ModelLayerLocation PALM_CHEST_BOAT_LAYER = new ModelLayerLocation(
             ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "chest_boat/palm"), "main");
-//    public static final ModelLayerLocation PALM_ELECTRIC_BOAT_LAYER = new ModelLayerLocation(
-//            ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "electric_boat/palm"), "main");
+    public static final ModelLayerLocation PALM_ELECTRIC_BOAT_LAYER = new ModelLayerLocation(
+            ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "electric_boat/palm"), "main");
 }

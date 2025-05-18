@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-10T22:53:45.8694314	Item Models: firstmod
+// 1.21.1	2025-05-16T22:40:40.7953542	Item Models: firstmod
 92d6c44e2521ee962dd833d46a51bb02cdbb0ce1 assets/firstmod/models/item/banana.json
 da688f0c599d0ce5cdb8032f392ad5e27207bbe1 assets/firstmod/models/item/battery.json
 49e8da2348b09cf5335f24c3eb6d7c57298e5db3 assets/firstmod/models/item/coconut.json
@@ -60,7 +60,9 @@ e1a2a9d4c0383a00325ffecaf3b9273bee801ba0 assets/firstmod/models/item/milk_shake.
 a5eef819981aa81d3c6a890c67313689b97d5f43 assets/firstmod/models/item/music_disc_bassoon_solos.json
 c6faf5608f76cd13f72fe298b5917b3c7e64cd94 assets/firstmod/models/item/music_disc_bassoon_songs.json
 b434e5a4776feeec6b41323ee673a98a1aca58a2 assets/firstmod/models/item/nigiri_sushi.json
+fd58773a99e26f47c66638174748b3aed4af410c assets/firstmod/models/item/palm_boat.json
 7f305ea81f68b17e2ed2211644367e8e44d3826b assets/firstmod/models/item/palm_button.json
+1f8ff3ec21adebafe079a3eb1e39cb168b084112 assets/firstmod/models/item/palm_chest_boat.json
 b89977b8a1d1502a5b3f64b0df2c0bc35b855abe assets/firstmod/models/item/palm_door.json
 6e6144c4d598b2c8001b09f7e3db45af7db9e020 assets/firstmod/models/item/palm_fence.json
 31f1702e273baf2f49254f04766fa8dc01b726c2 assets/firstmod/models/item/palm_sapling.json
