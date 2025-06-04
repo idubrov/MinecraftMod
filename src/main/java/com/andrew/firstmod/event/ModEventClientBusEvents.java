@@ -16,8 +16,7 @@ public class ModEventClientBusEvents {
     public static void registerLayer(EntityRenderersEvent.RegisterLayerDefinitions event) {
 
         event.registerLayerDefinition(ModModelLayers.PALM_BOAT_LAYER, BoatModel::createBodyModel);
-        event.registerLayerDefinition(ModModelLayers.PALM_CHEST_BOAT_LAYER, ChestBoatModel::createBodyModel);
-      //  event.registerLayerDefinition(ModModelLayers.PALM_ELECTRIC_BOAT_LAYER, BoatModel::createBodyModel);
+        event.registerLayerDefinition(ModModelLayers.PALM_ELECTRIC_BOAT_LAYER, ChestBoatModel::createBodyModel);
     }
 
     @SubscribeEvent

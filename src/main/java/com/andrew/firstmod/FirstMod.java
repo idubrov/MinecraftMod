@@ -13,6 +13,8 @@ import com.andrew.firstmod.item.ModItems;
 import com.andrew.firstmod.loot.ModLootModifiers;
 import com.andrew.firstmod.particle.ModParticlesTypes;
 import com.andrew.firstmod.potion.ModPotions;
+import com.andrew.firstmod.screen.ModMenuTypes;
+import com.andrew.firstmod.screen.custom.ChargingStationScreen;
 import com.andrew.firstmod.sound.ModSounds;
 import com.andrew.firstmod.worldgen.tree.ModFoliagePlacers;
 import com.andrew.firstmod.worldgen.tree.ModTrunkPlacerTypes;
@@ -30,6 +32,7 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
@@ -65,6 +68,7 @@ public class FirstMod
         ModEntities.register(modEventBus);
         ModSounds.register(modEventBus);
         ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
         ModDataComponents.register(modEventBus);
 
@@ -102,9 +106,7 @@ public class FirstMod
         {
             EntityRenderers.register(ModEntities.COCONUT.get(), ThrownItemRenderer::new);
             EntityRenderers.register(ModEntities.MOD_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
-            EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
-          //  EntityRenderers.register(ModEntities.MOD_ELECTRIC_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
-
+            EntityRenderers.register(ModEntities.MOD_ELECTRIC_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
         }
 
 
@@ -112,5 +114,12 @@ public class FirstMod
         public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {
             event.registerBlockEntityRenderer(ModBlockEntities.CHARGING_STATION_BE.get(), ChargingStationBlockEntityRenderer::new);
         }
+
+
+        @SubscribeEvent
+        public static void registerScreens(RegisterMenuScreensEvent event) {
+            event.register(ModMenuTypes.CHARGING_STATION_MENU.get(), ChargingStationScreen::new);
+        }
+
     }
 }

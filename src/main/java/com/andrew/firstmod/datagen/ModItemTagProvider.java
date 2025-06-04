@@ -112,8 +112,6 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.ELECTRIC_LEGGINGS.get());
 
 
-        tag(ItemTags.CHEST_BOATS)
-                .add(ModItems.PALM_CHEST_BOAT.get());
         tag(ItemTags.BOATS)
                 .add(ModItems.PALM_BOAT.get())
                 .add(ModItems.PALM_ELECTRIC_BOAT.get());

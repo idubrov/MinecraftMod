@@ -16,6 +16,8 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 
 import java.util.function.Function;
 
+import static net.minecraft.data.models.model.TextureMapping.cubeBottomTop;
+
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
         super(output, FirstMod.MOD_ID, exFileHelper);
@@ -67,6 +69,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         logBlock((RotatedPillarBlock) ModBlocks.TELEPORTATION_STONE.get());
 
+
         blockItem(ModBlocks.PALM_LOG);
         blockItem(ModBlocks.STRIPPED_PALM_LOG);
         blockItem(ModBlocks.PALM_WOOD);
@@ -77,9 +80,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.PALM_FENCE_GATE);
         blockItem(ModBlocks.PALM_TRAPDOOR, "_bottom");
         blockItem(ModBlocks.TELEPORTATION_STONE);
+        blockItem(ModBlocks.CHARGING_STATION);
+
 
         makeRiceCrop(((CropBlock) ModBlocks.RICE_CROP.get()), "rice_crop_stage", "rice_crop_stage");
         makeBananaBush(((SweetBerryBushBlock) ModBlocks.BANANA_BUSH.get()), "banana_bush_stage", "banana_bush_stage");
+
+        makeCubeWithTop(ModBlocks.CHARGING_STATION.get(), "charging_station");
     }
 
     public void makeBananaBush(SweetBerryBushBlock block, String modelName, String textureName) {
@@ -109,6 +116,18 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         return models;
     }
+
+    private void makeCubeWithTop(Block block, String textureName) {
+        simpleBlock(block,
+                models().cubeBottomTop(
+                        textureName,
+                        modLoc("block/" + textureName),
+                        modLoc("block/" + textureName),
+                        modLoc("block/" + textureName + "_top")
+                )
+        );
+    }
+
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {
         simpleBlockWithItem(deferredBlock.get(), cubeAll(deferredBlock.get()));

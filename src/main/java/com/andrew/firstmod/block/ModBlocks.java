@@ -119,7 +119,9 @@ public class ModBlocks {
             () -> new TeleportationBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
     public static final DeferredBlock<Block> CHARGING_STATION = registerBlock("charging_station",
-            () -> new ChargingStationBlock(BlockBehaviour.Properties.of().noOcclusion()));
+            () -> new ChargingStationBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CRAFTING_TABLE).noOcclusion()));
+
+
 
     //Registering of our new blocks and its item
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

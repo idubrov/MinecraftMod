@@ -1,7 +1,9 @@
 # Plan
 
 ### Change Log v 1.0.2
-- Two music discs and coconut sound
+- Two music discs and coconut sound. Discs are in simple dungeon
+- Charging station with recipe.
+- 
 - Palm boat, Palm chest boat + recipies, tags and advancements
 - Add electric armor to item tags
 

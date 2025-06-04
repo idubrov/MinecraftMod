@@ -42,7 +42,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.PALM_BUTTON);
 
                         output.accept(ModItems.PALM_BOAT.get());
-                        output.accept(ModItems.PALM_CHEST_BOAT.get());
                         output.accept(ModItems.PALM_ELECTRIC_BOAT.get());
 
                         output.accept(ModBlocks.SULFUR_ORE);
