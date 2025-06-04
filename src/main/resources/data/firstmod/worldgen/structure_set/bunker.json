@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "firstmod:bunker",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1592530681,
+    "spacing": 34,
+    "separation": 8
+
+  }
+}
