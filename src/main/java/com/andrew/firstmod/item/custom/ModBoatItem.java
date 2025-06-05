@@ -1,7 +1,7 @@
 package com.andrew.firstmod.item.custom;
 
 import com.andrew.firstmod.entity.custom.ModBoatEntity;
-import com.andrew.firstmod.entity.custom.ModChestBoatEntity;
+import com.andrew.firstmod.entity.custom.ModElectricBoatEntity;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -53,7 +53,7 @@ public class ModBoatItem extends Item {
 
             if (hitresult.getType() == HitResult.Type.BLOCK) {
                 Boat boat = this.getBoat(pLevel, hitresult);
-                if(boat instanceof ModChestBoatEntity chestBoat) {
+                if(boat instanceof ModElectricBoatEntity chestBoat) {
                     chestBoat.setVariant(this.type);
                 } else if(boat instanceof ModBoatEntity) {
                     ((ModBoatEntity)boat).setVariant(this.type);
@@ -80,7 +80,7 @@ public class ModBoatItem extends Item {
     }
 
     private Boat getBoat(Level p_220017_, HitResult p_220018_) {
-        return (Boat)(this.hasChest ? new ModChestBoatEntity(p_220017_, p_220018_.getLocation().x, p_220018_.getLocation().y, p_220018_.getLocation().z) :
+        return (Boat)(this.hasChest ? new ModElectricBoatEntity(p_220017_, p_220018_.getLocation().x, p_220018_.getLocation().y, p_220018_.getLocation().z) :
                 new ModBoatEntity(p_220017_, p_220018_.getLocation().x, p_220018_.getLocation().y, p_220018_.getLocation().z));
     }
 }

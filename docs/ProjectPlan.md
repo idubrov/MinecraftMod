@@ -1,11 +1,12 @@
 # Plan
 
 ### Change Log v 1.0.2
-- Two music discs and coconut sound. Discs are in simple dungeon
+- Two music discs and coconut sound. Discs are in chests.
 - Charging station with recipe.
-- 
-- Palm boat, Palm chest boat + recipies, tags and advancements
+- Palm boat with recipe, tag and advancement
 - Add electric armor to item tags
+- Structure
+- Palm electric boat
 
 
 ### To Fix
@@ -13,7 +14,6 @@
 
 
 ### Feature Requests and Ideas
-- electric boat from palm (electric boat)
 - palm sign
 - dried rice stems for pillows, mattresses, curtains
 - avocado tree
@@ -23,7 +23,6 @@
 - enchantments for hammer
 - electric hammer
 - cook top for fancy recipes
-- charge station for electric tools and armor (req sun?)
 - pizza
 - meatballs
 - volcano

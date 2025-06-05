@@ -2,7 +2,7 @@ package com.andrew.firstmod.client;
 
 import com.andrew.firstmod.FirstMod;
 import com.andrew.firstmod.entity.custom.ModBoatEntity;
-import com.andrew.firstmod.entity.custom.ModChestBoatEntity;
+import com.andrew.firstmod.entity.custom.ModElectricBoatEntity;
 import com.google.common.collect.ImmutableMap;
 import com.mojang.datafixers.util.Pair;
 import net.minecraft.client.model.BoatModel;
@@ -52,8 +52,8 @@ public class ModBoatRenderer extends BoatRenderer {
     public Pair<ResourceLocation, ListModel<Boat>> getModelWithLocation(Boat boat) {
         if(boat instanceof ModBoatEntity modBoat) {
             return this.boatResources.get(modBoat.getPalmVariant());
-        } else if(boat instanceof ModChestBoatEntity modChestBoatEntity) {
-            return this.boatResources.get(modChestBoatEntity.getPalmVariant());
+        } else if(boat instanceof ModElectricBoatEntity modElectricBoatEntity) {
+            return this.boatResources.get(modElectricBoatEntity.getPalmVariant());
         } else {
             return null;
         }

@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-18T17:42:37.7104728	Tags for minecraft:item mod id firstmod
+// 1.21.1	2025-05-31T19:12:47.2947763	Tags for minecraft:item mod id firstmod
 2e210837655c82a8c946c05139e0f398a43b8620 data/firstmod/tags/item/hammers.json
 cdf4c381520132653fcf2bdf8659627bec006d40 data/firstmod/tags/item/palm_logs.json
 51c02366ade650f912b99da2aa5485b44ba45e8c data/firstmod/tags/item/sulfur.json
@@ -6,7 +6,6 @@ cdf4c381520132653fcf2bdf8659627bec006d40 data/firstmod/tags/item/palm_logs.json
 6c5c52cd9cac9981845495e4b31a31b5891ceeeb data/minecraft/tags/item/axes.json
 1c1070c40dd0473b7e7f04dd468de9057b7c7836 data/minecraft/tags/item/boats.json
 10231109f0e3576f9ae641772c027c3c395337f1 data/minecraft/tags/item/chest_armor.json
-1db89f3997789b210fb8aa6105d75de6e1243ec4 data/minecraft/tags/item/chest_boats.json
 4e9d71d1a068380b0e14e4d95d1aee3fb209980f data/minecraft/tags/item/fence_gates.json
 21ef12f96c045d9958cde42522279394c62a9cad data/minecraft/tags/item/foot_armor.json
 1071808b78fee0896f49641a6afa4b9bc81e8582 data/minecraft/tags/item/head_armor.json

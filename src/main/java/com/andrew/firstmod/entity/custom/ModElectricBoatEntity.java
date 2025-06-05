@@ -1,30 +1,30 @@
 package com.andrew.firstmod.entity.custom;
 
-import com.andrew.firstmod.block.ModBlocks;
 import com.andrew.firstmod.entity.ModEntities;
 import com.andrew.firstmod.item.ModItems;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
-import net.minecraft.util.ByIdMap;
-import net.minecraft.util.StringRepresentable;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.vehicle.Boat;
+import net.minecraft.world.entity.vehicle.ChestBoat;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.world.phys.Vec3;
 
-import java.util.function.IntFunction;
-public class ModElectricBoatEntity extends Boat {
-    private static final EntityDataAccessor<Integer> DATA_ID_TYPE = SynchedEntityData.defineId(ModBoatEntity.class, EntityDataSerializers.INT);
+public class ModElectricBoatEntity extends ChestBoat {
+    private static final EntityDataAccessor<Integer> DATA_ID_TYPE = SynchedEntityData.defineId(Boat.class, EntityDataSerializers.INT);
 
-    public ModElectricBoatEntity(EntityType<? extends Boat> pEntityType, Level pLevel) {
+    public ModElectricBoatEntity(EntityType<? extends ChestBoat> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
     }
 
-    public ModElectricBoatEntity(Level level, double pX, double pY, double pZ) {
-        this(ModEntities.MOD_BOAT.get(), level);
+    public ModElectricBoatEntity(Level pLevel, double pX, double pY, double pZ) {
+        this(ModEntities.MOD_ELECTRIC_BOAT.get(), pLevel);
         this.setPos(pX, pY, pZ);
         this.xo = pX;
         this.yo = pY;
@@ -33,60 +33,71 @@ public class ModElectricBoatEntity extends Boat {
 
     @Override
     public Item getDropItem() {
-        return switch (getPalmVariant()) {
-            case PALM -> ModItems.PALM_BOAT.get();
-        };
+        switch (getPalmVariant()) {
+            case PALM -> {
+                return ModItems.PALM_ELECTRIC_BOAT.get();
+            }
+        }
+        return super.getDropItem();
     }
 
-    public void setVariant(Type pVariant) {
+    public void setVariant(ModBoatEntity.Type pVariant) {
         this.entityData.set(DATA_ID_TYPE, pVariant.ordinal());
-    }
-    public Type getPalmVariant() {
-        return Type.byId(this.entityData.get(DATA_ID_TYPE));
     }
 
     protected void defineSynchedData(SynchedEntityData.Builder builder) {
         super.defineSynchedData(builder);
-        builder.define(DATA_ID_TYPE, Type.PALM.ordinal());
+        builder.define(DATA_ID_TYPE, ModBoatEntity.Type.PALM.ordinal());
     }
+
     protected void addAdditionalSaveData(CompoundTag pCompound) {
         pCompound.putString("Type", this.getPalmVariant().getSerializedName());
     }
+
     protected void readAdditionalSaveData(CompoundTag pCompound) {
         if (pCompound.contains("Type", 8)) {
-            this.setVariant(Type.byName(pCompound.getString("Type")));
+            this.setVariant(ModBoatEntity.Type.byName(pCompound.getString("Type")));
         }
     }
-    public static enum Type implements StringRepresentable {
-        PALM(ModBlocks.PALM_PLANKS.get(), "palm");
-        private final String name;
-        private final Block planks;
-        public static final EnumCodec<Type> CODEC = StringRepresentable.fromEnum(Type::values);
-        private static final IntFunction<Type> BY_ID = ByIdMap.continuous(Enum::ordinal, values(), ByIdMap.OutOfBoundsStrategy.ZERO);
-        private Type(Block pPlanks, String pName) {
-            this.name = pName;
-            this.planks = pPlanks;
+
+    public ModBoatEntity.Type getPalmVariant() {
+        return ModBoatEntity.Type.byId(this.entityData.get(DATA_ID_TYPE));
+    }
+
+    @Override
+    public InteractionResult interact(Player player, InteractionHand hand) {
+        // If the player is not sneaking (not holding Shift), allow riding
+        if (!player.isSecondaryUseActive() && this.canAddPassenger(player)) {
+            return super.interact(player, hand);
         }
-        public String getSerializedName() {
-            return this.name;
-        }
-        public String getName() {
-            return this.name;
-        }
-        public Block getPlanks() {
-            return this.planks;
-        }
-        public String toString() {
-            return this.name;
-        }
-        /**
-         * Get a boat type by its enum ordinal
-         */
-        public static Type byId(int pId) {
-            return BY_ID.apply(pId);
-        }
-        public static Type byName(String pName) {
-            return CODEC.byName(pName, PALM);
+        // Prevent opening the chest by skipping container interaction
+        return InteractionResult.SUCCESS;
+    }
+
+    @Override
+    public void openCustomInventoryScreen(Player player) {
+        // Do nothing: disables chest inventory opening
+    }
+
+
+    @Override
+    public void tick() {
+        super.tick(); // Runs all normal boat logic
+
+        if (this.isControlledByLocalInstance() && (this.getPaddleState(0) || this.getPaddleState(1))) {
+            Vec3 currentMotion = this.getDeltaMovement();
+            Vec3 forward = this.getForward().scale(0.04); // vanilla: 0.02, boost to 0.04
+
+            // Apply acceleration
+            Vec3 newMotion = currentMotion.add(forward);
+
+            // Cap speed
+            double maxSpeed = 1.5 * 0.35; // vanilla is ~0.35 blocks/tick
+            if (newMotion.length() > maxSpeed) {
+                newMotion = newMotion.normalize().scale(maxSpeed);
+            }
+
+            this.setDeltaMovement(newMotion);
         }
     }
 }
