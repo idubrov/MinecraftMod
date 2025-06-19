@@ -9,6 +9,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
 import net.neoforged.neoforge.common.data.GlobalLootModifierProvider;
 import net.neoforged.neoforge.common.loot.LootTableIdCondition;
 
@@ -50,6 +51,92 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                 new AddItemModifier(new LootItemCondition[] {
                         new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("chests/stronghold_crossing")).build(),
                 }, ModBlocks.TELEPORTATION_STONE.asItem()));
+
+
+
+//        this.add("music_disc_bassoon_solos_from_simple_dungeon",More actions
+//                new AddItemModifier(new LootItemCondition[] {
+//                        new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("chests/simple_dungeon")).build(),
+//                }, ModItems.MUSIC_DISC_BASSOON_SOLOS.get()));
+
+        this.add("music_disc_bassoon_solos_from_simple_dungeon",
+                new AddItemModifier(
+                        new LootItemCondition[] {
+                                new LootTableIdCondition.Builder(
+                                        ResourceLocation.withDefaultNamespace("chests/simple_dungeon")
+                                ).build(),
+                                LootItemRandomChanceCondition.randomChance(0.2F).build() // 20% chance
+                        },
+                        ModItems.MUSIC_DISC_BASSOON_SOLOS.get()
+                )
+        );
+
+        this.add("music_disc_bassoon_solos_from_woodland_mansion",
+                new AddItemModifier(
+                        new LootItemCondition[] {
+                                new LootTableIdCondition.Builder(
+                                        ResourceLocation.withDefaultNamespace("chests/woodland_mansion")
+                                ).build(),
+                                LootItemRandomChanceCondition.randomChance(0.3F).build() // 30% chance
+                        },
+                        ModItems.MUSIC_DISC_BASSOON_SOLOS.get()
+                )
+        );
+
+        this.add("music_disc_bassoon_solos_from_ancient_city",
+                new AddItemModifier(
+                        new LootItemCondition[] {
+                                new LootTableIdCondition.Builder(
+                                        ResourceLocation.withDefaultNamespace("chests/ancient_city")
+                                ).build(),
+                                LootItemRandomChanceCondition.randomChance(0.5F).build() // 50% chance
+                        },
+                        ModItems.MUSIC_DISC_BASSOON_SOLOS.get()
+                )
+        );
+
+//        this.add("music_disc_bassoon_song_from_simple_dungeon",
+//                new AddItemModifier(new LootItemCondition[] {
+//                        new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("chests/simple_dungeon")).build(),
+//                }, ModItems.MUSIC_DISC_BASSOON_SONGS.get()));
+
+        this.add("music_disc_bassoon_song_from_simple_dungeon",
+                new AddItemModifier(
+                        new LootItemCondition[] {
+                                new LootTableIdCondition.Builder(
+                                        ResourceLocation.withDefaultNamespace("chests/simple_dungeon")
+                                ).build(),
+                                LootItemRandomChanceCondition.randomChance(0.2F).build() // 20% chance
+                        },
+                        ModItems.MUSIC_DISC_BASSOON_SONGS.get()
+                )
+        );
+
+        this.add("music_disc_bassoon_song_from_woodland_mansion",
+                new AddItemModifier(
+                        new LootItemCondition[] {
+                                new LootTableIdCondition.Builder(
+                                        ResourceLocation.withDefaultNamespace("chests/woodland_mansion")
+                                ).build(),
+                                LootItemRandomChanceCondition.randomChance(0.3F).build() // 30% chance
+                        },
+                        ModItems.MUSIC_DISC_BASSOON_SONGS.get()
+                )
+        );
+
+        this.add("music_disc_bassoon_song_from_ancient_city",
+                new AddItemModifier(
+                        new LootItemCondition[] {
+                                new LootTableIdCondition.Builder(
+                                        ResourceLocation.withDefaultNamespace("chests/ancient_city")
+                                ).build(),
+                                LootItemRandomChanceCondition.randomChance(0.5F).build() // 50% chance
+                        },
+                        ModItems.MUSIC_DISC_BASSOON_SONGS.get()
+                )
+        );
+
+
 
     }
 }

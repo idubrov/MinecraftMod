@@ -1,13 +1,17 @@
-// 1.21.5	2025-05-07T20:32:28.3152449	Tags for minecraft:item mod id firstmod
+// 1.21.5	2025-06-19T16:14:38.2966152	Tags for minecraft:item mod id firstmod
 920d3168d549b6bcb420f831e4f409d627dfa816 data/firstmod/tags/item/battery_repair.json
 2e210837655c82a8c946c05139e0f398a43b8620 data/firstmod/tags/item/hammers.json
 cdf4c381520132653fcf2bdf8659627bec006d40 data/firstmod/tags/item/palm_logs.json
 51c02366ade650f912b99da2aa5485b44ba45e8c data/firstmod/tags/item/sulfur.json
 430220e9f737ce79388cdf35bf46e857e8f914ec data/firstmod/tags/item/sulfur_ores.json
 6c5c52cd9cac9981845495e4b31a31b5891ceeeb data/minecraft/tags/item/axes.json
+10231109f0e3576f9ae641772c027c3c395337f1 data/minecraft/tags/item/chest_armor.json
 4e9d71d1a068380b0e14e4d95d1aee3fb209980f data/minecraft/tags/item/fence_gates.json
+21ef12f96c045d9958cde42522279394c62a9cad data/minecraft/tags/item/foot_armor.json
+1071808b78fee0896f49641a6afa4b9bc81e8582 data/minecraft/tags/item/head_armor.json
 24f61c5a8287d8b686c457d7b264bf0e91efd642 data/minecraft/tags/item/hoes.json
 b8e5c8d62478e98e1219ef39b896840cda121540 data/minecraft/tags/item/leaves.json
+69713b8f301ffe4add21c817906f1f3c650e5ac6 data/minecraft/tags/item/leg_armor.json
 cdf4c381520132653fcf2bdf8659627bec006d40 data/minecraft/tags/item/logs_that_burn.json
 0f4115fc66fc79d1768a8ca0a9a4faa623b6f6ed data/minecraft/tags/item/pickaxes.json
 bc7447936f3af40bdf9198cb617b9695d28d1d8d data/minecraft/tags/item/planks.json
