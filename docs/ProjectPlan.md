@@ -5,8 +5,12 @@
 - Charging station with recipe.
 - Palm boat with recipe, tag and advancement
 - Add electric armor to item tags
-- Structure
+- Structure Bunker
 - Palm electric boat
+
+structure set:
+    "spacing": 34,
+    "separation": 8
 
 
 ### To Fix
