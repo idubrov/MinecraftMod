@@ -2,6 +2,7 @@ package com.andrew.firstmod.item;
 
 import com.andrew.firstmod.FirstMod;
 import com.andrew.firstmod.block.ModBlocks;
+import com.andrew.firstmod.entity.custom.ModBoatEntity;
 import com.andrew.firstmod.item.custom.*;
 import com.andrew.firstmod.sound.ModSounds;
 import net.minecraft.core.registries.Registries;
@@ -164,6 +165,22 @@ public class ModItems {
             () -> new Item(new Item.Properties()
                     .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "music_disc_bassoon_solos")))
                     .jukeboxPlayable(ModSounds.BASSOON_SOLOS_KEY).stacksTo(1)));
+
+
+    public static final Supplier<Item> PALM_BOAT = registerItem("maple_boat",
+            (properties)->(new BoatItem(MapleEntityType.Maple_BOAT.get(), properties)), (new Item.Properties()).stacksTo(1));
+
+
+    public static final Supplier<Item> PALM_ELECTRIC_BOAT = registerItem("maple_chest_boat",
+            (properties)->(new BoatItem(MapleEntityType.Maple_CHEST_BOAT.get(), properties)), (new Item.Properties()).stacksTo(1));
+
+
+    public static final DeferredItem<Item> PALM_BOAT = ITEMS.register("palm_boat",
+            () -> new BoatItem(ModEntities.PALM_BOAT.get(), (new Item.Properties()).stacksTo(1)));
+
+
+    public static final DeferredItem<Item> PALM_ELECTRIC_BOAT = ITEMS.register("palm_electric_boat",
+            () -> new BoatItem(true, ModBoatEntity.Type.PALM, (new Item.Properties()).stacksTo(1)));
 
 
     public static void register(IEventBus eventBus) {
