@@ -6,7 +6,7 @@
   "biomes": "#firstmod:has_structure/bunker",
   "step": "underground_structures",
   "start_height": {
-    "absolute": -12
+    "absolute": -14
   },
   "project_start_to_heightmap": "WORLD_SURFACE",
   "terrain_adaptation": "none",

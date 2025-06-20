@@ -5,7 +5,7 @@
 - Charging station with recipe.
 - Palm boat with recipe, tag and advancement
 - Add electric armor to item tags
-- Structure Bunker
+- Structure Bunker in biomes:
 - Palm electric boat
 
 structure set:
