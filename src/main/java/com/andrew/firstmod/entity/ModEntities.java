@@ -2,6 +2,7 @@ package com.andrew.firstmod.entity;
 
 import com.andrew.firstmod.FirstMod;
 import com.andrew.firstmod.entity.custom.CoconutProjectileEntity;
+import com.andrew.firstmod.entity.custom.ModElectricBoatEntity;
 import com.andrew.firstmod.item.ModItems;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -40,14 +41,15 @@ public class ModEntities {
                     .clientTrackingRange(10)
                     .build(entityId("palm_boat")));
 
-    public static final Supplier<EntityType<ChestBoat>> PALM_ELECTRIC_BOAT =
+
+    public static final Supplier<EntityType<ModElectricBoatEntity>> PALM_ELECTRIC_BOAT =
             ENTITY_TYPES.register("palm_electric_boat", () -> EntityType.Builder
-                    .of(getChestBoatFactory(ModItems.PALM_ELECTRIC_BOAT), MobCategory.MISC)
+                    .of(getElectricBoatFactory(ModItems.PALM_ELECTRIC_BOAT), MobCategory.MISC)
                     .noLootTable()
                     .sized(1.375F, 0.5625F)
                     .eyeHeight(0.5625F)
                     .clientTrackingRange(10)
-                    .build(entityId("mod_electric_boat")));
+                    .build(entityId("palm_electric_boat")));
 
 
     public static void register(IEventBus eventBus) {
@@ -64,10 +66,7 @@ public class ModEntities {
             return new Boat(type, world, itemSupplier);
         };
     }
-
-    private static EntityType.EntityFactory<ChestBoat> getChestBoatFactory(Supplier<Item> itemSupplier) {
-        return (type, world) -> {
-            return new ChestBoat(type, world, itemSupplier);
-        };
+    private static EntityType.EntityFactory<ModElectricBoatEntity> getElectricBoatFactory(Supplier<Item> itemSupplier) {
+        return (type, world) -> new ModElectricBoatEntity(type, world, itemSupplier);
     }
 }
