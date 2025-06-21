@@ -1,4 +1,4 @@
-// 1.21.5	2025-05-12T19:46:33.5565906	Model Definitions - firstmod
+// 1.21.5	2025-06-20T18:54:32.5361856	Model Definitions - firstmod
 5a4be082f866abf343c84034192cf99495f8b7f5 assets/firstmod/blockstates/banana_bush.json
 b2a653fb2035f999939e0486425efb12c445221f assets/firstmod/blockstates/deepslate_sulfur_ore.json
 2a5070dd5f9ffd00167bc62872ceadb99435737a assets/firstmod/blockstates/dry_palm_leaves_carpet.json
@@ -52,8 +52,10 @@ e72462ef58dd60ecea2a1d8da7f0c377880e3281 assets/firstmod/items/music_disc_bassoo
 5977f09e1a1165ad576a61dd08be489a9ad068b9 assets/firstmod/items/music_disc_bassoon_songs.json
 786f3c7115392c9af62494e4688853551218010d assets/firstmod/items/nether_sulfur_ore.json
 d2e1b16807185a5395b9930ccfbbac2c3b03c1dc assets/firstmod/items/nigiri_sushi.json
+1cfc6bcc6614e719a535e537c07b481a82ac80b4 assets/firstmod/items/palm_boat.json
 a3735bf87c42e76ec77bd0d2fee43eed374d70ce assets/firstmod/items/palm_button.json
 3d928b454cd829aba95b93523f7af5e9f25bc3a6 assets/firstmod/items/palm_door.json
+308a324c75d7c8aa7f1b887cd6dc65543868e1ba assets/firstmod/items/palm_electric_boat.json
 2cc720474c73f7ad9e7498a002d830624c294ff0 assets/firstmod/items/palm_fence.json
 d0600830d6c4279837a7b3a0924122777d76ae0a assets/firstmod/items/palm_fence_gate.json
 c1eef88cbecb40d590aab2cf1d95716acdfe56d9 assets/firstmod/items/palm_leaves.json
@@ -206,7 +208,9 @@ e1a2a9d4c0383a00325ffecaf3b9273bee801ba0 assets/firstmod/models/item/milk_shake.
 a5eef819981aa81d3c6a890c67313689b97d5f43 assets/firstmod/models/item/music_disc_bassoon_solos.json
 c6faf5608f76cd13f72fe298b5917b3c7e64cd94 assets/firstmod/models/item/music_disc_bassoon_songs.json
 b434e5a4776feeec6b41323ee673a98a1aca58a2 assets/firstmod/models/item/nigiri_sushi.json
+fd58773a99e26f47c66638174748b3aed4af410c assets/firstmod/models/item/palm_boat.json
 b89977b8a1d1502a5b3f64b0df2c0bc35b855abe assets/firstmod/models/item/palm_door.json
+b78b9a456a576bb88372f85bea5041b291057a29 assets/firstmod/models/item/palm_electric_boat.json
 31f1702e273baf2f49254f04766fa8dc01b726c2 assets/firstmod/models/item/palm_sapling.json
 e4a5462df8c6a2558afab3661d88e71a956371da assets/firstmod/models/item/rice_seeds.json
 f6f0dc68acd1e33119803981c364b8c6020ae462 assets/firstmod/models/item/rice_stem.json

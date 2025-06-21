@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "electric_boat",
+  "ingredients": [
+    "firstmod:palm_boat",
+    "firstmod:battery"
+  ],
+  "result": {
+    "count": 1,
+    "id": "firstmod:palm_electric_boat"
+  }
+}

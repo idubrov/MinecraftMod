@@ -1,6 +1,7 @@
 package com.andrew.firstmod;
 
 import com.andrew.firstmod.block.ModBlocks;
+import com.andrew.firstmod.client.ModModelLayers;
 import com.andrew.firstmod.component.ModDataComponents;
 import com.andrew.firstmod.effect.ModEffects;
 import com.andrew.firstmod.entity.ModEntities;
@@ -14,8 +15,9 @@ import com.andrew.firstmod.sound.ModSounds;
 import com.andrew.firstmod.worldgen.tree.ModFoliagePlacers;
 import com.andrew.firstmod.worldgen.tree.ModTrunkPlacerTypes;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.model.BoatModel;
+import net.minecraft.client.renderer.entity.BoatRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
-import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.neoforged.api.distmarker.Dist;
@@ -26,6 +28,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
@@ -96,6 +99,20 @@ public class FirstMod
         public static void onClientSetup(FMLClientSetupEvent event)
         {
 
+        }
+    }
+
+
+    @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    public static class LayersRegistry {
+
+        @SubscribeEvent
+        public static void registerLayer(EntityRenderersEvent.RegisterLayerDefinitions event) {
+            EntityRenderers.register(ModEntities.PALM_BOAT.get(), pContext -> new BoatRenderer(pContext, ModModelLayers.PALM_BOAT_LAYER));
+            EntityRenderers.register(ModEntities.PALM_ELECTRIC_BOAT.get(), pContext -> new BoatRenderer(pContext, ModModelLayers.PALM_ELECTRIC_BOAT_LAYER));
+
+            event.registerLayerDefinition(ModModelLayers.PALM_BOAT_LAYER, BoatModel::createBoatModel);
+            event.registerLayerDefinition(ModModelLayers.PALM_ELECTRIC_BOAT_LAYER, BoatModel::createChestBoatModel);
         }
     }
 }

@@ -90,6 +90,11 @@
   "item.firstmod.music_disc_bassoon_solos.desc": "Bassoon solos: Soviet Anthem, Whiskey in the Jar, Imperial March, Polovetzian Dance.",
   "sounds.firstmod.coconut_pop": "Coconut Pop",
 
+  "block.firstmod.charging_station": "Charging Station",
+
+  "item.firstmod.palm_boat": "Palm Boat",
+  "item.firstmod.palm_electric_boat": "Palm Electric Boat",
+
   "tooltip.firstmod.empty_line": " ",
   "tooltip.firstmod.sulfur_ore.tooltip": "§7This block will hurt you if you touch it.§r",
   "tooltip.firstmod.battery.tooltip": "Green energy!",

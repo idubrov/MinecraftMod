@@ -1,4 +1,4 @@
-// 1.21.5	2025-05-07T20:32:28.3152449	My Recipes
+// 1.21.5	2025-06-20T19:00:14.7472282	My Recipes
 45760b825cef91b98fbf2ba3847c35efd65edcc1 data/firstmod/advancement/recipes/building_blocks/dry_palm_leaves_block.json
 efcfbfa6c3c58989670f8d199baaffa7731f6ec0 data/firstmod/advancement/recipes/building_blocks/dry_palm_leaves_carpet.json
 bda11ac69c058f2a7dda5d878ab55ef0fcff8172 data/firstmod/advancement/recipes/building_blocks/dry_palm_leaves_slab.json
@@ -15,6 +15,8 @@ ef0fecd6e7c4f3f3d8ae96d9eb390e267bad6e9d data/firstmod/advancement/recipes/food/
 93a251edae53ca43e2848847d4caa5ea903b70fb data/firstmod/advancement/recipes/food/rice_pudding.json
 d88d829d3d560e8aa5ee75f4d25aeedee12b061f data/firstmod/advancement/recipes/misc/battery.json
 4ad7e8219c9ddc94b26aaf2bd5e508493a6dc611 data/firstmod/advancement/recipes/misc/coconut_lamp.json
+b92ec8b124a17aa679c454e6a2b4863183ded5e4 data/firstmod/advancement/recipes/misc/palm_boat.json
+1603a37789e6d77b633a26ce244ec139aae38511 data/firstmod/advancement/recipes/misc/palm_electric_boat.json
 4e7e3665e3943ad76db89ea676914af0a34fce24 data/firstmod/advancement/recipes/misc/sulfur_block.json
 3a2184d5fa9bb50fe467c6c1bbdde687b99831a4 data/firstmod/advancement/recipes/misc/sulfur_powder_from_blasting_deepslate_sulfur_ore.json
 4ad4e608b0b49939f12dd32af13fd2add1558abb data/firstmod/advancement/recipes/misc/sulfur_powder_from_blasting_end_sulfur_ore.json
@@ -67,8 +69,10 @@ b49286563d666df38dd34c684afe12b5068dfd56 data/firstmod/recipe/electric_pickaxe.j
 b5ce5cd7ac2ed19581fb2d96855e581e0d63d685 data/firstmod/recipe/maki_sushi.json
 7ff8fd3db401f202f86a2eb0619a5e14d138915d data/firstmod/recipe/milk_shake.json
 ed42491f14dab5343bf0cba6c4e1f2b51ea4da79 data/firstmod/recipe/nigiri_sushi.json
+15b9b03ca2d2910123f8d515d6283b2d7d7c624b data/firstmod/recipe/palm_boat.json
 8f983f921d5a3775e496ae12b1c97236aa4827a9 data/firstmod/recipe/palm_button.json
 51e14180e8123069b0b830dd012f7867b2ccdf94 data/firstmod/recipe/palm_door.json
+cfbf24946e4faeb15384ddbb387c1389cd6007e9 data/firstmod/recipe/palm_electric_boat.json
 2079e1c39cd03b20f88357506dcabc1603c521c7 data/firstmod/recipe/palm_fence.json
 80d4b50f878b3af013175ea4dcec5b26b09b2369 data/firstmod/recipe/palm_fence_gate.json
 93c8d7f3494e6145f5e250ea8765bc601da14c57 data/firstmod/recipe/palm_planks.json

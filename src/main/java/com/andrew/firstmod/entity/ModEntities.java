@@ -30,32 +30,19 @@ public class ModEntities {
                     .updateInterval(10)
                     .build(entityId("coconut")));
 
-//    public static final Supplier<EntityType<ModBoatEntity>> MOD_BOAT =
-//            ENTITY_TYPES.register("mod_boat", () -> EntityType.Builder
-//                    .<ModBoatEntity>of(ModBoatEntity::new, MobCategory.MISC)
-//                    .sized(1.375f, 0.5625f)
-//                    .build("mod_boat"));
-//    public static final Supplier<EntityType<ModElectricBoatEntity>> MOD_ELECTRIC_BOAT =
-//            ENTITY_TYPES.register("mod_electric_boat", () -> EntityType.Builder
-//                    .<ModElectricBoatEntity>of(ModElectricBoatEntity::new, MobCategory.MISC)
-//                    .sized(1.375f, 0.5625f)
-//                    .build("mod_electric_boat"));
 
-
-    public static final Supplier<EntityType<Boat>> MOD_BOAT =
-            ENTITY_TYPES.register("mod_boat", () -> EntityType.Builder.of(getBoatFactory(() -> {
-                        return ModItems.MAPLE_BOAT.get();
-                    }), MobCategory.MISC)
+    public static final Supplier<EntityType<Boat>> PALM_BOAT =
+            ENTITY_TYPES.register("palm_boat", () -> EntityType.Builder
+                    .of(getBoatFactory(ModItems.PALM_BOAT), MobCategory.MISC)
                     .noLootTable()
                     .sized(1.375F, 0.5625F)
                     .eyeHeight(0.5625F)
                     .clientTrackingRange(10)
-                    .build(entityId("mod_boat")));
+                    .build(entityId("palm_boat")));
 
-    public static final Supplier<EntityType<ChestBoat>> MOD_ELECTRIC_BOAT =
-            ENTITY_TYPES.register("mod_electric_boat", () -> EntityType.Builder.of(getChestBoatFactory(() -> {
-                        return ModItems.MAPLE_CHEST_BOAT.get();
-                    }), MobCategory.MISC)
+    public static final Supplier<EntityType<ChestBoat>> PALM_ELECTRIC_BOAT =
+            ENTITY_TYPES.register("palm_electric_boat", () -> EntityType.Builder
+                    .of(getChestBoatFactory(ModItems.PALM_ELECTRIC_BOAT), MobCategory.MISC)
                     .noLootTable()
                     .sized(1.375F, 0.5625F)
                     .eyeHeight(0.5625F)

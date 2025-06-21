@@ -173,12 +173,14 @@ public class ModRecipeProvider extends RecipeProvider {
 
         shapeless(RecipeCategory.MISC, ModItems.SULFUR_SHARD.get(), 9)
                 .requires(ModBlocks.SULFUR_BLOCK)
-                .unlockedBy("has_sulfur", has(ModBlocks.SULFUR_BLOCK)).save(this.output);
+                .unlockedBy("has_sulfur", has(ModBlocks.SULFUR_BLOCK))
+                .save(this.output);
 
         shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALM_PLANKS.get(), 4)
                 .group("planks")
                 .requires(ModTags.Items.PALM_LOGS_ITEMS)
-                .unlockedBy("has_palm_logs", has(ModTags.Items.PALM_LOGS_ITEMS)).save(this.output);
+                .unlockedBy("has_palm_logs", has(ModTags.Items.PALM_LOGS_ITEMS))
+                .save(this.output);
 
         shapeless(RecipeCategory.FOOD, ModItems.FRUIT_SALAD.get(), 1)
                 .requires(ModItems.BANANA)
@@ -356,6 +358,22 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('I', Items.IRON_INGOT)
                 .define('B', ModItems.BATTERY.get())
                 .define('E', Items.ENDER_PEARL)
+                .unlockedBy("has_battery", has(ModItems.BATTERY))
+                .save(this.output);
+
+
+        shaped(RecipeCategory.MISC, ModItems.PALM_BOAT.get(), 1)
+                .group("boat")
+                .pattern("# #")
+                .pattern("###")
+                .define('#', ModBlocks.PALM_PLANKS.get())
+                .unlockedBy("in_water", insideOf(Blocks.WATER))
+                .save(this.output);
+
+        shapeless(RecipeCategory.MISC, ModItems.PALM_ELECTRIC_BOAT.get(), 1)
+                .group("electric_boat")
+                .requires(ModItems.PALM_BOAT.get())
+                .requires(ModItems.BATTERY.get())
                 .unlockedBy("has_battery", has(ModItems.BATTERY))
                 .save(this.output);
     }

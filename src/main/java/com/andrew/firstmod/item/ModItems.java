@@ -2,22 +2,17 @@ package com.andrew.firstmod.item;
 
 import com.andrew.firstmod.FirstMod;
 import com.andrew.firstmod.block.ModBlocks;
-import com.andrew.firstmod.entity.custom.ModBoatEntity;
+import com.andrew.firstmod.entity.ModEntities;
 import com.andrew.firstmod.item.custom.*;
 import com.andrew.firstmod.sound.ModSounds;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.equipment.ArmorType;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
-import java.util.function.Function;
 
 
 public class ModItems {
@@ -167,20 +162,14 @@ public class ModItems {
                     .jukeboxPlayable(ModSounds.BASSOON_SOLOS_KEY).stacksTo(1)));
 
 
-    public static final Supplier<Item> PALM_BOAT = registerItem("maple_boat",
-            (properties)->(new BoatItem(MapleEntityType.Maple_BOAT.get(), properties)), (new Item.Properties()).stacksTo(1));
-
-
-    public static final Supplier<Item> PALM_ELECTRIC_BOAT = registerItem("maple_chest_boat",
-            (properties)->(new BoatItem(MapleEntityType.Maple_CHEST_BOAT.get(), properties)), (new Item.Properties()).stacksTo(1));
-
-
     public static final DeferredItem<Item> PALM_BOAT = ITEMS.register("palm_boat",
-            () -> new BoatItem(ModEntities.PALM_BOAT.get(), (new Item.Properties()).stacksTo(1)));
-
-
+            () -> new BoatItem(ModEntities.PALM_BOAT.get(), (new Item.Properties())
+                    .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "palm_boat")))
+                    .stacksTo(1)));
     public static final DeferredItem<Item> PALM_ELECTRIC_BOAT = ITEMS.register("palm_electric_boat",
-            () -> new BoatItem(true, ModBoatEntity.Type.PALM, (new Item.Properties()).stacksTo(1)));
+            () -> new BoatItem(ModEntities.PALM_ELECTRIC_BOAT.get(), (new Item.Properties())
+                    .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "palm_electric_boat")))
+                    .stacksTo(1)));
 
 
     public static void register(IEventBus eventBus) {

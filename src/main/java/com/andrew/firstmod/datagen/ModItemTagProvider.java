@@ -111,5 +111,10 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.ELECTRIC_HELMET.get());
         tag(ItemTags.LEG_ARMOR)
                 .add(ModItems.ELECTRIC_LEGGINGS.get());
+
+
+        tag(ItemTags.BOATS)
+                .add(ModItems.PALM_BOAT.get())
+                .add(ModItems.PALM_ELECTRIC_BOAT.get());
     }
 }
