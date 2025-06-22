@@ -113,5 +113,7 @@
   "block.firstmod.charging_station": "Charging Station",
 
   "item.firstmod.palm_boat": "Palm Boat",
-  "item.firstmod.palm_electric_boat": "Palm Electric Boat"
+  "item.firstmod.palm_electric_boat": "Palm Electric Boat",
+
+  "block.firstmod.chair": "Chair"
 }

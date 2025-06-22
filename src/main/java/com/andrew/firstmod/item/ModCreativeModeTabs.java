@@ -70,6 +70,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.RICE_PUDDING);
 
                         output.accept(ModBlocks.COCONUT_LAMP);
+
+                        output.accept(ModBlocks.CHAIR);
                     }).build());
 
     public static final Supplier<CreativeModeTab> ITEMS_TAB2 = CREATIVE_MODE_TAB.register("electric_bananas_items_tab2",

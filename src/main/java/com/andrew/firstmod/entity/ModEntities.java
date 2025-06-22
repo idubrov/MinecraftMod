@@ -1,6 +1,7 @@
 package com.andrew.firstmod.entity;
 
 import com.andrew.firstmod.FirstMod;
+import com.andrew.firstmod.entity.custom.ChairEntity;
 import com.andrew.firstmod.entity.custom.CoconutProjectileEntity;
 import com.andrew.firstmod.entity.custom.ModBoatEntity;
 import com.andrew.firstmod.entity.custom.ModElectricBoatEntity;
@@ -35,6 +36,12 @@ public class ModEntities {
                     .<ModElectricBoatEntity>of(ModElectricBoatEntity::new, MobCategory.MISC)
                     .sized(1.375f, 0.5625f)
                     .build("mod_electric_boat"));
+
+    public static final Supplier<EntityType<ChairEntity>> CHAIR_ENTITY =
+            ENTITY_TYPES.register("chair_entity", () -> EntityType.Builder
+                    .<ChairEntity>of(ChairEntity::new, MobCategory.MISC)
+                    .sized(0.5f, 0.5f)
+                    .build("chair_entity"));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
