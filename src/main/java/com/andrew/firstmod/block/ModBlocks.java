@@ -207,6 +207,14 @@ public class ModBlocks {
                             ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "teleportation_stone")))));
 
 
+    public static final DeferredBlock<Block> CHARGING_STATION = registerBlock("charging_station",
+            () -> new ChargingStationBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CRAFTING_TABLE)
+                    .noOcclusion()
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "charging_station")))));
+
+
+
     //Registering of our new blocks and its item
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

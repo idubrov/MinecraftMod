@@ -1,5 +1,6 @@
-// 1.21.5	2025-06-20T18:54:32.5361856	Model Definitions - firstmod
+// 1.21.5	2025-06-24T19:20:14.6422744	Model Definitions - firstmod
 5a4be082f866abf343c84034192cf99495f8b7f5 assets/firstmod/blockstates/banana_bush.json
+27206c4616627dbf687e4498e41211d96718389b assets/firstmod/blockstates/charging_station.json
 b2a653fb2035f999939e0486425efb12c445221f assets/firstmod/blockstates/deepslate_sulfur_ore.json
 2a5070dd5f9ffd00167bc62872ceadb99435737a assets/firstmod/blockstates/dry_palm_leaves_carpet.json
 fa91825877e68baa1cc1d3b973c3ea9ea2227fe4 assets/firstmod/blockstates/end_sulfur_ore.json
@@ -26,6 +27,7 @@ aa40192935e053904ebb8a202b43f1c537980c85 assets/firstmod/blockstates/stripped_pa
 899a0b734fdaef57f989a83d316f2d638567bae5 assets/firstmod/blockstates/teleportation_stone.json
 029667159bfc88643a4c96b845ca5b5abf3a6506 assets/firstmod/items/banana.json
 784f89530d9351edf58b01e7915b748e3453fade assets/firstmod/items/battery.json
+1756e7f1b25dfb24bea4b494a8ce12cfdbc12b2b assets/firstmod/items/charging_station.json
 33b154d57400ab9f4ff2695431a6e50acc4d7a28 assets/firstmod/items/coconut.json
 44006ffe87a87203045cdf6fbed7dbaca1d65c2e assets/firstmod/items/coconut_lamp.json
 2128b1af42b38025944c9fec8556a70a9cab8c47 assets/firstmod/items/deepslate_sulfur_ore.json
@@ -85,6 +87,7 @@ ab2560dc99b93871c2d5177ed311031446c6d64f assets/firstmod/models/block/banana_bus
 06072fc232e6b9df0582248164ff1b0bc3632ddc assets/firstmod/models/block/banana_bush_stage1.json
 2c95b0f92b0a6a5570b549dd6e90c4c621d2a5ab assets/firstmod/models/block/banana_bush_stage2.json
 6455c883da65c5efc76aeaa3e4c66b0274d80c28 assets/firstmod/models/block/banana_bush_stage3.json
+be90b00c29de0d3ce7cbe1a4f7b7bca84b0ed09a assets/firstmod/models/block/charging_station.json
 5fdd9d6a88323122a10b0f39053dd08467eb59fd assets/firstmod/models/block/deepslate_sulfur_ore.json
 163cbd8a5fa0a861ef0d6a06a0210a8ea44eb2e8 assets/firstmod/models/block/dry_palm_leaves_carpet.json
 3ce03abbc19b60d5a824c430967c95bc1fe95c1f assets/firstmod/models/block/end_sulfur_ore.json

@@ -2,7 +2,7 @@
 
 ### Change Log v 1.0.2
 - Two music discs and coconut sound. Discs are in chests.
-- 
+- Charging station with recipe.
 - Palm boat with recipe, tag and advancement
 - Add electric armor to item tags
 - Structure Bunker in biomes:

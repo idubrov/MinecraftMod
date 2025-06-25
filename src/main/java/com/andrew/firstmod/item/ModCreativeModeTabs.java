@@ -107,6 +107,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.MUSIC_DISC_BASSOON_SONGS);
                         output.accept(ModItems.MUSIC_DISC_BASSOON_SOLOS);
+
+                        output.accept(ModBlocks.CHARGING_STATION);
                     }).build());
 
     public static void register(IEventBus eventBus) {

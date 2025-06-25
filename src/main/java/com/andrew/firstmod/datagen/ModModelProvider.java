@@ -124,6 +124,8 @@ public class ModModelProvider extends ModelProvider {
 
         blockModels.createRotatedPillarWithHorizontalVariant(ModBlocks.TELEPORTATION_STONE.get(),
                 TexturedModel.COLUMN, TexturedModel.COLUMN_HORIZONTAL);
+
+        makeCubeWithTop(blockModels, ModBlocks.CHARGING_STATION.get());
     }
 
 
@@ -392,6 +394,32 @@ public class ModModelProvider extends ModelProvider {
         blockModels.blockStateOutput.accept(createSimpleBlock(pottedSapling, multivariant2));
 
         blockModels.registerSimpleFlatItemModel(sapling);
+    }
+
+
+    public void makeCubeWithTop(BlockModelGenerators blockModels, Block block) {
+        ResourceLocation id = BuiltInRegistries.BLOCK.getKey(block);
+        ResourceLocation modelId = id.withPath(path -> "block/" + path);
+
+        // Textures
+        ResourceLocation sideAndBottom = ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "block/" + id.getPath() + "_side");
+        ResourceLocation top = ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "block/" + id.getPath() + "_top");
+
+        // Texture mapping
+        TextureMapping textureMapping = new TextureMapping()
+                .put(TextureSlot.SIDE, sideAndBottom)
+                .put(TextureSlot.BOTTOM, sideAndBottom)
+                .put(TextureSlot.TOP, top);
+
+        // Model template using cube_bottom_top with explicit texture slots
+        ModelTemplate cubeBottomTopTemplate = new ModelTemplate(
+                Optional.of(ResourceLocation.fromNamespaceAndPath("minecraft", "block/cube_bottom_top")),
+                Optional.empty(),
+                TextureSlot.BOTTOM, TextureSlot.SIDE, TextureSlot.TOP
+        );
+
+        MultiVariant multivariant = plainVariant(cubeBottomTopTemplate.create(modelId, textureMapping, blockModels.modelOutput));
+        blockModels.blockStateOutput.accept(createSimpleBlock(block, multivariant));
     }
 
 

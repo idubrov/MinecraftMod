@@ -71,6 +71,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         dropSelf(ModBlocks.PALM_SAPLING.get());
         dropSelf(ModBlocks.COCONUT_LAMP.get());
         dropSelf(ModBlocks.TELEPORTATION_STONE.get());
+        dropSelf(ModBlocks.CHARGING_STATION.get());
 
 
 

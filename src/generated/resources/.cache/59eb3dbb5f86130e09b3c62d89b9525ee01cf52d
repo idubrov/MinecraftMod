@@ -1,5 +1,6 @@
-// 1.21.5	2025-05-07T20:32:28.3152449	Loot Tables
+// 1.21.5	2025-06-22T20:17:49.1477971	Loot Tables
 a5854d9d92fc37f1207b3f29a7e649e4a9212ee3 data/firstmod/loot_table/blocks/banana_bush.json
+7a3d1839af3ab714e1057d8143f3dcff60c42b46 data/firstmod/loot_table/blocks/charging_station.json
 b5f99f3110f1d0fdb74c426ff46006831328a9fb data/firstmod/loot_table/blocks/coconut_lamp.json
 508bb1880e6fe9001c84ef430f31e8d092ac8f0b data/firstmod/loot_table/blocks/deepslate_sulfur_ore.json
 1ce889f5c3778eb20fa63f8895f1af88b2268f54 data/firstmod/loot_table/blocks/dry_palm_leaves_block.json

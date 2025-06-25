@@ -1,4 +1,4 @@
-// 1.21.5	2025-06-20T19:00:14.7472282	My Recipes
+// 1.21.5	2025-06-22T20:17:49.13631	My Recipes
 45760b825cef91b98fbf2ba3847c35efd65edcc1 data/firstmod/advancement/recipes/building_blocks/dry_palm_leaves_block.json
 efcfbfa6c3c58989670f8d199baaffa7731f6ec0 data/firstmod/advancement/recipes/building_blocks/dry_palm_leaves_carpet.json
 bda11ac69c058f2a7dda5d878ab55ef0fcff8172 data/firstmod/advancement/recipes/building_blocks/dry_palm_leaves_slab.json
@@ -14,6 +14,7 @@ ef0fecd6e7c4f3f3d8ae96d9eb390e267bad6e9d data/firstmod/advancement/recipes/food/
 69fe9c1f74729fa3b23cb4c08150b5c1919b8d90 data/firstmod/advancement/recipes/food/nigiri_sushi.json
 93a251edae53ca43e2848847d4caa5ea903b70fb data/firstmod/advancement/recipes/food/rice_pudding.json
 d88d829d3d560e8aa5ee75f4d25aeedee12b061f data/firstmod/advancement/recipes/misc/battery.json
+58c2790a640f488fe9cd2fd520c1de585497d8c9 data/firstmod/advancement/recipes/misc/charging_station.json
 4ad7e8219c9ddc94b26aaf2bd5e508493a6dc611 data/firstmod/advancement/recipes/misc/coconut_lamp.json
 b92ec8b124a17aa679c454e6a2b4863183ded5e4 data/firstmod/advancement/recipes/misc/palm_boat.json
 1603a37789e6d77b633a26ce244ec139aae38511 data/firstmod/advancement/recipes/misc/palm_electric_boat.json
@@ -50,6 +51,7 @@ aa4e9924816a1b96f2ae2d82cbc021b059be14de data/firstmod/advancement/recipes/tools
 17f70f69389a172c538852a91d14213577765c93 data/firstmod/advancement/recipes/tools/stone_hammer.json
 5c87b2921f09979dc5e236e4822d1efb16a7a77d data/firstmod/advancement/recipes/tools/wooden_hammer.json
 fffa400cd6bc53833b2778bdc9ee17876391a11c data/firstmod/recipe/battery.json
+4a9f6878de9726b86b18c0bd7dff9a0608e48fd8 data/firstmod/recipe/charging_station.json
 e1bcc81e395e7bd901ccc674e82b8bcfe26422b0 data/firstmod/recipe/coconut_lamp.json
 055d75147d3c1fe603bd1a554795ea0041a09eac data/firstmod/recipe/diamond_hammer.json
 933340980d2ec838176f7651c95bc3797bfbcce2 data/firstmod/recipe/dry_palm_leaves_block.json

@@ -1,21 +1,28 @@
 package com.andrew.firstmod;
 
 import com.andrew.firstmod.block.ModBlocks;
-import com.andrew.firstmod.client.ModModelLayers;
+import com.andrew.firstmod.block.entity.ModBlockEntities;
+import com.andrew.firstmod.block.entity.renderer.ChargingStationBlockEntityRenderer;
+import com.andrew.firstmod.entity.client.ModModelLayers;
 import com.andrew.firstmod.component.ModDataComponents;
 import com.andrew.firstmod.effect.ModEffects;
 import com.andrew.firstmod.entity.ModEntities;
-import com.andrew.firstmod.event.ModEventClientBusEvents;
 import com.andrew.firstmod.item.ModCreativeModeTabs;
 import com.andrew.firstmod.item.ModItems;
 import com.andrew.firstmod.loot.ModLootModifiers;
 import com.andrew.firstmod.particle.ModParticlesTypes;
+import com.andrew.firstmod.particle.custom.SulfurParticles;
+import com.andrew.firstmod.particle.custom.TeleportationParticles;
 import com.andrew.firstmod.potion.ModPotions;
+import com.andrew.firstmod.screen.ModMenuTypes;
+import com.andrew.firstmod.screen.custom.ChargingStationScreen;
 import com.andrew.firstmod.sound.ModSounds;
 import com.andrew.firstmod.worldgen.tree.ModFoliagePlacers;
 import com.andrew.firstmod.worldgen.tree.ModTrunkPlacerTypes;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.model.BoatModel;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.BoatRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.level.block.Blocks;
@@ -29,6 +36,8 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
+import net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
@@ -51,7 +60,7 @@ public class FirstMod
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
-        modEventBus.register(ModEventClientBusEvents.class);
+       // modEventBus.register(ModEventClientBusEvents.class);
 
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
@@ -63,10 +72,10 @@ public class FirstMod
         ModFoliagePlacers.register(modEventBus);
         ModEntities.register(modEventBus);
         ModSounds.register(modEventBus);
-
         ModDataComponents.register(modEventBus);
-
         ModLootModifiers.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
     }
@@ -98,7 +107,29 @@ public class FirstMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.BANANA_BUSH.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.RICE_CROP.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.PALM_SAPLING.get(), RenderType.cutout());
 
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.PALM_DOOR.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.PALM_TRAPDOOR.get(), RenderType.cutout());
+        }
+
+        @SubscribeEvent
+        public static void registerParticleFactories(RegisterParticleProvidersEvent event) {
+            event.registerSpriteSet(ModParticlesTypes.SULFUR_PARTICLES.get(), SulfurParticles.SulfurParticlesProvider::new);
+            event.registerSpriteSet(ModParticlesTypes.TELEPORTATION_PARTICLES.get(), TeleportationParticles.TeleportationParticlesProvider::new);
+        }
+
+        @SubscribeEvent
+        public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {
+            event.registerBlockEntityRenderer(ModBlockEntities.CHARGING_STATION_BE.get(), ChargingStationBlockEntityRenderer::new);
+        }
+
+
+        @SubscribeEvent
+        public static void registerScreens(RegisterMenuScreensEvent event) {
+            event.register(ModMenuTypes.CHARGING_STATION_MENU.get(), ChargingStationScreen::new);
         }
     }
 

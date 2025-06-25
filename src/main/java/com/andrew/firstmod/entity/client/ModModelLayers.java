@@ -1,4 +1,4 @@
-package com.andrew.firstmod.client;
+package com.andrew.firstmod.entity.client;
 
 import com.andrew.firstmod.FirstMod;
 import net.minecraft.client.model.geom.ModelLayerLocation;

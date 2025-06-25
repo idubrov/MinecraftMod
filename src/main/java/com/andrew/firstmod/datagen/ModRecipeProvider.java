@@ -376,6 +376,19 @@ public class ModRecipeProvider extends RecipeProvider {
                 .requires(ModItems.BATTERY.get())
                 .unlockedBy("has_battery", has(ModItems.BATTERY))
                 .save(this.output);
+
+
+        shaped(RecipeCategory.MISC, ModBlocks.CHARGING_STATION.get(), 1)
+                .pattern("GNG")
+                .pattern("IBI")
+                .pattern("GCG")
+                .define('I', Items.IRON_INGOT)
+                .define('B', ModItems.BATTERY.get())
+                .define('G', Items.GOLD_INGOT)
+                .define('N', Items.NETHERITE_INGOT)
+                .define('C', Items.COPPER_INGOT)
+                .unlockedBy("has_battery", has(ModItems.BATTERY))
+                .save(this.output);
     }
 
 
