@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_nugget"
+    },
+    "W": {
+      "tag": "minecraft:wooden_slabs"
+    }
+  },
+  "pattern": [
+    "W  ",
+    "I  ",
+    "W  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "firstmod:palm_drawer"
+  }
+}

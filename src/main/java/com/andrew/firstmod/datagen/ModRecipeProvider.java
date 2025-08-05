@@ -7,6 +7,7 @@ import com.andrew.firstmod.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
@@ -370,6 +371,35 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('N', Items.NETHERITE_INGOT)
                 .define('C', Items.COPPER_INGOT)
                 .unlockedBy("has_battery", has(ModItems.BATTERY))
+                .save(recipeOutput);
+//---------------------------------------------------------------//
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PALM_TABLE.get(), 1)
+                .pattern("WIW")
+                .pattern("S S")
+                .pattern("   ")
+                .define('W', ItemTags.WOODEN_SLABS)
+                .define('S', Items.STICK)
+                .define('I', Items.IRON_NUGGET)
+                .unlockedBy("has_wood_slab", has(ItemTags.WOODEN_SLABS))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PALM_CHAIR.get(), 1)
+                .pattern("W  ")
+                .pattern("WWW")
+                .pattern("SIS")
+                .define('W', ItemTags.WOODEN_SLABS)
+                .define('S', Items.STICK)
+                .define('I', Items.IRON_NUGGET)
+                .unlockedBy("has_wood_slab", has(ItemTags.WOODEN_SLABS))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PALM_DRAWER.get(), 1)
+                .pattern("W  ")
+                .pattern("I  ")
+                .pattern("W  ")
+                .define('I', Items.IRON_NUGGET)
+                .define('W', ItemTags.WOODEN_SLABS)
+                .unlockedBy("has_wood_slab", has(ItemTags.WOODEN_SLABS))
                 .save(recipeOutput);
     }
 
