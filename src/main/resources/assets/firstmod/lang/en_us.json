@@ -1,6 +1,7 @@
 {
   "creativetab.firstmod.electric_bananas_items_tab1": "Bananas Items",
-  "creativetab.firstmod.electric_bananas_items_tab2": "Electric Items",
+  "creativetab.firstmod.electric_bananas_items_tab2": "House Items",
+  "creativetab.firstmod.electric_bananas_items_tab3": "Electric Items",
 
   "block.firstmod.palm_wood": "Palm Wood",
   "block.firstmod.palm_log": "Palm Log",
@@ -115,5 +116,7 @@
   "item.firstmod.palm_boat": "Palm Boat",
   "item.firstmod.palm_electric_boat": "Palm Electric Boat",
 
-  "block.firstmod.chair": "Chair"
+  "block.firstmod.palm_chair": "Palm Chair",
+  "block.firstmod.palm_table": "Palm Table",
+  "block.firstmod.palm_drawer": "Palm Drawer"
 }

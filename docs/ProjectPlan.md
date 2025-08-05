@@ -1,4 +1,9 @@
 # Plan
+### Plan for v3
+- Furniture and electric boat from any wood.
+- Improve drawer voxel shape.
+- add chances to loot tables
+- increase charging time
 
 ### Change Log v 1.0.2
 - Two music discs and coconut sound. Discs are in chests.
@@ -7,11 +12,14 @@
 - Add electric armor to item tags
 - Structure Bunker in biomes:
 - Palm electric boat
+- Furniture flammable
+- new tab - household
+- teleportation stuff 50% loot probability
 
-structure set:
-    "spacing": 34,
-    "separation": 8
-
+### TO DO FOR RELEASE
+- furniture recipes
+- port to v25
+- docs
 
 ### To Fix
 - Don't waste teleportation device if there is no stones

@@ -123,8 +123,12 @@ public class ModBlocks {
 
 
 
-    public static final DeferredBlock<Block> CHAIR = registerBlock("chair",
+    public static final DeferredBlock<Block> PALM_CHAIR = registerBlock("palm_chair",
             () -> new ChairBlock(BlockBehaviour.Properties.of().noOcclusion()));
+    public static final DeferredBlock<Block> PALM_TABLE = registerBlock("palm_table",
+            () -> new TableBlock(BlockBehaviour.Properties.of().noOcclusion()));
+    public static final DeferredBlock<Block> PALM_DRAWER = registerBlock("palm_drawer",
+            () -> new DrawerBlock(BlockBehaviour.Properties.of().noOcclusion()));
 
 
     //Registering of our new blocks and its item

@@ -37,6 +37,8 @@ public class ModEntities {
                     .sized(1.375f, 0.5625f)
                     .build("mod_electric_boat"));
 
+
+
     public static final Supplier<EntityType<ChairEntity>> CHAIR_ENTITY =
             ENTITY_TYPES.register("chair_entity", () -> EntityType.Builder
                     .<ChairEntity>of(ChairEntity::new, MobCategory.MISC)

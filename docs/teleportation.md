@@ -11,7 +11,7 @@ inside of blocks, however, it just teleports you to the first open space above t
 <br>
 
 ### Obtain
-You can get both from wandering traders and the stronghold crossing chest.
+You can get both from wandering traders and the stronghold crossing chest with a fifty percent chance.
 
 ### Recipe
 

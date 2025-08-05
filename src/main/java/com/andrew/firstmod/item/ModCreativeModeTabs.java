@@ -71,12 +71,26 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.COCONUT_LAMP);
 
-                        output.accept(ModBlocks.CHAIR);
+                        output.accept(ModBlocks.PALM_CHAIR);
+                        output.accept(ModBlocks.PALM_TABLE);
                     }).build());
 
     public static final Supplier<CreativeModeTab> ITEMS_TAB2 = CREATIVE_MODE_TAB.register("electric_bananas_items_tab2",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BATTERY.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.PALM_CHAIR.get()))
                     .title(Component.translatable("creativetab.firstmod.electric_bananas_items_tab2"))
+                    .displayItems((itemDisplayParameters, output) -> {
+
+                        output.accept(ModBlocks.COCONUT_LAMP);
+
+                        output.accept(ModBlocks.PALM_CHAIR);
+                        output.accept(ModBlocks.PALM_TABLE);
+                        output.accept(ModBlocks.PALM_DRAWER);
+                    }).build());
+
+
+    public static final Supplier<CreativeModeTab> ITEMS_TAB3 = CREATIVE_MODE_TAB.register("electric_bananas_items_tab3",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BATTERY.get()))
+                    .title(Component.translatable("creativetab.firstmod.electric_bananas_items_tab3"))
                     .displayItems((itemDisplayParameters, output) -> {
 
                         output.accept(ModItems.BATTERY);
