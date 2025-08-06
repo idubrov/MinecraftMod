@@ -7,6 +7,7 @@ import com.andrew.firstmod.entity.client.ModModelLayers;
 import com.andrew.firstmod.component.ModDataComponents;
 import com.andrew.firstmod.effect.ModEffects;
 import com.andrew.firstmod.entity.ModEntities;
+import com.andrew.firstmod.entity.client.ChairRenderer;
 import com.andrew.firstmod.item.ModCreativeModeTabs;
 import com.andrew.firstmod.item.ModItems;
 import com.andrew.firstmod.loot.ModLootModifiers;
@@ -107,6 +108,8 @@ public class FirstMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            EntityRenderers.register(ModEntities.CHAIR_ENTITY.get(), ChairRenderer::new);
+
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.BANANA_BUSH.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.RICE_CROP.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.PALM_SAPLING.get(), RenderType.cutout());
