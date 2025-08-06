@@ -27,10 +27,11 @@ power armor.
 ### Palm Tree
 
 Palm trees are amazing! They give
-[wood](docs/palm.md), [leaves](docs/palm.md), and coconuts.
- They appear in several biomes that both do and don't make sense. (Imagine finding a palm
+[palm wood](docs/palm.md), [leaves](docs/palm.md), and coconuts.
+They appear in several biomes that both do and don't make sense. (Imagine finding a palm
 tree in the desert. Totally makes sense.) Coconuts can also be used as a weapon now
-because why not.
+because why not. Also, they have a very satisfying sound effect. All default wooden items can be
+crafted with palm wood.
 
 ### Sulfur Ore
 
@@ -40,31 +41,32 @@ with a hammer gives you sulfur powder directly.
 
 ### Hammer
 Use the [hammer](docs/hammer.md) to mine sulfur ore without needing to smelt the sulfur
-shards into powder, as you get the powder instantly. Who knew the 
+shards into powder, as you get the powder instantly. Who knew the
 solution to burning less coal was Stone Age technology?
 
-### Battery, Electric Tools, and Power Armor
-[Batteries](docs/electric_stuff.md) make a terrible fuel (What have your parents told you about burning 
-batteries?), smell _interesting_, but are needed for all electrical 
-items. [Electric Tools](docs/electric_stuff.md) are faster than normal tools _and_ mine a bigger area. Have you ever
-felt that your netherite armor doesn't protect you enough? Have you ever wanted to have a neverending regen effect?
-If so, get your [Power Armor](docs/electric_stuff.md) today!
+### Battery, Electric Tools, Power Armor, Electric Boat, and Charging Station
+[Batteries](docs/electric_stuff.md) make a terrible fuel (What have your parents told you about burning
+batteries?), smell _interesting_, but are needed for all electrical
+items. [Electric Tools](docs/electric_stuff.md) are faster than normal tools _and_ mine a bigger area. Also,
+the Charging Station allows you to use them infinitely! [Power Armor](docs/electric_stuff.md)
+you special effects that can save your life! And lastly, [Electric Boats](docs/electric_stuff.md)
+move faster than regular boats.
 
 ### Rice Crop and Banana Bush
-Sushi! Rice pudding! Mats! All of these can be made with the  [rice plant](docs/plants.md)! 
+Sushi! Rice pudding! Mats! All of these can be made with the  [rice plant](docs/plants.md)!
 A major food source, kind of annoying to grow,
-rice is essential for any self-respecting foodie.  The 
-[banana bush](docs/plants.md) is another food source. It spawns way too often, 
+rice is essential for any self-respecting foodie.  The
+[banana bush](docs/plants.md) is another food source. It spawns way too often,
 but who cares when you get bananas!? Also: milkshakes.
 
 ### New Food Recipes
-[Fruit salads](docs/food.md), [smoothies](docs/food.md), [sushi](docs/food.md), and more! What else could you ask for? 
-(Not accepting answers to question.) 
+[Fruit salads](docs/food.md), [smoothies](docs/food.md), [sushi](docs/food.md), and more! What else could you ask for?
+(Not accepting answers to question.)
 
 ### Electrified Effect Potion
-Have you ever wanted to become a living tesla rod? Have you ever been surrounded by countless mobs? If so, the 
+Have you ever wanted to become a living tesla rod? Have you ever been surrounded by countless mobs? If so, the
 [electrified effect](docs/electrified_effect.md) is here to help! This effect damages you and everybody around you,
-but if you wear electric armor it will absorb the electricity that damages you.
+but if you wear electric armor it will absorb the electricity that charges you.
 
 ### Teleportation Device
 [Teleportation Stones and Devices](docs/teleportation.md) are new additions that
@@ -72,5 +74,13 @@ let you teleport! Ridiculously expensive, kind of useless, and nonreusable, the
 teleportation device will send you right back home!
 
 ### Household Items
-We will add more household items, but for now you just have to deal with simple [coconut lamps](docs/palm).
+Now, with amazing new furniture items, you can FINALLY sit, in no less than an ACTUAL CHAIR. Also,
+we now have tables, [coconut lamps](docs/palm), and even dressers! Note: so far the dresser does
+not have any inventory. :(
 
+### Music Discs
+The ALL-NEW Solo and Music discs are here to ~~spread communism~~ prove to the world that bassoons
+_do_ exist!
+
+### Structures
+Now, you can explore abandoned bunkers! However, so far, there is no loot.
