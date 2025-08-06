@@ -73,6 +73,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         dropSelf(ModBlocks.TELEPORTATION_STONE.get());
         dropSelf(ModBlocks.CHARGING_STATION.get());
 
+        dropSelf(ModBlocks.PALM_CHAIR.get());
+        dropSelf(ModBlocks.PALM_DRAWER.get());
+        dropSelf(ModBlocks.PALM_TABLE.get());
 
 
         add(ModBlocks.POTTED_PALM_SAPLING.get(), createPotFlowerItemTable(ModBlocks.PALM_SAPLING.get()));

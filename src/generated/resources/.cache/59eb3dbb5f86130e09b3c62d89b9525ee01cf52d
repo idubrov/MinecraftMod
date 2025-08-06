@@ -1,4 +1,4 @@
-// 1.21.5	2025-06-22T20:17:49.1477971	Loot Tables
+// 1.21.5	2025-08-05T22:10:59.5329963	Loot Tables
 a5854d9d92fc37f1207b3f29a7e649e4a9212ee3 data/firstmod/loot_table/blocks/banana_bush.json
 7a3d1839af3ab714e1057d8143f3dcff60c42b46 data/firstmod/loot_table/blocks/charging_station.json
 b5f99f3110f1d0fdb74c426ff46006831328a9fb data/firstmod/loot_table/blocks/coconut_lamp.json
@@ -9,7 +9,9 @@ b5f99f3110f1d0fdb74c426ff46006831328a9fb data/firstmod/loot_table/blocks/coconut
 5fd370a6b8723ab13ae4d657801c9d83b0a018cc data/firstmod/loot_table/blocks/end_sulfur_ore.json
 f21c2ca4a618015b1a98e93cdf2c55b061be00e1 data/firstmod/loot_table/blocks/nether_sulfur_ore.json
 d06c91a26af207de498840c5aff821a57670f439 data/firstmod/loot_table/blocks/palm_button.json
+43d34b6406a8779e7bfc019dd504327338520df2 data/firstmod/loot_table/blocks/palm_chair.json
 1454f21530c7c65751539580cbecd786cc42c0bb data/firstmod/loot_table/blocks/palm_door.json
+e0133bf996d03a5fca742dcf77d47ffe522786fe data/firstmod/loot_table/blocks/palm_drawer.json
 772e2dd478b5180effbdc40bbc11b3654b0e74a4 data/firstmod/loot_table/blocks/palm_fence.json
 506e7bb3acfe9250cb8348959666c14a9f707ff0 data/firstmod/loot_table/blocks/palm_fence_gate.json
 5a848edd25f26e0976dd11923125867f698c6aa6 data/firstmod/loot_table/blocks/palm_leaves.json
@@ -19,6 +21,7 @@ f95616185817856c51abee4db201390faa12b17c data/firstmod/loot_table/blocks/palm_pl
 99851eaef5a1657791a25f2be5a97db56dc027a9 data/firstmod/loot_table/blocks/palm_sapling.json
 84632bf3366f0c751017257010906b76e4fe0e96 data/firstmod/loot_table/blocks/palm_slab.json
 0e50d8b032519f2890434961d48749fadcbd4719 data/firstmod/loot_table/blocks/palm_stairs.json
+918a5354096722ef36ee1e26630bcd9f16f39294 data/firstmod/loot_table/blocks/palm_table.json
 709973166849d4a22a746052ef1cf06fd286536b data/firstmod/loot_table/blocks/palm_trapdoor.json
 a0ba44313c6c216dad874843a70ceabb58b859cc data/firstmod/loot_table/blocks/palm_wood.json
 6bff99d2477acf3773692d65f31f5f71d1f7df9f data/firstmod/loot_table/blocks/potted_palm_sapling.json

@@ -1,4 +1,4 @@
-// 1.21.5	2025-06-24T19:20:14.6422744	Model Definitions - firstmod
+// 1.21.5	2025-08-05T22:10:59.509297	Model Definitions - firstmod
 5a4be082f866abf343c84034192cf99495f8b7f5 assets/firstmod/blockstates/banana_bush.json
 27206c4616627dbf687e4498e41211d96718389b assets/firstmod/blockstates/charging_station.json
 b2a653fb2035f999939e0486425efb12c445221f assets/firstmod/blockstates/deepslate_sulfur_ore.json
@@ -56,7 +56,9 @@ e72462ef58dd60ecea2a1d8da7f0c377880e3281 assets/firstmod/items/music_disc_bassoo
 d2e1b16807185a5395b9930ccfbbac2c3b03c1dc assets/firstmod/items/nigiri_sushi.json
 1cfc6bcc6614e719a535e537c07b481a82ac80b4 assets/firstmod/items/palm_boat.json
 a3735bf87c42e76ec77bd0d2fee43eed374d70ce assets/firstmod/items/palm_button.json
+7ac2f17ed4683bca127372825843c401825571f3 assets/firstmod/items/palm_chair.json
 3d928b454cd829aba95b93523f7af5e9f25bc3a6 assets/firstmod/items/palm_door.json
+133de9f24f233fb157138a55c09755e8001b31e3 assets/firstmod/items/palm_drawer.json
 308a324c75d7c8aa7f1b887cd6dc65543868e1ba assets/firstmod/items/palm_electric_boat.json
 2cc720474c73f7ad9e7498a002d830624c294ff0 assets/firstmod/items/palm_fence.json
 d0600830d6c4279837a7b3a0924122777d76ae0a assets/firstmod/items/palm_fence_gate.json
@@ -67,6 +69,7 @@ ce7ee6d7198cb1427abfc49a462b807a216a18e8 assets/firstmod/items/palm_log.json
 a76f780a7b1af3310a0a9623ccaf31d81cab6d35 assets/firstmod/items/palm_sapling.json
 d463eda455360415ca6cfce3aafbbc9885a551df assets/firstmod/items/palm_slab.json
 6747787702f129b06a29660a29d6a29b4ac6e1b7 assets/firstmod/items/palm_stairs.json
+fcb377519f90074cd8d284ae6adbb03cbf756c4f assets/firstmod/items/palm_table.json
 e1b89feb17a2fa99f698642bac2c42df85e9803b assets/firstmod/items/palm_trapdoor.json
 27ce6182ac2519d26c9a164a6ef04b9b17bbde10 assets/firstmod/items/palm_wood.json
 be0bd0d424c2f4c6644b260c2012fd6eaac7108c assets/firstmod/items/potted_palm_sapling.json

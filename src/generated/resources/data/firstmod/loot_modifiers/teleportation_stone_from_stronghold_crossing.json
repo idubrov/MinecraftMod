@@ -4,6 +4,10 @@
     {
       "condition": "neoforge:loot_table_id",
       "loot_table_id": "minecraft:chests/stronghold_crossing"
+    },
+    {
+      "chance": 0.5,
+      "condition": "minecraft:random_chance"
     }
   ],
   "item": "firstmod:teleportation_stone"

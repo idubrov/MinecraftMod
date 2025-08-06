@@ -46,6 +46,9 @@ public class ModModelProvider extends ModelProvider {
         blocks.remove(ModBlocks.DRY_PALM_LEAVES_SLAB);
         blocks.remove(ModBlocks.COCONUT_LAMP);
         blocks.remove(ModBlocks.RICE_PUDDING);
+        blocks.remove(ModBlocks.PALM_CHAIR);
+        blocks.remove(ModBlocks.PALM_TABLE);
+        blocks.remove(ModBlocks.PALM_DRAWER);
 
         return blocks.stream();
     }

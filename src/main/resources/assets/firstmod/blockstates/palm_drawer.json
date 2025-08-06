@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "firstmod:block/palm_drawer"
+    },
+    "facing=south": {
+      "model": "firstmod:block/palm_drawer",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "firstmod:block/palm_drawer",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "firstmod:block/palm_drawer",
+      "y": 270
+    }
+  }
+}

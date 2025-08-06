@@ -3,6 +3,8 @@
 
   "values": [
     "#minecraft:is_taiga",
-    "minecraft:desert"
+    "minecraft:desert",
+    "minecraft:plains",
+    "minecraft:snowy_plains"
   ]
 }

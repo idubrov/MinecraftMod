@@ -1,6 +1,7 @@
 package com.andrew.firstmod.entity;
 
 import com.andrew.firstmod.FirstMod;
+import com.andrew.firstmod.entity.custom.ChairEntity;
 import com.andrew.firstmod.entity.custom.CoconutProjectileEntity;
 import com.andrew.firstmod.entity.custom.ModElectricBoatEntity;
 import com.andrew.firstmod.item.ModItems;
@@ -11,7 +12,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.vehicle.Boat;
-import net.minecraft.world.entity.vehicle.ChestBoat;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -50,6 +50,13 @@ public class ModEntities {
                     .eyeHeight(0.5625F)
                     .clientTrackingRange(10)
                     .build(entityId("palm_electric_boat")));
+
+
+    public static final Supplier<EntityType<ChairEntity>> CHAIR_ENTITY =
+            ENTITY_TYPES.register("chair_entity", () -> EntityType.Builder
+                    .<ChairEntity>of(ChairEntity::new, MobCategory.MISC)
+                    .sized(0.5f, 0.5f)
+                    .build(entityId("chair_entity")));
 
 
     public static void register(IEventBus eventBus) {

@@ -389,6 +389,37 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('C', Items.COPPER_INGOT)
                 .unlockedBy("has_battery", has(ModItems.BATTERY))
                 .save(this.output);
+
+
+
+        shaped(RecipeCategory.MISC, ModBlocks.PALM_TABLE.get(), 1)
+                .pattern("WIW")
+                .pattern("S S")
+                .pattern("   ")
+                .define('W', ItemTags.WOODEN_SLABS)
+                .define('S', Items.STICK)
+                .define('I', Items.IRON_NUGGET)
+                .unlockedBy("has_wood_slab", has(ItemTags.WOODEN_SLABS))
+                .save(this.output);
+
+        shaped(RecipeCategory.MISC, ModBlocks.PALM_CHAIR.get(), 1)
+                .pattern("W  ")
+                .pattern("WWW")
+                .pattern("SIS")
+                .define('W', ItemTags.WOODEN_SLABS)
+                .define('S', Items.STICK)
+                .define('I', Items.IRON_NUGGET)
+                .unlockedBy("has_wood_slab", has(ItemTags.WOODEN_SLABS))
+                .save(this.output);
+
+        shaped(RecipeCategory.MISC, ModBlocks.PALM_DRAWER.get(), 1)
+                .pattern("W  ")
+                .pattern("I  ")
+                .pattern("W  ")
+                .define('I', Items.IRON_NUGGET)
+                .define('W', ItemTags.WOODEN_SLABS)
+                .unlockedBy("has_wood_slab", has(ItemTags.WOODEN_SLABS))
+                .save(this.output);
     }
 
 

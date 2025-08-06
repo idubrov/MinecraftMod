@@ -1,6 +1,7 @@
 {
   "creativetab.firstmod.electric_bananas_items_tab1": "Bananas Items",
-  "creativetab.firstmod.electric_bananas_items_tab2": "Electric Items",
+  "creativetab.firstmod.electric_bananas_items_tab2": "House Items",
+  "creativetab.firstmod.electric_bananas_items_tab3": "Electric Items",
 
 
   "item.firstmod.palm_wood": "Palm Wood",
@@ -95,6 +96,11 @@
 
   "item.firstmod.palm_boat": "Palm Boat",
   "item.firstmod.palm_electric_boat": "Palm Electric Boat",
+
+  "item.firstmod.palm_chair": "Palm Chair",
+  "item.firstmod.palm_table": "Palm Table",
+  "item.firstmod.palm_drawer": "Palm Drawer",
+
 
   "tooltip.firstmod.empty_line": " ",
   "tooltip.firstmod.sulfur_ore.tooltip": "§7This block will hurt you if you touch it.§r",

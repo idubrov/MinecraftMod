@@ -6,7 +6,10 @@
 - Palm boat with recipe, tag and advancement
 - Add electric armor to item tags
 - Structure Bunker in biomes:
-- Palm electric boat
+- Palm electric boat with recipe
+- Furniture flammable
+- new tab - household
+- teleportation stuff 50% loot probability
 
 
 ### To Fix

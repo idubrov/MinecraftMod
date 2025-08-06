@@ -21,8 +21,7 @@ public class ModCreativeModeTabs {
 
 
     public static final Supplier<CreativeModeTab> ITEMS_TAB1 = CREATIVE_MODE_TAB.register("electric_bananas_items_tab1",
-            () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModItems.BANANA.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BANANA.get()))
                     .title(Component.translatable("creativetab.firstmod.electric_bananas_items_tab1"))
                     .displayItems((itemDisplayParameters, output) -> {
 
@@ -57,13 +56,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.DRY_PALM_LEAVES_CARPET);
                         output.accept(ModBlocks.PALM_SAPLING);
 
-                        output.accept(ModItems.COCONUT);
-                        output.accept(ModBlocks.COCONUT_LAMP);
-
                         output.accept(ModItems.RICE_SEEDS);
                         output.accept(ModItems.RICE_STEM);
-
                         output.accept(ModItems.BANANA);
+                        output.accept(ModItems.COCONUT);
+
                         output.accept(ModItems.MILK_SHAKE);
                         output.accept(ModItems.FRUIT_SALAD);
                         output.accept(ModItems.MAKI_SUSHI);
@@ -72,9 +69,20 @@ public class ModCreativeModeTabs {
                     }).build());
 
     public static final Supplier<CreativeModeTab> ITEMS_TAB2 = CREATIVE_MODE_TAB.register("electric_bananas_items_tab2",
-            () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModItems.BATTERY.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.PALM_CHAIR.get()))
                     .title(Component.translatable("creativetab.firstmod.electric_bananas_items_tab2"))
+                    .displayItems((itemDisplayParameters, output) -> {
+
+                        output.accept(ModBlocks.COCONUT_LAMP);
+
+                        output.accept(ModBlocks.PALM_CHAIR);
+                        output.accept(ModBlocks.PALM_TABLE);
+                        output.accept(ModBlocks.PALM_DRAWER);
+                    }).build());
+
+    public static final Supplier<CreativeModeTab> ITEMS_TAB3 = CREATIVE_MODE_TAB.register("electric_bananas_items_tab3",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BATTERY.get()))
+                    .title(Component.translatable("creativetab.firstmod.electric_bananas_items_tab3"))
                     .displayItems((itemDisplayParameters, output) -> {
 
                         output.accept(ModItems.BATTERY);
@@ -110,6 +118,7 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.CHARGING_STATION);
                     }).build());
+
 
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TAB.register(eventBus);

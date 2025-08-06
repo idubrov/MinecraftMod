@@ -65,7 +65,6 @@ public class ModBlocks {
                                     ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "end_sulfur_ore")))));
 
 
-
     public static final DeferredBlock<Block> PALM_WOOD = registerBlock("palm_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_WOOD)
                     .setId(ResourceKey.create(Registries.BLOCK,
@@ -90,7 +89,6 @@ public class ModBlocks {
             () -> new ModFlammableBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PLANKS)
                     .setId(ResourceKey.create(Registries.BLOCK,
                             ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "palm_planks")))));
-
 
 
     public static final DeferredBlock<SlabBlock> PALM_SLAB = registerBlock("palm_slab",
@@ -135,7 +133,6 @@ public class ModBlocks {
                             ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "palm_trapdoor")))));
 
 
-
     public static final DeferredBlock<Block> PALM_LEAVES = registerBlock("palm_leaves",
             () -> new ModFlammableLeavesBlock(0.01F, BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_LEAVES).noOcclusion()
                     .setId(ResourceKey.create(Registries.BLOCK,
@@ -157,7 +154,6 @@ public class ModBlocks {
                             ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "dry_palm_leaves_carpet")))));
 
 
-
     public static final DeferredBlock<ModSaplingBlock> PALM_SAPLING = registerBlock("palm_sapling",
             () -> new ModSaplingBlock(ModTreeGrowers.PALMWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_SAPLING).noCollission()
                     .setId(ResourceKey.create(Registries.BLOCK,
@@ -171,13 +167,11 @@ public class ModBlocks {
                             ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "potted_palm_sapling")))));
 
 
-
     public static final DeferredBlock<Block> COCONUT_LAMP = registerBlock("coconut_lamp",
             () -> new CoconutLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.TORCH)
                     .lightLevel(state -> state.getValue(CoconutLampBlock.COCONUT_LAMP_CLICKED) ? 10 : 0)
                     .setId(ResourceKey.create(Registries.BLOCK,
                             ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "coconut_lamp")))));
-
 
 
     public static final DeferredBlock<Block> RICE_CROP = BLOCKS.register("rice_crop",
@@ -186,19 +180,16 @@ public class ModBlocks {
                             ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "rice_crop")))));
 
 
-
     public static final DeferredBlock<Block> BANANA_BUSH = BLOCKS.register("banana_bush",
             () -> new BananaBushBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)
                     .setId(ResourceKey.create(Registries.BLOCK,
                             ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "banana_bush")))));
 
 
-
     public static final DeferredBlock<Block> RICE_PUDDING = registerBlock("rice_pudding",
             () -> new RicePuddingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE)
                     .setId(ResourceKey.create(Registries.BLOCK,
                             ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "rice_pudding")))), 1);
-
 
 
     public static final DeferredBlock<Block> TELEPORTATION_STONE = registerBlock("teleportation_stone",
@@ -213,6 +204,16 @@ public class ModBlocks {
                     .setId(ResourceKey.create(Registries.BLOCK,
                             ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "charging_station")))));
 
+
+    public static final DeferredBlock<Block> PALM_CHAIR = registerBlock("palm_chair",
+            () -> new ChairBlock(BlockBehaviour.Properties.of().noOcclusion().setId(ResourceKey.create(Registries.BLOCK,
+                    ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "palm_chair")))));
+    public static final DeferredBlock<Block> PALM_TABLE = registerBlock("palm_table",
+            () -> new TableBlock(BlockBehaviour.Properties.of().noOcclusion().setId(ResourceKey.create(Registries.BLOCK,
+                    ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "palm_table")))));
+    public static final DeferredBlock<Block> PALM_DRAWER = registerBlock("palm_drawer",
+            () -> new DrawerBlock(BlockBehaviour.Properties.of().noOcclusion().setId(ResourceKey.create(Registries.BLOCK,
+                    ResourceLocation.fromNamespaceAndPath(FirstMod.MOD_ID, "palm_drawer")))));
 
 
     //Registering of our new blocks and its item
