@@ -1,6 +1,10 @@
 # Plan
-
 ### Change Log v 1.0.2
+In this update, we now have two music discs - one of which is meant to ~~spread communism~~
+_be an intro song to the bunker._ Also, we have added a block entity - the Charging Station,
+which can charge all of your stuff now. Yippee! Additionally, we have made electric boats.
+Lastly, the Bunker has been created!
+
 - Two music discs and coconut sound. Discs are in chests.
 - Charging station with recipe.
 - Palm boat with recipe, tag and advancement

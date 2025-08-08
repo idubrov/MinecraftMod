@@ -1,4 +1,4 @@
-// 1.21.5	2025-05-07T20:32:28.3152449	Registries
+// 1.21.5	2025-08-06T10:37:11.7400132	Registries
 8d7e52483ab870c1bdfe3cf69942aa59f0920ef2 data/firstmod/neoforge/biome_modifier/add_banana_bush.json
 f0759e5cb8740c6da87ca1ef959dea2d50702499 data/firstmod/neoforge/biome_modifier/add_end_sulfur_ore.json
 02d92c906e57654c330a34eed9b167d7566e225f data/firstmod/neoforge/biome_modifier/add_nether_sulfur_ore.json
@@ -12,8 +12,8 @@ f9af00ec3c13cf016331069cb37feed07100030b data/firstmod/neoforge/biome_modifier/a
 00eb508caab85ffb1379c3aa410007ff659c8548 data/firstmod/worldgen/configured_feature/palmwood.json
 26fc0a779250f9a7bd00c85ebc7239290558a83d data/firstmod/worldgen/configured_feature/sulfur_ore.json
 19f16b0a23a2f2a446f257cd4be3b309b4cc0639 data/firstmod/worldgen/placed_feature/banana_bush_placed.json
-7a153edd304530358a3dc1c0508b2b47d5c5b0f0 data/firstmod/worldgen/placed_feature/end_sulfur_ore_placed.json
-90a729d260f5d3151ec484d9342e822253acc3cc data/firstmod/worldgen/placed_feature/nether_sulfur_ore_placed.json
+4eb6c287d1105f85bb3a72d99d70777aa03dd62a data/firstmod/worldgen/placed_feature/end_sulfur_ore_placed.json
+d15b523896d0365f1b05bbd353cf3c2bab56e0fb data/firstmod/worldgen/placed_feature/nether_sulfur_ore_placed.json
 d1198612359324cdf64f3309699f6144a32a847c data/firstmod/worldgen/placed_feature/palmwood_placed_less.json
 5fa2d94c7fb9374133a8ff98f71f5121e3ee71a5 data/firstmod/worldgen/placed_feature/palmwood_placed_more.json
 1373dfb3a1fa8aba1bf7b0c220c2036dbe1d3e54 data/firstmod/worldgen/placed_feature/palmwood_placed_rare.json
